@@ -15,13 +15,22 @@
     @yield('head')
 </head>
 
-<body>
+<body class="font-audiowide text-white">
     @yield('modals')
-    <div class="font-audiowide">
+    <div class="w-screen h-screen bg-e-grid-black relative">
         @yield('content')
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     @yield('scripts')
+    <script>
+        function openModal(type) {
+            $('#' + type + '-modal').removeClass('hidden').addClass('flex');
+        }
+
+        function closeModal() {
+            $('.modal').removeClass('flex').addClass('hidden');
+        }
+    </script>
 </body>
 
 </html>

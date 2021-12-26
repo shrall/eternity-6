@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.modal{
+    @apply z-50;
+}
+.input-text{
+    @apply bg-eternity-6-gray rounded-lg outline-none font-montserrat px-4 py-2;
+}
+.hover-button{
+    @apply border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300;
+}

@@ -8,12 +8,18 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                // login: "url('/webp/login-board.webp')",
+                "e-flower": "url('/svg/e-flower.svg')",
+                "e-grid-black": "url('/svg/background.svg')",
+                "lb-rt-frame": "url('/svg/lb-rt-frame.svg')",
+                "lt-rb-frame": "url('/svg/lt-rb-frame.svg')",
             },
             colors: {
                 "eternity-6-blue" : "#2484C6",
                 "eternity-6-orange" : "#D55023",
                 "eternity-6-black" : "#231f20",
+                "eternity-6-gray" : "#827e7b",
+                "eternity-6-red" : "#c14d45",
+                "eternity-6-green" : "#1db954",
             },
             fontFamily: {
                 audiowide: ['"audiowide"'],
@@ -107,6 +113,10 @@ module.exports = {
                 "-30": "-30",
                 "-40": "-40",
             },
+            animation: {
+              'spin-slow': 'spin 5s linear infinite',
+              'ping-slow': 'ping 5s cubic-bezier(0, 0, 0.2, 1) infinite',
+            }
         },
     },
     variants: {
