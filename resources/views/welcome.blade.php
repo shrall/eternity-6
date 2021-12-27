@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- <div class="orange-fade-background bg-gradient-to-b from-eternity-6-orange opacity-50 absolute w-screen h-screen top-0"></div> --}}
     <div id="loading-page" class="flex flex-col items-center justify-center h-screen">
         <img src="{{ asset('svg/loading-ship.svg') }}" class="animate-pulse mb-8">
         <div class="w-96 border border-eternity-6-orange h-6 relative">
@@ -55,7 +54,7 @@
         <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
         </div>
         <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col gap-20">
-            <div class="text-3xl ml-12">Login</div>
+            <div class="text-3xl ml-12 mb-8">Login</div>
             <div class="text-2xl mx-24">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -64,7 +63,7 @@
                         <input id="email" class="input-text"
                             type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     </div>
-                    <div class="flex items-center justify-between gap-8 mb-8">
+                    <div class="flex items-center justify-between gap-8 mb-12">
                         <label for="password">Password</label>
                         <input id="password" class="input-text"
                             type="password" name="password" required autocomplete="current-password">

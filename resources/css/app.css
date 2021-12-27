@@ -13,3 +13,14 @@
 .hover-button{
     @apply border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
