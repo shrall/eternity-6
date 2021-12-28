@@ -25,4 +25,8 @@ class HomeController extends Controller
     public function rally_trading_index(){
         return view('user.rally_trading.index');
     }
+
+    public function rally_trading_rally(){
+        return view('user.rally_trading.rally');
+    }
 }

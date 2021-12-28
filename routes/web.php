@@ -23,3 +23,4 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/rally_trading/index', [HomeController::class, 'rally_trading_index'])->name('rally_trading_index');
+Route::get('/rally_trading/rally', [HomeController::class, 'rally_trading_rally'])->name('rally_trading_rally');

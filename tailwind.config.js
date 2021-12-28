@@ -18,6 +18,7 @@ module.exports = {
                 "lt-rt-frame": "url('/svg/lt-rt-frame.svg')",
                 "lt-small-frame": "url('/svg/lt-small-frame.svg')",
                 "rt-frame": "url('/svg/rt-frame.svg')",
+                "rally-zoom": "url('/svg/rally-zoom.svg')",
             },
             colors: {
                 "eternity-6-blue" : "#2484C6",
