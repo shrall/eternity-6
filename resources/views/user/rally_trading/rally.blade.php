@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <form action="#" method="post">
-        @csrf
         <div class="grid grid-cols-12 h-screen">
             @include('user.rally_trading.inc.sidebar')
             <div class="col-span-10 h-screen flex flex-col gap-y-8 px-4 py-8">
@@ -13,31 +11,31 @@
                         <div class="grid grid-cols-5 gap-x-12 gap-y-4 px-14">
                             <div id="rally-1" onclick="openModal('rally-1');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-4">The Game</div>
+                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
                                 <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
                                     Zoom</div>
                             </div>
                             <div id="rally-2" onclick="openModal('rally-2');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-4">The Game</div>
+                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
                                 <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
                                     Zoom</div>
                             </div>
                             <div id="rally-3" onclick="openModal('rally-3');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-4">The Game</div>
+                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
                                 <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
                                     Zoom</div>
                             </div>
                             <div id="rally-4" onclick="openModal('rally-4');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-4">The Game</div>
+                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
                                 <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
                                     Zoom</div>
                             </div>
                             <div id="rally-5" onclick="openModal('rally-5');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-4">The Game</div>
+                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
                                 <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
                                     Zoom</div>
                             </div>
@@ -63,14 +61,21 @@
                         Breakout: 2
                     </div>
                 </div>
-                <div class="flex items-center mr-24">
+                <div class="flex items-center mr-48">
                     <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
                 </div>
             </div>
         </div>
-
-    </form>
 @endsection
 
 @section('scripts')
+    <script>
+        function plusCraft(order) {
+            $('#craft-' + order).get(0).value++
+        }
+
+        function minCraft(order) {
+            $('#craft-' + order).get(0).value--
+        }
+    </script>
 @endsection
