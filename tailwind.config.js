@@ -22,6 +22,7 @@ module.exports = {
                 "market-left": "url('/svg/market-left.svg')",
                 "market-middle": "url('/svg/market-middle.svg')",
                 "market-right": "url('/svg/market-right.svg')",
+                "lucky-draw-box": "url('/svg/lucky-draw-box.svg')",
             },
             colors: {
                 "eternity-6-blue" : "#2484C6",

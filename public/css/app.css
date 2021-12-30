@@ -436,23 +436,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-2{
   margin-right: 0.5rem;
 }
+.mb-1{
+  margin-bottom: 0.25rem;
+}
 .mr-24{
   margin-right: 6rem;
-}
-.mb-16{
-  margin-bottom: 4rem;
-}
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-.mr-32{
-  margin-right: 8rem;
 }
 .mr-48{
   margin-right: 12rem;
 }
-.mb-1{
-  margin-bottom: 0.25rem;
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+.mb-16{
+  margin-bottom: 4rem;
 }
 .block{
   display: block;
@@ -514,6 +511,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-32{
   height: 8rem;
 }
+.h-vh-40{
+  height: 40vh;
+}
 .h-vh-20{
   height: 20vh;
 }
@@ -522,9 +522,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-vh-55{
   height: 55vh;
-}
-.h-vh-40{
-  height: 40vh;
 }
 .w-96{
   width: 24rem;
@@ -565,14 +562,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-12{
   width: 3rem;
 }
-.w-16{
-  width: 4rem;
-}
-.w-32{
-  width: 8rem;
-}
 .w-6{
   width: 1.5rem;
+}
+.w-16{
+  width: 4rem;
 }
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
@@ -613,6 +607,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-animation: spin 5s linear infinite;
           animation: spin 5s linear infinite;
 }
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+.animate-spin{
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
 .cursor-pointer{
   cursor: pointer;
 }
@@ -627,9 +630,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-5{
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -681,16 +681,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
-.gap-x-2{
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
 .gap-x-1{
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
 }
+.gap-x-2{
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
 .self-start{
   align-self: flex-start;
+}
+.justify-self-start{
+  justify-self: start;
+}
+.justify-self-center{
+  justify-self: center;
 }
 .overflow-y-scroll{
   overflow-y: scroll;
@@ -765,6 +771,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-market-right{
   background-image: url('/svg/market-right.svg');
 }
+.bg-lucky-draw-box{
+  background-image: url('/svg/lucky-draw-box.svg');
+}
 .bg-contain{
   background-size: contain;
 }
@@ -825,19 +834,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 }
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-.pl-12{
-  padding-left: 3rem;
-}
-.pr-24{
-  padding-right: 6rem;
 }
 .pt-12{
   padding-top: 3rem;
@@ -873,6 +872,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .font-bold{
   font-weight: 700;
@@ -999,24 +1002,15 @@ input[type=number] {
   --tw-text-opacity: 1;
   color: rgb(36 132 198 / var(--tw-text-opacity));
 }
-@media (min-width: 1280px){
-  .xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
 @media (min-width: 1536px){
-  .\32xl\:mr-48{
-    margin-right: 12rem;
-  }
   .\32xl\:mb-4{
     margin-bottom: 1rem;
   }
-  .\32xl\:mr-40{
-    margin-right: 10rem;
-  }
   .\32xl\:mr-36{
     margin-right: 9rem;
+  }
+  .\32xl\:mr-48{
+    margin-right: 12rem;
   }
   .\32xl\:p-12{
     padding: 3rem;
