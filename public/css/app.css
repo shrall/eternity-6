@@ -409,6 +409,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -450,6 +454,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-16{
   margin-bottom: 4rem;
+}
+.ml-24{
+  margin-left: 6rem;
+}
+.ml-16{
+  margin-left: 4rem;
+}
+.ml-20{
+  margin-left: 5rem;
+}
+.ml-10{
+  margin-left: 2.5rem;
 }
 .block{
   display: block;
@@ -522,6 +538,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-vh-55{
   height: 55vh;
+}
+.h-48{
+  height: 12rem;
 }
 .w-96{
   width: 24rem;
@@ -1011,6 +1030,15 @@ input[type=number] {
   }
   .\32xl\:mr-48{
     margin-right: 12rem;
+  }
+  .\32xl\:ml-20{
+    margin-left: 5rem;
+  }
+  .\32xl\:mb-8{
+    margin-bottom: 2rem;
+  }
+  .\32xl\:mb-10{
+    margin-bottom: 2.5rem;
   }
   .\32xl\:p-12{
     padding: 3rem;
