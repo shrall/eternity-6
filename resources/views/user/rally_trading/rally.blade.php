@@ -61,7 +61,7 @@
                         Breakout: 2
                     </div>
                 </div>
-                <div class="flex items-center mr-48">
+                <div class="flex items-center mr-8 2xl:mr-32">
                     <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
                 </div>
             </div>

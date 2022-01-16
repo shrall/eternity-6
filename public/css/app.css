@@ -376,6 +376,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .left-1\/2{
   left: 50%;
 }
+.right-0{
+  right: 0px;
+}
 .col-span-10{
   grid-column: span 10 / span 10;
 }
@@ -408,10 +411,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
-}
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }
 .mb-8{
   margin-bottom: 2rem;
@@ -449,23 +448,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-48{
   margin-right: 12rem;
 }
+.ml-10{
+  margin-left: 2.5rem;
+}
 .mb-2{
   margin-bottom: 0.5rem;
 }
 .mb-16{
   margin-bottom: 4rem;
 }
-.ml-24{
-  margin-left: 6rem;
-}
-.ml-16{
-  margin-left: 4rem;
-}
-.ml-20{
-  margin-left: 5rem;
-}
-.ml-10{
-  margin-left: 2.5rem;
+.mr-8{
+  margin-right: 2rem;
 }
 .block{
   display: block;
@@ -521,11 +514,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-1\/2{
   height: 50%;
 }
+.h-24{
+  height: 6rem;
+}
 .h-vh-70{
   height: 70vh;
 }
 .h-32{
   height: 8rem;
+}
+.h-48{
+  height: 12rem;
 }
 .h-vh-40{
   height: 40vh;
@@ -536,11 +535,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-vh-10{
   height: 10vh;
 }
-.h-vh-55{
-  height: 55vh;
-}
-.h-48{
-  height: 12rem;
+.h-12{
+  height: 3rem;
 }
 .w-96{
   width: 24rem;
@@ -635,6 +631,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;
 }
+@-webkit-keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+  50%{
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+  50%{
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+.animate-bounce{
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
 .cursor-pointer{
   cursor: pointer;
 }
@@ -711,12 +735,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .self-start{
   align-self: flex-start;
 }
-.justify-self-start{
-  justify-self: start;
-}
-.justify-self-center{
-  justify-self: center;
-}
 .overflow-y-scroll{
   overflow-y: scroll;
 }
@@ -772,8 +790,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-lt-frame{
   background-image: url('/svg/lt-frame.svg');
 }
+.bg-box-frame{
+  background-image: url('/svg/box-frame.svg');
+}
 .bg-rally-zoom{
   background-image: url('/svg/rally-zoom.svg');
+}
+.bg-lucky-draw-box{
+  background-image: url('/svg/lucky-draw-box.svg');
 }
 .bg-lb-rt-dashboard-frame{
   background-image: url('/svg/lb-rt-frame.svg');
@@ -790,8 +814,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-market-right{
   background-image: url('/svg/market-right.svg');
 }
-.bg-lucky-draw-box{
-  background-image: url('/svg/lucky-draw-box.svg');
+.bg-ship-1{
+  background-image: url('/svg/ship-1.svg');
+}
+.bg-ship-2{
+  background-image: url('/svg/ship-2.svg');
+}
+.bg-ship-3{
+  background-image: url('/svg/ship-3.svg');
+}
+.bg-ship-4{
+  background-image: url('/svg/ship-4.svg');
+}
+.bg-ship-5{
+  background-image: url('/svg/ship-5.svg');
+}
+.bg-ship-6{
+  background-image: url('/svg/ship-6.svg');
 }
 .bg-contain{
   background-size: contain;
@@ -1025,20 +1064,23 @@ input[type=number] {
   .\32xl\:mb-4{
     margin-bottom: 1rem;
   }
+  .\32xl\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+  .\32xl\:ml-20{
+    margin-left: 5rem;
+  }
   .\32xl\:mr-36{
     margin-right: 9rem;
   }
   .\32xl\:mr-48{
     margin-right: 12rem;
   }
-  .\32xl\:ml-20{
-    margin-left: 5rem;
+  .\32xl\:mr-24{
+    margin-right: 6rem;
   }
-  .\32xl\:mb-8{
-    margin-bottom: 2rem;
-  }
-  .\32xl\:mb-10{
-    margin-bottom: 2.5rem;
+  .\32xl\:mr-32{
+    margin-right: 8rem;
   }
   .\32xl\:p-12{
     padding: 3rem;

@@ -22,14 +22,18 @@
                 <span onclick="openModal('login');" class="text-2xl cursor-pointer">Login</span>
             @endguest
             @auth
-                <span class="text-2xl cursor-pointer">Logout</span>
+                <span onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();" class="text-2xl cursor-pointer">Logout</span>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             @endauth
         </div>
         <div class="h-vh-80 flex flex-col items-center justify-center gap-4">
             <div class="text-5xl tracking-widest">ETERNITY 6.0</div>
             <div class="text-2xl tracking-widest font-montserrat font-bold mb-20">STABILITY IN DIVERSITY</div>
             <div class="flex items-center justify-center gap-20">
-                <a href="#"
+                <a href="{{route('rally_trading_index')}}"
                     class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
                     <img src="{{ asset('svg/first-island.svg') }}" class="w-56 group-hover:animate-pulse">
                     <div class="text-xl font-montserrat font-medium">Rally & Trading</div>
@@ -60,17 +64,16 @@
                     @csrf
                     <div class="flex items-center justify-between gap-8 mb-4">
                         <label for="email">E-Mail</label>
-                        <input id="email" class="input-text"
-                            type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input id="email" class="input-text" type="email" name="email" value="{{ old('email') }}"
+                            required autocomplete="email" autofocus>
                     </div>
                     <div class="flex items-center justify-between gap-8 mb-12">
                         <label for="password">Password</label>
-                        <input id="password" class="input-text"
-                            type="password" name="password" required autocomplete="current-password">
+                        <input id="password" class="input-text" type="password" name="password" required
+                            autocomplete="current-password">
                     </div>
                     <div class="flex items-center">
-                        <button type="submit"
-                            class="hover-button ml-auto">Login</button>
+                        <button type="submit" class="hover-button ml-auto">Login</button>
                     </div>
                 </form>
             </div>
