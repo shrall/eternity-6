@@ -543,10 +543,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.mr-2{
-  margin-right: 0.5rem;
-}
-
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -577,6 +573,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-0{
   margin-bottom: 0px;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
 }
 
 .mr-24{
@@ -703,14 +703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 10vh;
 }
 
-.w-4{
-  width: 1rem;
-}
-
-.w-12{
-  width: 3rem;
-}
-
 .w-96{
   width: 24rem;
 }
@@ -747,8 +739,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 90vw;
 }
 
+.w-4{
+  width: 1rem;
+}
+
 .w-3\/10{
   width: 30%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-16{
@@ -919,11 +919,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
-.gap-x-1{
-  -moz-column-gap: 0.25rem;
-       column-gap: 0.25rem;
-}
-
 .gap-y-8{
   row-gap: 2rem;
 }
@@ -933,17 +928,27 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 1rem;
 }
 
-.gap-y-2{
-  row-gap: 0.5rem;
+.gap-x-8{
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .gap-y-4{
   row-gap: 1rem;
 }
 
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+
 .gap-x-12{
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.gap-x-1{
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 
 .gap-x-2{
@@ -957,6 +962,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-y-scroll{
   overflow-y: scroll;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .border{
@@ -986,13 +995,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-transparent{
-  background-color: transparent;
-}
-
 .bg-eternity-6-orange{
   --tw-bg-opacity: 1;
   background-color: rgb(213 80 35 / var(--tw-bg-opacity));
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 .bg-white{
@@ -1153,6 +1162,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-14{
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-24{
@@ -1336,6 +1350,11 @@ input[type=number] {
 .hover\:-translate-y-2:hover{
   --tw-translate-y: -0.5rem;
   transform: var(--tw-transform);
+}
+
+.hover\:bg-eternity-6-orange:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 80 35 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gray-200:hover{

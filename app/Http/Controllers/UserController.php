@@ -450,8 +450,215 @@ class UserController extends Controller
                 'auction' => 1
             ]);
             return redirect()->back()->with('Message', 'Correct Answer');
-        }else{
+        } else {
             return redirect()->back()->with('Message', 'Wrong Answer');
         }
+    }
+    public function exchange_item(Request $request)
+    {
+        $user = User::where('id', Auth::id())->first();
+        if ($user->eternite1 < $request->total_eternites) {
+            return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Eternites');
+        }
+        if ($request->first_item == 'wood') {
+            if ($user->wood < $request->amount) {
+                return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
+            } else {
+                Log::create([
+                    'amount' => $request->total_eternites,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1 - $request->total_eternites,
+                    'math' => 1,
+                    'description' => 'Exchange Item',
+                    'user_id' => Auth::id(),
+                    'period' => $user->period->name,
+                ]);
+                if ($request->second_item == 'iron') {
+                    $user->update([
+                        'wood' => $user->wood - $request->amount,
+                        'iron' => $user->iron + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'cloth') {
+                    $user->update([
+                        'wood' => $user->wood - $request->amount,
+                        'cloth' => $user->cloth + $request->amount,
+                    ]);
+                }
+            }
+        } else if ($request->first_item == 'iron') {
+            if ($user->iron < $request->amount) {
+                return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
+            } else {
+                Log::create([
+                    'amount' => $request->total_eternites,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1 - $request->total_eternites,
+                    'math' => 1,
+                    'description' => 'Exchange Item',
+                    'user_id' => Auth::id(),
+                    'period' => $user->period->name,
+                ]);
+                if ($request->second_item == 'wood') {
+                    $user->update([
+                        'iron' => $user->iron - $request->amount,
+                        'wood' => $user->wood + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'cloth') {
+                    $user->update([
+                        'iron' => $user->iron - $request->amount,
+                        'cloth' => $user->cloth + $request->amount,
+                    ]);
+                }
+            }
+        } else if ($request->first_item == 'cloth') {
+            if ($user->cloth < $request->amount) {
+                return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
+            } else {
+                Log::create([
+                    'amount' => $request->total_eternites,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1 - $request->total_eternites,
+                    'math' => 1,
+                    'description' => 'Exchange Item',
+                    'user_id' => Auth::id(),
+                    'period' => $user->period->name,
+                ]);
+                if ($request->second_item == 'wood') {
+                    $user->update([
+                        'cloth' => $user->cloth - $request->amount,
+                        'wood' => $user->wood + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'iron') {
+                    $user->update([
+                        'cloth' => $user->cloth - $request->amount,
+                        'iron' => $user->iron + $request->amount,
+                    ]);
+                }
+            }
+        } else if ($request->first_item == 'egg') {
+            if ($user->egg < $request->amount) {
+                return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
+            } else {
+                Log::create([
+                    'amount' => $request->total_eternites,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1 - $request->total_eternites,
+                    'math' => 1,
+                    'description' => 'Exchange Item',
+                    'user_id' => Auth::id(),
+                    'period' => $user->period->name,
+                ]);
+                if ($request->second_item == 'oil') {
+                    $user->update([
+                        'egg' => $user->egg - $request->amount,
+                        'oil' => $user->oil + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'meat') {
+                    $user->update([
+                        'egg' => $user->egg - $request->amount,
+                        'meat' => $user->meat + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'flour') {
+                    $user->update([
+                        'egg' => $user->egg - $request->amount,
+                        'flour' => $user->flour + $request->amount,
+                    ]);
+                }
+            }
+        }else if ($request->first_item == 'oil') {
+            if ($user->oil < $request->amount) {
+                return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
+            } else {
+                Log::create([
+                    'amount' => $request->total_eternites,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1 - $request->total_eternites,
+                    'math' => 1,
+                    'description' => 'Exchange Item',
+                    'user_id' => Auth::id(),
+                    'period' => $user->period->name,
+                ]);
+                if ($request->second_item == 'egg') {
+                    $user->update([
+                        'oil' => $user->oil - $request->amount,
+                        'egg' => $user->egg + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'meat') {
+                    $user->update([
+                        'oil' => $user->oil - $request->amount,
+                        'meat' => $user->meat + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'flour') {
+                    $user->update([
+                        'oil' => $user->oil - $request->amount,
+                        'flour' => $user->flour + $request->amount,
+                    ]);
+                }
+            }
+        }else if ($request->first_item == 'meat') {
+            if ($user->meat < $request->amount) {
+                return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
+            } else {
+                Log::create([
+                    'amount' => $request->total_eternites,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1 - $request->total_eternites,
+                    'math' => 1,
+                    'description' => 'Exchange Item',
+                    'user_id' => Auth::id(),
+                    'period' => $user->period->name,
+                ]);
+                if ($request->second_item == 'egg') {
+                    $user->update([
+                        'meat' => $user->meat - $request->amount,
+                        'egg' => $user->egg + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'oil') {
+                    $user->update([
+                        'meat' => $user->meat - $request->amount,
+                        'oil' => $user->oil + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'flour') {
+                    $user->update([
+                        'meat' => $user->meat - $request->amount,
+                        'flour' => $user->flour + $request->amount,
+                    ]);
+                }
+            }
+        }else if ($request->first_item == 'flour') {
+            if ($user->flour < $request->amount) {
+                return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
+            } else {
+                Log::create([
+                    'amount' => $request->total_eternites,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1 - $request->total_eternites,
+                    'math' => 1,
+                    'description' => 'Exchange Item',
+                    'user_id' => Auth::id(),
+                    'period' => $user->period->name,
+                ]);
+                if ($request->second_item == 'egg') {
+                    $user->update([
+                        'flour' => $user->flour - $request->amount,
+                        'egg' => $user->egg + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'oil') {
+                    $user->update([
+                        'flour' => $user->flour - $request->amount,
+                        'oil' => $user->oil + $request->amount,
+                    ]);
+                } else if ($request->second_item == 'meat') {
+                    $user->update([
+                        'flour' => $user->flour - $request->amount,
+                        'meat' => $user->meat + $request->amount,
+                    ]);
+                }
+            }
+        }
+        $user->update([
+            'eternite1' => $user->eternite1 - $request->total_eternites
+        ]);
+        return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Exchange Successful');
     }
 }

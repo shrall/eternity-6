@@ -11,28 +11,12 @@
                         <div class="border-2 border-eternity-6-gray px-2 py-1">
                             Your Ship
                         </div>
-                        <div class="border-2 border-eternity-6-gray px-2 py-1">
-                            Part A: Lv. {{ Auth::user()->ship1 }}
-                        </div>
-                        <div class="border-2 border-eternity-6-gray px-2 py-1">
-                            Part B: Lv. {{ Auth::user()->ship2 }}
-                        </div>
-                        <div class="border-2 border-eternity-6-gray px-2 py-1">
-                            Part C: Lv. {{ Auth::user()->ship3 }}
-                        </div>
-                        <div class="border-2 border-eternity-6-gray px-2 py-1">
-                            Part D: Lv. {{ Auth::user()->ship4 }}
-                        </div>
-                        <div class="border-2 border-eternity-6-gray px-2 py-1">
-                            Part E: Lv. {{ Auth::user()->ship5 }}
-                        </div>
-                        <div class="border-2 border-eternity-6-gray px-2 py-1">
-                            Part F: Lv. {{ Auth::user()->ship6 }}
-                        </div>
                     </div>
                     <div class="w-full h-full border-2 border-eternity-6-gray px-4 py-2 relative">
-                        <div class="mb-4">Ship Parts</div>
-                        <div class="w-full grid grid-cols-3 gap-8">
+                        <div class="w-full grid grid-cols-3 gap-x-8 gap-y-4">
+                            <div>Part A: Lv. {{ Auth::user()->ship1 }}</div>
+                            <div>Part B: Lv. {{ Auth::user()->ship2 }}</div>
+                            <div>Part C: Lv. {{ Auth::user()->ship3 }}</div>
                             <div onclick="openModal('ship-1')"
                                 class="border-2 border-eternity-6-gray bg-ship-1 bg-contain bg-center bg-no-repeat h-32 cursor-pointer transition ease-in-out hover:-translate-y-3">
                             </div>
@@ -42,6 +26,9 @@
                             <div onclick="openModal('ship-3')"
                                 class="border-2 border-eternity-6-gray bg-ship-3 bg-contain bg-center bg-no-repeat h-32 cursor-pointer transition ease-in-out hover:-translate-y-3">
                             </div>
+                            <div>Part D: Lv. {{ Auth::user()->ship4 }}</div>
+                            <div>Part E: Lv. {{ Auth::user()->ship5 }}</div>
+                            <div>Part F: Lv. {{ Auth::user()->ship6 }}</div>
                             <div onclick="openModal('ship-4')"
                                 class="border-2 border-eternity-6-gray bg-ship-4 bg-contain bg-center bg-no-repeat h-32 cursor-pointer transition ease-in-out hover:-translate-y-3">
                             </div>
