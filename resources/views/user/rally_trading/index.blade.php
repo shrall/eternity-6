@@ -386,7 +386,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">
                                     </span>Flour
                                 </td>
                                 <td>Food</td>
@@ -395,7 +395,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">
                                     </span>Egg
                                 </td>
                                 <td>Food</td>
@@ -404,7 +404,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">
                                     </span>Raw Meat
                                 </td>
                                 <td>Food</td>
@@ -413,7 +413,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">
                                     </span>Oil
                                 </td>
                                 <td>Food</td>
@@ -422,7 +422,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">
                                     </span>Iron
                                 </td>
                                 <td>Non-Food</td>
@@ -431,7 +431,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">
                                     </span>Wood
                                 </td>
                                 <td>Non-Food</td>
@@ -440,7 +440,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">
                                     </span>Cloth
                                 </td>
                                 <td>Non-Food</td>
@@ -974,7 +974,7 @@
                 onclick="closeModal();">
             </div>
             <div
-                class="w-vw-60 h-vh-30 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+                class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
                 <div class="flex items-center justify-center">
                     <div class="text-4xl">{{ session('Message') }}</div>
                 </div>

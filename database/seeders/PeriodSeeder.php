@@ -17,6 +17,9 @@ class PeriodSeeder extends Seeder
         $period = new Period();
         $period->name = 0;
         $period->news = 'Lorem ipsum this is period 0';
+        $period->egg = 200;
+        $period->egg_math = 1;
+        $period->egg_change = 120;
         $period->save();
     }
 }
