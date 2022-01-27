@@ -368,4 +368,32 @@ class UserController extends Controller
         }
         return $request->data;
     }
+    public function buy_resource(Request $request){
+        $user = User::where('id', Auth::id())->first();
+        $cannon = $request->cannon * 1300;
+        $cb = $request->cannonball * 35;
+        $coal = $request->coal * 200;
+        $r = $request->ration * 20;
+        $total = $cannon + $cb + $coal + $r;
+        if($total > $user->eternite1){
+            return redirect()->route('rally_trading_trading_resource')->with('Message', 'Insufficient Eternites');
+        }
+        Log::create([
+            'amount' => $total,
+            'before' => $user->eternite1,
+            'after' => $user->eternite1 - $total,
+            'math' => 1,
+            'description' => 'Buy Resource Items',
+            'user_id' => Auth::id(),
+            'period' => $user->period->name,
+        ]);
+        $user->update([
+            'eternite1' => $user->eternite1 - $total,
+            'cannon' => $user->cannon + $request->cannon,
+            'cannonball' => $user->cannonball + $request->cannonball,
+            'ration' => $user->ration + $request->ration,
+            'coal' => $user->coal + $request->coal,
+        ]);
+        return redirect()->route('rally_trading_trading_resource')->with('Message', 'Purchase Successful');
+    }
 }

@@ -1,34 +1,16 @@
-
-            if ($request->bread > $user->bread || $request->omelette > $user->omelette || $request->steak > $user->steak || $request->bakpao > $user->bakpao || $request->sword > $user->sword || $request->armor > $user->armor || $request->furniture > $user->furniture || $request->sail > $user->sail) {
-                return redirect()->route('rally_trading_trading_market')->with('Message', 'Insufficient Items');
-            }
-            $bread = $request->bread * Auth::user()->period->bread;
-            $omelette = $request->omelette * Auth::user()->period->omelette;
-            $steak = $request->steak  * Auth::user()->period->steak;
-            $bakpao = $request->bakpao  * Auth::user()->period->bakpao;
-            $sword = $request->sword  * Auth::user()->period->sword;
-            $armor = $request->armor  * Auth::user()->period->armor;
-            $furniture = $request->furniture  * Auth::user()->period->furniture;
-            $sail = $request->sail  * Auth::user()->period->sail;
-            $eternite = $bread + $omelette + $steak + $bakpao + $sword + $armor + $furniture + $sail;
-            Log::create([
-                'amount' => $eternite,
-                'before' => $user->eternite1,
-                'after' => $user->eternite1 + $eternite,
-                'math' => 0,
-                'description' => 'Sell Raw Items',
-                'user_id' => Auth::id(),
-                'period' => $user->period->name,
-            ]);
-            $user->update([
-                'bread' => $user->bread - $request->bread,
-                'omelette' => $user->omelette - $request->omelette,
-                'steak' => $user->steak - $request->steak,
-                'bakpao' => $user->bakpao - $request->bakpao,
-                'sword' => $user->sword - $request->sword,
-                'armor' => $user->armor - $request->armor,
-                'furniture' => $user->furniture - $request->furniture,
-                'sail' => $user->sail - $request->sail,
-                'eternite1' => $user->eternite1 + $eternite
-            ]);
-            return redirect()->route('rally_trading_trading_market')->with('Message', 'Item Sold');
+<tr>
+    <td>4.</td>
+    <td class="flex items-center">
+        <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-4 mr-2">
+        </span>Cannon Ball
+    </td>
+    <td id="resource-4-amount">{{ Auth::user()->cannonball }}</td>
+    <td><span id="resource-4-price">{{ Auth::user()->period->cannonball }}</span>
+    </td>
+    <td class="flex items-center gap-x-1">
+        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200" onclick="minSell('resource', 4);"></span>
+        <input type="number" disabled onkeyup="refreshTotal();" name="cannonball" id="resource-4"
+            class="w-12 bg-transparent text-center" value=0>
+        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200" onclick="plusSell('resource', 4);"></span>
+    </td>
+</tr>
