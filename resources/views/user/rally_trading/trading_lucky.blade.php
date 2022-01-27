@@ -71,6 +71,19 @@
             </div>
         </div>
     </div>
+    @if (session('Message'))
+        <div class="absolute w-screen h-screen flex items-center justify-center modal" id="upgrade-info-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div
+                class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+                <div class="flex items-center justify-center">
+                    <div class="text-4xl">{{ session('Message') }}</div>
+                </div>
+            </div>
+        </div>
+    @endif
 @endsection
 
 @section('scripts')

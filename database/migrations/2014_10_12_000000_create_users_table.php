@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->integer('auction')->default(0);
+            $table->integer('auction_q')->default(1);
             $table->integer('role')->default(0);
             $table->integer('eternite1')->default(0);
             $table->integer('flour')->default(0);

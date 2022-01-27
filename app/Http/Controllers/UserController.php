@@ -368,14 +368,15 @@ class UserController extends Controller
         }
         return $request->data;
     }
-    public function buy_resource(Request $request){
+    public function buy_resource(Request $request)
+    {
         $user = User::where('id', Auth::id())->first();
         $cannon = $request->cannon * 1300;
         $cb = $request->cannonball * 35;
         $coal = $request->coal * 200;
         $r = $request->ration * 20;
         $total = $cannon + $cb + $coal + $r;
-        if($total > $user->eternite1){
+        if ($total > $user->eternite1) {
             return redirect()->route('rally_trading_trading_resource')->with('Message', 'Insufficient Eternites');
         }
         Log::create([
@@ -395,5 +396,62 @@ class UserController extends Controller
             'coal' => $user->coal + $request->coal,
         ]);
         return redirect()->route('rally_trading_trading_resource')->with('Message', 'Purchase Successful');
+    }
+    public function auction_answer(Request $request)
+    {
+        $user = User::where('id', Auth::id())->first();
+        if (Auth::user()->auction_q == 1 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'eternity') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 2 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'ciputra') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 3 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'inflasi') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 4 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'megawati') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 5 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'jakarta') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 6 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'madagaskar') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 7 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'filipina') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 8 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'merauke') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 9 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'thailand') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        } else if (Auth::user()->auction_q == 10 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'konvensi') {
+            $user->update([
+                'auction' => 1
+            ]);
+            return redirect()->back()->with('Message', 'Correct Answer');
+        }else{
+            return redirect()->back()->with('Message', 'Wrong Answer');
+        }
     }
 }

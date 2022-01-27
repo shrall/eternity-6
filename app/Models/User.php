@@ -50,6 +50,8 @@ class User extends Authenticatable
         'ship4',
         'ship5',
         'ship6',
+        'auction',
+        'auction_q',
     ];
 
     /**
