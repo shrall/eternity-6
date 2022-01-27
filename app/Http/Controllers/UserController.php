@@ -311,4 +311,61 @@ class UserController extends Controller
             return redirect()->route('rally_trading_trading_market')->with('Message', 'Item Sold');
         }
     }
+    public function get_lucky(Request $request)
+    {
+        $user = User::where('id', Auth::id())->first();
+        Log::create([
+            'amount' => 125,
+            'before' => $user->eternite1,
+            'after' => $user->eternite1 - 125,
+            'math' => 1,
+            'description' => 'Buy Lucky Draw',
+            'user_id' => Auth::id(),
+            'period' => $user->period->name,
+        ]);
+        if ($request->data == 1) {
+            $user->update([
+                'eternite1' => $user->eternite1 + 25
+            ]);
+        } else if ($request->data == 2) {
+            $user->update([
+                'eternite1' => $user->eternite1 + 50
+            ]);
+        } else if ($request->data == 3) {
+            $user->update([
+                'eternite1' => $user->eternite1 + 75
+            ]);
+        } else if ($request->data == 4) {
+            $user->update([
+                'eternite1' => $user->eternite1 - 125,
+                'flour' => $user->flour + 1
+            ]);
+        } else if ($request->data == 5) {
+            $user->update([
+                'eternite1' => $user->eternite1 - 125,
+                'egg' => $user->egg + 1
+            ]);
+        } else if ($request->data == 6) {
+            $user->update([
+                'eternite1' => $user->eternite1 - 125,
+                'sail' => $user->sail + 1
+            ]);
+        } else if ($request->data == 7) {
+            $user->update([
+                'eternite1' => $user->eternite1 - 125,
+                'bakpao' => $user->bakpao + 1
+            ]);
+        } else if ($request->data == 8) {
+            $user->update([
+                'eternite1' => $user->eternite1 - 100,
+                'sword' => $user->sword + 1
+            ]);
+        } else if ($request->data == 9) {
+            $user->update([
+                'eternite1' => $user->eternite1 - 100,
+                'bakpao' => $user->bakpao + 1
+            ]);
+        }
+        return $request->data;
+    }
 }

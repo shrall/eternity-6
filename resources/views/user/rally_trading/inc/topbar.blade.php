@@ -14,6 +14,6 @@
     <div
         class="col-span-2 bg-lb-rt-dashboard-frame bg-contain bg-no-repeat bg-center w-full h-full flex flex-col items-center px-4 py-8">
         <div class="text-lg self-start mb-4">Eternites</div>
-        <div class="text-2xl">{{Auth::user()->eternite1}}</div>
+        <div class="text-2xl" id='global-eternites'>{{Auth::user()->eternite1}}</div>
     </div>
 </div>

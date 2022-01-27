@@ -14,7 +14,7 @@
                         Enter Lucky Draw<br>For
                         <span class="font-bold">125 Eternites</span>
                     </div>
-                    <div class="hover-button cursor-pointer" onclick="buyLucky();">Enter</div>
+                    <div class="hover-button cursor-pointer" @if (Auth::user()->eternite1 >- 125) onclick="buyLucky();" @else disabled @endif>@if (Auth::user()->eternite1 >- 125) Enter @else Not Enough Eternites @endif</div>
                 </div>
             </div>
             <div class="h-vh-60 border-2 border-eternity-6-gray bg-eternity-6-black px-4 py-2 hidden flex-col items-center justify-center"
@@ -25,6 +25,14 @@
             </div>
             <div class="h-vh-60 border-2 border-eternity-6-gray bg-eternity-6-black px-4 py-2 hidden grid-cols-5 gap-8"
                 id="lucky-2">
+                <div class="bg-lucky-draw-box bg-contain bg-no-repeat bg-center w-full h-full transition hover:-translate-y-2 cursor-pointer"
+                    onclick="openModal('lucky');"></div>
+                <div class="bg-lucky-draw-box bg-contain bg-no-repeat bg-center w-full h-full transition hover:-translate-y-2 cursor-pointer"
+                    onclick="openModal('lucky');"></div>
+                <div class="bg-lucky-draw-box bg-contain bg-no-repeat bg-center w-full h-full transition hover:-translate-y-2 cursor-pointer"
+                    onclick="openModal('lucky');"></div>
+                <div class="bg-lucky-draw-box bg-contain bg-no-repeat bg-center w-full h-full transition hover:-translate-y-2 cursor-pointer"
+                    onclick="openModal('lucky');"></div>
                 <div class="bg-lucky-draw-box bg-contain bg-no-repeat bg-center w-full h-full transition hover:-translate-y-2 cursor-pointer"
                     onclick="openModal('lucky');"></div>
                 <div class="bg-lucky-draw-box bg-contain bg-no-repeat bg-center w-full h-full transition hover:-translate-y-2 cursor-pointer"
@@ -54,12 +62,12 @@
                 <div class="mb-8">
                     You got
                     <span class="font-bold">
-                        <span class="lucky-prize">0</span> Eternites
+                        <span class="lucky-prize">0 Eternites</span>
                     </span>
                 </div>
             </div>
             <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
-                <a href="#" class="hover-button cursor-pointer">Okay</a>
+                <a href="{{route('rally_trading_trading_lucky')}}" class="hover-button cursor-pointer">Okay</a>
             </div>
         </div>
     </div>
@@ -67,10 +75,28 @@
 
 @section('scripts')
     <script>
+        var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+        lucky = ['125 Eternites', '150 Eternites', '175 Eternites', '200 Eternites', 'Flour', 'Egg', 'Ship Sail', 'Bakpao',
+            'Sword & 25 Eternites', 'Bakpao & 25 Eternites'
+        ]
+
         function buyLucky() {
+            var index = Math.floor(Math.random() * 10);
             $('#lucky-1').removeClass('flex').addClass('hidden');
             $('#lucky-loading').removeClass('hidden').addClass('flex');
-            // $('#lucky-2').removeClass('hidden').addClass('grid');
+            $('#global-eternites').html(parseInt($('#global-eternites').html()) - 125)
+            $.post('{{ config('app.url') }}' + "/rally_trading/getlucky", {
+                    _token: CSRF_TOKEN,
+                    data: index
+                })
+                .done(function(data) {
+                    $('#lucky-loading').removeClass('flex').addClass('hidden');
+                    $('#lucky-2').removeClass('hidden').addClass('grid');
+                    $('.lucky-prize').html(lucky[index]);
+                })
+                .fail(function() {
+                    console.log('fail');
+                });
         }
     </script>
 @endsection

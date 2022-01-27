@@ -33,4 +33,5 @@ Route::group(['middleware' => ['player']], function () {
     Route::post('/rally_trading/craft', [UserController::class, 'craft'])->name('rally_trading_craft');
     Route::post('/rally_trading/upgrade_ship', [UserController::class, 'upgrade_ship'])->name('rally_trading_upgrade_ship');
     Route::post('/rally_trading/sellmarket', [UserController::class, 'sell_market'])->name('rally_trading_sell_market');
+    Route::post('/rally_trading/getlucky', [UserController::class, 'get_lucky'])->name('rally_trading_get_lucky');
 });
