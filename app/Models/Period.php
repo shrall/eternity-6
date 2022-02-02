@@ -10,7 +10,8 @@ class Period extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'news',
+        'name',
+        'news',
         'flour',
         'egg',
         'meat',

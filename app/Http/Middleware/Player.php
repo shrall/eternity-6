@@ -21,7 +21,7 @@ class Player
             if (Auth::user()->isPlayer()) {
                 return $next($request);
             } else {
-                return redirect()->route('home');
+                return redirect()->route('admin.dashboard');
             }
             return redirect()->route('home');
         } else {

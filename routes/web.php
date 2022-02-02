@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\PeriodController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -37,4 +40,10 @@ Route::group(['middleware' => ['player']], function () {
     Route::post('/rally_trading/buyresource', [UserController::class, 'buy_resource'])->name('rally_trading_buy_resource');
     Route::post('/rally_trading/auctionanswer', [UserController::class, 'auction_answer'])->name('rally_trading_auction_answer');
     Route::post('/rally_trading/exchangeitem', [UserController::class, 'exchange_item'])->name('rally_trading_exchange_item');
+});
+
+Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('/', [PageController::class, 'dashboard'])->name('dashboard');
+    Route::resource('user', AdminUserController::class);
+    Route::resource('period', PeriodController::class);
 });

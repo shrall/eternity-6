@@ -31,8 +31,7 @@
                                     <td><span id="raw-1-price">{{ Auth::user()->period->flour }}</span>
                                         <span
                                             class="{{ Auth::user()->period->flour_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
-                                            <span
-                                                class="fa fa-fw {{ Auth::user()->period->flour_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>{{ Auth::user()->period->flour_change }}
+                                            <span class="fa fa-fw {{ Auth::user()->period->flour_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -55,7 +54,7 @@
                                         <span
                                             class="{{ Auth::user()->period->egg_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
-                                                class="fa fa-fw {{ Auth::user()->period->egg_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>{{ Auth::user()->period->egg_change }}
+                                                class="fa fa-fw {{ Auth::user()->period->egg_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -79,7 +78,6 @@
                                             class="{{ Auth::user()->period->meat_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->meat_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->meat_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -103,7 +101,6 @@
                                             class="{{ Auth::user()->period->oil_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->oil_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->oil_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -127,7 +124,6 @@
                                             class="{{ Auth::user()->period->iron_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->iron_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->iron_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -151,7 +147,6 @@
                                             class="{{ Auth::user()->period->wood_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->wood_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->wood_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -175,7 +170,6 @@
                                             class="{{ Auth::user()->period->cloth_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->cloth_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->cloth_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -224,7 +218,7 @@
                                         <span
                                             class="{{ Auth::user()->period->bread_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
-                                                class="fa fa-fw {{ Auth::user()->period->bread_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>{{ Auth::user()->period->bread_change }}
+                                                class="fa fa-fw {{ Auth::user()->period->bread_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -247,7 +241,7 @@
                                         <span
                                             class="{{ Auth::user()->period->omelette_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
-                                                class="fa fa-fw {{ Auth::user()->period->omelette_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>{{ Auth::user()->period->omelette_change }}
+                                                class="fa fa-fw {{ Auth::user()->period->omelette_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -271,7 +265,6 @@
                                             class="{{ Auth::user()->period->steak_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->steak_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->steak_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -295,7 +288,6 @@
                                             class="{{ Auth::user()->period->bakpao_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->bakpao_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->bakpao_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -319,7 +311,6 @@
                                             class="{{ Auth::user()->period->sword_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->sword_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->sword_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -343,7 +334,6 @@
                                             class="{{ Auth::user()->period->furniture_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->furniture_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->furniture_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -367,7 +357,6 @@
                                             class="{{ Auth::user()->period->armor_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->armor_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->armor_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -391,7 +380,6 @@
                                             class="{{ Auth::user()->period->sail_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
                                                 class="fa fa-fw {{ Auth::user()->period->sail_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                            {{ Auth::user()->period->sail_change }}
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
