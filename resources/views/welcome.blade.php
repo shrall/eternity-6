@@ -23,17 +23,17 @@
             @endguest
             @auth
                 <span onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();" class="text-2xl cursor-pointer">Logout</span>
+                                document.getElementById('logout-form').submit();" class="text-2xl cursor-pointer">Logout</span>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
             @endauth
         </div>
-        <div class="h-vh-80 flex flex-col items-center justify-center gap-4">
+        <div class="h-vh-80 flex flex-col items-center justify-center gap-4 relative">
             <div class="text-5xl tracking-widest">ETERNITY 6.0</div>
             <div class="text-2xl tracking-widest font-montserrat font-bold mb-20">STABILITY IN DIVERSITY</div>
             <div class="flex items-center justify-center gap-20">
-                <a href="{{route('rally_trading_index')}}"
+                <a href="{{ route('rally_trading_index') }}"
                     class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
                     <img src="{{ asset('svg/first-island.svg') }}" class="w-56 group-hover:animate-pulse">
                     <div class="text-xl font-montserrat font-medium">Rally & Trading</div>
@@ -49,6 +49,10 @@
                     <div class="text-xl font-montserrat font-medium">Final</div>
                 </a>
             </div>
+        </div>
+        <div class="absolute right-8 bottom-0">
+            <div class="text-xl">Supported by</div>
+            <img src="{{ asset('img/logo-anteraja.png') }}" class="w-64">
         </div>
     </div>
 @endsection

@@ -21,6 +21,8 @@
                     class="block">
                     @csrf
                     <input type="hidden" name="total_eternites" id="total-eternites-food">
+                    <!-- Prevent implicit submission of the form -->
+                    <button type="submit" disabled style="display: none" aria-hidden="true"></button>
                     <div class="grid grid-cols-2 gap-x-12 mb-4">
                         <div class="text-lg mb-2">Item 1</div>
                         <div class="text-lg mb-2">Item 2</div>
@@ -57,6 +59,8 @@
                     class="hidden">
                     @csrf
                     <input type="hidden" name="total_eternites" id="total-eternites-non-food">
+                    <!-- Prevent implicit submission of the form -->
+                    <button type="submit" disabled style="display: none" aria-hidden="true"></button>
                     <div class="grid grid-cols-2 gap-x-12 mb-4">
                         <div class="text-lg mb-2">Item 1</div>
                         <div class="text-lg mb-2">Item 2</div>
@@ -187,8 +191,8 @@
             refreshTotal();
         }
 
-        function minusAmount() {
-            if ($('#amount-' + ctype).val > 0) {
+        function minAmount() {
+            if ($('#amount-' + ctype).val() > 0) {
                 $('#amount-' + ctype).get(0).value--
             }
             refreshTotal();

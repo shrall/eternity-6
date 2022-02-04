@@ -14,7 +14,7 @@
                         Enter Lucky Draw<br>For
                         <span class="font-bold">125 Eternites</span>
                     </div>
-                    <div class="hover-button cursor-pointer" @if (Auth::user()->eternite1 >- 125) onclick="buyLucky();" @else disabled @endif>@if (Auth::user()->eternite1 >- 125) Enter @else Not Enough Eternites @endif</div>
+                    <div class="hover-button cursor-pointer" @if (Auth::user()->eternite1 >= 125) onclick="buyLucky();" @else disabled @endif>@if (Auth::user()->eternite1 >= 125) Enter @else Not Enough Eternites @endif</div>
                 </div>
             </div>
             <div class="h-vh-60 border-2 border-eternity-6-gray bg-eternity-6-black px-4 py-2 hidden flex-col items-center justify-center"
