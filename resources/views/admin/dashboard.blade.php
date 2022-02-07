@@ -36,6 +36,7 @@
                             @foreach ($users as $user)
                                 @include('admin.user.modal.plus')
                                 @include('admin.user.modal.minus')
+                                @include('admin.user.modal.random')
                                 @php
                                     $ship1 = $user->ship1;
                                     $ship2 = $user->ship2;
@@ -73,6 +74,9 @@
                                         <a data-toggle="modal" data-target="#modal-minus-{{ $user->id }}"
                                             class="btn btn-sm btn-secondary mx-2"><span
                                                 class="fas fa-fw fa-minus"></span></a>
+                                        <a data-toggle="modal" data-target="#modal-random-{{ $user->id }}"
+                                            class="btn btn-sm btn-secondary mx-2"><span
+                                                class="fas fa-fw fa-dice"></span></a>
                                         <a href="{{ route('admin.user.show', $user->id) }}"
                                             class="btn btn-sm btn-secondary mx-2">
                                             <span class="fa fa-fw fa-eye"></span> See Logs
