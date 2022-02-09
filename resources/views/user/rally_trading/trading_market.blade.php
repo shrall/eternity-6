@@ -17,6 +17,7 @@
                                 <tr>
                                     <td>No.</td>
                                     <td>Item</td>
+                                    <td>Type</td>
                                     <td>INV</td>
                                     <td>Price</td>
                                     <td>Amount</td>
@@ -27,6 +28,7 @@
                                         <span><img src="{{ asset('svg/flour.svg') }}" class="w-12  mr-2">
                                         </span>Flour
                                     </td>
+                                    <td>Food</td>
                                     <td id="raw-1-amount">{{ Auth::user()->flour }}</td>
                                     <td><span id="raw-1-price">{{ Auth::user()->period->flour }}</span>
                                         <span
@@ -50,6 +52,7 @@
                                         <span><img src="{{ asset('svg/egg.svg') }}" class="w-12  mr-2">
                                         </span>Egg
                                     </td>
+                                    <td>Food</td>
                                     <td id="raw-2-amount">{{ Auth::user()->egg }}</td>
                                     <td><span id="raw-2-price">{{ Auth::user()->period->egg }}</span>
                                         <span
@@ -73,6 +76,7 @@
                                         <span><img src="{{ asset('svg/meat.svg') }}" class="w-12  mr-2">
                                         </span>Meat
                                     </td>
+                                    <td>Food</td>
                                     <td id="raw-3-amount">{{ Auth::user()->meat }}</td>
                                     <td><span id="raw-3-price">{{ Auth::user()->period->meat }}</span>
                                         <span
@@ -96,6 +100,7 @@
                                         <span><img src="{{ asset('svg/oil.svg') }}" class="w-12  mr-2">
                                         </span>Oil
                                     </td>
+                                    <td>Food</td>
                                     <td id="raw-4-amount">{{ Auth::user()->oil }}</td>
                                     <td><span id="raw-4-price">{{ Auth::user()->period->oil }}</span>
                                         <span
@@ -119,6 +124,7 @@
                                         <span><img src="{{ asset('svg/iron.svg') }}" class="w-12  mr-2">
                                         </span>Iron
                                     </td>
+                                    <td>Non-Food</td>
                                     <td id="raw-5-amount">{{ Auth::user()->iron }}</td>
                                     <td><span id="raw-5-price">{{ Auth::user()->period->iron }}</span>
                                         <span
@@ -142,6 +148,7 @@
                                         <span><img src="{{ asset('svg/wood.svg') }}" class="w-12  mr-2">
                                         </span>Wood
                                     </td>
+                                    <td>Non-Food</td>
                                     <td id="raw-6-amount">{{ Auth::user()->wood }}</td>
                                     <td><span id="raw-6-price">{{ Auth::user()->period->wood }}</span>
                                         <span
@@ -165,6 +172,7 @@
                                         <span><img src="{{ asset('svg/cloth.svg') }}" class="w-12  mr-2">
                                         </span>Cloth
                                     </td>
+                                    <td>Non-Food</td>
                                     <td id="raw-7-amount">{{ Auth::user()->cloth }}</td>
                                     <td><span id="raw-7-price">{{ Auth::user()->period->cloth }}</span>
                                         <span
@@ -204,6 +212,7 @@
                                 <tr>
                                     <td>No.</td>
                                     <td>Item</td>
+                                    <td>Type</td>
                                     <td>INV</td>
                                     <td>Price</td>
                                     <td>Amount</td>
@@ -214,6 +223,7 @@
                                         <span><img src="{{ asset('svg/bread.svg') }}" class="w-12  mr-2">
                                         </span>Bread
                                     </td>
+                                    <td>Food</td>
                                     <td id="crafted-1-amount">{{ Auth::user()->bread }}</td>
                                     <td><span id="crafted-1-price">{{ Auth::user()->period->bread }}</span>
                                         <span
@@ -237,6 +247,7 @@
                                         <span><img src="{{ asset('svg/omelette.svg') }}" class="w-12  mr-2">
                                         </span>Omelette
                                     </td>
+                                    <td>Food</td>
                                     <td id="crafted-2-amount">{{ Auth::user()->omelette }}</td>
                                     <td><span id="crafted-2-price">{{ Auth::user()->period->omelette }}</span>
                                         <span
@@ -260,6 +271,7 @@
                                         <span><img src="{{ asset('svg/steak.svg') }}" class="w-12  mr-2">
                                         </span>Steak
                                     </td>
+                                    <td>Food</td>
                                     <td id="crafted-3-amount">{{ Auth::user()->steak }}</td>
                                     <td><span id="crafted-3-price">{{ Auth::user()->period->steak }}</span>
                                         <span
@@ -283,6 +295,7 @@
                                         <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-12  mr-2">
                                         </span>Bakpao
                                     </td>
+                                    <td>Food</td>
                                     <td id="crafted-4-amount">{{ Auth::user()->bakpao }}</td>
                                     <td><span id="crafted-4-price">{{ Auth::user()->period->bakpao }}</span>
                                         <span
@@ -306,6 +319,7 @@
                                         <span><img src="{{ asset('svg/sword.svg') }}" class="w-12  mr-2">
                                         </span>Sword
                                     </td>
+                                    <td>Non-Food</td>
                                     <td id="crafted-5-amount">{{ Auth::user()->sword }}</td>
                                     <td><span id="crafted-5-price">{{ Auth::user()->period->sword }}</span>
                                         <span
@@ -329,6 +343,7 @@
                                         <span><img src="{{ asset('svg/furniture.svg') }}" class="w-12  mr-2">
                                         </span>Furniture
                                     </td>
+                                    <td>Non-Food</td>
                                     <td id="crafted-6-amount">{{ Auth::user()->furniture }}</td>
                                     <td><span id="crafted-6-price">{{ Auth::user()->period->furniture }}</span>
                                         <span
@@ -352,6 +367,7 @@
                                         <span><img src="{{ asset('svg/armor.svg') }}" class="w-12  mr-2">
                                         </span>Armor
                                     </td>
+                                    <td>Non-Food</td>
                                     <td id="crafted-7-amount">{{ Auth::user()->armor }}</td>
                                     <td><span id="crafted-7-price">{{ Auth::user()->period->armor }}</span>
                                         <span
@@ -375,6 +391,7 @@
                                         <span><img src="{{ asset('svg/sail.svg') }}" class="w-12  mr-2">
                                         </span>Sail
                                     </td>
+                                    <td>Non-Food</td>
                                     <td id="crafted-8-amount">{{ Auth::user()->sail }}</td>
                                     <td><span id="crafted-8-price">{{ Auth::user()->period->sail }}</span>
                                         <span

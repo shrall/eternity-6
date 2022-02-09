@@ -496,6 +496,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.inset-x-0{
+  left: 0px;
+  right: 0px;
+}
+
 .top-1\/2{
   top: 50%;
 }
@@ -510,6 +515,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bottom-0{
   bottom: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-40{
+  z-index: 40;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .col-span-10{
@@ -553,6 +570,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mx-4{
@@ -612,8 +634,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .mr-24{
@@ -672,12 +702,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 60vh;
 }
 
-.h-vh-50{
-  height: 50vh;
-}
-
 .h-full{
   height: 100%;
+}
+
+.h-vh-50{
+  height: 50vh;
 }
 
 .h-32{
@@ -708,8 +738,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 90vh;
 }
 
-.h-1\/2{
-  height: 50%;
+.h-1\/4{
+  height: 25%;
+}
+
+.h-3\/4{
+  height: 75%;
 }
 
 .h-24{
@@ -776,16 +810,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 90vw;
 }
 
-.w-4{
-  width: 1rem;
+.w-12{
+  width: 3rem;
 }
 
 .w-3\/10{
   width: 30%;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .w-16{
@@ -904,12 +934,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1049,14 +1079,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-eternity-6-black{
   --tw-bg-opacity: 1;
   background-color: rgb(35 31 32 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-eternity-6-brown{
@@ -1138,6 +1173,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-contain{
   background-size: contain;
+}
+
+.bg-cover{
+  background-size: cover;
 }
 
 .bg-center{
@@ -1224,9 +1263,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .pb-2{
@@ -1255,6 +1294,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .pt-12{
@@ -1345,6 +1388,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-0{
   opacity: 0;
+}
+
+.opacity-40{
+  opacity: 0.4;
 }
 
 .shadow-sm{
