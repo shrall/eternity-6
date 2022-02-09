@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Period;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PeriodController extends Controller
@@ -70,6 +71,12 @@ class PeriodController extends Controller
      */
     public function update(Request $request, Period $period)
     {
+        $users = User::where('role', 0)->get();
+        foreach ($users as $key => $value) {
+            $value->update([
+                'luckydraw' => 0
+            ]);
+        }
         if ($request->period == 2) {
             $period->update([
                 'news' => 'Perlahan para penduduk dapat bertahan hidup dari musibah kelaparan yang terjadi pekan lalu, namun penduduk diharapkan untuk tetap berjaga-jaga karena kondisi E-Nation belum sepenuhnya stabil. Peneliti memperkirakan pulau-pulau yang kemarin disinggahi oleh penduduk ini memiliki banyak lahan yang luas yang dapat dikembangkan. Sehingga penduduk tertarik untuk mengeksplor pulau-pulau selanjutnya untuk memanfaatkan lahan yang ada untuk dikelola sehingga bisa menghasilkan. Untuk menjangkau pulau-pulau selanjutnya dibutuhkan kapal yang lebih memadai karena jarak yang ditempuh akan semakin jauh dan memakan waktu yang cukup lama apabila kapal memiliki fasilitas yang kurang memadai. ',

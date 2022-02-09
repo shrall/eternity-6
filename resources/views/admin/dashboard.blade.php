@@ -65,7 +65,7 @@
                                         {{ $user->name }}
                                     </td>
                                     <td>{{ $user->eternite1 }}</td>
-                                    <td>{{ $user->ration * 40 + $user->coal * 75 + $user->cannonball * 450 + $user->cannon * 3250 + $power }}
+                                    <td>{{ (($user->ration * 40 + $user->coal * 75 + $user->cannonball * 450 + $user->cannon * 3250) * 2) / 5 + ($power * 3) / 5 }}
                                     </td>
                                     <td>
                                         <a data-toggle="modal" data-target="#modal-plus-{{ $user->id }}"

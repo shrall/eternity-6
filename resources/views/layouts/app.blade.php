@@ -20,6 +20,17 @@
 <body class="font-audiowide text-white tracking-widest">
     @yield('modals')
     @auth
+        <div class="absolute w-screen h-screen {{Auth::user()->period->name == 4 ? 'flex' : 'hidden'}} items-center justify-center modal" id="auction-announcement-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div
+                class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+                <div class="flex items-center justify-center text-center">
+                    <div class="text-4xl">Auction Will Open on the 6th Period.<br>Access The Trading Menu to Register.</div>
+                </div>
+            </div>
+        </div>
         <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="auction-disabled-modal">
             <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
                 onclick="closeModal();">
@@ -31,7 +42,6 @@
                 </div>
             </div>
         </div>
-
         <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="auction-modal">
             <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
                 onclick="closeModal();">

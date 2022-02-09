@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="h-3/10 border-2 border-eternity-6-gray px-12 py-4 flex flex-col items-center">
-                        <div class="text-lg self-start mb-4">Points</div>
+                        <div class="text-lg self-start mb-4">Total Points</div>
                         <div class="text-2xl" id="points">2500</div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">
                                     </span>Flour
                                 </td>
                                 <td>Food</td>
@@ -155,7 +155,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">
                                     </span>Egg
                                 </td>
                                 <td>Food</td>
@@ -164,7 +164,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">
                                     </span>Raw Meat
                                 </td>
                                 <td>Food</td>
@@ -173,7 +173,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">
                                     </span>Oil
                                 </td>
                                 <td>Food</td>
@@ -182,7 +182,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">
                                     </span>Iron
                                 </td>
                                 <td>Non-Food</td>
@@ -191,7 +191,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">
                                     </span>Wood
                                 </td>
                                 <td>Non-Food</td>
@@ -200,7 +200,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">
                                     </span>Cloth
                                 </td>
                                 <td>Non-Food</td>
@@ -223,7 +223,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/bread.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/bread.svg') }}" class="w-4 mr-2">
                                     </span>Bread
                                 </td>
                                 <td>Food</td>
@@ -232,7 +232,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-4 mr-2">
                                     </span>Bakpao
                                 </td>
                                 <td>Food</td>
@@ -241,7 +241,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/omelette.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/omelette.svg') }}" class="w-4 mr-2">
                                     </span>Omelette
                                 </td>
                                 <td>Food</td>
@@ -250,7 +250,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/steak.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/steak.svg') }}" class="w-4 mr-2">
                                     </span>Steak
                                 </td>
                                 <td>Food</td>
@@ -259,7 +259,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/sword.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/sword.svg') }}" class="w-4 mr-2">
                                     </span>Sword
                                 </td>
                                 <td>Non-Food</td>
@@ -268,7 +268,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/furniture.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/furniture.svg') }}" class="w-4 mr-2">
                                     </span>Furniture
                                 </td>
                                 <td>Non-Food</td>
@@ -277,7 +277,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/armor.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/armor.svg') }}" class="w-4 mr-2">
                                     </span>Armor
                                 </td>
                                 <td>Non-Food</td>
@@ -286,7 +286,7 @@
                             <tr>
                                 <td>8</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/sail.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/sail.svg') }}" class="w-4 mr-2">
                                     </span>Ship Sail
                                 </td>
                                 <td>Non-Food</td>
@@ -309,7 +309,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-4 mr-2">
                                     </span>Ration
                                 </td>
                                 <td>Food</td>
@@ -318,7 +318,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-4 mr-2">
                                     </span>Coal
                                 </td>
                                 <td>Non-Food</td>
@@ -327,7 +327,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-4 mr-2">
                                     </span>Cannon
                                 </td>
                                 <td>Non-Food</td>
@@ -336,7 +336,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-4 mr-2">
                                     </span>Cannon Ball
                                 </td>
                                 <td>Non-Food</td>
@@ -358,337 +358,334 @@
                 <span class="fa fa-fw fa-times cursor-pointer text-2xl hover:text-gray-200" onclick="closeModal();"></span>
             </div>
             <div class="grid grid-cols-3 h-full gap-x-4">
+                <div class="h-vh-70 bg-eternity-6-blackbg-contain bg-no-repeat flex flex-col">
+                    <div
+                        class="h-1/2 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                        <div class="text-xl mb-8">Raw Material</div>
+                        <div class="overflow-y-scroll flex">
+                            <table class="font-montserrat w-full">
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Item</td>
+                                    <td>Type</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">
+                                        </span>Flour
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->flour }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">
+                                        </span>Egg
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->egg }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">
+                                        </span>Raw Meat
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->meat }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">
+                                        </span>Oil
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->oil }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">
+                                        </span>Iron
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td>{{ Auth::user()->iron }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">
+                                        </span>Wood
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td>{{ Auth::user()->wood }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">
+                                        </span>Cloth
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td>{{ Auth::user()->cloth }} pcs</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div
+                        class="h-1/2 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                        <div class="text-xl mb-8">Crafted Items</div>
+                        <div class="overflow-y-scroll flex">
+                            <table class="font-montserrat w-full">
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Item</td>
+                                    <td>Type</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-4 mr-2">
+                                        </span>Bread
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->bread }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-4 mr-2">
+                                        </span>Bakpao
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->bakpao }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-4 mr-2">
+                                        </span>Omelette
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->omelette }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-4 mr-2">
+                                        </span>Steak
+                                    </td>
+                                    <td>Food</td>
+                                    <td>{{ Auth::user()->steak }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-4 mr-2">
+                                        </span>Sword
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td>{{ Auth::user()->sword }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/furniture.svg') }}" class="w-4 mr-2">
+                                        </span>Furniture
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td>{{ Auth::user()->furniture }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/armor.svg') }}" class="w-4 mr-2">
+                                        </span>Armor
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td>{{ Auth::user()->armor }} pcs</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-4 mr-2">
+                                        </span>Ship Sail
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td>{{ Auth::user()->sail }} pcs</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <div
                     class="h-vh-70 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
-                    <div class="text-xl mb-8">Raw Material</div>
+                    <div class="text-xl mb-4">Recipe</div>
                     <div class="overflow-y-scroll flex">
                         <table class="font-montserrat w-full">
                             <tr>
-                                <td>No.</td>
-                                <td>Item</td>
-                                <td>Type</td>
-                                <td>Amount</td>
+                                <td class="w-3/10">Bread</td>
+                                <td>= Flour + Egg </td>
                             </tr>
                             <tr>
-                                <td>1</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">
-                                    </span>Flour
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->flour }} pcs</td>
+                                <td class="w-3/10">Bakpao</td>
+                                <td>= Flour + Meat </td>
                             </tr>
                             <tr>
-                                <td>2</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">
-                                    </span>Egg
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->egg }} pcs</td>
+                                <td class="w-3/10">Omelette</td>
+                                <td>= Oil + Egg </td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">
-                                    </span>Raw Meat
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->meat }} pcs</td>
+                                <td class="w-3/10">Steak</td>
+                                <td>= Oil + Meat </td>
                             </tr>
                             <tr>
-                                <td>4</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">
-                                    </span>Oil
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->oil }} pcs</td>
+                                <td class="w-3/10">Sword</td>
+                                <td>= Iron + Wood </td>
                             </tr>
                             <tr>
-                                <td>5</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">
-                                    </span>Iron
-                                </td>
-                                <td>Non-Food</td>
-                                <td>{{ Auth::user()->iron }} pcs</td>
+                                <td class="w-3/10">Furniture</td>
+                                <td>= Iron + Wood + Cloth </td>
                             </tr>
                             <tr>
-                                <td>6</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">
-                                    </span>Wood
-                                </td>
-                                <td>Non-Food</td>
-                                <td>{{ Auth::user()->wood }} pcs</td>
+                                <td class="w-3/10">Armor</td>
+                                <td>= Cloth + Iron </td>
                             </tr>
                             <tr>
-                                <td>7</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">
-                                    </span>Cloth
-                                </td>
-                                <td>Non-Food</td>
-                                <td>{{ Auth::user()->cloth }} pcs</td>
+                                <td class="w-3/10">Ship Sail</td>
+                                <td>= Cloth + Wood </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <form action="{{ route('rally_trading_craft') }}" method="post">
                     @csrf
-                    <div class="h-vh-70 bg-eternity-6-blackbg-contain bg-no-repeat flex flex-col gap-y-4">
-                        <div
-                            class="h-1/4 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
-                            <div class="text-xl mb-4">Recipe</div>
-                            <div class="overflow-y-scroll flex">
-                                <table class="font-montserrat w-full">
-                                    <tr>
-                                        <td class="w-3/10">Bread</td>
-                                        <td>= Flour + Egg </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-3/10">Bakpao</td>
-                                        <td>= Flour + Meat </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-3/10">Omelette</td>
-                                        <td>= Oil + Egg </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-3/10">Steak</td>
-                                        <td>= Oil + Meat </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-3/10">Sword</td>
-                                        <td>= Iron + Wood </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-3/10">Furniture</td>
-                                        <td>= Iron + Wood + Cloth </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-3/10">Armor</td>
-                                        <td>= Cloth + Iron </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-3/10">Ship Sail</td>
-                                        <td>= Cloth + Wood </td>
-                                    </tr>
-                                </table>
-                            </div>
+                    <div
+                        class="h-vh-70 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                        <div class="text-xl mb-4">Craft</div>
+                        <div class="overflow-y-scroll flex mb-4">
+                            <table class="font-montserrat w-full">
+                                <tr>
+                                    <td>Item</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-4 mr-2"></span>Bread
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(1);"></span>
+                                        <input type="number" id="craft-1" name="bread" class="input-text w-12" value=0
+                                            min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(1);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-4 mr-2"></span>Bakpao
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(2);"></span>
+                                        <input type="number" id="craft-2" name="bakpao" class="input-text w-12" value=0
+                                            min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(2);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-4 mr-2"></span>Omelette
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(3);"></span>
+                                        <input type="number" id="craft-3" name="omelette" class="input-text w-12" value=0
+                                            min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(3);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-4 mr-2"></span>Steak
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(4);"></span>
+                                        <input type="number" id="craft-4" name="steak" class="input-text w-12" value=0
+                                            min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(4);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-4 mr-2"></span>Sword
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(5);"></span>
+                                        <input type="number" id="craft-5" name="sword" class="input-text w-12" value=0
+                                            min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(5);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/furniture.svg') }}"
+                                                class="w-4 mr-2"></span>Furniture
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(6);"></span>
+                                        <input type="number" id="craft-6" name="furniture" class="input-text w-12" value=0
+                                            min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(6);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/armor.svg') }}" class="w-4 mr-2"></span>Armor
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(7);"></span>
+                                        <input type="number" id="craft-7" name="armor" class="input-text w-12" value=0
+                                            min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(7);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-4 mr-2"></span>Ship
+                                        Sail
+                                    </td>
+                                    <td>
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minCraft(8);"></span>
+                                        <input type="number" id="craft-8" name="sail" class="input-text w-12" value=0 min=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusCraft(8);"></span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                        <div
-                            class="h-3/4 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
-                            <div class="text-xl mb-4">Craft</div>
-                            <div class="overflow-y-scroll flex h-64 mb-4">
-                                <table class="font-montserrat w-full">
-                                    <tr>
-                                        <td>Item</td>
-                                        <td>Amount</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/bread.svg') }}" class="w-12 mr-2"></span>Bread
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(1);"></span>
-                                            <input type="number" id="craft-1" name="bread" class="input-text w-12" value=0
-                                                min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(1);"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/bakpao.svg') }}"
-                                                    class="w-12 mr-2"></span>Bakpao
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(2);"></span>
-                                            <input type="number" id="craft-2" name="bakpao" class="input-text w-12" value=0
-                                                min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(2);"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/omelette.svg') }}"
-                                                    class="w-12 mr-2"></span>Omelette
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(3);"></span>
-                                            <input type="number" id="craft-3" name="omelette" class="input-text w-12"
-                                                value=0 min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(3);"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/steak.svg') }}" class="w-12 mr-2"></span>Steak
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(4);"></span>
-                                            <input type="number" id="craft-4" name="steak" class="input-text w-12" value=0
-                                                min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(4);"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/sword.svg') }}" class="w-12 mr-2"></span>Sword
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(5);"></span>
-                                            <input type="number" id="craft-5" name="sword" class="input-text w-12" value=0
-                                                min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(5);"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/furniture.svg') }}"
-                                                    class="w-12 mr-2"></span>Furniture
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(6);"></span>
-                                            <input type="number" id="craft-6" name="furniture" class="input-text w-12"
-                                                value=0 min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(6);"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/armor.svg') }}" class="w-12 mr-2"></span>Armor
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(7);"></span>
-                                            <input type="number" id="craft-7" name="armor" class="input-text w-12" value=0
-                                                min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(7);"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/sail.svg') }}" class="w-12 mr-2"></span>Ship
-                                            Sail
-                                        </td>
-                                        <td>
-                                            <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                                onclick="minCraft(8);"></span>
-                                            <input type="number" id="craft-8" name="sail" class="input-text w-12" value=0
-                                                min=0>
-                                            <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                                onclick="plusCraft(8);"></span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="flex items-center">
-                                <button type="submit" class="hover-button ml-auto text-md">Craft</button>
-                            </div>
+                        <div class="flex items-center">
+                            <button type="submit" class="hover-button ml-auto text-md">Craft</button>
                         </div>
                     </div>
                 </form>
-                <div
-                    class="h-vh-70 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
-                    <div class="text-xl mb-8">Crafted Items</div>
-                    <div class="overflow-y-scroll flex">
-                        <table class="font-montserrat w-full">
-                            <tr>
-                                <td>No.</td>
-                                <td>Item</td>
-                                <td>Type</td>
-                                <td>Amount</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/bread.svg') }}" class="w-12 mr-2">
-                                    </span>Bread
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->bread }} pcs</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-12 mr-2">
-                                    </span>Bakpao
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->bakpao }} pcs</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/omelette.svg') }}" class="w-12 mr-2">
-                                    </span>Omelette
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->omelette }} pcs</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/steak.svg') }}" class="w-12 mr-2">
-                                    </span>Steak
-                                </td>
-                                <td>Food</td>
-                                <td>{{ Auth::user()->steak }} pcs</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/sword.svg') }}" class="w-12 mr-2">
-                                    </span>Sword
-                                </td>
-                                <td>Non-Food</td>
-                                <td>{{ Auth::user()->sword }} pcs</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/furniture.svg') }}" class="w-12 mr-2">
-                                    </span>Furniture
-                                </td>
-                                <td>Non-Food</td>
-                                <td>{{ Auth::user()->furniture }} pcs</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/armor.svg') }}" class="w-12 mr-2">
-                                    </span>Armor
-                                </td>
-                                <td>Non-Food</td>
-                                <td>{{ Auth::user()->armor }} pcs</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/sail.svg') }}" class="w-12 mr-2">
-                                    </span>Ship Sail
-                                </td>
-                                <td>Non-Food</td>
-                                <td>{{ Auth::user()->sail }} pcs</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -1020,7 +1017,7 @@
         var cannonball = @json(Auth::user()->cannonball);
         var cannon = @json(Auth::user()->cannon);
         var resources = (ration * 40) + (coal * 75) + (cannonball * 450) + (cannon * 3250);
-        $('#points').html(power + resources);
+        $('#points').html((power * 3 / 5) + (resources * 2 / 5));
 
     </script>
     <script>

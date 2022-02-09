@@ -139,7 +139,8 @@ class UserController extends Controller
         if ($level == 0 && $user->eternite1 >= 100) {
             $level++;
             $user->update([
-                'eternite1' => $user->eternite1 - 100
+                'eternite1' => $user->eternite1 - 100,
+                'luckydraw' => 1,
             ]);
             Log::create([
                 'amount' => 100,
@@ -153,7 +154,8 @@ class UserController extends Controller
         } else if ($level == 1 && $user->eternite1 >= 150) {
             $level++;
             $user->update([
-                'eternite1' => $user->eternite1 - 150
+                'eternite1' => $user->eternite1 - 150,
+                'luckydraw' => 1,
             ]);
             Log::create([
                 'amount' => 150,
@@ -167,7 +169,8 @@ class UserController extends Controller
         } else if ($level == 2 && $user->eternite1 >= 300) {
             $level++;
             $user->update([
-                'eternite1' => $user->eternite1 - 300
+                'eternite1' => $user->eternite1 - 300,
+                'luckydraw' => 1,
             ]);
             Log::create([
                 'amount' => 300,
@@ -190,7 +193,8 @@ class UserController extends Controller
                 'period' => $user->period->name,
             ]);
             $user->update([
-                'eternite1' => $user->eternite1 - 350
+                'eternite1' => $user->eternite1 - 350,
+                'luckydraw' => 1,
             ]);
         } else if ($level == 4 && $user->eternite1 >= 400) {
             $level++;
@@ -204,7 +208,8 @@ class UserController extends Controller
                 'period' => $user->period->name,
             ]);
             $user->update([
-                'eternite1' => $user->eternite1 - 400
+                'eternite1' => $user->eternite1 - 400,
+                'luckydraw' => 1,
             ]);
         } else {
             $suff = false;
@@ -272,7 +277,8 @@ class UserController extends Controller
                 'iron' => $user->iron - $request->iron,
                 'wood' => $user->wood - $request->wood,
                 'cloth' => $user->cloth - $request->cloth,
-                'eternite1' => $user->eternite1 + $eternite
+                'eternite1' => $user->eternite1 + $eternite,
+                'luckydraw' => 1,
             ]);
             return redirect()->route('rally_trading_trading_market')->with('Message', 'Item Sold');
         } else {
@@ -306,7 +312,8 @@ class UserController extends Controller
                 'armor' => $user->armor - $request->armor,
                 'furniture' => $user->furniture - $request->furniture,
                 'sail' => $user->sail - $request->sail,
-                'eternite1' => $user->eternite1 + $eternite
+                'eternite1' => $user->eternite1 + $eternite,
+                'luckydraw' => 1,
             ]);
             return redirect()->route('rally_trading_trading_market')->with('Message', 'Item Sold');
         }
@@ -325,44 +332,53 @@ class UserController extends Controller
         ]);
         if ($request->data == 1) {
             $user->update([
-                'eternite1' => $user->eternite1 + 25
+                'eternite1' => $user->eternite1 + 25,
+                'luckydraw' => 1,
             ]);
         } else if ($request->data == 2) {
             $user->update([
-                'eternite1' => $user->eternite1 + 50
+                'eternite1' => $user->eternite1 + 50,
+                'luckydraw' => 1,
             ]);
         } else if ($request->data == 3) {
             $user->update([
-                'eternite1' => $user->eternite1 + 75
+                'eternite1' => $user->eternite1 + 75,
+                'luckydraw' => 1,
             ]);
         } else if ($request->data == 4) {
             $user->update([
                 'eternite1' => $user->eternite1 - 125,
+                'luckydraw' => 1,
                 'flour' => $user->flour + 1
             ]);
         } else if ($request->data == 5) {
             $user->update([
                 'eternite1' => $user->eternite1 - 125,
+                'luckydraw' => 1,
                 'egg' => $user->egg + 1
             ]);
         } else if ($request->data == 6) {
             $user->update([
                 'eternite1' => $user->eternite1 - 125,
+                'luckydraw' => 1,
                 'sail' => $user->sail + 1
             ]);
         } else if ($request->data == 7) {
             $user->update([
                 'eternite1' => $user->eternite1 - 125,
+                'luckydraw' => 1,
                 'bakpao' => $user->bakpao + 1
             ]);
         } else if ($request->data == 8) {
             $user->update([
                 'eternite1' => $user->eternite1 - 100,
+                'luckydraw' => 1,
                 'sword' => $user->sword + 1
             ]);
         } else if ($request->data == 9) {
             $user->update([
                 'eternite1' => $user->eternite1 - 100,
+                'luckydraw' => 1,
                 'bakpao' => $user->bakpao + 1
             ]);
         }

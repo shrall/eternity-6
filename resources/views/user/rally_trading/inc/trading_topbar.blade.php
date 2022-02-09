@@ -17,7 +17,7 @@
             <div class="text-xl 2xl:text-2xl">!!! Auction !!!</div>
         </a>
     @else
-        <a @if (Auth::user()->auction == 6) href="{{ route('rally_trading_trading_auction') }}" @else onclick="openModal('auction-disabled');" @endif
+        <a @if (Auth::user()->auction == 1 && Auth::user()->period->name == 6) href="{{ route('rally_trading_trading_auction') }}" @else onclick="openModal('auction-disabled');" @endif
             class="col-span-2 bg-market-middle bg-contain bg-no-repeat w-full h-full transition hover:-translate-y-2 cursor-pointer flex justify-center py-4 2xl:py-6">
             <div class="text-xl 2xl:text-2xl">Auction</div>
         </a>

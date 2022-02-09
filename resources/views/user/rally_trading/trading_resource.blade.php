@@ -8,11 +8,11 @@
             @include('user.rally_trading.inc.trading_topbar')
             <div class="h-vh-60 border-2 border-eternity-6-gray bg-eternity-6-black px-4 py-2">
                 <div
-                    class="{{ Auth::user()->period->name == 10 || Auth::user()->period->name == 12 ? 'flex' : 'hidden' }} items-center justify-center w-full h-full text-3xl">
+                    class="{{ Auth::user()->period->name != 10 && Auth::user()->period->name != 12 ? 'flex' : 'hidden' }} items-center justify-center w-full h-full text-3xl">
                     Please comeback on the 10th or 12th period.
                 </div>
                 <form action="{{ route('rally_trading_buy_resource') }}" method="post" id="form-resource"
-                    class="{{ Auth::user()->period->name == 10 || Auth::user()->period->name == 12 ? 'hidden' : 'block' }}">
+                    class="{{ Auth::user()->period->name == 10 || Auth::user()->period->name == 12 ? 'block' : 'hidden' }}">
                     @csrf
                     <div class="text-xl">Resource Items</div>
                     <div class="overflow-y-scroll font-montserrat h-vh-40">
@@ -28,7 +28,7 @@
                             <tr>
                                 <td>1.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-4 mr-2">
                                     </span>Ration
                                 </td>
                                 <td id="resource-1-amount">{{ Auth::user()->ration }}</td>
@@ -47,7 +47,7 @@
                             <tr>
                                 <td>2.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-4 mr-2">
                                     </span>Coal
                                 </td>
                                 <td id="resource-3-amount">{{ Auth::user()->coal }}</td>
@@ -66,7 +66,7 @@
                             <tr>
                                 <td>3.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-4 mr-2">
                                     </span>Cannon Ball
                                 </td>
                                 <td id="resource-4-amount">{{ Auth::user()->cannonball }}</td>
@@ -85,7 +85,7 @@
                             <tr>
                                 <td>4.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-12 mr-2">
+                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-4 mr-2">
                                     </span>Cannon
                                 </td>
                                 <td id="resource-2-amount">{{ Auth::user()->cannon }}</td>
