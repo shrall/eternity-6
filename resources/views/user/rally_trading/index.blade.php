@@ -359,7 +359,7 @@
             </div>
             <div class="grid grid-cols-3 h-full gap-x-4">
                 <div
-                    class="h-full bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                    class="h-vh-70 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
                     <div class="text-xl mb-8">Raw Material</div>
                     <div class="overflow-y-scroll flex">
                         <table class="font-montserrat w-full">
@@ -437,7 +437,7 @@
                 </div>
                 <form action="{{ route('rally_trading_craft') }}" method="post">
                     @csrf
-                    <div class="h-full bg-eternity-6-blackbg-contain bg-no-repeat flex flex-col gap-y-4">
+                    <div class="h-vh-70 bg-eternity-6-blackbg-contain bg-no-repeat flex flex-col gap-y-4">
                         <div
                             class="h-1/4 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
                             <div class="text-xl mb-4">Recipe</div>
@@ -481,7 +481,7 @@
                         <div
                             class="h-3/4 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
                             <div class="text-xl mb-4">Craft</div>
-                            <div class="overflow-y-scroll flex h-24 mb-4">
+                            <div class="overflow-y-scroll flex h-64 mb-4">
                                 <table class="font-montserrat w-full">
                                     <tr>
                                         <td>Item</td>
@@ -604,7 +604,7 @@
                     </div>
                 </form>
                 <div
-                    class="h-full bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                    class="h-vh-70 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
                     <div class="text-xl mb-8">Crafted Items</div>
                     <div class="overflow-y-scroll flex">
                         <table class="font-montserrat w-full">
