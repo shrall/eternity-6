@@ -14,9 +14,9 @@
                     </div>
                     <div class="w-full h-full border-2 border-eternity-6-gray px-4 py-2 relative">
                         <div class="w-full grid grid-cols-3 gap-x-8 gap-y-4">
-                            <div>Part A: Lv. {{ Auth::user()->ship1 }}</div>
-                            <div>Part B: Lv. {{ Auth::user()->ship2 }}</div>
-                            <div>Part C: Lv. {{ Auth::user()->ship3 }}</div>
+                            <div>Part A - Level {{ Auth::user()->ship1 }}</div>
+                            <div>Part B - Level {{ Auth::user()->ship2 }}</div>
+                            <div>Part C - Level {{ Auth::user()->ship3 }}</div>
                             <div onclick="openModal('ship-1')"
                                 class="border-2 border-eternity-6-gray bg-ship-1 bg-contain bg-center bg-no-repeat h-32 cursor-pointer transition ease-in-out hover:-translate-y-3">
                             </div>
@@ -26,9 +26,9 @@
                             <div onclick="openModal('ship-3')"
                                 class="border-2 border-eternity-6-gray bg-ship-3 bg-contain bg-center bg-no-repeat h-32 cursor-pointer transition ease-in-out hover:-translate-y-3">
                             </div>
-                            <div>Part D: Lv. {{ Auth::user()->ship4 }}</div>
-                            <div>Part E: Lv. {{ Auth::user()->ship5 }}</div>
-                            <div>Part F: Lv. {{ Auth::user()->ship6 }}</div>
+                            <div>Part D - Level {{ Auth::user()->ship4 }}</div>
+                            <div>Part E - Level {{ Auth::user()->ship5 }}</div>
+                            <div>Part F - Level {{ Auth::user()->ship6 }}</div>
                             <div onclick="openModal('ship-4')"
                                 class="border-2 border-eternity-6-gray bg-ship-4 bg-contain bg-center bg-no-repeat h-32 cursor-pointer transition ease-in-out hover:-translate-y-3">
                             </div>
@@ -44,7 +44,7 @@
                 <div class="col-span-2 flex flex-col gap-2">
                     <div class="h-7/10 border-2 border-eternity-6-gray px-12 py-8 flex flex-col gap-y-2">
                         <div class="mb-8">Ship Status</div>
-                        <div class="font-montserrat font-bold">Power</div>
+                        <div class="font-montserrat font-bold">Power - <span id="power-value"></span></div>
                         <div class="border-4 border-white h-6 mb-8">
                             <div class="bg-white h-4" id="power-bar"></div>
                         </div>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-span-2 bg-lt-rb-frame bg-contain bg-no-repeat px-8 py-4 flex flex-col items-center">
                     <div class="text-lg self-start mb-4">Profile</div>
-                    <div class="text-2xl">Tim {{ Auth::user()->name }}</div>
+                    <div class="text-xl self-start">Tim {{ Auth::user()->name }}</div>
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">
                                     </span>Flour
                                 </td>
                                 <td>Food</td>
@@ -155,7 +155,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">
                                     </span>Egg
                                 </td>
                                 <td>Food</td>
@@ -164,7 +164,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">
                                     </span>Raw Meat
                                 </td>
                                 <td>Food</td>
@@ -173,7 +173,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">
                                     </span>Oil
                                 </td>
                                 <td>Food</td>
@@ -182,7 +182,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">
                                     </span>Iron
                                 </td>
                                 <td>Non-Food</td>
@@ -191,7 +191,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">
                                     </span>Wood
                                 </td>
                                 <td>Non-Food</td>
@@ -200,7 +200,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">
                                     </span>Cloth
                                 </td>
                                 <td>Non-Food</td>
@@ -223,7 +223,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/bread.svg') }}" class="w-12 mr-2">
                                     </span>Bread
                                 </td>
                                 <td>Food</td>
@@ -232,7 +232,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-12 mr-2">
                                     </span>Bakpao
                                 </td>
                                 <td>Food</td>
@@ -241,7 +241,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/omelette.svg') }}" class="w-12 mr-2">
                                     </span>Omelette
                                 </td>
                                 <td>Food</td>
@@ -250,7 +250,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/steak.svg') }}" class="w-12 mr-2">
                                     </span>Steak
                                 </td>
                                 <td>Food</td>
@@ -259,7 +259,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/sword.svg') }}" class="w-12 mr-2">
                                     </span>Sword
                                 </td>
                                 <td>Non-Food</td>
@@ -268,7 +268,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/furniture.svg') }}" class="w-12 mr-2">
                                     </span>Furniture
                                 </td>
                                 <td>Non-Food</td>
@@ -277,7 +277,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/armor.svg') }}" class="w-12 mr-2">
                                     </span>Armor
                                 </td>
                                 <td>Non-Food</td>
@@ -286,7 +286,7 @@
                             <tr>
                                 <td>8</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/sail.svg') }}" class="w-12 mr-2">
                                     </span>Ship Sail
                                 </td>
                                 <td>Non-Food</td>
@@ -309,7 +309,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-12 mr-2">
                                     </span>Ration
                                 </td>
                                 <td>Food</td>
@@ -318,7 +318,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-12 mr-2">
                                     </span>Coal
                                 </td>
                                 <td>Non-Food</td>
@@ -327,7 +327,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-12 mr-2">
                                     </span>Cannon
                                 </td>
                                 <td>Non-Food</td>
@@ -336,7 +336,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-12 mr-2">
                                     </span>Cannon Ball
                                 </td>
                                 <td>Non-Food</td>
@@ -349,8 +349,7 @@
         </div>
     </div>
     <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="crafting-modal">
-        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
-            onclick="closeModal();">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
         </div>
         <div
             class="w-vw-90 h-vh-90 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
@@ -373,7 +372,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">
                                     </span>Flour
                                 </td>
                                 <td>Food</td>
@@ -382,7 +381,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">
                                     </span>Egg
                                 </td>
                                 <td>Food</td>
@@ -391,7 +390,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">
                                     </span>Raw Meat
                                 </td>
                                 <td>Food</td>
@@ -400,7 +399,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">
                                     </span>Oil
                                 </td>
                                 <td>Food</td>
@@ -409,7 +408,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">
                                     </span>Iron
                                 </td>
                                 <td>Non-Food</td>
@@ -418,7 +417,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">
                                     </span>Wood
                                 </td>
                                 <td>Non-Food</td>
@@ -427,7 +426,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">
                                     </span>Cloth
                                 </td>
                                 <td>Non-Food</td>
@@ -440,7 +439,7 @@
                     @csrf
                     <div class="h-full bg-eternity-6-blackbg-contain bg-no-repeat flex flex-col gap-y-4">
                         <div
-                            class="h-1/2 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                            class="h-1/4 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
                             <div class="text-xl mb-4">Recipe</div>
                             <div class="overflow-y-scroll flex">
                                 <table class="font-montserrat w-full">
@@ -480,7 +479,7 @@
                             </div>
                         </div>
                         <div
-                            class="h-1/2 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                            class="h-3/4 bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
                             <div class="text-xl mb-4">Craft</div>
                             <div class="overflow-y-scroll flex h-24 mb-4">
                                 <table class="font-montserrat w-full">
@@ -490,8 +489,7 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Bread
+                                            <span><img src="{{ asset('svg/bread.svg') }}" class="w-12 mr-2"></span>Bread
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -504,8 +502,8 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Bakpao
+                                            <span><img src="{{ asset('svg/bakpao.svg') }}"
+                                                    class="w-12 mr-2"></span>Bakpao
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -518,8 +516,8 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Omelette
+                                            <span><img src="{{ asset('svg/omelette.svg') }}"
+                                                    class="w-12 mr-2"></span>Omelette
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -532,8 +530,7 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Steak
+                                            <span><img src="{{ asset('svg/steak.svg') }}" class="w-12 mr-2"></span>Steak
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -546,8 +543,7 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Sword
+                                            <span><img src="{{ asset('svg/sword.svg') }}" class="w-12 mr-2"></span>Sword
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -560,8 +556,8 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Furniture
+                                            <span><img src="{{ asset('svg/furniture.svg') }}"
+                                                    class="w-12 mr-2"></span>Furniture
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -574,8 +570,7 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Armor
+                                            <span><img src="{{ asset('svg/armor.svg') }}" class="w-12 mr-2"></span>Armor
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -588,8 +583,8 @@
                                     </tr>
                                     <tr>
                                         <td class="flex items-center">
-                                            <span><img src="{{ asset('svg/e-flower.svg') }}"
-                                                    class="w-4 mr-2"></span>Ship Sail
+                                            <span><img src="{{ asset('svg/sail.svg') }}" class="w-12 mr-2"></span>Ship
+                                            Sail
                                         </td>
                                         <td>
                                             <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -622,7 +617,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/bread.svg') }}" class="w-12 mr-2">
                                     </span>Bread
                                 </td>
                                 <td>Food</td>
@@ -631,7 +626,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-12 mr-2">
                                     </span>Bakpao
                                 </td>
                                 <td>Food</td>
@@ -640,7 +635,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/omelette.svg') }}" class="w-12 mr-2">
                                     </span>Omelette
                                 </td>
                                 <td>Food</td>
@@ -649,7 +644,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/steak.svg') }}" class="w-12 mr-2">
                                     </span>Steak
                                 </td>
                                 <td>Food</td>
@@ -658,7 +653,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/sword.svg') }}" class="w-12 mr-2">
                                     </span>Sword
                                 </td>
                                 <td>Non-Food</td>
@@ -667,7 +662,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/furniture.svg') }}" class="w-12 mr-2">
                                     </span>Furniture
                                 </td>
                                 <td>Non-Food</td>
@@ -676,7 +671,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/armor.svg') }}" class="w-12 mr-2">
                                     </span>Armor
                                 </td>
                                 <td>Non-Food</td>
@@ -685,7 +680,7 @@
                             <tr>
                                 <td>8</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/e-flower.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/sail.svg') }}" class="w-12 mr-2">
                                     </span>Ship Sail
                                 </td>
                                 <td>Non-Food</td>
@@ -709,7 +704,9 @@
                 <div class="text-3xl ml-12 mb-8">Upgrade</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="mb-8">
-                        @if (Auth::user()->ship1 != 5)
+                        @if (Auth::user()->ship1 > Auth::user()->ship2 || Auth::user()->ship1 > Auth::user()->ship3 || Auth::user()->ship1 > Auth::user()->ship4 || Auth::user()->ship1 > Auth::user()->ship5 || Auth::user()->ship1 > Auth::user()->ship6)
+                            Please upgrade all the parts to the same level first.
+                        @elseif (Auth::user()->ship1 != 5)
                             Are you sure you want to upgrade part A for
                             <span class="font-bold">
                                 @if (Auth::user()->ship1 == 0)
@@ -730,7 +727,9 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
-                    @if (Auth::user()->ship1 != 5)
+                    @if (Auth::user()->ship1 > Auth::user()->ship2 || Auth::user()->ship1 > Auth::user()->ship3 || Auth::user()->ship1 > Auth::user()->ship4 || Auth::user()->ship1 > Auth::user()->ship5 || Auth::user()->ship1 > Auth::user()->ship6)
+                        <div type="submit" class="hover-button" onclick="closeModal();">Okay</div>
+                    @elseif (Auth::user()->ship1 != 5)
                         <div type="submit" class="hover-button" onclick="closeModal();">No</div>
                         <button type="submit" class="hover-button">Yes</button>
                     @else
@@ -752,7 +751,9 @@
                 <div class="text-3xl ml-12 mb-8">Upgrade</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="mb-8">
-                        @if (Auth::user()->ship2 != 5)
+                        @if (Auth::user()->ship2 > Auth::user()->ship1 || Auth::user()->ship2 > Auth::user()->ship3 || Auth::user()->ship2 > Auth::user()->ship4 || Auth::user()->ship2 > Auth::user()->ship5 || Auth::user()->ship2 > Auth::user()->ship6)
+                            Please upgrade all the parts to the same level first.
+                        @elseif (Auth::user()->ship2 != 5)
                             Are you sure you want to upgrade part B for
                             <span class="font-bold">
                                 @if (Auth::user()->ship2 == 0)
@@ -773,7 +774,9 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
-                    @if (Auth::user()->ship2 != 5)
+                    @if (Auth::user()->ship2 > Auth::user()->ship1 || Auth::user()->ship2 > Auth::user()->ship3 || Auth::user()->ship2 > Auth::user()->ship4 || Auth::user()->ship2 > Auth::user()->ship5 || Auth::user()->ship2 > Auth::user()->ship6)
+                        <div type="submit" class="hover-button" onclick="closeModal();">Okay</div>
+                    @elseif (Auth::user()->ship2 != 5)
                         <div type="submit" class="hover-button" onclick="closeModal();">No</div>
                         <button type="submit" class="hover-button">Yes</button>
                     @else
@@ -795,7 +798,9 @@
                 <div class="text-3xl ml-12 mb-8">Upgrade</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="mb-8">
-                        @if (Auth::user()->ship3 != 5)
+                        @if (Auth::user()->ship3 > Auth::user()->ship1 || Auth::user()->ship3 > Auth::user()->ship2 || Auth::user()->ship3 > Auth::user()->ship4 || Auth::user()->ship3 > Auth::user()->ship5 || Auth::user()->ship3 > Auth::user()->ship6)
+                            Please upgrade all the parts to the same level first.
+                        @elseif (Auth::user()->ship3 != 5)
                             Are you sure you want to upgrade part C for
                             <span class="font-bold">
                                 @if (Auth::user()->ship3 == 0)
@@ -816,7 +821,9 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
-                    @if (Auth::user()->ship3 != 5)
+                    @if (Auth::user()->ship3 > Auth::user()->ship1 || Auth::user()->ship3 > Auth::user()->ship2 || Auth::user()->ship3 > Auth::user()->ship4 || Auth::user()->ship3 > Auth::user()->ship5 || Auth::user()->ship3 > Auth::user()->ship6)
+                        <div type="submit" class="hover-button" onclick="closeModal();">Okay</div>
+                    @elseif (Auth::user()->ship3 != 5)
                         <div type="submit" class="hover-button" onclick="closeModal();">No</div>
                         <button type="submit" class="hover-button">Yes</button>
                     @else
@@ -838,7 +845,9 @@
                 <div class="text-3xl ml-12 mb-8">Upgrade</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="mb-8">
-                        @if (Auth::user()->ship4 != 5)
+                        @if (Auth::user()->ship4 > Auth::user()->ship1 || Auth::user()->ship4 > Auth::user()->ship2 || Auth::user()->ship4 > Auth::user()->ship3 || Auth::user()->ship4 > Auth::user()->ship5 || Auth::user()->ship4 > Auth::user()->ship6)
+                            Please upgrade all the parts to the same level first.
+                        @elseif (Auth::user()->ship4 != 5)
                             Are you sure you want to upgrade part D for
                             <span class="font-bold">
                                 @if (Auth::user()->ship4 == 0)
@@ -859,7 +868,9 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
-                    @if (Auth::user()->ship4 != 5)
+                    @if (Auth::user()->ship4 > Auth::user()->ship1 || Auth::user()->ship4 > Auth::user()->ship2 || Auth::user()->ship4 > Auth::user()->ship3 || Auth::user()->ship4 > Auth::user()->ship5 || Auth::user()->ship4 > Auth::user()->ship6)
+                        <div type="submit" class="hover-button" onclick="closeModal();">Okay</div>
+                    @elseif (Auth::user()->ship4 != 5)
                         <div type="submit" class="hover-button" onclick="closeModal();">No</div>
                         <button type="submit" class="hover-button">Yes</button>
                     @else
@@ -881,7 +892,9 @@
                 <div class="text-3xl ml-12 mb-8">Upgrade</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="mb-8">
-                        @if (Auth::user()->ship5 != 5)
+                        @if (Auth::user()->ship5 > Auth::user()->ship1 || Auth::user()->ship5 > Auth::user()->ship2 || Auth::user()->ship5 > Auth::user()->ship3 || Auth::user()->ship5 > Auth::user()->ship4 || Auth::user()->ship5 > Auth::user()->ship6)
+                            Please upgrade all the parts to the same level first.
+                        @elseif (Auth::user()->ship5 != 5)
                             Are you sure you want to upgrade part E for
                             <span class="font-bold">
                                 @if (Auth::user()->ship5 == 0)
@@ -902,7 +915,9 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
-                    @if (Auth::user()->ship5 != 5)
+                    @if (Auth::user()->ship5 > Auth::user()->ship1 || Auth::user()->ship5 > Auth::user()->ship2 || Auth::user()->ship5 > Auth::user()->ship3 || Auth::user()->ship5 > Auth::user()->ship4 || Auth::user()->ship5 > Auth::user()->ship6)
+                        <div type="submit" class="hover-button" onclick="closeModal();">Okay</div>
+                    @elseif (Auth::user()->ship5 != 5)
                         <div type="submit" class="hover-button" onclick="closeModal();">No</div>
                         <button type="submit" class="hover-button">Yes</button>
                     @else
@@ -924,7 +939,9 @@
                 <div class="text-3xl ml-12 mb-8">Upgrade</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="mb-8">
-                        @if (Auth::user()->ship6 != 5)
+                        @if (Auth::user()->ship6 > Auth::user()->ship1 || Auth::user()->ship6 > Auth::user()->ship2 || Auth::user()->ship6 > Auth::user()->ship3 || Auth::user()->ship6 > Auth::user()->ship4 || Auth::user()->ship6 > Auth::user()->ship5)
+                            Please upgrade all the parts to the same level first.
+                        @elseif (Auth::user()->ship6 != 5)
                             Are you sure you want to upgrade part F for
                             <span class="font-bold">
                                 @if (Auth::user()->ship6 == 0)
@@ -945,7 +962,9 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
-                    @if (Auth::user()->ship6 != 5)
+                    @if (Auth::user()->ship6 > Auth::user()->ship1 || Auth::user()->ship6 > Auth::user()->ship2 || Auth::user()->ship6 > Auth::user()->ship3 || Auth::user()->ship6 > Auth::user()->ship4 || Auth::user()->ship6 > Auth::user()->ship5)
+                        <div type="submit" class="hover-button" onclick="closeModal();">Okay</div>
+                    @elseif (Auth::user()->ship6 != 5)
                         <div type="submit" class="hover-button" onclick="closeModal();">No</div>
                         <button type="submit" class="hover-button">Yes</button>
                     @else
@@ -993,6 +1012,7 @@
                 power += 3130;
             }
         });
+        $('#power-value').html(power);
         var powerbarwidth = power / 18780 * 100;
         $('#power-bar').css('width', powerbarwidth + '%')
         var ration = @json(Auth::user()->ration);
@@ -1001,6 +1021,7 @@
         var cannon = @json(Auth::user()->cannon);
         var resources = (ration * 40) + (coal * 75) + (cannonball * 450) + (cannon * 3250);
         $('#points').html(power + resources);
+
     </script>
     <script>
         function plusCraft(order) {
@@ -1010,5 +1031,6 @@
         function minCraft(order) {
             $('#craft-' + order).get(0).value--
         }
+
     </script>
 @endsection

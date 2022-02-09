@@ -16,9 +16,10 @@
                     <div id="toggler-non-food"
                         class="cursor-pointer border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300;"
                         onclick="toggleType('non-food');">Non-Food</div>
+                    <div class="cursor-pointer border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300;"
+                        onclick="openModal('guide');">Guide</div>
                 </div>
-                <form action="{{ route('rally_trading_exchange_item') }}" method="post" id="form-food"
-                    class="block">
+                <form action="{{ route('rally_trading_exchange_item') }}" method="post" id="form-food" class="block">
                     @csrf
                     <input type="hidden" name="total_eternites" id="total-eternites-food">
                     <!-- Prevent implicit submission of the form -->
@@ -55,8 +56,7 @@
                         </div>
                     </div>
                 </form>
-                <form action="{{ route('rally_trading_exchange_item') }}" method="post" id="form-non-food"
-                    class="hidden">
+                <form action="{{ route('rally_trading_exchange_item') }}" method="post" id="form-non-food" class="hidden">
                     @csrf
                     <input type="hidden" name="total_eternites" id="total-eternites-non-food">
                     <!-- Prevent implicit submission of the form -->
@@ -137,6 +137,151 @@
                 <button type="submit" class="hover-button" onclick="closeModal();">No</button>
                 <button type="submit" class="hover-button"
                     onclick="event.preventDefault(); document.getElementById('form-non-food').submit();">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="guide-modal">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
+        </div>
+        <div
+            class="w-vw-90 h-vh-90 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+            <div class="flex justify-between">
+                <div class="text-3xl mb-8">Exchange Guide</div>
+                <span class="fa fa-fw fa-times cursor-pointer text-2xl hover:text-gray-200" onclick="closeModal();"></span>
+            </div>
+            <div class="grid grid-cols-2 h-full gap-x-4">
+                <div
+                    class="h-full bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                    <div class="text-xl mb-8">Raw Food</div>
+                    <div class="flex overflow-y-scroll h-vh-60">
+                        <table class="font-montserrat w-full">
+                            <tr>
+                                <td colspan="3">Exchange</td>
+                                <td>Price</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">Flour</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">Oil</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">Flour</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">Egg</td>
+                                <td>50 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">Flour</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">Raw Meat</td>
+                                <td>100 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">Oil</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">Flour</td>
+                                <td>20 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">Oil</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">Egg</td>
+                                <td>65 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">Oil</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">Raw Meat</td>
+                                <td>120 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">Egg</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">Flour</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">Egg</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">Oil</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">Egg</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">Raw Meat</td>
+                                <td>55 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">Raw Meat</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-12 mr-2">Flour</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">Raw Meat</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-12 mr-2">Oil</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-12 mr-2">Raw Meat</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-12 mr-2">Egg</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div
+                    class="h-full bg-eternity-6-black border-2 border-eternity-6-gray p-8 bg-contain bg-no-repeat flex flex-col">
+                    <div class="text-xl mb-8">Raw Non-Food</div>
+                    <div class="flex overflow-y-scroll">
+                        <table class="font-montserrat w-full">
+                            <tr>
+                                <td colspan="3">Exchange</td>
+                                <td>Price</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">Cloth</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">Wood</td>
+                                <td>20 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">Cloth</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">Iron</td>
+                                <td>50 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">Wood</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">Cloth</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">Wood</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">Iron</td>
+                                <td>35 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">Iron</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-12 mr-2">Cloth</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                            <tr>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-12 mr-2">Iron</td>
+                                <td>-></td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-12 mr-2">Wood</td>
+                                <td>10 Eternites</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -237,8 +382,9 @@
             } else if ($('#first-item-' + ctype).val() == 'wood' && $('#second-item-' + ctype).val() == 'cloth') {
                 total = 10 * $('#amount-' + ctype).val();
             }
-            $('#total-eternites-'+ctype).val(parseInt(total));
+            $('#total-eternites-' + ctype).val(parseInt(total));
             $('.total-exchange').html(total);
         }
+
     </script>
 @endsection

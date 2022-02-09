@@ -372,8 +372,8 @@ class UserController extends Controller
     {
         $user = User::where('id', Auth::id())->first();
         $cannon = $request->cannon * 1300;
-        $cb = $request->cannonball * 35;
-        $coal = $request->coal * 200;
+        $cb = $request->cannonball * 200;
+        $coal = $request->coal * 35;
         $r = $request->ration * 20;
         $total = $cannon + $cb + $coal + $r;
         if ($total > $user->eternite1) {
@@ -456,6 +456,9 @@ class UserController extends Controller
     }
     public function exchange_item(Request $request)
     {
+        if ($request->first_item == $request->second_item) {
+            return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Exchange Failed');
+        }
         $user = User::where('id', Auth::id())->first();
         if ($user->eternite1 < $request->total_eternites) {
             return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Eternites');
@@ -565,7 +568,7 @@ class UserController extends Controller
                     ]);
                 }
             }
-        }else if ($request->first_item == 'oil') {
+        } else if ($request->first_item == 'oil') {
             if ($user->oil < $request->amount) {
                 return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
             } else {
@@ -595,7 +598,7 @@ class UserController extends Controller
                     ]);
                 }
             }
-        }else if ($request->first_item == 'meat') {
+        } else if ($request->first_item == 'meat') {
             if ($user->meat < $request->amount) {
                 return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
             } else {
@@ -625,7 +628,7 @@ class UserController extends Controller
                     ]);
                 }
             }
-        }else if ($request->first_item == 'flour') {
+        } else if ($request->first_item == 'flour') {
             if ($user->flour < $request->amount) {
                 return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Insufficient Items');
             } else {

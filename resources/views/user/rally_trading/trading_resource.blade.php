@@ -20,17 +20,19 @@
                             <tr>
                                 <td>No.</td>
                                 <td>Item</td>
-                                <td>Inventory</td>
+                                <td>INV</td>
+                                <td>Point</td>
                                 <td>Price</td>
                                 <td>Amount</td>
                             </tr>
                             <tr>
                                 <td>1.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-12 mr-2">
                                     </span>Ration
                                 </td>
                                 <td id="resource-1-amount">{{ Auth::user()->ration }}</td>
+                                <td>40</td>
                                 <td><span id="resource-1-price">20</span>
                                 </td>
                                 <td class="flex items-center gap-x-1">
@@ -45,29 +47,12 @@
                             <tr>
                                 <td>2.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-4 mr-2">
-                                    </span>Cannon
-                                </td>
-                                <td id="resource-2-amount">{{ Auth::user()->cannon }}</td>
-                                <td><span id="resource-2-price">1300</span>
-                                </td>
-                                <td class="flex items-center gap-x-1">
-                                    <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                        onclick="minSell('resource', 2);"></span>
-                                    <input type="number" onkeyup="refreshTotal();" name="cannon" id="resource-2"
-                                        class="w-12 bg-transparent text-center" value=0>
-                                    <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                        onclick="plusSell('resource', 2);"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.</td>
-                                <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-12 mr-2">
                                     </span>Coal
                                 </td>
                                 <td id="resource-3-amount">{{ Auth::user()->coal }}</td>
-                                <td><span id="resource-3-price">200</span>
+                                <td>75</td>
+                                <td><span id="resource-3-price">35</span>
                                 </td>
                                 <td class="flex items-center gap-x-1">
                                     <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -79,13 +64,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>4.</td>
+                                <td>3.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-12 mr-2">
                                     </span>Cannon Ball
                                 </td>
                                 <td id="resource-4-amount">{{ Auth::user()->cannonball }}</td>
-                                <td><span id="resource-4-price">35</span>
+                                <td>450</td>
+                                <td><span id="resource-4-price">200</span>
                                 </td>
                                 <td class="flex items-center gap-x-1">
                                     <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -94,6 +80,25 @@
                                         id="resource-4" class="w-12 bg-transparent text-center" value=0>
                                     <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                         onclick="plusSell('resource', 4);"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td class="flex items-center">
+                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-12 mr-2">
+                                    </span>Cannon
+                                </td>
+                                <td id="resource-2-amount">{{ Auth::user()->cannon }}</td>
+                                <td>3250</td>
+                                <td><span id="resource-2-price">1300</span>
+                                </td>
+                                <td class="flex items-center gap-x-1">
+                                    <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                        onclick="minSell('resource', 2);"></span>
+                                    <input type="number" onkeyup="refreshTotal();" name="cannon" id="resource-2"
+                                        class="w-12 bg-transparent text-center" value=0>
+                                    <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                        onclick="plusSell('resource', 2);"></span>
                                 </td>
                             </tr>
                         </table>

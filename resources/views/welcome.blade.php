@@ -33,6 +33,24 @@
             <div class="text-5xl tracking-widest">ETERNITY 6.0</div>
             <div class="text-2xl tracking-widest font-montserrat font-bold mb-20">STABILITY IN DIVERSITY</div>
             <div class="flex items-center justify-center gap-20">
+                @guest
+                <a onclick="openModal('login');"
+                    class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                    <img src="{{ asset('svg/first-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                    <div class="text-xl font-montserrat font-medium">Rally & Trading</div>
+                </a>
+                <a onclick="openModal('login');"
+                    class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                    <img src="{{ asset('svg/second-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                    <div class="text-xl font-montserrat font-medium">Escape Room</div>
+                </a>
+                <a onclick="openModal('login');"
+                    class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                    <img src="{{ asset('svg/fourth-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                    <div class="text-xl font-montserrat font-medium">Business Simulation</div>
+                </a>
+                @endguest
+                @auth
                 <a href="{{ route('rally_trading_index') }}"
                     class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
                     <img src="{{ asset('svg/first-island.svg') }}" class="w-56 group-hover:animate-pulse">
@@ -45,9 +63,10 @@
                 </a>
                 <a href="#"
                     class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
-                    <img src="{{ asset('svg/third-island.svg') }}" class="w-56 group-hover:animate-pulse">
-                    <div class="text-xl font-montserrat font-medium">Final</div>
+                    <img src="{{ asset('svg/fourth-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                    <div class="text-xl font-montserrat font-medium">Business Simulation</div>
                 </a>
+                @endauth
             </div>
         </div>
         <div class="absolute right-8 bottom-0">

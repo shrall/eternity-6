@@ -56,9 +56,9 @@
                 <a href="{{ route('admin.user.index') }}" class="nav-link d-flex align-items-center justify-content-between">
                     <span>
                         <span class="sidebar-icon">
-                            <span class="fas fa-fw fa-users"></span>
+                            <span class="fas fa-fw fa-dice"></span>
                         </span>
-                        <span class="sidebar-text">Users</span>
+                        <span class="sidebar-text">Add Random Item</span>
                     </span>
                 </a>
             </li>

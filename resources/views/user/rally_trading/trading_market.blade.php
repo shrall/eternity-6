@@ -17,21 +17,22 @@
                                 <tr>
                                     <td>No.</td>
                                     <td>Item</td>
-                                    <td>Inventory</td>
+                                    <td>INV</td>
                                     <td>Price</td>
                                     <td>Amount</td>
                                 </tr>
                                 <tr>
                                     <td>1.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/flour.svg') }}" class="w-12  mr-2">
                                         </span>Flour
                                     </td>
                                     <td id="raw-1-amount">{{ Auth::user()->flour }}</td>
                                     <td><span id="raw-1-price">{{ Auth::user()->period->flour }}</span>
                                         <span
                                             class="{{ Auth::user()->period->flour_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
-                                            <span class="fa fa-fw {{ Auth::user()->period->flour_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
+                                            <span
+                                                class="fa fa-fw {{ Auth::user()->period->flour_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
                                         </span>
                                     </td>
                                     <td class="flex items-center gap-x-1">
@@ -46,7 +47,7 @@
                                 <tr>
                                     <td>2.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/egg.svg') }}" class="w-12  mr-2">
                                         </span>Egg
                                     </td>
                                     <td id="raw-2-amount">{{ Auth::user()->egg }}</td>
@@ -69,7 +70,7 @@
                                 <tr>
                                     <td>3.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/meat.svg') }}" class="w-12  mr-2">
                                         </span>Meat
                                     </td>
                                     <td id="raw-3-amount">{{ Auth::user()->meat }}</td>
@@ -92,7 +93,7 @@
                                 <tr>
                                     <td>4.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/oil.svg') }}" class="w-12  mr-2">
                                         </span>Oil
                                     </td>
                                     <td id="raw-4-amount">{{ Auth::user()->oil }}</td>
@@ -115,7 +116,7 @@
                                 <tr>
                                     <td>5.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/iron.svg') }}" class="w-12  mr-2">
                                         </span>Iron
                                     </td>
                                     <td id="raw-5-amount">{{ Auth::user()->iron }}</td>
@@ -138,7 +139,7 @@
                                 <tr>
                                     <td>6.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/wood.svg') }}" class="w-12  mr-2">
                                         </span>Wood
                                     </td>
                                     <td id="raw-6-amount">{{ Auth::user()->wood }}</td>
@@ -161,7 +162,7 @@
                                 <tr>
                                     <td>7.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/cloth.svg') }}" class="w-12  mr-2">
                                         </span>Cloth
                                     </td>
                                     <td id="raw-7-amount">{{ Auth::user()->cloth }}</td>
@@ -203,14 +204,14 @@
                                 <tr>
                                     <td>No.</td>
                                     <td>Item</td>
-                                    <td>Inventory</td>
+                                    <td>INV</td>
                                     <td>Price</td>
                                     <td>Amount</td>
                                 </tr>
                                 <tr>
                                     <td>1.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-12  mr-2">
                                         </span>Bread
                                     </td>
                                     <td id="crafted-1-amount">{{ Auth::user()->bread }}</td>
@@ -233,7 +234,7 @@
                                 <tr>
                                     <td>2.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-12  mr-2">
                                         </span>Omelette
                                     </td>
                                     <td id="crafted-2-amount">{{ Auth::user()->omelette }}</td>
@@ -256,7 +257,7 @@
                                 <tr>
                                     <td>3.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-12  mr-2">
                                         </span>Steak
                                     </td>
                                     <td id="crafted-3-amount">{{ Auth::user()->steak }}</td>
@@ -279,7 +280,7 @@
                                 <tr>
                                     <td>4.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-12  mr-2">
                                         </span>Bakpao
                                     </td>
                                     <td id="crafted-4-amount">{{ Auth::user()->bakpao }}</td>
@@ -302,7 +303,7 @@
                                 <tr>
                                     <td>5.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-12  mr-2">
                                         </span>Sword
                                     </td>
                                     <td id="crafted-5-amount">{{ Auth::user()->sword }}</td>
@@ -325,7 +326,7 @@
                                 <tr>
                                     <td>6.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/furniture.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/furniture.svg') }}" class="w-12  mr-2">
                                         </span>Furniture
                                     </td>
                                     <td id="crafted-6-amount">{{ Auth::user()->furniture }}</td>
@@ -348,7 +349,7 @@
                                 <tr>
                                     <td>7.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/armorsvg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/armor.svg') }}" class="w-12  mr-2">
                                         </span>Armor
                                     </td>
                                     <td id="crafted-7-amount">{{ Auth::user()->armor }}</td>
@@ -371,7 +372,7 @@
                                 <tr>
                                     <td>8.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-12  mr-2">
                                         </span>Sail
                                     </td>
                                     <td id="crafted-8-amount">{{ Auth::user()->sail }}</td>
@@ -385,7 +386,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 8);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="sail" id="crafted-7"
+                                        <input type="number" onkeyup="refreshTotal();" name="sail" id="crafted-8"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 8);"></span>
@@ -412,8 +413,7 @@
 @section('modals')
     @include('user.rally_trading.inc.modal.news')
     <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="raw-confirmation-modal">
-        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
-            onclick="closeModal();">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
         </div>
         <div
             class="w-vw-60 h-vh-60 bg-lt-rb-frame pt-12 pb-24 px-12 2xl:p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
@@ -429,13 +429,12 @@
             <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
                 <button type="submit" class="hover-button" onclick="closeModal();">No</button>
                 <button type="submit" class="hover-button" onclick="event.preventDefault();
-                    document.getElementById('form-raw').submit();">Yes</button>
+                        document.getElementById('form-raw').submit();">Yes</button>
             </div>
         </div>
     </div>
     <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="crafted-confirmation-modal">
-        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
-            onclick="closeModal();">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
         </div>
         <div
             class="w-vw-60 h-vh-60 bg-lt-rb-frame pt-12 pb-24 px-12 2xl:p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
@@ -451,7 +450,7 @@
             <div class="flex items-center justify-end gap-x-4 2xl:mr-36">
                 <button type="submit" class="hover-button" onclick="closeModal();">No</button>
                 <button type="submit" class="hover-button" onclick="event.preventDefault();
-                    document.getElementById('form-crafted').submit();">Yes</button>
+                        document.getElementById('form-crafted').submit();">Yes</button>
             </div>
         </div>
     </div>
@@ -502,5 +501,6 @@
             //     $('.total-crafted').html(parseInt($('#crafted-' + index + '-price').html()) * $('#crafted-' + index))
             // }
         }
+
     </script>
 @endsection

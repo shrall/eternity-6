@@ -15,7 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::where('role', 0)->get();
+        return view('admin.user.index', compact('users'));
     }
 
     /**
@@ -36,7 +37,44 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $users = User::where('role', 0)->get();
+        foreach ($users as $user) {
+            if ($request['random_' . $user->id] == 1) {
+                $array = [1, 0, 0, 0, 0, 0, 0];
+            } else if ($request['random_' . $user->id] == 2) {
+                $array = [1, 1, 0, 0, 0, 0, 0];
+            } else if ($request['random_' . $user->id] == 3) {
+                $array = [1, 1, 1, 0, 0, 0, 0];
+            } else if ($request['random_' . $user->id] == 4) {
+                $array = [1, 1, 1, 1, 0, 0, 0];
+            } else if ($request['random_' . $user->id] == 5) {
+                $array = [1, 1, 1, 1, 1, 0, 0];
+            } else if ($request['random_' . $user->id] == 6) {
+                $array = [1, 1, 1, 1, 1, 1, 0];
+            } else if ($request['random_' . $user->id] == 7) {
+                $array = [1, 1, 1, 1, 1, 1, 1];
+            } else {
+                $array = [0, 0, 0, 0, 0, 0, 0];
+            }
+            shuffle($array);
+            $flour = $array[0];
+            $egg = $array[1];
+            $meat = $array[2];
+            $oil = $array[3];
+            $iron = $array[4];
+            $wood = $array[5];
+            $cloth = $array[6];
+            $user->update([
+                'flour' => $user->flour + $flour,
+                'egg' => $user->egg + $egg,
+                'meat' => $user->meat + $meat,
+                'oil' => $user->oil + $oil,
+                'iron' => $user->iron + $iron,
+                'wood' => $user->wood + $wood,
+                'cloth' => $user->cloth + $cloth,
+            ]);
+        };
+        return redirect()->route('admin.user.index');
     }
 
     /**

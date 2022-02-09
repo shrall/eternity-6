@@ -279,6 +279,9 @@ class PeriodController extends Controller
                 'sail_math' => 1,
             ]);
         }
+        $period->update([
+            'name' => $request->period,
+        ]);
         return redirect()->route('admin.dashboard');
     }
 

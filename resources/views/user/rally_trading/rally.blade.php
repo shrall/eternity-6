@@ -8,36 +8,36 @@
                 <div class="h-vh-70 grid grid-cols-10 gap-x-4">
                     <div class="col-span-10 border-2 border-eternity-6-gray px-4 py-2 overflow-y-scroll">
                         <div class="text-2xl mb-8">Zoom Rally</div>
-                        <div class="grid grid-cols-5 gap-x-12 gap-y-4 px-14">
+                        <div class="grid grid-cols-3 gap-x-12 gap-y-4 px-14">
                             <div id="rally-1" onclick="openModal('rally-1');"
-                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
-                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
-                                    Zoom</div>
+                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group items-center justify-center">
+                                <div class="text-3xl mb-1 2xl:mb-4">Zoom 1</div>
+                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Pos 1-5</div>
                             </div>
                             <div id="rally-2" onclick="openModal('rally-2');"
-                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
-                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
-                                    Zoom</div>
+                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group items-center justify-center">
+                                <div class="text-3xl mb-1 2xl:mb-4">Zoom 2</div>
+                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Pos 6-9</div>
                             </div>
                             <div id="rally-3" onclick="openModal('rally-3');"
-                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
-                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
-                                    Zoom</div>
+                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group items-center justify-center">
+                                <div class="text-3xl mb-1 2xl:mb-4">Zoom 3</div>
+                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Pos 10-12</div>
                             </div>
                             <div id="rally-4" onclick="openModal('rally-4');"
-                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
-                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
-                                    Zoom</div>
+                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group items-center justify-center">
+                                <div class="text-3xl mb-1 2xl:mb-4">Zoom 4</div>
+                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Pos 13-16</div>
                             </div>
                             <div id="rally-5" onclick="openModal('rally-5');"
-                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-32 p-4 flex flex-col items-center group">
-                                <div class="text-lg mb-1 2xl:mb-4">The Game</div>
-                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Join
-                                    Zoom</div>
+                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group items-center justify-center">
+                                <div class="text-3xl mb-1 2xl:mb-4">Zoom 5</div>
+                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Pos 17-20</div>
+                            </div>
+                            <div id="rally-6" onclick="openModal('rally-6');"
+                                class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group items-center justify-center">
+                                <div class="text-3xl mb-1 2xl:mb-4">Zoom 6</div>
+                                <div class="text-xl group-hover:text-eternity-6-blue transition-colors duration-300">Pos 21-25</div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,6 @@
                     <div class="flex items-center justify-between gap-8 mb-8">
                         Meeting ID: 9320-13214-12321<br>
                         Password: EfortionMantuls<br>
-                        Breakout: 2
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">
