@@ -147,8 +147,14 @@
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.js"></script>
     <script>
         $(document).ready(function() {
-            var thetable = $('.table').DataTable();
+            var thetable = $('.table').DataTable({
+                "lengthMenu": [
+                    [10, 25, 50, -1],
+                    [10, 25, 50, "All"]
+                ]
+            });
         });
+
     </script>
 
     <!-- Volt JS -->

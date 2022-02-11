@@ -156,8 +156,30 @@ class UserController extends Controller
                 'cloth' => $user->cloth + $cloth,
             ]);
         } else if ($request->math == 55) {
+            $map = $request->map1 + $request->map2 + $request->map3 + $request->map4 + $request->map5 + $request->map6 + $request->map7 + $request->map8 + $request->map9 + $request->map10 + $request->map11 + $request->map12 + $request->map13 + $request->map14 + $request->map15 + $request->map16 + $request->map17 + $request->map18 + $request->map19 + $request->map20;
             $user->update([
                 'eternite2' => $user->eternite2 + $request->eternite,
+                'map' => $map,
+                'map1' => $request->map1,
+                'map2' => $request->map2,
+                'map3' => $request->map3,
+                'map4' => $request->map4,
+                'map5' => $request->map5,
+                'map6' => $request->map6,
+                'map7' => $request->map7,
+                'map8' => $request->map8,
+                'map9' => $request->map9,
+                'map10' => $request->map10,
+                'map11' => $request->map11,
+                'map12' => $request->map12,
+                'map13' => $request->map13,
+                'map14' => $request->map14,
+                'map15' => $request->map15,
+                'map16' => $request->map16,
+                'map17' => $request->map17,
+                'map18' => $request->map18,
+                'map19' => $request->map19,
+                'map20' => $request->map20,
                 'easy' => $request->easy,
                 'medium' => $request->medium,
                 'hard' => $request->hard

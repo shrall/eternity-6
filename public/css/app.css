@@ -702,6 +702,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .cursor-default{
   cursor: default;
 }
+.resize{
+  resize: both;
+}
 .grid-cols-12{
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -716,6 +719,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-5{
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-col{
   flex-direction: column;
@@ -737,6 +743,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-between{
   justify-content: space-between;
+}
+.justify-evenly{
+  justify-content: space-evenly;
 }
 .gap-4{
   gap: 1rem;
@@ -880,6 +889,81 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-map-1a{
   background-image: url('/svg/1a.svg');
 }
+.bg-map-2a{
+  background-image: url('/svg/2a.svg');
+}
+.bg-map-3a{
+  background-image: url('/svg/3a.svg');
+}
+.bg-map-4a{
+  background-image: url('/svg/4a.svg');
+}
+.bg-map-5a{
+  background-image: url('/svg/5a.svg');
+}
+.bg-map-6a{
+  background-image: url('/svg/6a.svg');
+}
+.bg-map-7a{
+  background-image: url('/svg/7a.svg');
+}
+.bg-map-8a{
+  background-image: url('/svg/8a.svg');
+}
+.bg-map-9a{
+  background-image: url('/svg/9a.svg');
+}
+.bg-map-10a{
+  background-image: url('/svg/10a.svg');
+}
+.bg-paper{
+  background-image: url('/svg/paper.svg');
+}
+.bg-easy-book-1{
+  background-image: url('/png/easy-book-1.png');
+}
+.bg-easy-book-2{
+  background-image: url('/png/easy-book-2.png');
+}
+.bg-easy-book-3{
+  background-image: url('/png/easy-book-3.png');
+}
+.bg-easy-book-4{
+  background-image: url('/png/easy-book-4.png');
+}
+.bg-easy-carpet{
+  background-image: url('/png/easy-carpet.png');
+}
+.bg-easy-curtain-left{
+  background-image: url('/png/easy-curtain-1.png');
+}
+.bg-easy-curtain-right{
+  background-image: url('/png/easy-curtain-2.png');
+}
+.bg-easy-frame-1{
+  background-image: url('/png/easy-frame-1.png');
+}
+.bg-easy-frame-2{
+  background-image: url('/png/easy-frame-2.png');
+}
+.bg-easy-frame-3{
+  background-image: url('/png/easy-frame-3.png');
+}
+.bg-easy-mirror{
+  background-image: url('/png/easy-mirror.png');
+}
+.bg-easy-lamp{
+  background-image: url('/png/easy-lamp.png');
+}
+.bg-easy-plant{
+  background-image: url('/png/easy-plant.png');
+}
+.bg-easy-sofa{
+  background-image: url('/png/easy-sofa.png');
+}
+.bg-easy-tv{
+  background-image: url('/png/easy-tv.png');
+}
 .bg-ship-1{
   background-image: url('/svg/ship-1.svg');
 }
@@ -928,6 +1012,33 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-market-right{
   background-image: url('/svg/market-right.svg');
 }
+.bg-map-1b{
+  background-image: url('/svg/1b.svg');
+}
+.bg-map-2b{
+  background-image: url('/svg/2b.svg');
+}
+.bg-map-3b{
+  background-image: url('/svg/3b.svg');
+}
+.bg-map-4b{
+  background-image: url('/svg/4b.svg');
+}
+.bg-map-5b{
+  background-image: url('/svg/5b.svg');
+}
+.bg-map-6b{
+  background-image: url('/svg/6b.svg');
+}
+.bg-map-7b{
+  background-image: url('/svg/7b.svg');
+}
+.bg-map-8b{
+  background-image: url('/svg/8b.svg');
+}
+.bg-map-10b{
+  background-image: url('/svg/10b.svg');
+}
 .bg-contain{
   background-size: contain;
 }
@@ -936,6 +1047,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-center{
   background-position: center;
+}
+.bg-right{
+  background-position: right;
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
@@ -1028,14 +1142,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-8{
   padding-top: 2rem;
 }
+.pt-24{
+  padding-top: 6rem;
+}
+.pt-4{
+  padding-top: 1rem;
+}
 .pt-12{
   padding-top: 3rem;
 }
 .pb-24{
   padding-bottom: 6rem;
-}
-.pt-4{
-  padding-top: 1rem;
 }
 .text-center{
   text-align: center;
@@ -1226,6 +1343,111 @@ input[type=number] {
 }
 .hover\:bg-map-1a-hover:hover{
   background-image: url('/svg/1a-hover.svg');
+}
+.hover\:bg-map-2a-hover:hover{
+  background-image: url('/svg/2a-hover.svg');
+}
+.hover\:bg-map-3a-hover:hover{
+  background-image: url('/svg/3a-hover.svg');
+}
+.hover\:bg-map-4a-hover:hover{
+  background-image: url('/svg/4a-hover.svg');
+}
+.hover\:bg-map-5a-hover:hover{
+  background-image: url('/svg/5a-hover.svg');
+}
+.hover\:bg-map-6a-hover:hover{
+  background-image: url('/svg/6a-hover.svg');
+}
+.hover\:bg-map-7a-hover:hover{
+  background-image: url('/svg/7a-hover.svg');
+}
+.hover\:bg-map-8a-hover:hover{
+  background-image: url('/svg/8a-hover.svg');
+}
+.hover\:bg-map-9a-hover:hover{
+  background-image: url('/svg/9a-hover.svg');
+}
+.hover\:bg-map-10a-hover:hover{
+  background-image: url('/svg/10a-hover.svg');
+}
+.hover\:bg-paper-hover:hover{
+  background-image: url('/svg/paper-hover.svg');
+}
+.hover\:bg-easy-book-1-hover:hover{
+  background-image: url('/png/easy-book-1-hover.png');
+}
+.hover\:bg-easy-book-2-hover:hover{
+  background-image: url('/png/easy-book-2-hover.png');
+}
+.hover\:bg-easy-book-3-hover:hover{
+  background-image: url('/png/easy-book-3-hover.png');
+}
+.hover\:bg-easy-book-4-hover:hover{
+  background-image: url('/png/easy-book-4-hover.png');
+}
+.hover\:bg-easy-carpet-hover:hover{
+  background-image: url('/png/easy-carpet-hover.png');
+}
+.hover\:bg-easy-curtain-left-hover:hover{
+  background-image: url('/png/easy-curtain-1-hover.png');
+}
+.hover\:bg-easy-curtain-right-hover:hover{
+  background-image: url('/png/easy-curtain-2-hover.png');
+}
+.hover\:bg-easy-frame-1-hover:hover{
+  background-image: url('/png/easy-frame-1-hover.png');
+}
+.hover\:bg-easy-frame-2-hover:hover{
+  background-image: url('/png/easy-frame-2-hover.png');
+}
+.hover\:bg-easy-frame-3-hover:hover{
+  background-image: url('/png/easy-frame-3-hover.png');
+}
+.hover\:bg-easy-mirror-hover:hover{
+  background-image: url('/png/easy-mirror-hover.png');
+}
+.hover\:bg-easy-lamp-hover:hover{
+  background-image: url('/png/easy-lamp-hover.png');
+}
+.hover\:bg-easy-plant-hover:hover{
+  background-image: url('/png/easy-plant-hover.png');
+}
+.hover\:bg-easy-sofa-hover:hover{
+  background-image: url('/png/easy-sofa-hover.png');
+}
+.hover\:bg-easy-tv-hover:hover{
+  background-image: url('/png/easy-tv-hover.png');
+}
+.hover\:bg-map-1b-hover:hover{
+  background-image: url('/svg/1b-hover.svg');
+}
+.hover\:bg-map-2b-hover:hover{
+  background-image: url('/svg/2b-hover.svg');
+}
+.hover\:bg-map-3b-hover:hover{
+  background-image: url('/svg/3b-hover.svg');
+}
+.hover\:bg-map-4b-hover:hover{
+  background-image: url('/svg/4b-hover.svg');
+}
+.hover\:bg-map-5b-hover:hover{
+  background-image: url('/svg/5b-hover.svg');
+}
+.hover\:bg-map-6b-hover:hover{
+  background-image: url('/svg/6b-hover.svg');
+}
+.hover\:bg-map-7b-hover:hover{
+  background-image: url('/svg/7b-hover.svg');
+}
+.hover\:bg-map-8b-hover:hover{
+  background-image: url('/svg/8b-hover.svg');
+}
+.hover\:bg-map-9b-hover:hover{
+  background-image: url('/svg/9b-hover.svg');
+}
+.hover\:bg-map-10b-hover:hover{
+  background-image: url('/svg/10b-hover.svg');
 }
 .hover\:text-gray-200:hover{
   --tw-text-opacity: 1;

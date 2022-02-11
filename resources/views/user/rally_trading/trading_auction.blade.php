@@ -12,21 +12,18 @@
                         <div class="grid grid-cols-3 gap-x-12 gap-y-4 px-14">
                             <div id="rally-1" onclick="openModal('auction-1');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group">
-                                <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction Room 1</div>
-                                <div class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">Join
-                                    Zoom</div>
+                                <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction 1</div>
+                                <div class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">Team 1 - 45</div>
                             </div>
                             <div id="rally-2" onclick="openModal('auction-2');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group">
-                                <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction Room 2</div>
-                                <div class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">Join
-                                    Zoom</div>
+                                <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction 2</div>
+                                <div class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">Team 46 - 90</div>
                             </div>
                             <div id="rally-3" onclick="openModal('auction-3');"
                                 class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group">
-                                <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction Room 3</div>
-                                <div class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">Join
-                                    Zoom</div>
+                                <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction 3</div>
+                                <div class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">Team 91 - 135</div>
                             </div>
                         </div>
                     </div>
@@ -45,9 +42,42 @@
                 <div class="text-3xl ml-12 mb-8">Zoom Info</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
-                        Meeting ID: 9320-13214-12321<br>
-                        Password: EfortionMantuls<br>
-                        Breakout: 2
+                        Meeting ID: 926 0766 3915<br>
+                        Password: auction1<br>
+                    </div>
+                </div>
+                <div class="flex items-center mr-8 2xl:mr-32">
+                    <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="auction-2-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
+                <div class="text-3xl ml-12 mb-8">Zoom Info</div>
+                <div class="text-xl ml-12 mr-24 font-montserrat">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        Meeting ID: 956 7359 8988<br>
+                        Password: auction2<br>
+                    </div>
+                </div>
+                <div class="flex items-center mr-8 2xl:mr-32">
+                    <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="auction-3-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
+                <div class="text-3xl ml-12 mb-8">Zoom Info</div>
+                <div class="text-xl ml-12 mr-24 font-montserrat">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        Meeting ID: 947 1249 7910<br>
+                        Password: auction3<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">

@@ -20,6 +20,10 @@ class UserSeeder extends Seeder
         $user->email = 'user@eternity.com';
         $user->eternite1 = 20000;
         $user->password = Hash::make('wars1234');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->escape = 1;
+        $user->easy = 1;
         $user->save();
 
         $user = new User();

@@ -53,12 +53,45 @@
                 </span>
             </li>
             <li class="nav-item">
+                <span class="nav-link d-flex align-items-center justify-content-between">
+                    <span>
+                        <span class="sidebar-icon">
+                            <span class="fas fa-fw fa-hourglass-half"></span>
+                        </span>
+                        <span class="sidebar-text">Period (Escape) :</span>
+                    </span>
+                    <span>
+                        <span class="btn btn-sm btn-secondary text-gray-800">{{Auth::user()->period->name2}}</span>
+                    </span>
+                </span>
+            </li>
+            <li class="nav-item">
                 <a href="{{ route('admin.user.index') }}" class="nav-link d-flex align-items-center justify-content-between">
                     <span>
                         <span class="sidebar-icon">
                             <span class="fas fa-fw fa-dice"></span>
                         </span>
                         <span class="sidebar-text">Add Random Item</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.user.escape') }}" class="nav-link d-flex align-items-center justify-content-between">
+                    <span>
+                        <span class="sidebar-icon">
+                            <span class="fas fa-fw fa-check"></span>
+                        </span>
+                        <span class="sidebar-text">Toggle Lolos Escape</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.escape') }}" class="nav-link d-flex align-items-center justify-content-between">
+                    <span>
+                        <span class="sidebar-icon">
+                            <span class="fas fa-fw fa-gamepad-alt"></span>
+                        </span>
+                        <span class="sidebar-text">Escape Room</span>
                     </span>
                 </a>
             </li>

@@ -28,6 +28,9 @@
                             <tr>
                                 <th class="border-0">Name</th>
                                 <th class="border-0">Eternites 2</th>
+                                <th class="border-0">Paket Soal</th>
+                                <th class="border-0">Map</th>
+                                <th class="border-0">Tipe Map</th>
                                 <th class="border-0">Actions</th>
                             </tr>
                         </thead>
@@ -39,6 +42,9 @@
                                         {{ $user->name }}
                                     </td>
                                     <td>{{ $user->eternite2 }}</td>
+                                    <td>{{ $user->question_pack }}</td>
+                                    <td>{{ $user->map }}</td>
+                                    <td>{{ $user->map_type == 1 ? 'A' : 'B' }}</td>
                                     <td>
                                         <a data-toggle="modal" data-target="#modal-edit-{{ $user->id }}"
                                             class="btn btn-sm btn-secondary mx-2"><span

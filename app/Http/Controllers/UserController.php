@@ -724,4 +724,11 @@ class UserController extends Controller
         ]);
         return $user->map;
     }
+    public function submit_answer(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        $user->update([
+            $request->difficulty . $request->number => $request->answer,
+        ]);
+    }
 }

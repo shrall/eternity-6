@@ -56,8 +56,93 @@
                 <div class="text-3xl ml-12 mb-8">Zoom Info</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
-                        Meeting ID: 9320-13214-12321<br>
-                        Password: EfortionMantuls<br>
+                        Meeting ID: 982 5506 4139<br>
+                        Password: zoom1<br>
+                    </div>
+                </div>
+                <div class="flex items-center mr-8 2xl:mr-32">
+                    <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="rally-2-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
+                <div class="text-3xl ml-12 mb-8">Zoom Info</div>
+                <div class="text-xl ml-12 mr-24 font-montserrat">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        Meeting ID: 936 5389 9355<br>
+                        Password: zoom2<br>
+                    </div>
+                </div>
+                <div class="flex items-center mr-8 2xl:mr-32">
+                    <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="rally-3-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
+                <div class="text-3xl ml-12 mb-8">Zoom Info</div>
+                <div class="text-xl ml-12 mr-24 font-montserrat">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        Meeting ID: 967 6544 6637<br>
+                        Password: zoom3<br>
+                    </div>
+                </div>
+                <div class="flex items-center mr-8 2xl:mr-32">
+                    <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="rally-4-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
+                <div class="text-3xl ml-12 mb-8">Zoom Info</div>
+                <div class="text-xl ml-12 mr-24 font-montserrat">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        Meeting ID: 940 7516 7576<br>
+                        Password: zoom4<br>
+                    </div>
+                </div>
+                <div class="flex items-center mr-8 2xl:mr-32">
+                    <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="rally-5-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
+                <div class="text-3xl ml-12 mb-8">Zoom Info</div>
+                <div class="text-xl ml-12 mr-24 font-montserrat">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        Meeting ID: 972 3505 5302<br>
+                        Password: zoom5<br>
+                    </div>
+                </div>
+                <div class="flex items-center mr-8 2xl:mr-32">
+                    <button type="submit" class="hover-button ml-auto" onclick="closeModal();">Okay</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="rally-6-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div class="w-vw-60 h-vh-60 bg-lt-rb-frame p-12 absolute bg-contain bg-no-repeat flex flex-col justify-between">
+                <div class="text-3xl ml-12 mb-8">Zoom Info</div>
+                <div class="text-xl ml-12 mr-24 font-montserrat">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        Meeting ID: 932 5422 6597<br>
+                        Password: zoom6<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">

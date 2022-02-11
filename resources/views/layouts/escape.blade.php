@@ -30,30 +30,80 @@
                 <div id="game-hud">
                     <div id="hud-foreground">
                         @yield('puzzles')
+                        <div id="question"
+                            class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden"
+                            style="width: 1000px; height: 600px;">
+                            <div class="flex flex-col items-center justify-center" style="height: 600px;">
+                                <div class="flex items-center justify-center mb-8">
+                                    <div class="text-3xl text-center" id="question-text"></div>
+                                </div>
+                                <div class="grid grid-cols-4 gap-x-2 items-center justify-evenly mb-4" id="question-choices">
+                                    <div class="text-md text-center font-montserrat" id="choice-a"></div>
+                                    <div class="text-md text-center font-montserrat" id="choice-b"></div>
+                                    <div class="text-md text-center font-montserrat" id="choice-c"></div>
+                                    <div class="text-md text-center font-montserrat" id="choice-d"></div>
+                                </div>
+                                <div class="items-center justify-center mb-8 hidden" id="easy-2-q">
+                                    <img src="{{ asset('png/easy-2-q.png') }}" class="w-36">
+                                </div>
+                                <div class="flex items-center justify-center mb-8">
+                                    <textarea style="resize: none; width: 800px;" id="answer"
+                                        class="bg-eternity-6-black border-2 border-eternity-6-gray p-4" type="text"
+                                        name="answer"></textarea>
+                                </div>
+                                <div class="flex items-center justify-center mb-8">
+                                    <div class="hover-button cursor-pointer" onclick="submitAnswer();">Submit</div>
+                                </div>
+                            </div>
+                        </div>
                         <div id="inventory"
                             class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden pt-4"
                             style="width: 1000px; height: 600px;">
-                            <img src="{{asset('png/1a.png')}}" class="absolute imap1 @if(Auth::user()->map1 == 0) hidden @endif">
-                            <img src="{{asset('png/2a.png')}}" class="absolute imap2 @if(Auth::user()->map2 == 0) hidden @endif">
-                            <img src="{{asset('png/3a.png')}}" class="absolute imap3 @if(Auth::user()->map3 == 0) hidden @endif">
-                            <img src="{{asset('png/4a.png')}}" class="absolute imap4 @if(Auth::user()->map4 == 0) hidden @endif">
-                            <img src="{{asset('png/5a.png')}}" class="absolute imap5 @if(Auth::user()->map5 == 0) hidden @endif">
-                            <img src="{{asset('png/6a.png')}}" class="absolute imap6 @if(Auth::user()->map6 == 0) hidden @endif">
-                            <img src="{{asset('png/7a.png')}}" class="absolute imap7 @if(Auth::user()->map7 == 0) hidden @endif">
-                            <img src="{{asset('png/6a.png')}}" class="absolute imap6 @if(Auth::user()->map6 == 0) hidden @endif">
-                            <img src="{{asset('png/8a.png')}}" class="absolute imap8 @if(Auth::user()->map8 == 0) hidden @endif">
-                            <img src="{{asset('png/9a.png')}}" class="absolute imap9 @if(Auth::user()->map9 == 0) hidden @endif">
-                            <img src="{{asset('png/10a.png')}}" class="absolute imap10 @if(Auth::user()->map10 == 0) hidden @endif">
-                            <img src="{{asset('png/11a.png')}}" class="absolute imap11 @if(Auth::user()->map11 == 0) hidden @endif">
-                            <img src="{{asset('png/12a.png')}}" class="absolute imap12 @if(Auth::user()->map12 == 0) hidden @endif">
-                            <img src="{{asset('png/13a.png')}}" class="absolute imap13 @if(Auth::user()->map13 == 0) hidden @endif">
-                            <img src="{{asset('png/14a.png')}}" class="absolute imap14 @if(Auth::user()->map14 == 0) hidden @endif">
-                            <img src="{{asset('png/15a.png')}}" class="absolute imap15 @if(Auth::user()->map15 == 0) hidden @endif">
-                            <img src="{{asset('png/16a.png')}}" class="absolute imap16 @if(Auth::user()->map16 == 0) hidden @endif">
-                            <img src="{{asset('png/17a.png')}}" class="absolute imap17 @if(Auth::user()->map17 == 0) hidden @endif">
-                            <img src="{{asset('png/18a.png')}}" class="absolute imap18 @if(Auth::user()->map18 == 0) hidden @endif">
-                            <img src="{{asset('png/19a.png')}}" class="absolute imap19 @if(Auth::user()->map19 == 0) hidden @endif">
-                            <img src="{{asset('png/20a.png')}}" class="absolute imap20 @if(Auth::user()->map20 == 0) hidden @endif">
+                            @if (Auth::user()->map_type == 1)
+                                <img src="{{ asset('png/1a.png') }}" class="absolute imap1 @if (Auth::user()->map1 == 0) hidden @endif">
+                                <img src="{{ asset('png/2a.png') }}" class="absolute imap2 @if (Auth::user()->map2 == 0) hidden @endif">
+                                <img src="{{ asset('png/3a.png') }}" class="absolute imap3 @if (Auth::user()->map3 == 0) hidden @endif">
+                                <img src="{{ asset('png/4a.png') }}" class="absolute imap4 @if (Auth::user()->map4 == 0) hidden @endif">
+                                <img src="{{ asset('png/5a.png') }}" class="absolute imap5 @if (Auth::user()->map5 == 0) hidden @endif">
+                                <img src="{{ asset('png/6a.png') }}" class="absolute imap6 @if (Auth::user()->map6 == 0) hidden @endif">
+                                <img src="{{ asset('png/7a.png') }}" class="absolute imap7 @if (Auth::user()->map7 == 0) hidden @endif">
+                                <img src="{{ asset('png/6a.png') }}" class="absolute imap6 @if (Auth::user()->map6 == 0) hidden @endif">
+                                <img src="{{ asset('png/8a.png') }}" class="absolute imap8 @if (Auth::user()->map8 == 0) hidden @endif">
+                                <img src="{{ asset('png/9a.png') }}" class="absolute imap9 @if (Auth::user()->map9 == 0) hidden @endif">
+                                <img src="{{ asset('png/10a.png') }}" class="absolute imap10 @if (Auth::user()->map10 == 0) hidden @endif">
+                                <img src="{{ asset('png/11a.png') }}" class="absolute imap11 @if (Auth::user()->map11 == 0) hidden @endif">
+                                <img src="{{ asset('png/12a.png') }}" class="absolute imap12 @if (Auth::user()->map12 == 0) hidden @endif">
+                                <img src="{{ asset('png/13a.png') }}" class="absolute imap13 @if (Auth::user()->map13 == 0) hidden @endif">
+                                <img src="{{ asset('png/14a.png') }}" class="absolute imap14 @if (Auth::user()->map14 == 0) hidden @endif">
+                                <img src="{{ asset('png/15a.png') }}" class="absolute imap15 @if (Auth::user()->map15 == 0) hidden @endif">
+                                <img src="{{ asset('png/16a.png') }}" class="absolute imap16 @if (Auth::user()->map16 == 0) hidden @endif">
+                                <img src="{{ asset('png/17a.png') }}" class="absolute imap17 @if (Auth::user()->map17 == 0) hidden @endif">
+                                <img src="{{ asset('png/18a.png') }}" class="absolute imap18 @if (Auth::user()->map18 == 0) hidden @endif">
+                                <img src="{{ asset('png/19a.png') }}" class="absolute imap19 @if (Auth::user()->map19 == 0) hidden @endif">
+                                <img src="{{ asset('png/20a.png') }}" class="absolute imap20 @if (Auth::user()->map20 == 0) hidden @endif">
+                            @else
+                                <img src="{{ asset('png/1b.png') }}" class="absolute imap1 @if (Auth::user()->map1 == 0) hidden @endif">
+                                <img src="{{ asset('png/2b.png') }}" class="absolute imap2 @if (Auth::user()->map2 == 0) hidden @endif">
+                                <img src="{{ asset('png/3b.png') }}" class="absolute imap3 @if (Auth::user()->map3 == 0) hidden @endif">
+                                <img src="{{ asset('png/4b.png') }}" class="absolute imap4 @if (Auth::user()->map4 == 0) hidden @endif">
+                                <img src="{{ asset('png/5b.png') }}" class="absolute imap5 @if (Auth::user()->map5 == 0) hidden @endif">
+                                <img src="{{ asset('png/6b.png') }}" class="absolute imap6 @if (Auth::user()->map6 == 0) hidden @endif">
+                                <img src="{{ asset('png/7b.png') }}" class="absolute imap7 @if (Auth::user()->map7 == 0) hidden @endif">
+                                <img src="{{ asset('png/6b.png') }}" class="absolute imap6 @if (Auth::user()->map6 == 0) hidden @endif">
+                                <img src="{{ asset('png/8b.png') }}" class="absolute imap8 @if (Auth::user()->map8 == 0) hidden @endif">
+                                <img src="{{ asset('png/9b.png') }}" class="absolute imap9 @if (Auth::user()->map9 == 0) hidden @endif">
+                                <img src="{{ asset('png/10b.png') }}" class="absolute imap10 @if (Auth::user()->map10 == 0) hidden @endif">
+                                <img src="{{ asset('png/11b.png') }}" class="absolute imap11 @if (Auth::user()->map11 == 0) hidden @endif">
+                                <img src="{{ asset('png/12b.png') }}" class="absolute imap12 @if (Auth::user()->map12 == 0) hidden @endif">
+                                <img src="{{ asset('png/13b.png') }}" class="absolute imap13 @if (Auth::user()->map13 == 0) hidden @endif">
+                                <img src="{{ asset('png/14b.png') }}" class="absolute imap14 @if (Auth::user()->map14 == 0) hidden @endif">
+                                <img src="{{ asset('png/15b.png') }}" class="absolute imap15 @if (Auth::user()->map15 == 0) hidden @endif">
+                                <img src="{{ asset('png/16b.png') }}" class="absolute imap16 @if (Auth::user()->map16 == 0) hidden @endif">
+                                <img src="{{ asset('png/17b.png') }}" class="absolute imap17 @if (Auth::user()->map17 == 0) hidden @endif">
+                                <img src="{{ asset('png/18b.png') }}" class="absolute imap18 @if (Auth::user()->map18 == 0) hidden @endif">
+                                <img src="{{ asset('png/19b.png') }}" class="absolute imap19 @if (Auth::user()->map19 == 0) hidden @endif">
+                                <img src="{{ asset('png/20b.png') }}" class="absolute imap20 @if (Auth::user()->map20 == 0) hidden @endif">
+                            @endif
                         </div>
                         <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex items-center gap-x-4"
                             style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#inventory');">
@@ -81,7 +131,9 @@
     </script>
     <script>
         $(function() {
-            $(".draggable").draggable();
+            $(".draggable").draggable({
+                containment: 'parent',
+            });
         });
 
     </script>
@@ -98,6 +150,7 @@
         function closeHUD() {
             $('#hud-background').removeClass('block').addClass('hidden');
             $('#inventory').removeClass('block').addClass('hidden');
+            $('#question').removeClass('block').addClass('hidden');
             $('.puzzle').removeClass('block').addClass('hidden');
         }
 
@@ -166,6 +219,135 @@
 
         function closeModal() {
             $('.modal').removeClass('flex').addClass('hidden');
+        }
+
+    </script>
+    <script>
+        var questions = {};
+        var easy = {};
+        var easy_choices = {};
+        easy['1'] = ['Puncak gunung manakah yang tertinggi di bumi sebelum puncak everest ditaklukkan?',
+            'Di foto, aku selalu berada diatas presiden dan wakil presiden, tetapi aku tidak memiliki peran apapun di pemerintahan, siapakah aku?',
+            '2 pria harus menyebrangi sungai dengan 1 perahu yang hanya bisa menampung 1 orang. Namun, keduanya tetap berhasil menyeberangi sungai. Bagaimana itu bisa terjadi?',
+            'Semakin banyak kamu mengambil, semakin banyak yang tersisa. Apakah itu?',
+            'Aku adalah makhluk ciptaan tuhan, jawabanku selalu benar. Siapakah aku?',
+            'Aku dibeli untuk makanan namun aku tidak pernah dimakan, apakah aku?',
+            'Manakah yang lebih dulu, ayam atau telur?',
+            'Ada 5 orang yang berjalan di satu payung kecil, tetapi anehnya tidak seorangpun dari mereka kehujanan, kenapa?',
+            'Siapakah menteri ekonomi Indonesia?',
+            'Sebutkan contoh Tradeoff dalam kehidupan sehari-hari!'
+        ];
+        easy_choices['1a'] = ['A. Everest', 'A. Burung Garuda',
+            'A. Orang pertama menyeberang terlebih dahulu, kemudian orang pertama mengoper perahu tersebut dan orang kedua menyeberang',
+            'A. Pasir', 'A. Perempuan', 'A. Kerupuk', 'A. Telur', 'A. Karena hujannya di tempat lain', '', ''
+        ];
+        easy_choices['1b'] = ['B. K2', 'B. Foto Presiden', 'B. Mereka berada di dua tepi sungai yang berbeda',
+            'B. Air', 'B. Panitia eternity', 'B. Plastik', 'B. Ayam ', 'B. Karena mereka berjalan di dalam rumah',
+            '', ''
+        ];
+        easy_choices['1c'] = ['C. Makalu', 'C. Peci',
+            'C. Orang pertama menyeberang menggunakan perahu, orang kedua menyeberang dengan berenang',
+            'C. Es batu mencair', 'C. Wanita', 'C. Tisu', 'C. Peternak Ayam', 'C. Karena tidak hujan ', '', ''
+        ];
+        easy_choices['1d'] = ['D. Cho Oyu', 'D. Jam dinding',
+            'D. Orang pertama menggendong orang kedua dan menyeberang bersama menggunakan perahu', 'D. Sidik jari',
+            'D. Orang tua ', 'D. Piring', 'D. Semua jawaban benar', 'D. Karena orangnya kecil-kecil', '', ''
+        ];
+        easy['2'] = ['Kenapa kaca spion ada dua?',
+            'Mobil apa yang bikin galau?',
+            'Budi punya 3 apel, diambil dua. Sisa berapa?',
+            'Apa yang ada di akhir pelangi?',
+            'Negara apa yang kaya akan teh hijau?',
+            'Apa yang terjadi 4 tahun sekali?',
+            'Apa nama daerah yang sangat beracun?',
+            'Cicak cicak apa yang banyak maunya?',
+            'Siapakah ini?',
+            'Apa perbedaan ekonomi mikro dan ekonomi makro?'
+        ];
+        easy_choices['2a'] = ['A. Agar pengendara dapat melihat kondisi di belakang kiri dan kanan kendaraan',
+            'A. Mobil tanpa penumpang di kiri',
+            'A. 3', 'A. Emas ', 'A. Papua nugreentea', 'A. Piala dunia ', 'A. Tasikmalaya', 'A. Cicak labil', '', ''
+        ];
+        easy_choices['2b'] = ['B. Supaya bisa liat doi', 'B. Mobilang sayang tapi bukan pacar ', 'B. 4',
+            'B. Leprechaun (kurcaci ijo)', 'B. Papua Nugenea', 'B. Piala Thomas ', 'B. Tasikasik',
+            'B. Cicak cicak demanding', '', ''
+        ];
+        easy_choices['2c'] = ['C. Karena kalau cuma satu kesepian', 'C. Mobil belum lunas cicilannya', 'C. 5', 'C. i',
+            'C. Papua Nugrinti', 'C. Piala presiden', 'C. Toxicmalaysia', 'C. Cicak betina', '', ''
+        ];
+        easy_choices['2d'] = ['D. Karena sudah kodratnya', 'D. Mobil mantan', 'D. 6', 'D. Kentang',
+            'D. Papua New Guinea',
+            'D. Piala Gubernur', 'D. Toxicmalaya ', 'D. Cicak kelaparan', '', ''
+        ];
+        easy['3'] = [
+            'Ada seseorang yang berjalan di tepi pantai. Ketika ia menoleh ke belakang, ia tidak menemukan jejak kakinya. Mengapa?',
+            'Siapa presiden paling unyu?',
+            'Kaki seribu kalo belok kiri kakinya berapa?',
+            'Kesenian apa yang biasa dilakukan oleh nasabah bank?',
+            'Kenapa matahari bisa tenggelam?',
+            'Buku buku apa yang buat keringatan dan pakai alat?',
+            'Siapa penyanyi dangdut yang mempunyai surel (surat elektronik)?',
+            'Meja meja apa yang sudah punah?',
+            'Sebutkan 10 prinsip ekonomi',
+            'Berikan contoh pasar monopolistik!'
+        ];
+        easy_choices['3a'] = ['A. Karena dia berjalan mundur ', 'A. Xi Jinping', 'A. 1001', 'A. Tari jaipong',
+            'A. Karena matahari bisanya terbit ', 'A. Buku hantam', 'A. Saiful jamil', 'A. Merak', '', ''
+        ];
+        easy_choices['3b'] = ['B. Karena dia tidak menoleh', 'B. Kim Jong Unch', 'B. 2000', 'B. Tari tunai ',
+            'B. Karena matahari tidak bisa berenang', 'B. Buku tangkis', 'B. Ayu ting ting', 'B. Quangga', '', ''
+        ];
+        easy_choices['3c'] = ['C. Karena dia menutup matanya', 'C. Jokowi', 'C. 500', 'C. Tari torsetor',
+            'C. Karena matahari terbit dari timur', 'C. Buku sulap', 'C. Via valen', 'C. Burung dodo', '', ''
+        ];
+        easy_choices['3d'] = ['D. Karena jejak kakinya terhapus oleh air laut', 'D. Joe Biden', 'D. 1000',
+            'D. Tari piring', 'D. Karena matahari bisa berenang', 'D. Buku anak', 'D. Lesti kejora', 'D. Mejalodon',
+            '', ''
+        ];
+        console.log(easy_choices)
+    </script>
+    <script>
+        var c_diff = '';
+        var c_type = '';
+        var c_num = '';
+
+        function openQ(diff, type, num) {
+            if (diff == 'easy' && type == 2 && num == 9) {
+                $('#easy-2-q').removeClass('hidden').addClass('flex');
+            } else {
+                $('#easy-2-q').removeClass('flex').addClass('hidden');
+            }
+            if (diff == 'easy') {
+                $('#question-choices').removeClass('hidden').addClass('grid');
+                $('#choice-a').html(easy_choices[type + 'a'][num - 1]);
+                $('#choice-b').html(easy_choices[type + 'b'][num - 1]);
+                $('#choice-c').html(easy_choices[type + 'c'][num - 1]);
+                $('#choice-d').html(easy_choices[type + 'd'][num - 1]);
+            } else {
+                $('#question-choices').removeClass('grid').addClass('hidden');
+            }
+            $('#answer').val(null);
+            c_diff = diff;
+            c_type = type;
+            c_num = num;
+            if (diff == 'easy') {
+                questions = easy;
+            }
+            $('#question-text').html(questions[type][num - 1]);
+            openHUD('#question');
+        }
+
+        function submitAnswer() {
+            $.post('{{ config('app.url') }}' + "/escape/submit-answer", {
+                _token: CSRF_TOKEN,
+                answer: $('#answer').val(),
+                difficulty: c_diff,
+                number: c_num,
+                id: {{ Auth::id() }}
+            }).done(function(result) {
+                closeHUD();
+                $('#paper-' + c_num).addClass('hidden');
+            });
         }
 
     </script>

@@ -16,7 +16,7 @@ class PageController extends Controller
 
     public function escape()
     {
-        $users = User::where('role', 0)->get();
+        $users = User::where('role', 0)->where('escape', 1)->get();
         return view('admin.escape', compact('users'));
     }
 
