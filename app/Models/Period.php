@@ -11,6 +11,7 @@ class Period extends Model
 
     protected $fillable = [
         'name',
+        'name2',
         'news',
         'flour',
         'egg',

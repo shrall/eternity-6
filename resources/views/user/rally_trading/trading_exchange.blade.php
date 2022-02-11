@@ -17,7 +17,7 @@
                         class="cursor-pointer border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300;"
                         onclick="toggleType('non-food');">Non-Food</div>
                     <div class="cursor-pointer border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300;"
-                        onclick="openModal('guide');">Guide</div>
+                        onclick="openModal('guide');">Pricelist</div>
                 </div>
                 <form action="{{ route('rally_trading_exchange_item') }}" method="post" id="form-food" class="block">
                     @csrf
@@ -160,75 +160,75 @@
                                 <td>Price</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">Flour</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">Flour</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">Oil</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">Oil</td>
                                 <td>10 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">Flour</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">Flour</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">Egg</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">Egg</td>
                                 <td>50 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">Flour</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">Flour</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">Raw Meat</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">Raw Meat</td>
                                 <td>100 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">Oil</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">Oil</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">Flour</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">Flour</td>
                                 <td>20 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">Oil</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">Oil</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">Egg</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">Egg</td>
                                 <td>65 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">Oil</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">Oil</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">Raw Meat</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">Raw Meat</td>
                                 <td>120 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">Egg</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">Egg</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">Flour</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">Flour</td>
                                 <td>10 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">Egg</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">Egg</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">Oil</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">Oil</td>
                                 <td>10 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">Egg</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">Egg</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">Raw Meat</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">Raw Meat</td>
                                 <td>55 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">Raw Meat</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">Raw Meat</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">Flour</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">Flour</td>
                                 <td>10 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">Raw Meat</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">Raw Meat</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">Oil</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">Oil</td>
                                 <td>10 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">Raw Meat</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">Raw Meat</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">Egg</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">Egg</td>
                                 <td>10 Eternites</td>
                             </tr>
                         </table>
@@ -244,39 +244,39 @@
                                 <td>Price</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">Cloth</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-6 h-6 mr-2">Cloth</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">Wood</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">Wood</td>
                                 <td>20 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">Cloth</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-6 h-6 mr-2">Cloth</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">Iron</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">Iron</td>
                                 <td>50 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">Wood</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">Wood</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">Cloth</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-6 h-6 mr-2">Cloth</td>
                                 <td>10 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">Wood</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">Wood</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">Iron</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">Iron</td>
                                 <td>35 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">Iron</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">Iron</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">Cloth</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/cloth.svg') }}" class="w-6 h-6 mr-2">Cloth</td>
                                 <td>10 Eternites</td>
                             </tr>
                             <tr>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">Iron</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">Iron</td>
                                 <td>-></td>
-                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">Wood</td>
+                                <td class="flex items-center gap-x-2"><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">Wood</td>
                                 <td>10 Eternites</td>
                             </tr>
                         </table>

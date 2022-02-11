@@ -247,6 +247,9 @@ class UserController extends Controller
     }
     public function sell_market(Request $request)
     {
+        if (Auth::user()->period->name == 1 || Auth::user()->period->name == 3 || Auth::user()->period->name == 5 || Auth::user()->period->name == 7 || Auth::user()->period->name == 9 || Auth::user()->period->name == 11) {
+            return redirect()->route('rally_trading_index')->with('Message', 'The Trading Menu is Closed');
+        }
         $user = User::where('id', Auth::id())->first();
         if ($request->type == 'raw') {
             if ($request->flour > $user->flour || $request->egg > $user->egg || $request->meat > $user->meat || $request->oil > $user->oil || $request->iron > $user->iron || $request->wood > $user->wood || $request->cloth > $user->cloth) {
@@ -320,6 +323,9 @@ class UserController extends Controller
     }
     public function get_lucky(Request $request)
     {
+        if (Auth::user()->period->name == 1 || Auth::user()->period->name == 3 || Auth::user()->period->name == 5 || Auth::user()->period->name == 7 || Auth::user()->period->name == 9 || Auth::user()->period->name == 11) {
+            return redirect()->route('rally_trading_index')->with('Message', 'The Trading Menu is Closed');
+        }
         $user = User::where('id', Auth::id())->first();
         Log::create([
             'amount' => 125,
@@ -386,11 +392,23 @@ class UserController extends Controller
     }
     public function buy_resource(Request $request)
     {
+        if (Auth::user()->period->name == 1 || Auth::user()->period->name == 3 || Auth::user()->period->name == 5 || Auth::user()->period->name == 7 || Auth::user()->period->name == 9 || Auth::user()->period->name == 11) {
+            return redirect()->route('rally_trading_index')->with('Message', 'The Trading Menu is Closed');
+        }
         $user = User::where('id', Auth::id())->first();
         $cannon = $request->cannon * 1300;
         $cb = $request->cannonball * 200;
         $coal = $request->coal * 35;
         $r = $request->ration * 20;
+        if ($user->cannon_c > 0 || $request->cannon > 1) {
+            return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Has Exceeded Ship's Capacity");
+        }
+        if ($user->coal_c >= 10 || $request->coal > 10) {
+            return redirect()->route('rally_trading_trading_resource')->with('Message', "Coal Has Exceeded Ship's Capacity");
+        }
+        if ($user->cannonball_c >= 30 || $request->cannonball > 30) {
+            return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Ball Has Exceeded Ship's Capacity");
+        }
         $total = $cannon + $cb + $coal + $r;
         if ($total > $user->eternite1) {
             return redirect()->route('rally_trading_trading_resource')->with('Message', 'Insufficient Eternites');
@@ -408,14 +426,27 @@ class UserController extends Controller
             'eternite1' => $user->eternite1 - $total,
             'cannon' => $user->cannon + $request->cannon,
             'cannonball' => $user->cannonball + $request->cannonball,
-            'ration' => $user->ration + $request->ration,
+            'coal_c' => $request->coal,
+            'cannon_c' => $request->cannon,
+            'cannonball_c' => $request->cannonball,
             'coal' => $user->coal + $request->coal,
+            'ration' => $user->ration + $request->ration,
         ]);
         return redirect()->route('rally_trading_trading_resource')->with('Message', 'Purchase Successful');
     }
     public function auction_answer(Request $request)
     {
+
+        if (Auth::user()->period->name == 1 || Auth::user()->period->name == 3 || Auth::user()->period->name == 5 || Auth::user()->period->name == 7 || Auth::user()->period->name == 9 || Auth::user()->period->name == 11) {
+            return redirect()->route('rally_trading_index')->with('Message', 'The Trading Menu is Closed');
+        }
         $user = User::where('id', Auth::id())->first();
+        if ($user->auction_c == 3) {
+            return redirect()->route('rally_trading_index')->with('Message', 'Submit Failed');
+        }
+        $user->update([
+            'auction_c' => $user->auction_c + 1
+        ]);
         if (Auth::user()->auction_q == 1 && strtolower(preg_replace('/\s+/', '', $request->answer)) == 'eternity') {
             $user->update([
                 'auction' => 1
@@ -472,6 +503,9 @@ class UserController extends Controller
     }
     public function exchange_item(Request $request)
     {
+        if (Auth::user()->period->name == 1 || Auth::user()->period->name == 3 || Auth::user()->period->name == 5 || Auth::user()->period->name == 7 || Auth::user()->period->name == 9 || Auth::user()->period->name == 11) {
+            return redirect()->route('rally_trading_index')->with('Message', 'The Trading Menu is Closed');
+        }
         if ($request->first_item == $request->second_item) {
             return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Exchange Failed');
         }
@@ -679,5 +713,15 @@ class UserController extends Controller
             'eternite1' => $user->eternite1 - $request->total_eternites
         ]);
         return redirect()->route('rally_trading_trading_exchange')->with('Message', 'Exchange Successful');
+    }
+
+    public function add_item(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        $user->update([
+            'map' => $user->map + 1,
+            $request->item => 1
+        ]);
+        return $user->map;
     }
 }

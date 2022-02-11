@@ -16,6 +16,7 @@ class CreatePeriodsTable extends Migration
         Schema::create('periods', function (Blueprint $table) {
             $table->id();
             $table->integer('name');
+            $table->integer('name2')->default(0);
             $table->text('news');
             $table->integer('flour')->default(0);
             $table->integer('egg')->default(0);

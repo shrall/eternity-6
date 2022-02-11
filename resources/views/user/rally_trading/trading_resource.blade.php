@@ -28,7 +28,7 @@
                             <tr>
                                 <td>1.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Ration
                                 </td>
                                 <td id="resource-1-amount">{{ Auth::user()->ration }}</td>
@@ -47,7 +47,7 @@
                             <tr>
                                 <td>2.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Coal
                                 </td>
                                 <td id="resource-3-amount">{{ Auth::user()->coal }}</td>
@@ -66,7 +66,7 @@
                             <tr>
                                 <td>3.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Cannon Ball
                                 </td>
                                 <td id="resource-4-amount">{{ Auth::user()->cannonball }}</td>
@@ -85,7 +85,7 @@
                             <tr>
                                 <td>4.</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Cannon
                                 </td>
                                 <td id="resource-2-amount">{{ Auth::user()->cannon }}</td>

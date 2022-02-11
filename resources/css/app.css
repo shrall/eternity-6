@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.nplc-item{
+    @apply absolute bg-contain bg-no-repeat bg-center cursor-pointer;
+}
+.e-map{
+    @apply absolute bg-cover bg-no-repeat cursor-pointer;
+}
 .modal{
     @apply z-50;
 }

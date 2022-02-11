@@ -12,7 +12,7 @@
         <div class="text-xl 2xl:text-2xl">Lucky Draw</div>
     </a>
     @if (Auth::user()->period->name == 4)
-        <a href="#" onclick="openModal('auction');"
+        <a href="#" @if (Auth::user()->auction_c == 3 && Auth::user()->auction == 0) onclick="openModal('auction-disabled');" @else onclick="openModal('auction');" @endif
             class="col-span-2 bg-market-middle bg-contain bg-no-repeat w-full h-full transition hover:-translate-y-2 cursor-pointer flex justify-center py-4 2xl:py-6 animate-bounce text-eternity-6-red">
             <div class="text-xl 2xl:text-2xl">!!! Auction !!!</div>
         </a>

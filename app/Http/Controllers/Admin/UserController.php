@@ -18,6 +18,11 @@ class UserController extends Controller
         $users = User::where('role', 0)->get();
         return view('admin.user.index', compact('users'));
     }
+    public function escape()
+    {
+        $users = User::where('role', 0)->get();
+        return view('admin.user.escape', compact('users'));
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -37,6 +42,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        if ($request->escape != null) {
+            $users = User::where('role', 0)->get();
+            foreach ($users as $user) {
+                $user->update([
+                    'escape' => $request['escape_' . $user->id] ?? 0,
+                ]);
+            };
+            return redirect()->route('admin.user.escape');
+        }
         $users = User::where('role', 0)->get();
         foreach ($users as $user) {
             if ($request['random_' . $user->id] == 1) {
@@ -141,6 +155,14 @@ class UserController extends Controller
                 'wood' => $user->wood + $wood,
                 'cloth' => $user->cloth + $cloth,
             ]);
+        } else if ($request->math == 55) {
+            $user->update([
+                'eternite2' => $user->eternite2 + $request->eternite,
+                'easy' => $request->easy,
+                'medium' => $request->medium,
+                'hard' => $request->hard
+            ]);
+            return redirect()->route('admin.escape');
         } else {
             if ($user->ship1 == 5) {
                 $request->shipa = 0;

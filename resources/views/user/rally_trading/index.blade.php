@@ -44,7 +44,7 @@
                 <div class="col-span-2 flex flex-col gap-2">
                     <div class="h-7/10 border-2 border-eternity-6-gray px-12 py-8 flex flex-col gap-y-2">
                         <div class="mb-8">Ship Status</div>
-                        <div class="font-montserrat font-bold">Power - <span id="power-value"></span></div>
+                        <div class="font-montserrat font-bold">Power <span id="power-value"></span></div>
                         <div class="border-4 border-white h-6 mb-8">
                             <div class="bg-white h-4" id="power-bar"></div>
                         </div>
@@ -146,7 +146,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Flour
                                 </td>
                                 <td>Food</td>
@@ -155,7 +155,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Egg
                                 </td>
                                 <td>Food</td>
@@ -164,7 +164,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Raw Meat
                                 </td>
                                 <td>Food</td>
@@ -173,7 +173,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Oil
                                 </td>
                                 <td>Food</td>
@@ -182,7 +182,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Iron
                                 </td>
                                 <td>Non-Food</td>
@@ -191,7 +191,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Wood
                                 </td>
                                 <td>Non-Food</td>
@@ -200,7 +200,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cloth.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Cloth
                                 </td>
                                 <td>Non-Food</td>
@@ -223,7 +223,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/bread.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/bread.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Bread
                                 </td>
                                 <td>Food</td>
@@ -232,7 +232,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Bakpao
                                 </td>
                                 <td>Food</td>
@@ -241,7 +241,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/omelette.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/omelette.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Omelette
                                 </td>
                                 <td>Food</td>
@@ -250,7 +250,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/steak.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/steak.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Steak
                                 </td>
                                 <td>Food</td>
@@ -259,7 +259,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/sword.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/sword.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Sword
                                 </td>
                                 <td>Non-Food</td>
@@ -268,7 +268,7 @@
                             <tr>
                                 <td>6</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/furniture.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/furniture.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Furniture
                                 </td>
                                 <td>Non-Food</td>
@@ -277,7 +277,7 @@
                             <tr>
                                 <td>7</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/armor.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/armor.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Armor
                                 </td>
                                 <td>Non-Food</td>
@@ -286,7 +286,7 @@
                             <tr>
                                 <td>8</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/sail.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/sail.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Ship Sail
                                 </td>
                                 <td>Non-Food</td>
@@ -309,7 +309,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/ration.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Ration
                                 </td>
                                 <td>Food</td>
@@ -318,7 +318,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/coal.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Coal
                                 </td>
                                 <td>Non-Food</td>
@@ -327,7 +327,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cannon.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Cannon
                                 </td>
                                 <td>Non-Food</td>
@@ -336,7 +336,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="flex items-center">
-                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-4 mr-2">
+                                    <span><img src="{{ asset('svg/cannonball.svg') }}" class="w-6 h-6 mr-2">
                                     </span>Cannon Ball
                                 </td>
                                 <td>Non-Food</td>
@@ -373,7 +373,7 @@
                                 <tr>
                                     <td>1</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/flour.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/flour.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Flour
                                     </td>
                                     <td>Food</td>
@@ -382,7 +382,7 @@
                                 <tr>
                                     <td>2</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/egg.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/egg.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Egg
                                     </td>
                                     <td>Food</td>
@@ -391,7 +391,7 @@
                                 <tr>
                                     <td>3</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/meat.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Raw Meat
                                     </td>
                                     <td>Food</td>
@@ -400,7 +400,7 @@
                                 <tr>
                                     <td>4</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/oil.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Oil
                                     </td>
                                     <td>Food</td>
@@ -409,7 +409,7 @@
                                 <tr>
                                     <td>5</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/iron.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Iron
                                     </td>
                                     <td>Non-Food</td>
@@ -418,7 +418,7 @@
                                 <tr>
                                     <td>6</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/wood.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Wood
                                     </td>
                                     <td>Non-Food</td>
@@ -427,7 +427,7 @@
                                 <tr>
                                     <td>7</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/cloth.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/cloth.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Cloth
                                     </td>
                                     <td>Non-Food</td>
@@ -450,7 +450,7 @@
                                 <tr>
                                     <td>1</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Bread
                                     </td>
                                     <td>Food</td>
@@ -459,7 +459,7 @@
                                 <tr>
                                     <td>2</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Bakpao
                                     </td>
                                     <td>Food</td>
@@ -468,7 +468,7 @@
                                 <tr>
                                     <td>3</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Omelette
                                     </td>
                                     <td>Food</td>
@@ -477,7 +477,7 @@
                                 <tr>
                                     <td>4</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Steak
                                     </td>
                                     <td>Food</td>
@@ -486,7 +486,7 @@
                                 <tr>
                                     <td>5</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Sword
                                     </td>
                                     <td>Non-Food</td>
@@ -495,7 +495,7 @@
                                 <tr>
                                     <td>6</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/furniture.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/furniture.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Furniture
                                     </td>
                                     <td>Non-Food</td>
@@ -504,7 +504,7 @@
                                 <tr>
                                     <td>7</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/armor.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/armor.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Armor
                                     </td>
                                     <td>Non-Food</td>
@@ -513,7 +513,7 @@
                                 <tr>
                                     <td>8</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-4 mr-2">
+                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Ship Sail
                                     </td>
                                     <td>Non-Food</td>
@@ -576,7 +576,7 @@
                                 </tr>
                                 <tr>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-4 mr-2"></span>Bread
+                                        <span><img src="{{ asset('svg/bread.svg') }}" class="w-6 h-6 mr-2"></span>Bread
                                     </td>
                                     <td>
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -589,7 +589,7 @@
                                 </tr>
                                 <tr>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-4 mr-2"></span>Bakpao
+                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-6 h-6 mr-2"></span>Bakpao
                                     </td>
                                     <td>
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -602,7 +602,7 @@
                                 </tr>
                                 <tr>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-4 mr-2"></span>Omelette
+                                        <span><img src="{{ asset('svg/omelette.svg') }}" class="w-6 h-6 mr-2"></span>Omelette
                                     </td>
                                     <td>
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -615,7 +615,7 @@
                                 </tr>
                                 <tr>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-4 mr-2"></span>Steak
+                                        <span><img src="{{ asset('svg/steak.svg') }}" class="w-6 h-6 mr-2"></span>Steak
                                     </td>
                                     <td>
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -628,7 +628,7 @@
                                 </tr>
                                 <tr>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-4 mr-2"></span>Sword
+                                        <span><img src="{{ asset('svg/sword.svg') }}" class="w-6 h-6 mr-2"></span>Sword
                                     </td>
                                     <td>
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -642,7 +642,7 @@
                                 <tr>
                                     <td class="flex items-center">
                                         <span><img src="{{ asset('svg/furniture.svg') }}"
-                                                class="w-4 mr-2"></span>Furniture
+                                                class="w-6 h-6 mr-2"></span>Furniture
                                     </td>
                                     <td>
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -655,7 +655,7 @@
                                 </tr>
                                 <tr>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/armor.svg') }}" class="w-4 mr-2"></span>Armor
+                                        <span><img src="{{ asset('svg/armor.svg') }}" class="w-6 h-6 mr-2"></span>Armor
                                     </td>
                                     <td>
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
@@ -668,7 +668,7 @@
                                 </tr>
                                 <tr>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-4 mr-2"></span>Ship
+                                        <span><img src="{{ asset('svg/sail.svg') }}" class="w-6 h-6 mr-2"></span>Ship
                                         Sail
                                     </td>
                                     <td>

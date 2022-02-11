@@ -40,10 +40,17 @@ Route::group(['middleware' => ['player']], function () {
     Route::post('/rally_trading/buyresource', [UserController::class, 'buy_resource'])->name('rally_trading_buy_resource');
     Route::post('/rally_trading/auctionanswer', [UserController::class, 'auction_answer'])->name('rally_trading_auction_answer');
     Route::post('/rally_trading/exchangeitem', [UserController::class, 'exchange_item'])->name('rally_trading_exchange_item');
+
+    Route::get('/escape/index', [HomeController::class, 'escape_index'])->name('escape_index');
+    Route::post('escape/add-item', [UserController::class, 'add_item'])->name('escape.additem');
 });
 
 Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/', [PageController::class, 'dashboard'])->name('dashboard');
+    Route::get('/user/escape', [AdminUserController::class, 'escape'])->name('user.escape');
+    Route::get('/escape', [PageController::class, 'escape'])->name('escape');
+    Route::get('/escape/{user}', [PageController::class, 'answer'])->name('user.answer');
+    Route::post('/escape/answer', [PageController::class, 'correct'])->name('user.correct');
     Route::resource('user', AdminUserController::class);
     Route::resource('period', PeriodController::class);
 });
