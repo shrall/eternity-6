@@ -672,6 +672,7 @@ class UserSeeder extends Seeder
         $user->eternite1 = 500;
         $user->auction_q = 10;
         $user->password = Hash::make('6017080');
+        $user->question_pack = 3;
         $user->save();
 
         $user = new User();
