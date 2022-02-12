@@ -124,7 +124,7 @@
                 <div class="text-3xl ml-12 mb-8">Zoom Info</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
-                        Meeting ID: 972 3505 5302<br>
+                        Meeting ID: 926 0766 3915<br>
                         Password: zoom5<br>
                     </div>
                 </div>
