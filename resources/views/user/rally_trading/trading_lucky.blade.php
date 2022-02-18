@@ -12,22 +12,7 @@
                     <div class="text-2xl font-bold">Test Your Luck!</div>
                     <div class="text-lg font-montserrat">
                         Enter Lucky Draw<br>For
-                        <span class=
-                        @if (Auth::user()->auction == 0 && Auth::user()->auction_c == 0)
-                            <div class="absolute w-screen h-screen {{ Auth::user()->period->name == 4 ? 'flex' : 'hidden' }} items-center justify-center modal"
-                                id="auction-announcement-modal">
-                                <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
-                                    onclick="closeModal();">
-                                </div>
-                                <div
-                                    class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
-                                    <div class="flex items-center justify-center text-center">
-                                        <div class="text-4xl">Auction Will Open on the 6th Period.<br>Access The Trading Menu to Register.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif"font-bold">125 Eternites</span>
+                        <span class="font-bold">125 Eternites</span>
                     </div>
                     <div class="hover-button cursor-pointer" @if (Auth::user()->eternite1 >= 125 && Auth::user()->luckydraw != 1) onclick="buyLucky();" @else disabled @endif>@if (Auth::user()->eternite1 >= 125 && Auth::user()->luckydraw != 1) Enter @elseif (Auth::user()->luckydraw != 0) Please Comeback on Another Period @else Not Enough Eternites @endif</div>
                 </div>
