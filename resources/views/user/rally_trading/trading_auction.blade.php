@@ -15,21 +15,21 @@
                             <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction 1</div>
                             <div
                                 class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">
-                                Team 1 - 45</div>
+                                Team 1 - 23</div>
                         </div>
                         <div id="rally-2" onclick="openModal('auction-2');"
                             class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group">
                             <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction 2</div>
                             <div
                                 class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">
-                                Team 46 - 90</div>
+                                Team 24 - 46</div>
                         </div>
                         <div id="rally-3" onclick="openModal('auction-3');"
                             class="bg-rally-zoom bg-contain bg-no-repeat transition hover:-translate-y-2 cursor-pointer h-48 px-12 py-4 flex flex-col group">
                             <div class="text-xl 2xl:text-2xl mb-8 2xl:mb-10">Auction 3</div>
                             <div
                                 class="text-lg 2xl:text-xl group-hover:text-eternity-6-blue transition-colors duration-300 ml-10 2xl:ml-20">
-                                Team 91 - 135</div>
+                                Team 47 - 69</div>
                         </div>
                     </div>
                 </div>
