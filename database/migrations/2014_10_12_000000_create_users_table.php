@@ -31,8 +31,8 @@ class CreateUsersTable extends Migration
             $table->integer('oil')->default(0);
             $table->integer('iron')->default(0);
             $table->integer('wood')->default(0);
-            $table->integer('bread')->default(0);
             $table->integer('cloth')->default(0);
+            $table->integer('bread')->default(0);
             $table->integer('bakpao')->default(0);
             $table->integer('omelette')->default(0);
             $table->integer('steak')->default(0);

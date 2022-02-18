@@ -31,7 +31,22 @@ class PeriodSeeder extends Seeder
         $period->wood_math = 1;
         $period->cloth = 100;
         $period->cloth_math = 1;
-        $period->egg_change = 0;
+        $period->bread = 100;
+        $period->bread_math = 1;
+        $period->bakpao = 100;
+        $period->bakpao_math = 1;
+        $period->omelette = 100;
+        $period->omelette_math = 1;
+        $period->steak = 100;
+        $period->steak_math = 1;
+        $period->sword = 100;
+        $period->sword_math = 1;
+        $period->armor = 100;
+        $period->armor_math = 1;
+        $period->furniture = 100;
+        $period->furniture_math = 1;
+        $period->sail = 100;
+        $period->sail_math = 1;
         $period->save();
     }
 }

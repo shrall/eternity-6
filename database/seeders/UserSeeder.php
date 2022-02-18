@@ -37,7 +37,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '001-AOW';
         $user->email = 'Player001@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -52,7 +52,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '002-Aladdin';
         $user->email = 'Player002@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -67,7 +67,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '003-Da wo baba';
         $user->email = 'Player003@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -82,7 +82,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '004-Cuan';
         $user->email = 'Player004@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -97,7 +97,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '005-SMA DHARMA LOKA';
         $user->email = 'Player005@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -112,7 +112,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '006-ETERNITY.TIM CLAIRE';
         $user->email = 'Player006@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -127,7 +127,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '007-Gaje';
         $user->email = 'Player007@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -142,7 +142,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '008-TENNET';
         $user->email = 'Player008@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -157,7 +157,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '009-bolte';
         $user->email = 'Player009@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -172,7 +172,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '010-SMA DHARMA LOKA 2';
         $user->email = 'Player010@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -187,7 +187,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '011-brotong';
         $user->email = 'Player011@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -202,7 +202,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '012-Avocado toast';
         $user->email = 'Player012@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -217,7 +217,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '013-GGANBU';
         $user->email = 'Player013@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -232,7 +232,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '014-The Chronicles';
         $user->email = 'Player014@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -247,7 +247,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '015-cuanciak';
         $user->email = 'Player015@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -262,7 +262,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '016-SMADA KUTIM';
         $user->email = 'Player016@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -277,7 +277,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '017-Bebas';
         $user->email = 'Player017@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -292,7 +292,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '018-Stonks';
         $user->email = 'Player018@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -307,7 +307,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '019-Daddy Roy';
         $user->email = 'Player019@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -322,7 +322,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '020-yuhuu';
         $user->email = 'Player020@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -337,7 +337,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '021-Future-Z';
         $user->email = 'Player021@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -352,7 +352,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '022-sightly';
         $user->email = 'Player022@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -367,7 +367,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '023-EUPHORIA';
         $user->email = 'Player023@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -382,7 +382,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '024-THE STEALER';
         $user->email = 'Player024@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -397,7 +397,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '025-Taipan';
         $user->email = 'Player025@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -412,7 +412,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '026-MasakoMantoel';
         $user->email = 'Player026@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -427,7 +427,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '027-Ryan Kendrick Hoatmodjo';
         $user->email = 'Player027@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -442,7 +442,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '028-Pengwins';
         $user->email = 'Player028@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -457,7 +457,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '029-FTW';
         $user->email = 'Player029@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -472,7 +472,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '030-Daisy';
         $user->email = 'Player030@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -487,7 +487,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '031-Bisniche';
         $user->email = 'Player031@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -502,7 +502,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '032-ROSE';
         $user->email = 'Player032@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -517,7 +517,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '033-JPC';
         $user->email = 'Player033@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -532,7 +532,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '034-Nathan Family';
         $user->email = 'Player034@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -547,7 +547,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '035-Mamat Family';
         $user->email = 'Player035@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -562,7 +562,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '036-Endeavour';
         $user->email = 'Player036@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -577,7 +577,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '037-UC Selalu Dihati';
         $user->email = 'Player037@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -592,7 +592,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '038-Trasama lasan';
         $user->email = 'Player038@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -607,7 +607,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '039-deus vindice';
         $user->email = 'Player039@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -622,7 +622,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '040-L-K2';
         $user->email = 'Player040@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -637,7 +637,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '041-Elyxion';
         $user->email = 'Player041@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -652,7 +652,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '042-FLEUR';
         $user->email = 'Player042@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -667,7 +667,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '043-MARVALIX';
         $user->email = 'Player043@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -682,7 +682,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '044-Adventuresome';
         $user->email = 'Player044@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -697,7 +697,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '045-Sixteen';
         $user->email = 'Player045@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -712,7 +712,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '046-TheMerge';
         $user->email = 'Player046@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -727,7 +727,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '047-MVP';
         $user->email = 'Player047@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -742,7 +742,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '048-HIGH SEDES';
         $user->email = 'Player048@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -757,7 +757,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '049-Emotional Demeg';
         $user->email = 'Player049@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -772,7 +772,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '050-arcane';
         $user->email = 'Player050@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -787,7 +787,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '051-SMANSA DC';
         $user->email = 'Player051@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -802,7 +802,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '052-IMMORTAL';
         $user->email = 'Player052@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -817,7 +817,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '053-WJD';
         $user->email = 'Player053@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -832,7 +832,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '054-SKY';
         $user->email = 'Player054@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -847,7 +847,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '055-Katoda';
         $user->email = 'Player055@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -862,7 +862,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '056-Hikari';
         $user->email = 'Player056@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -877,7 +877,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '057-SMA Team';
         $user->email = 'Player057@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -892,7 +892,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '058-Deradadum';
         $user->email = 'Player058@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -907,7 +907,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '059-Sumber Makmur';
         $user->email = 'Player059@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -922,7 +922,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '060-ESASI Stellarflare';
         $user->email = 'Player060@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -937,7 +937,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '061-Kamfē';
         $user->email = 'Player061@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -952,7 +952,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '062-The Phantera';
         $user->email = 'Player062@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -967,7 +967,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '063-Pasti Menang';
         $user->email = 'Player063@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -982,7 +982,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '064-SOLID';
         $user->email = 'Player064@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -997,7 +997,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '065-H2SO4';
         $user->email = 'Player065@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1012,7 +1012,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '066-PEMASUKAN';
         $user->email = 'Player066@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1027,7 +1027,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '067-Gyro';
         $user->email = 'Player067@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1042,7 +1042,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '068-Grateful';
         $user->email = 'Player068@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1057,7 +1057,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '069-Fitriana Defita Sari';
         $user->email = 'Player069@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1072,7 +1072,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '070-Bella Ciao';
         $user->email = 'Player070@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1087,7 +1087,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '071-KUMA';
         $user->email = 'Player071@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1102,7 +1102,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '072-Infinity';
         $user->email = 'Player072@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1117,7 +1117,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '073-Fabiro';
         $user->email = 'Player073@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1132,7 +1132,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '074-CH3OOH';
         $user->email = 'Player074@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1147,7 +1147,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '075-CAT';
         $user->email = 'Player075@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1162,7 +1162,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '076-Yeyey';
         $user->email = 'Player076@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1177,7 +1177,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '077-RESTU IBU';
         $user->email = 'Player077@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1192,7 +1192,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '078-Tuktuk';
         $user->email = 'Player078@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1207,7 +1207,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '079-Player';
         $user->email = 'Player079@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1222,7 +1222,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '080-Player';
         $user->email = 'Player080@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1238,7 +1238,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '081-Player';
         $user->email = 'Player081@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1253,7 +1253,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '082-Player';
         $user->email = 'Player082@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1268,7 +1268,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '083-Player';
         $user->email = 'Player083@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1283,7 +1283,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '084-Player';
         $user->email = 'Player084@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1298,7 +1298,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '085-Player';
         $user->email = 'Player085@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1313,7 +1313,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '086-Player';
         $user->email = 'Player086@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1328,7 +1328,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '087-Player';
         $user->email = 'Player087@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1343,7 +1343,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '088-Player';
         $user->email = 'Player088@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1358,7 +1358,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '089-Player';
         $user->email = 'Player089@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1373,7 +1373,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '090-Player';
         $user->email = 'Player090@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1388,7 +1388,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '091-Player';
         $user->email = 'Player091@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1403,7 +1403,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '092-Player';
         $user->email = 'Player092@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1418,7 +1418,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '093-Player';
         $user->email = 'Player093@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1433,7 +1433,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '094-Player';
         $user->email = 'Player094@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1448,7 +1448,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '095-Player';
         $user->email = 'Player095@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1463,7 +1463,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '096-Player';
         $user->email = 'Player096@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1478,7 +1478,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '097-Player';
         $user->email = 'Player097@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1493,7 +1493,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '098-Player';
         $user->email = 'Player098@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1508,7 +1508,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '099-Player';
         $user->email = 'Player099@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1523,7 +1523,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '100-Player';
         $user->email = 'Player100@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1538,7 +1538,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '101-Player';
         $user->email = 'Player101@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1553,7 +1553,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '102-Player';
         $user->email = 'Player102@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1568,7 +1568,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '103-Player';
         $user->email = 'Player103@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1583,7 +1583,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '104-Player';
         $user->email = 'Player104@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1598,7 +1598,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '105-Player';
         $user->email = 'Player105@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1613,7 +1613,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '106-Player';
         $user->email = 'Player106@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1628,7 +1628,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '107-Player';
         $user->email = 'Player107@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1643,7 +1643,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '108-Player';
         $user->email = 'Player108@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1658,7 +1658,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '109-Player';
         $user->email = 'Player109@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1673,7 +1673,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '110-Player';
         $user->email = 'Player110@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1688,7 +1688,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '111-Player';
         $user->email = 'Player111@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1703,7 +1703,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '112-Player';
         $user->email = 'Player112@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1718,7 +1718,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '113-Player';
         $user->email = 'Player113@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1733,7 +1733,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '114-Player';
         $user->email = 'Player114@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1748,7 +1748,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '115-Player';
         $user->email = 'Player115@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1763,7 +1763,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '116-Player';
         $user->email = 'Player116@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1778,7 +1778,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '117-Player';
         $user->email = 'Player117@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1793,7 +1793,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '118-Player';
         $user->email = 'Player118@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1808,7 +1808,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '119-Player';
         $user->email = 'Player119@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1823,7 +1823,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '120-Player';
         $user->email = 'Player120@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1838,7 +1838,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '121-Player';
         $user->email = 'Player121@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1853,7 +1853,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '122-Player';
         $user->email = 'Player122@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1868,7 +1868,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '123-Player';
         $user->email = 'Player123@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1883,7 +1883,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '124-Player';
         $user->email = 'Player124@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1898,7 +1898,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '125-Player';
         $user->email = 'Player125@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1913,7 +1913,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '126-Player';
         $user->email = 'Player126@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1928,7 +1928,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '127-Player';
         $user->email = 'Player127@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1943,7 +1943,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '128-Player';
         $user->email = 'Player128@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1958,7 +1958,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '129-Player';
         $user->email = 'Player129@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1973,7 +1973,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '130-Player';
         $user->email = 'Player130@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -1988,7 +1988,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '131-Player';
         $user->email = 'Player131@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2003,7 +2003,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '132-Player';
         $user->email = 'Player132@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2018,7 +2018,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '133-Player';
         $user->email = 'Player133@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2033,7 +2033,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '134-Player';
         $user->email = 'Player134@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2048,7 +2048,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '135-Player';
         $user->email = 'Player135@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2063,7 +2063,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '136-Player';
         $user->email = 'Player136@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2078,7 +2078,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '137-Player';
         $user->email = 'Player137@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2093,7 +2093,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '138-Player';
         $user->email = 'Player138@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2108,7 +2108,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '139-Player';
         $user->email = 'Player139@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2123,7 +2123,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '140-Player';
         $user->email = 'Player140@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2138,7 +2138,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '141-Player';
         $user->email = 'Player141@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2153,7 +2153,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '142-Player';
         $user->email = 'Player142@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2168,7 +2168,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '143-Player';
         $user->email = 'Player143@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2183,7 +2183,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '144-Player';
         $user->email = 'Player144@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2198,7 +2198,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '145-Player';
         $user->email = 'Player145@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2213,7 +2213,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '146-Player';
         $user->email = 'Player146@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2228,7 +2228,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '147-Player';
         $user->email = 'Player147@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2243,7 +2243,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '148-Player';
         $user->email = 'Player148@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2258,7 +2258,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '149-Player';
         $user->email = 'Player149@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;
@@ -2273,7 +2273,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name = '150-Player';
         $user->email = 'Player150@eternity.com';
-        $user->eternite1 = 2000;
+        $user->eternite1 = 20000;
         $user->flour = 100;
         $user->egg = 100;
         $user->meat = 100;

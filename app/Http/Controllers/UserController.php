@@ -393,7 +393,7 @@ class UserController extends Controller
         $cb = $request->cannonball * 200;
         $coal = $request->coal * 35;
         $r = $request->ration * 20;
-        if ($user->cannon_c > 0 && $request->cannon > 0) {
+        if ($user->cannon_c > 0 || $request->cannon > 1) {
             return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Has Exceeded Ship's Capacity");
         }
         // if ($user->coal_c >= 10 && $request->coal > 10) {
