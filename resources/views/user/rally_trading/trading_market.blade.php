@@ -73,108 +73,12 @@
                                 <tr>
                                     <td>3.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">
-                                        </span>Meat
-                                    </td>
-                                    <td>Food</td>
-                                    <td id="raw-3-amount">{{ Auth::user()->meat }}</td>
-                                    <td><span id="raw-3-price">{{ Auth::user()->period->meat }}</span>
-                                        <span
-                                            class="{{ Auth::user()->period->meat_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
-                                            <span
-                                                class="fa fa-fw {{ Auth::user()->period->meat_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                        </span>
-                                    </td>
-                                    <td class="flex items-center gap-x-1">
-                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                            onclick="minSell('raw', 3);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="meat" id="raw-3"
-                                            class="w-12 bg-transparent cursor-default text-center" value=0>
-                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                            onclick="plusSell('raw', 3);"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4.</td>
-                                    <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">
-                                        </span>Oil
-                                    </td>
-                                    <td>Food</td>
-                                    <td id="raw-4-amount">{{ Auth::user()->oil }}</td>
-                                    <td><span id="raw-4-price">{{ Auth::user()->period->oil }}</span>
-                                        <span
-                                            class="{{ Auth::user()->period->oil_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
-                                            <span
-                                                class="fa fa-fw {{ Auth::user()->period->oil_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                        </span>
-                                    </td>
-                                    <td class="flex items-center gap-x-1">
-                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                            onclick="minSell('raw', 4);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="oil" id="raw-4"
-                                            class="w-12 bg-transparent cursor-default text-center" value=0>
-                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                            onclick="plusSell('raw', 4);"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5.</td>
-                                    <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">
-                                        </span>Iron
-                                    </td>
-                                    <td>Non-Food</td>
-                                    <td id="raw-5-amount">{{ Auth::user()->iron }}</td>
-                                    <td><span id="raw-5-price">{{ Auth::user()->period->iron }}</span>
-                                        <span
-                                            class="{{ Auth::user()->period->iron_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
-                                            <span
-                                                class="fa fa-fw {{ Auth::user()->period->iron_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                        </span>
-                                    </td>
-                                    <td class="flex items-center gap-x-1">
-                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                            onclick="minSell('raw', 5);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="iron" id="raw-5"
-                                            class="w-12 bg-transparent cursor-default text-center" value=0>
-                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                            onclick="plusSell('raw', 5);"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6.</td>
-                                    <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">
-                                        </span>Wood
-                                    </td>
-                                    <td>Non-Food</td>
-                                    <td id="raw-6-amount">{{ Auth::user()->wood }}</td>
-                                    <td><span id="raw-6-price">{{ Auth::user()->period->wood }}</span>
-                                        <span
-                                            class="{{ Auth::user()->period->wood_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
-                                            <span
-                                                class="fa fa-fw {{ Auth::user()->period->wood_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                        </span>
-                                    </td>
-                                    <td class="flex items-center gap-x-1">
-                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                            onclick="minSell('raw', 6);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="wood" id="raw-6"
-                                            class="w-12 bg-transparent cursor-default text-center" value=0>
-                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                            onclick="plusSell('raw', 6);"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7.</td>
-                                    <td class="flex items-center">
                                         <span><img src="{{ asset('svg/cloth.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Cloth
                                     </td>
                                     <td>Non-Food</td>
-                                    <td id="raw-7-amount">{{ Auth::user()->cloth }}</td>
-                                    <td><span id="raw-7-price">{{ Auth::user()->period->cloth }}</span>
+                                    <td id="raw-3-amount">{{ Auth::user()->cloth }}</td>
+                                    <td><span id="raw-3-price">{{ Auth::user()->period->cloth }}</span>
                                         <span
                                             class="{{ Auth::user()->period->cloth_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
@@ -183,8 +87,104 @@
                                     </td>
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minSell('raw', 3);"></span>
+                                        <input type="number" onkeyup="refreshTotal();" name="cloth" id="raw-3"
+                                            class="w-12 bg-transparent cursor-default text-center" value=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusSell('raw', 3);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/meat.svg') }}" class="w-6 h-6 mr-2">
+                                        </span>Meat
+                                    </td>
+                                    <td>Food</td>
+                                    <td id="raw-4-amount">{{ Auth::user()->meat }}</td>
+                                    <td><span id="raw-4-price">{{ Auth::user()->period->meat }}</span>
+                                        <span
+                                            class="{{ Auth::user()->period->meat_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
+                                            <span
+                                                class="fa fa-fw {{ Auth::user()->period->meat_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
+                                        </span>
+                                    </td>
+                                    <td class="flex items-center gap-x-1">
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minSell('raw', 4);"></span>
+                                        <input type="number" onkeyup="refreshTotal();" name="meat" id="raw-4"
+                                            class="w-12 bg-transparent cursor-default text-center" value=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusSell('raw', 4);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/wood.svg') }}" class="w-6 h-6 mr-2">
+                                        </span>Wood
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td id="raw-5-amount">{{ Auth::user()->wood }}</td>
+                                    <td><span id="raw-5-price">{{ Auth::user()->period->wood }}</span>
+                                        <span
+                                            class="{{ Auth::user()->period->wood_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
+                                            <span
+                                                class="fa fa-fw {{ Auth::user()->period->wood_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
+                                        </span>
+                                    </td>
+                                    <td class="flex items-center gap-x-1">
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minSell('raw', 5);"></span>
+                                        <input type="number" onkeyup="refreshTotal();" name="wood" id="raw-5"
+                                            class="w-12 bg-transparent cursor-default text-center" value=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusSell('raw', 5);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/oil.svg') }}" class="w-6 h-6 mr-2">
+                                        </span>Oil
+                                    </td>
+                                    <td>Food</td>
+                                    <td id="raw-6-amount">{{ Auth::user()->oil }}</td>
+                                    <td><span id="raw-6-price">{{ Auth::user()->period->oil }}</span>
+                                        <span
+                                            class="{{ Auth::user()->period->oil_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
+                                            <span
+                                                class="fa fa-fw {{ Auth::user()->period->oil_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
+                                        </span>
+                                    </td>
+                                    <td class="flex items-center gap-x-1">
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minSell('raw', 6);"></span>
+                                        <input type="number" onkeyup="refreshTotal();" name="oil" id="raw-6"
+                                            class="w-12 bg-transparent cursor-default text-center" value=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusSell('raw', 6);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7.</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/iron.svg') }}" class="w-6 h-6 mr-2">
+                                        </span>Iron
+                                    </td>
+                                    <td>Non-Food</td>
+                                    <td id="raw-7-amount">{{ Auth::user()->iron }}</td>
+                                    <td><span id="raw-7-price">{{ Auth::user()->period->iron }}</span>
+                                        <span
+                                            class="{{ Auth::user()->period->iron_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
+                                            <span
+                                                class="fa fa-fw {{ Auth::user()->period->iron_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
+                                        </span>
+                                    </td>
+                                    <td class="flex items-center gap-x-1">
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 7);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="cloth" id="raw-7"
+                                        <input type="number" onkeyup="refreshTotal();" name="iron" id="raw-7"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 7);"></span>
@@ -292,36 +292,12 @@
                                 <tr>
                                     <td>4.</td>
                                     <td class="flex items-center">
-                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-6 h-6 mr-2">
-                                        </span>Bakpao
-                                    </td>
-                                    <td>Food</td>
-                                    <td id="crafted-4-amount">{{ Auth::user()->bakpao }}</td>
-                                    <td><span id="crafted-4-price">{{ Auth::user()->period->bakpao }}</span>
-                                        <span
-                                            class="{{ Auth::user()->period->bakpao_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
-                                            <span
-                                                class="fa fa-fw {{ Auth::user()->period->bakpao_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
-                                        </span>
-                                    </td>
-                                    <td class="flex items-center gap-x-1">
-                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                            onclick="minSell('crafted', 4);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="bakpao" id="crafted-4"
-                                            class="w-12 bg-transparent cursor-default text-center" value=0>
-                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                            onclick="plusSell('crafted', 4);"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5.</td>
-                                    <td class="flex items-center">
                                         <span><img src="{{ asset('svg/sword.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Sword
                                     </td>
                                     <td>Non-Food</td>
-                                    <td id="crafted-5-amount">{{ Auth::user()->sword }}</td>
-                                    <td><span id="crafted-5-price">{{ Auth::user()->period->sword }}</span>
+                                    <td id="crafted-4-amount">{{ Auth::user()->sword }}</td>
+                                    <td><span id="crafted-4-price">{{ Auth::user()->period->sword }}</span>
                                         <span
                                             class="{{ Auth::user()->period->sword_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
@@ -330,22 +306,22 @@
                                     </td>
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
-                                            onclick="minSell('crafted', 5);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="sword" id="crafted-5"
+                                            onclick="minSell('crafted', 4);"></span>
+                                        <input type="number" onkeyup="refreshTotal();" name="sword" id="crafted-4"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
-                                            onclick="plusSell('crafted', 5);"></span>
+                                            onclick="plusSell('crafted', 4);"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>6.</td>
+                                    <td>5.</td>
                                     <td class="flex items-center">
                                         <span><img src="{{ asset('svg/furniture.svg') }}" class="w-6 h-6 mr-2">
                                         </span>Furniture
                                     </td>
                                     <td>Non-Food</td>
-                                    <td id="crafted-6-amount">{{ Auth::user()->furniture }}</td>
-                                    <td><span id="crafted-6-price">{{ Auth::user()->period->furniture }}</span>
+                                    <td id="crafted-5-amount">{{ Auth::user()->furniture }}</td>
+                                    <td><span id="crafted-5-price">{{ Auth::user()->period->furniture }}</span>
                                         <span
                                             class="{{ Auth::user()->period->furniture_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
                                             <span
@@ -354,8 +330,32 @@
                                     </td>
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                            onclick="minSell('crafted', 5);"></span>
+                                        <input type="number" onkeyup="refreshTotal();" name="furniture" id="crafted-5"
+                                            class="w-12 bg-transparent cursor-default text-center" value=0>
+                                        <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                            onclick="plusSell('crafted', 5);"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td class="flex items-center">
+                                        <span><img src="{{ asset('svg/bakpao.svg') }}" class="w-6 h-6 mr-2">
+                                        </span>Bakpao
+                                    </td>
+                                    <td>Food</td>
+                                    <td id="crafted-6-amount">{{ Auth::user()->bakpao }}</td>
+                                    <td><span id="crafted-6-price">{{ Auth::user()->period->bakpao }}</span>
+                                        <span
+                                            class="{{ Auth::user()->period->bakpao_math == 1 ? 'text-eternity-6-green' : 'text-eternity-6-red' }}">
+                                            <span
+                                                class="fa fa-fw {{ Auth::user()->period->bakpao_math == 1 ? 'fa-arrow-up' : 'fa-arrow-down' }}"></span>
+                                        </span>
+                                    </td>
+                                    <td class="flex items-center gap-x-1">
+                                        <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 6);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="furniture" id="crafted-6"
+                                        <input type="number" onkeyup="refreshTotal();" name="bakpao" id="crafted-6"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 6);"></span>
