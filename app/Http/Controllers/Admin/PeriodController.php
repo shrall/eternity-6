@@ -106,6 +106,7 @@ class PeriodController extends Controller
                         'coal' => 0,
                         'cannon' => 0,
                         'cannonball' => 0,
+                        'luckydraw' => 0
                     ]);
                 }
             }
