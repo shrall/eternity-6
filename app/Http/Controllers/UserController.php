@@ -140,7 +140,6 @@ class UserController extends Controller
             $level++;
             $user->update([
                 'eternite1' => $user->eternite1 - 100,
-                'luckydraw' => 1,
             ]);
             Log::create([
                 'amount' => 100,
@@ -155,7 +154,6 @@ class UserController extends Controller
             $level++;
             $user->update([
                 'eternite1' => $user->eternite1 - 150,
-                'luckydraw' => 1,
             ]);
             Log::create([
                 'amount' => 150,
@@ -170,7 +168,6 @@ class UserController extends Controller
             $level++;
             $user->update([
                 'eternite1' => $user->eternite1 - 300,
-                'luckydraw' => 1,
             ]);
             Log::create([
                 'amount' => 300,
@@ -194,7 +191,6 @@ class UserController extends Controller
             ]);
             $user->update([
                 'eternite1' => $user->eternite1 - 350,
-                'luckydraw' => 1,
             ]);
         } else if ($level == 4 && $user->eternite1 >= 400) {
             $level++;
@@ -209,7 +205,6 @@ class UserController extends Controller
             ]);
             $user->update([
                 'eternite1' => $user->eternite1 - 400,
-                'luckydraw' => 1,
             ]);
         } else {
             $suff = false;
@@ -281,7 +276,6 @@ class UserController extends Controller
                 'wood' => $user->wood - $request->wood,
                 'cloth' => $user->cloth - $request->cloth,
                 'eternite1' => $user->eternite1 + $eternite,
-                'luckydraw' => 1,
             ]);
             return redirect()->route('rally_trading_trading_market')->with('Message', 'Item Sold');
         } else {
@@ -316,7 +310,6 @@ class UserController extends Controller
                 'furniture' => $user->furniture - $request->furniture,
                 'sail' => $user->sail - $request->sail,
                 'eternite1' => $user->eternite1 + $eternite,
-                'luckydraw' => 1,
             ]);
             return redirect()->route('rally_trading_trading_market')->with('Message', 'Item Sold');
         }
