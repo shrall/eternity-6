@@ -83,6 +83,32 @@ class PeriodController extends Controller
                     'luckydraw' => 0
                 ]);
             }
+            if ($request->period == 1) {
+                foreach ($users as $key => $value) {
+                    $value->update([
+                        'eternite1' => 500,
+                        'flour' => 0,
+                        'egg' => 0,
+                        'meat' => 0,
+                        'oil' => 0,
+                        'iron' => 0,
+                        'wood' => 0,
+                        'cloth' => 0,
+                        'bread' => 0,
+                        'bakpao' => 0,
+                        'omelette' => 0,
+                        'steak' => 0,
+                        'sword' => 0,
+                        'armor' => 0,
+                        'furniture' => 0,
+                        'sail' => 0,
+                        'ration' => 0,
+                        'coal' => 0,
+                        'cannon' => 0,
+                        'cannonball' => 0,
+                    ]);
+                }
+            }
             if ($request->period == 2) {
                 $period->update([
                     'news' => 'Perlahan para penduduk dapat bertahan hidup dari musibah kelaparan yang terjadi pekan lalu, namun penduduk diharapkan untuk tetap berjaga-jaga karena kondisi E-Nation belum sepenuhnya stabil. Peneliti memperkirakan pulau-pulau yang kemarin disinggahi oleh penduduk ini memiliki banyak lahan yang luas yang dapat dikembangkan. Sehingga penduduk tertarik untuk mengeksplor pulau-pulau selanjutnya untuk memanfaatkan lahan yang ada untuk dikelola sehingga bisa menghasilkan. Untuk menjangkau pulau-pulau selanjutnya dibutuhkan kapal yang lebih memadai karena jarak yang ditempuh akan semakin jauh dan memakan waktu yang cukup lama apabila kapal memiliki fasilitas yang kurang memadai. ',
