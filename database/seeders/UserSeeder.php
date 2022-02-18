@@ -24,6 +24,25 @@ class UserSeeder extends Seeder
         $user->map_type = 2;
         $user->escape = 1;
         $user->easy = 1;
+        $user->flour = 100;
+        $user->egg = 100;
+        $user->meat = 100;
+        $user->oil = 100;
+        $user->iron = 100;
+        $user->wood = 100;
+        $user->bread = 100;
+        $user->cloth = 100;
+        $user->bakpao = 100;
+        $user->omelette = 100;
+        $user->steak = 100;
+        $user->sword = 100;
+        $user->armor = 100;
+        $user->furniture = 100;
+        $user->sail = 100;
+        $user->ration = 100;
+        $user->coal = 100;
+        $user->cannon = 100;
+        $user->cannonball = 100;
         $user->save();
 
         $user = new User();
