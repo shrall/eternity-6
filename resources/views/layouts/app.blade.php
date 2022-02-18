@@ -100,7 +100,7 @@
             </div>
         </div>
     @endauth
-    <div class="w-screen h-screen bg-e-grid-black relative">
+    <div class="w-screen h-full bg-e-grid-black relative">
         @yield('content')
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

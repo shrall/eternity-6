@@ -400,15 +400,15 @@ class UserController extends Controller
         $cb = $request->cannonball * 200;
         $coal = $request->coal * 35;
         $r = $request->ration * 20;
-        if ($user->cannon_c > 0 || $request->cannon > 1) {
+        if ($user->cannon_c > 0 && $request->cannon > 1) {
             return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Has Exceeded Ship's Capacity");
         }
-        if ($user->coal_c >= 10 || $request->coal > 10) {
-            return redirect()->route('rally_trading_trading_resource')->with('Message', "Coal Has Exceeded Ship's Capacity");
-        }
-        if ($user->cannonball_c >= 30 || $request->cannonball > 30) {
-            return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Ball Has Exceeded Ship's Capacity");
-        }
+        // if ($user->coal_c >= 10 && $request->coal > 10) {
+        //     return redirect()->route('rally_trading_trading_resource')->with('Message', "Coal Has Exceeded Ship's Capacity");
+        // }
+        // if ($user->cannonball_c >= 30 && $request->cannonball > 30) {
+        //     return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Ball Has Exceeded Ship's Capacity");
+        // }
         $total = $cannon + $cb + $coal + $r;
         if ($total > $user->eternite1) {
             return redirect()->route('rally_trading_trading_resource')->with('Message', 'Insufficient Eternites');

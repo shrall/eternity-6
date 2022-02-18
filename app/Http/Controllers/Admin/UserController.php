@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Log;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -87,6 +89,17 @@ class UserController extends Controller
                 'wood' => $user->wood + $wood,
                 'cloth' => $user->cloth + $cloth,
             ]);
+            if ($array != [0, 0, 0, 0, 0, 0, 0]) {
+                Log::create([
+                    'amount' => 0,
+                    'before' => $user->eternite1,
+                    'after' => $user->eternite1,
+                    'math' => 0,
+                    'description' => 'Added Random Items',
+                    'user_id' => $user->id,
+                    'period' => $user->period->name,
+                ]);
+            }
         };
         return redirect()->route('admin.user.index');
     }
