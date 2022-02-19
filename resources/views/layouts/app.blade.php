@@ -21,7 +21,7 @@
     @yield('modals')
     @auth
         @if (Auth::user()->auction == 0 && Auth::user()->auction_c == 0)
-            <div class="absolute w-screen h-screen {{ Auth::user()->period->name == 4 ? 'flex' : 'hidden' }} items-center justify-center modal"
+            <div class="absolute w-screen h-screen {{ Auth::user()->period->name == 4 && session()->get('asds') == null ? 'flex' : 'hidden' }} items-center justify-center modal"
                 id="auction-announcement-modal">
                 <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
                     onclick="closeModal();">
@@ -29,11 +29,15 @@
                 <div
                     class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
                     <div class="flex items-center justify-center text-center">
-                        <div class="text-4xl">Auction Will Open on the 6th Period.<br>Access The Trading Menu to Register.
+                        <div class="text-4xl">Auction Will Open on the 6th Period.<br>Access The Trading Menu to
+                            Register.
                         </div>
                     </div>
                 </div>
             </div>
+            @if (Auth::user()->period->name == 4)
+                {{ session()->put('asds', 1) }}
+            @endif
         @endif
         <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="auction-disabled-modal">
             <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
@@ -113,7 +117,6 @@
         function closeModal() {
             $('.modal').removeClass('flex').addClass('hidden');
         }
-
     </script>
 </body>
 
