@@ -74,7 +74,7 @@
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
                         Meeting ID: 966 8951 3032<br>
-                        Password: RALLy2<br>
+                        Password: RALLY2<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">
@@ -91,7 +91,7 @@
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
                         Meeting ID: 968 4101 2163<br>
-                        Password: RALLy3<br>
+                        Password: RALLY3<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">
@@ -108,7 +108,7 @@
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
                         Meeting ID: 955 2649 1700<br>
-                        Password: RALLy4<br>
+                        Password: RALLY4<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">
@@ -125,7 +125,7 @@
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
                         Meeting ID: 935 3773 0695<br>
-                        Password: RALLy5<br>
+                        Password: RALLY5<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">
@@ -142,7 +142,7 @@
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
                         Meeting ID: 942 9786 8774<br>
-                        Password: RALLy6<br>
+                        Password: RALLY6<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">
