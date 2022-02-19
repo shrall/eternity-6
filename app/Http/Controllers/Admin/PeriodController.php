@@ -145,6 +145,18 @@ class PeriodController extends Controller
                     'sail_math' => 0,
                 ]);
             } else if ($request->period == 4) {
+                foreach ($users as $key => $value) {
+                    $value->update([
+                        'eternite1' => $value + 2000,
+                        'flour' => 5,
+                        'egg' => 5,
+                        'meat' => 5,
+                        'oil' => 5,
+                        'iron' => 5,
+                        'wood' => 5,
+                        'cloth' => 5,
+                    ]);
+                };
                 $period->update([
                     'news' => 'Badan pemantau kepulauan E-Nation memprediksi bahwa destinasi selanjutnya yaitu pulau ke enam adalah pulau yang sangat luas dan dikenal sebagai pulau yang agraris dan berkelimpahan sumber daya alam di tengah hamparan samudra yang memiliki tingkat kepadatan penduduk yang minim, di mana permintaan tidaklah terlalu banyak.',
                     'flour' => 85,
