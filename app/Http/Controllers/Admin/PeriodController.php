@@ -147,14 +147,14 @@ class PeriodController extends Controller
             } else if ($request->period == 4) {
                 foreach ($users as $key => $value) {
                     $value->update([
-                        'eternite1' => $value + 2000,
-                        'flour' => 5,
-                        'egg' => 5,
-                        'meat' => 5,
-                        'oil' => 5,
-                        'iron' => 5,
-                        'wood' => 5,
-                        'cloth' => 5,
+                        'eternite1' => $value->eternite1 + 2000,
+                        'flour' => $value->flour + 5,
+                        'egg' => $value->egg + 5,
+                        'meat' => $value->meat + 5,
+                        'oil' => $value->oil + 5,
+                        'iron' => $value->iron + 5,
+                        'wood' => $value->wood + 5,
+                        'cloth' => $value->cloth + 5,
                     ]);
                 };
                 $period->update([
