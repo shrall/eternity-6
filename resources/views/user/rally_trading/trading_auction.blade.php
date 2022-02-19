@@ -49,6 +49,7 @@
                 <div class="flex items-center justify-between gap-8 mb-8">
                     Meeting ID: 993 1132 7023<br>
                     Password: AUCTION1<br>
+                    <a target="_blank" href="https://zoom.us/j/99311327023?pwd=dXdLU2tOZTU2dHBtZzJ1THZ5czhQZz09"></a>
                 </div>
             </div>
             <div class="flex items-center mr-8 2xl:mr-32">
@@ -65,6 +66,7 @@
                 <div class="flex items-center justify-between gap-8 mb-8">
                     Meeting ID: 953 2862 2784<br>
                     Password: AUCTION2<br>
+                    <a target="_blank" href="https://zoom.us/j/95328622784?pwd=Z2pTNW5nbkYzWHp2bkJFSkVud1lnQT09"></a>
                 </div>
             </div>
             <div class="flex items-center mr-8 2xl:mr-32">
@@ -81,6 +83,7 @@
                 <div class="flex items-center justify-between gap-8 mb-8">
                     Meeting ID: 978 1499 4739<br>
                     Password: AUCTION3<br>
+                    <a target="_blank" href="https://zoom.us/j/97814994739?pwd=R0x5aUNpT3NYbER2blhpRWZmL0ZpZz09"></a>
                 </div>
             </div>
             <div class="flex items-center mr-8 2xl:mr-32">
