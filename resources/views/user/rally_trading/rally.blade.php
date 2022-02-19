@@ -141,8 +141,8 @@
                 <div class="text-3xl ml-12 mb-8">Zoom Info</div>
                 <div class="text-xl ml-12 mr-24 font-montserrat">
                     <div class="flex items-center justify-between gap-8 mb-8">
-                        Meeting ID: 942 9786 8774<br>
-                        Password: RALLy6<br>
+                        Meeting ID: 933 9828 6548<br>
+                        Password: 590228<br>
                     </div>
                 </div>
                 <div class="flex items-center mr-8 2xl:mr-32">
