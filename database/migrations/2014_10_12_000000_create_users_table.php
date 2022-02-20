@@ -117,8 +117,9 @@ class CreateUsersTable extends Migration
             $table->integer('map20')->default(0);
             $table->integer('map_type')->default(1);
             $table->integer('question_pack')->default(1);
-            $table->integer('referral_code')->default(0);
-            $table->integer('referral_answer')->default(0);
+            $table->integer('referral')->default(0);
+            $table->string('referral_code')->default(0);
+            $table->string('referral_answer')->default(0);
             $table->integer('timestwo')->default(0);
             $table->integer('teleport')->default(0);
             $table->integer('freepass')->default(0);

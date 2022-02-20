@@ -440,6 +440,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -1155,6 +1159,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-4{
   padding: 1rem;
+}
+.p-2{
+  padding: 0.5rem;
 }
 .py-4{
   padding-top: 1rem;

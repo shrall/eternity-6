@@ -118,6 +118,9 @@ class User extends Authenticatable
         'map20',
         'map_type',
         'question_pack',
+        'referral_code',
+        'referral_answer',
+        'referral'
     ];
 
     /**

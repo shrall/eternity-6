@@ -44,6 +44,7 @@ Route::group(['middleware' => ['player']], function () {
     Route::get('/escape/index', [HomeController::class, 'escape_index'])->name('escape_index');
     Route::post('escape/add-item', [UserController::class, 'add_item'])->name('escape.additem');
     Route::post('escape/submit-answer', [UserController::class, 'submit_answer'])->name('escape.submitanswer');
+    Route::post('escape/submit-referral', [UserController::class, 'submit_referral'])->name('escape.submitreferral');
 });
 
 Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'], function () {

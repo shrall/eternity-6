@@ -137,61 +137,61 @@
             @endif
         @endif
         @if (Auth::user()->easy1 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-1"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy1"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 1);"
                 style="width: 52px; height: 46px; top: 611px; left: 700px;">
             </div>
         @endif
         @if (Auth::user()->easy2 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-2"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy2"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 2);"
                 style="width: 52px; height: 46px; top: 75px; left: 546px;">
             </div>
         @endif
         @if (Auth::user()->easy3 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-3"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy3"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 3);"
                 style="width: 52px; height: 46px; top: 316px; left: 200px;">
             </div>
         @endif
         @if (Auth::user()->easy4 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-4"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy4"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 4);"
                 style="width: 52px; height: 46px; top: 486px; left: 822px;">
             </div>
         @endif
         @if (Auth::user()->easy5 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-5"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy5"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 5);"
                 style="width: 52px; height: 46px; top: 370px; left: 846px;">
             </div>
         @endif
         @if (Auth::user()->easy6 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-6"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy6"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 6);"
                 style="width: 52px; height: 46px; top: 275px; left: 1082px;">
             </div>
         @endif
         @if (Auth::user()->easy7 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-7"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy7"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 7);"
                 style="width: 52px; height: 46px; top: 398px; left: 1000px;">
             </div>
         @endif
         @if (Auth::user()->easy8 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-8"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy8"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 8);"
                 style="width: 52px; height: 46px; top: 250px; left: 715px;">
             </div>
         @endif
         @if (Auth::user()->easy9 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-9"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy9"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 9);"
                 style="width: 52px; height: 46px; top: 497px; left: 328px;">
             </div>
         @endif
         @if (Auth::user()->easy10 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-10"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-easy10"
                 onclick="openQ('easy',{{ Auth::user()->question_pack }}, 10);"
                 style="width: 52px; height: 46px; top: 316px; left: 535px;">
             </div>
@@ -336,37 +336,37 @@
             @endif
         @endif
         @if (Auth::user()->medium1 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-medium1"
                 onclick="openQ('medium',{{ Auth::user()->question_pack }}, 1);"
                 style="width: 52px; height: 46px; top: 241px; left: 738px;">
             </div>
         @endif
         @if (Auth::user()->medium2 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-medium2"
                 onclick="openQ('medium',{{ Auth::user()->question_pack }}, 2);"
                 style="width: 52px; height: 46px; top: 254px; left: 570px;">
             </div>
         @endif
         @if (Auth::user()->medium3 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-medium3"
                 onclick="openQ('medium',{{ Auth::user()->question_pack }}, 3);"
                 style="width: 52px; height: 46px; top: 188px; left: 200px;">
             </div>
         @endif
         @if (Auth::user()->medium4 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-medium4"
                 onclick="openQ('medium',{{ Auth::user()->question_pack }}, 4);"
                 style="width: 52px; height: 46px; top: 332px; left: 1148px;">
             </div>
         @endif
         @if (Auth::user()->medium5 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-medium5"
                 onclick="openQ('medium',{{ Auth::user()->question_pack }}, 5);"
                 style="width: 52px; height: 46px; top: 401px; left: 888px;">
             </div>
         @endif
         @if (Auth::user()->medium6 == null)
-            <div class="nplc-item bg-paper hover:bg-paper-hover"
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-medium6"
                 onclick="openQ('medium',{{ Auth::user()->question_pack }}, 6);"
                 style="width: 52px; height: 46px; top: 250px; left: 380px;">
             </div>
@@ -419,6 +419,18 @@
         <div class="nplc-item bg-medium-shelf-closed hover:bg-medium-shelf-closed-hover" onclick="openShelf();"
             style="width: 348px; height: 348px; top: 100px; left: 950px;">
         </div> --}}
+    </div>
+    <div class="w-full h-full bg-room bg-hard-room bg-cover hidden relative">
+        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex items-center justify-center gap-x-4"
+            style="width: 100px; height:50px; top:0; left:0;" onclick="changeScene('.bg-room', '.bg-starting-point')">
+            <span class="text-lg">Back</span>
+        </div>
+        @if (Auth::user()->hard1 == null)
+            <div class="nplc-item bg-paper hover:bg-paper-hover" id="paper-hard1"
+                onclick="openQ('hard',{{ Auth::user()->question_pack }}, 1);"
+                style="width: 52px; height: 46px; top: 250px; left: 600px;">
+            </div>
+        @endif
     </div>
 @endsection
 

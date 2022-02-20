@@ -727,4 +727,16 @@ class UserController extends Controller
             $request->difficulty . $request->number => $request->answer,
         ]);
     }
+    public function submit_referral(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        if (strtolower(preg_replace('/\s+/', '', $request->code)) == $user->referral_answer) {
+            $user->update([
+                'referral' => 1
+            ]);
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }
