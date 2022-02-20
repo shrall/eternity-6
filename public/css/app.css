@@ -991,6 +991,87 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-easy-tv{
   background-image: url('/png/easy-tv.png');
 }
+.bg-map-11a{
+  background-image: url('/svg/11a.svg');
+}
+.bg-map-11b{
+  background-image: url('/svg/11b.svg');
+}
+.bg-map-12a{
+  background-image: url('/svg/12a.svg');
+}
+.bg-map-12b{
+  background-image: url('/svg/12b.svg');
+}
+.bg-map-13a{
+  background-image: url('/svg/13a.svg');
+}
+.bg-map-13b{
+  background-image: url('/svg/13b.svg');
+}
+.bg-map-14a{
+  background-image: url('/svg/14a.svg');
+}
+.bg-map-14b{
+  background-image: url('/svg/14b.svg');
+}
+.bg-map-15a{
+  background-image: url('/svg/15a.svg');
+}
+.bg-map-15b{
+  background-image: url('/svg/15b.svg');
+}
+.bg-map-16a{
+  background-image: url('/svg/16a.svg');
+}
+.bg-map-16b{
+  background-image: url('/svg/16b.svg');
+}
+.bg-map-17a{
+  background-image: url('/svg/17a.svg');
+}
+.bg-map-17b{
+  background-image: url('/svg/17b.svg');
+}
+.bg-map-18a{
+  background-image: url('/svg/18a.svg');
+}
+.bg-map-18b{
+  background-image: url('/svg/18b.svg');
+}
+.bg-medium-alarm{
+  background-image: url('/svg/medium-alarm.svg');
+}
+.bg-medium-basket{
+  background-image: url('/svg/medium-basket.svg');
+}
+.bg-medium-frame-1{
+  background-image: url('/svg/medium-frame-1.svg');
+}
+.bg-medium-frame-2{
+  background-image: url('/svg/medium-frame-2.svg');
+}
+.bg-medium-frame-3{
+  background-image: url('/svg/medium-frame-3.svg');
+}
+.bg-medium-frame-4{
+  background-image: url('/svg/medium-frame-4.svg');
+}
+.bg-medium-books{
+  background-image: url('/svg/medium-books.svg');
+}
+.bg-medium-book{
+  background-image: url('/svg/medium-book.svg');
+}
+.bg-medium-lamp{
+  background-image: url('/svg/medium-lamp.svg');
+}
+.bg-medium-parfume{
+  background-image: url('/svg/medium-parfumee.svg');
+}
+.bg-medium-shelf-closed{
+  background-image: url('/svg/medium-shelf-closed.svg');
+}
 .bg-ship-1{
   background-image: url('/svg/ship-1.svg');
 }
@@ -1039,6 +1120,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-market-right{
   background-image: url('/svg/market-right.svg');
 }
+.bg-medium-shelf-open-left{
+  background-image: url('/svg/medium-shelf-open-left.svg');
+}
+.bg-medium-shelf-open-right{
+  background-image: url('/svg/medium-shelf-open-right.svg');
+}
 .bg-contain{
   background-size: contain;
 }
@@ -1050,6 +1137,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-right{
   background-position: right;
+}
+.bg-left{
+  background-position: left;
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
@@ -1448,6 +1538,93 @@ input[type=number] {
 }
 .hover\:bg-easy-tv-hover:hover{
   background-image: url('/png/easy-tv-hover.png');
+}
+.hover\:bg-map-11a-hover:hover{
+  background-image: url('/svg/11a-hover.svg');
+}
+.hover\:bg-map-11b-hover:hover{
+  background-image: url('/svg/11b-hover.svg');
+}
+.hover\:bg-map-12a-hover:hover{
+  background-image: url('/svg/12a-hover.svg');
+}
+.hover\:bg-map-12b-hover:hover{
+  background-image: url('/svg/12b-hover.svg');
+}
+.hover\:bg-map-13a-hover:hover{
+  background-image: url('/svg/13a-hover.svg');
+}
+.hover\:bg-map-13b-hover:hover{
+  background-image: url('/svg/13b-hover.svg');
+}
+.hover\:bg-map-14a-hover:hover{
+  background-image: url('/svg/14a-hover.svg');
+}
+.hover\:bg-map-14b-hover:hover{
+  background-image: url('/svg/14b-hover.svg');
+}
+.hover\:bg-map-15a-hover:hover{
+  background-image: url('/svg/15a-hover.svg');
+}
+.hover\:bg-map-15b-hover:hover{
+  background-image: url('/svg/15b-hover.svg');
+}
+.hover\:bg-map-16a-hover:hover{
+  background-image: url('/svg/16a-hover.svg');
+}
+.hover\:bg-map-16b-hover:hover{
+  background-image: url('/svg/16b-hover.svg');
+}
+.hover\:bg-map-17a-hover:hover{
+  background-image: url('/svg/17a-hover.svg');
+}
+.hover\:bg-map-17b-hover:hover{
+  background-image: url('/svg/17b-hover.svg');
+}
+.hover\:bg-map-18a-hover:hover{
+  background-image: url('/svg/18a-hover.svg');
+}
+.hover\:bg-map-18b-hover:hover{
+  background-image: url('/svg/18b-hover.svg');
+}
+.hover\:bg-medium-alarm-hover:hover{
+  background-image: url('/svg/medium-alarm-hover.svg');
+}
+.hover\:bg-medium-basket-hover:hover{
+  background-image: url('/svg/medium-basket-hover.svg');
+}
+.hover\:bg-medium-frame-1-hover:hover{
+  background-image: url('/svg/medium-frame-1-hover.svg');
+}
+.hover\:bg-medium-frame-2-hover:hover{
+  background-image: url('/svg/medium-frame-2-hover.svg');
+}
+.hover\:bg-medium-frame-3-hover:hover{
+  background-image: url('/svg/medium-frame-3-hover.svg');
+}
+.hover\:bg-medium-frame-4-hover:hover{
+  background-image: url('/svg/medium-frame-4-hover.svg');
+}
+.hover\:bg-medium-books-hover:hover{
+  background-image: url('/svg/medium-books-hover.svg');
+}
+.hover\:bg-medium-book-hover:hover{
+  background-image: url('/svg/medium-book-hover.svg');
+}
+.hover\:bg-medium-lamp-hover:hover{
+  background-image: url('/svg/medium-lamp-hover.svg');
+}
+.hover\:bg-medium-parfume-hover:hover{
+  background-image: url('/svg/medium-parfumee-hover.svg');
+}
+.hover\:bg-medium-shelf-closed-hover:hover{
+  background-image: url('/svg/medium-shelf-closed-hover.svg');
+}
+.hover\:bg-medium-shelf-open-left-hover:hover{
+  background-image: url('/svg/medium-shelf-open-left-hover.svg');
+}
+.hover\:bg-medium-shelf-open-right-hover:hover{
+  background-image: url('/svg/medium-shelf-open-right-hover.svg');
 }
 .hover\:text-gray-200:hover{
   --tw-text-opacity: 1;

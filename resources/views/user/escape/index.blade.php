@@ -21,7 +21,11 @@
             '.bg-hard-room');" @else onclick="openModal('locked-room');" @endif>
         </div>
     </div>
-    <div class="w-full h-full bg-easy-room bg-cover hidden relative">
+    <div class="w-full h-full bg-room bg-easy-room bg-cover hidden relative">
+        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex items-center justify-center gap-x-4"
+            style="width: 100px; height:50px; top:0; left:0;" onclick="changeScene('.bg-room', '.bg-starting-point')">
+            <span class="text-lg">Back</span>
+        </div>
         @if (Auth::user()->map1 == 0)
             @if (Auth::user()->map_type == 1)
                 <div class="e-map map1 bg-map-1a hover:bg-map-1a-hover w-12 h-12" style="top: 100px; left: 83px;"
@@ -238,6 +242,184 @@
             style="width: 220px; height: 135px; top: 200px; left: 950px;">
         </div>
     </div>
+    <div class="w-full h-full bg-room bg-medium-room bg-cover hidden relative">
+        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex items-center justify-center gap-x-4"
+            style="width: 100px; height:50px; top:0; left:0;" onclick="changeScene('.bg-room', '.bg-starting-point')">
+            <span class="text-lg">Back</span>
+        </div>
+        @if (Auth::user()->map11 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map11 bg-map-11a hover:bg-map-11a-hover w-12 h-12 bg-center" style="top: 404px; left: 325px;"
+                    onclick="getItem('map11');">
+                </div>
+            @else
+                <div class="e-map map11 bg-map-11b hover:bg-map-11b-hover w-12 h-12 bg-right"
+                    style="top: 396px; left: 325px;" onclick="getItem('map11');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->map12 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map12 bg-map-12a hover:bg-map-12a-hover w-12 h-12 bg-right" style="top: 172px; left: 54px;"
+                    onclick="getItem('map12');">
+                </div>
+            @else
+                <div class="e-map map12 bg-map-12b hover:bg-map-12b-hover w-12 h-12" style="top: 172px; left: 55px;"
+                    onclick="getItem('map12');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->map13 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map13 bg-map-13a hover:bg-map-13a-hover w-12 h-12 bg-right" style="top: 206px; left: 432px;"
+                    onclick="getItem('map13');">
+                </div>
+            @else
+                <div class="e-map map13 bg-map-13b hover:bg-map-13b-hover w-12 h-12 bg-center"
+                    style="top: 206px; left: 432px;" onclick="getItem('map13');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->map14 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map14 bg-map-14a hover:bg-map-14a-hover w-12 h-12 bg-right" style="top: 330px; left: 1045px;"
+                    onclick="getItem('map14');">
+                </div>
+            @else
+                <div class="e-map map14 bg-map-14b hover:bg-map-14b-hover w-12 h-12 bg-right"
+                    style="top: 352px; left: 1045px;" onclick="getItem('map14');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->map15 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map15 bg-map-15a hover:bg-map-15a-hover w-12 h-12 bg-right" style="top: 225px; left: 623px;"
+                    onclick="getItem('map15');">
+                </div>
+            @else
+                <div class="e-map map15 bg-map-15b hover:bg-map-15b-hover w-12 h-12 bg-left"
+                    style="top: 225px; left: 623px;" onclick="getItem('map15');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->map16 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map16 bg-map-16a hover:bg-map-16a-hover w-12 h-12 bg-center" style="top: 150px; left: 1143px;"
+                    onclick="getItem('map16');">
+                </div>
+            @else
+                <div class="e-map map16 bg-map-16b hover:bg-map-16b-hover w-12 h-12" style="top: 150px; left: 1143px;"
+                    onclick="getItem('map16');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->map17 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map17 bg-map-17a hover:bg-map-17a-hover w-12 h-12 bg-center"
+                    style="top: 247px; left: 1170px;" onclick="getItem('map17');">
+                </div>
+            @else
+                <div class="e-map map17 bg-map-17b hover:bg-map-17b-hover w-12 h-12 bg-center"
+                    style="top: 247px; left: 1170px;" onclick="getItem('map17');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->map18 == 0)
+            @if (Auth::user()->map_type == 1)
+                <div class="e-map map18 bg-map-18a hover:bg-map-18a-hover w-12 h-12 bg-center"
+                    style="top: 170px; left: 1034px;" onclick="getItem('map18');">
+                </div>
+            @else
+                <div class="e-map map18 bg-map-18b hover:bg-map-18b-hover w-12 h-12 bg-right"
+                    style="top: 170px; left: 1034px;" onclick="getItem('map18');">
+                </div>
+            @endif
+        @endif
+        @if (Auth::user()->medium1 == null)
+            <div class="nplc-item bg-paper hover:bg-paper-hover"
+                onclick="openQ('medium',{{ Auth::user()->question_pack }}, 1);"
+                style="width: 52px; height: 46px; top: 241px; left: 738px;">
+            </div>
+        @endif
+        @if (Auth::user()->medium2 == null)
+            <div class="nplc-item bg-paper hover:bg-paper-hover"
+                onclick="openQ('medium',{{ Auth::user()->question_pack }}, 2);"
+                style="width: 52px; height: 46px; top: 254px; left: 570px;">
+            </div>
+        @endif
+        @if (Auth::user()->medium3 == null)
+            <div class="nplc-item bg-paper hover:bg-paper-hover"
+                onclick="openQ('medium',{{ Auth::user()->question_pack }}, 3);"
+                style="width: 52px; height: 46px; top: 188px; left: 200px;">
+            </div>
+        @endif
+        @if (Auth::user()->medium4 == null)
+            <div class="nplc-item bg-paper hover:bg-paper-hover"
+                onclick="openQ('medium',{{ Auth::user()->question_pack }}, 4);"
+                style="width: 52px; height: 46px; top: 332px; left: 1148px;">
+            </div>
+        @endif
+        @if (Auth::user()->medium5 == null)
+            <div class="nplc-item bg-paper hover:bg-paper-hover"
+                onclick="openQ('medium',{{ Auth::user()->question_pack }}, 5);"
+                style="width: 52px; height: 46px; top: 401px; left: 888px;">
+            </div>
+        @endif
+        @if (Auth::user()->medium6 == null)
+            <div class="nplc-item bg-paper hover:bg-paper-hover"
+                onclick="openQ('medium',{{ Auth::user()->question_pack }}, 6);"
+                style="width: 52px; height: 46px; top: 250px; left: 380px;">
+            </div>
+        @endif
+        <div class="nplc-item bg-medium-alarm hover:bg-medium-alarm-hover draggable"
+            style="width: 47px; height: 51px; top: 397px; left: 888px;">
+        </div>
+        <div class="nplc-item bg-medium-basket hover:bg-medium-basket-hover draggable"
+            style="width: 88px; height: 56px; top: 169px; left: 1029px;">
+        </div>
+        <div class="nplc-item bg-medium-basket hover:bg-medium-basket-hover draggable"
+            style="width: 88px; height: 56px; top: 169px; left: 1132px;">
+        </div>
+        <div class="nplc-item bg-medium-frame-1 hover:bg-medium-frame-1-hover draggable"
+            style="width: 150px; height: 105px; top: 200px; left: 367px;">
+        </div>
+        <div class="nplc-item bg-medium-frame-2 hover:bg-medium-frame-2-hover draggable"
+            style="width: 150px; height: 105px; top: 200px; left: 560px;">
+        </div>
+        <div class="nplc-item bg-medium-frame-3 hover:bg-medium-frame-3-hover draggable"
+            style="width: 43px; height: 48px; top: 402px; left: 333px;">
+        </div>
+        <div class="nplc-item bg-medium-frame-4 hover:bg-medium-frame-4-hover draggable"
+            style="width: 220px; height: 135px; top: 200px; left: 740px;">
+        </div>
+        <div class="nplc-item bg-medium-books hover:bg-medium-books-hover draggable"
+            style="width: 75px; height: 52px; top: 254px; left: 1032px;">
+        </div>
+        <div class="nplc-item bg-medium-books hover:bg-medium-books-hover draggable"
+            style="width: 75px; height: 52px; top: 332px; left: 1032px;">
+        </div>
+        <div class="nplc-item bg-medium-books hover:bg-medium-books-hover draggable"
+            style="width: 75px; height: 52px; top: 254px; left: 1138px;">
+        </div>
+        <div class="nplc-item bg-medium-books hover:bg-medium-books-hover draggable"
+            style="width: 75px; height: 52px; top: 332px; left: 1138px;">
+        </div>
+        <div class="nplc-item bg-medium-book hover:bg-medium-book-hover draggable"
+            style="width: 126px; height: 62px; top: 176px; left: 49px;">
+        </div>
+        <div class="nplc-item bg-medium-parfume hover:bg-medium-parfume-hover draggable"
+            style="width: 52px; height: 53px; top: 188px; left: 190px;">
+        </div>
+        {{-- <div class="nplc-item bg-medium-shelf-open bg-medium-shelf-open-left hover:bg-medium-shelf-open-left-hover hidden"
+            onclick="closeShelf();" style="width: 164px; height: 347px; top: 200px; left: 950px;">
+        </div>
+        <div class="nplc-item bg-medium-shelf-open bg-medium-shelf-open-right hover:bg-medium-shelf-open-right-hover hidden"
+            onclick="closeShelf();" style="width: 164px; height: 347px; top: 200px; left: 950px;">
+        </div>
+        <div class="nplc-item bg-medium-shelf-closed hover:bg-medium-shelf-closed-hover" onclick="openShelf();"
+            style="width: 348px; height: 348px; top: 100px; left: 950px;">
+        </div> --}}
+    </div>
 @endsection
 
 @section('modals')
@@ -254,4 +436,15 @@
 @endsection
 
 @section('scripts')
+    <script>
+        function openShelf() {
+            $('.bg-medium-shelf-closed').addClass('hidden').removeClass('block');
+            $('.bg-medium-shelf-open').addClass('block').removeClass('hidden');
+        }
+
+        function closeShelf() {
+            $('.bg-medium-shelf-open').addClass('hidden').removeClass('block');
+            $('.bg-medium-shelf-closed').addClass('block').removeClass('hidden');
+        }
+    </script>
 @endsection
