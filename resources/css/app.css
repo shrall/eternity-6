@@ -30,3 +30,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.board-block{
+    @apply absolute border border-eternity-6-gray w-12 h-12 hover:opacity-80 hover:cursor-pointer bg-cover !important;
+}

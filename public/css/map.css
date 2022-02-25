@@ -1,0 +1,18 @@
+
+.dragged {
+    width: 90rem;
+    height: 96rem;
+    color: white;
+    touch-action: none;
+    user-select: none;
+    overflow: auto;
+}
+.map-container{
+    /* background-image: url(../rally/lauts.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sea{
+    /* background-image: url(../rally/gelombang.svg); */
+    background-repeat: no-repeat;
+}

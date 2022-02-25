@@ -120,7 +120,25 @@ class User extends Authenticatable
         'question_pack',
         'referral_code',
         'referral_answer',
-        'referral'
+        'referral',
+        'timestwo',
+        'teleport',
+        'freepass',
+        'magnet',
+        'dice1',
+        'dice2',
+        'dice3',
+        'dice4',
+        'dice5',
+        'dice6',
+        'x',
+        'y',
+        'chl1',
+        'chl2',
+        'chl3',
+        'safe',
+        'slide',
+        'circuit',
     ];
 
     /**

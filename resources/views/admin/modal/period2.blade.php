@@ -12,7 +12,7 @@
                 <div class="modal-body">
                     <div class="mb-2">
                         <label for="">Period</label>
-                        <input type="number" name="period" id="period" class="form-control" min="1" value="{{Auth::user()->period->name2}}">
+                        <input type="text" name="period" id="period" class="form-control" min="1" value="{{Auth::user()->period->name2}}">
                     </div>
                 </div>
                 <div class="modal-footer">

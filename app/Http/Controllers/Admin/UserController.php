@@ -195,7 +195,10 @@ class UserController extends Controller
                 'map20' => $request->map20,
                 'easy' => $request->easy,
                 'medium' => $request->medium,
-                'hard' => $request->hard
+                'hard' => $request->hard,
+                'chl1' => $request->chl1,
+                'chl2' => $request->chl2,
+                'chl3' => $request->chl3,
             ]);
             return redirect()->route('admin.escape');
         } else {

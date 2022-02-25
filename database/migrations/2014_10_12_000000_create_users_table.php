@@ -130,6 +130,11 @@ class CreateUsersTable extends Migration
             $table->integer('dice4')->default(0);
             $table->integer('dice5')->default(0);
             $table->integer('dice6')->default(0);
+            $table->string('x')->default('15');
+            $table->string('y')->default('01');
+            $table->integer('chl1')->default(0);
+            $table->integer('chl2')->default(0);
+            $table->integer('chl3')->default(0);
             $table->integer('safe')->default(0);
             $table->integer('slide')->default(0);
             $table->integer('circuit')->default(0);

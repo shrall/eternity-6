@@ -138,9 +138,6 @@ class UserController extends Controller
         }
         if ($level == 0 && $user->eternite1 >= 100) {
             $level++;
-            $user->update([
-                'eternite1' => $user->eternite1 - 100,
-            ]);
             Log::create([
                 'amount' => 100,
                 'before' => $user->eternite1,
@@ -150,11 +147,11 @@ class UserController extends Controller
                 'user_id' => Auth::id(),
                 'period' => $user->period->name,
             ]);
+            $user->update([
+                'eternite1' => $user->eternite1 - 100,
+            ]);
         } else if ($level == 1 && $user->eternite1 >= 150) {
             $level++;
-            $user->update([
-                'eternite1' => $user->eternite1 - 150,
-            ]);
             Log::create([
                 'amount' => 150,
                 'before' => $user->eternite1,
@@ -164,11 +161,11 @@ class UserController extends Controller
                 'user_id' => Auth::id(),
                 'period' => $user->period->name,
             ]);
+            $user->update([
+                'eternite1' => $user->eternite1 - 150,
+            ]);
         } else if ($level == 2 && $user->eternite1 >= 300) {
             $level++;
-            $user->update([
-                'eternite1' => $user->eternite1 - 300,
-            ]);
             Log::create([
                 'amount' => 300,
                 'before' => $user->eternite1,
@@ -177,6 +174,9 @@ class UserController extends Controller
                 'description' => 'Upgrade Ship Part ' . $request->ship,
                 'user_id' => Auth::id(),
                 'period' => $user->period->name,
+            ]);
+            $user->update([
+                'eternite1' => $user->eternite1 - 300,
             ]);
         } else if ($level == 3 && $user->eternite1 >= 350) {
             $level++;
@@ -738,5 +738,45 @@ class UserController extends Controller
         } else {
             return 0;
         }
+    }
+
+    public function escape_buy_item(Request $request)
+    {
+        $totalprice = ($request->dice1 * 50) + ($request->dice2 * 90) + ($request->dice3 * 130) + ($request->dice4 * 170) + ($request->dice5 * 210) + ($request->dice6 * 250) + ($request->magnet * 250) + ($request->freepass * 1000) + ($request->teleport * 750) + ($request->timestwo * 300);
+        if ($totalprice > Auth::user()->eternite2) {
+            return redirect()->route('escape_index')->with('Message', 'Insufficient Eternite');
+        }
+        $user = User::where('id', Auth::id())->first();
+        Log::create([
+            'amount' => $totalprice,
+            'before' => Auth::user()->eternite2,
+            'after' => Auth::user()->eternite2 - $totalprice,
+            'math' => 1,
+            'description' => 'Buy Escape Items',
+            'user_id' => Auth::id(),
+            'period' => Auth::user()->period->name2,
+        ]);
+        $user->update([
+            'eternite2' => $user->eternite2 - $totalprice,
+            'dice1' => $user->dice1 + $request->dice1,
+            'dice2' => $user->dice2 + $request->dice2,
+            'dice3' => $user->dice3 + $request->dice3,
+            'dice4' => $user->dice4 + $request->dice4,
+            'dice5' => $user->dice5 + $request->dice5,
+            'dice6' => $user->dice6 + $request->dice6,
+            'magnet' => $user->magnet + $request->magnet,
+            'freepass' => $user->freepass + $request->freepass,
+            'timestwo' => $user->timestwo + $request->timestwo,
+            'teleport' => $user->teleport + $request->teleport,
+        ]);
+        return redirect()->route('escape_index')->with('Message', 'Purchase Successful');
+    }
+
+    public function move_pos(Request $request){
+        $user = User::where('id', Auth::id())->first();
+        $user->update([
+            'x' => $request->x,
+            'y' => $request->y
+        ]);
     }
 }

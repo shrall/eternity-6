@@ -141,6 +141,23 @@
                                 required>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <label>Challenge 1</label>
+                            <input class="form-control" id="" name="chl1" type="number" placeholder="" value={{$user->chl1}}
+                                required>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label>Challenge2</label>
+                            <input class="form-control" id="" name="chl2" type="number" placeholder="" value={{$user->chl2}}
+                                required>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label>Challenge 3</label>
+                            <input class="form-control" id="" name="chl3" type="number" placeholder="" value={{$user->chl3}}
+                                required>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-secondary">Submit</button>

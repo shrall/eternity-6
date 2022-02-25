@@ -13,6 +13,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/map.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     @yield('head')
 </head>
 
@@ -60,7 +64,7 @@
                         <div id="inventory"
                             class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden pt-4"
                             style="width: 1000px; height: 600px;">
-                            <div id="map-true" @if (Auth::user()->period->name2 == 3 && Auth::user()->referral == 0) class="hidden" @endif>
+                            <div id="map-true" @if (Auth::user()->period->name2 == '2b' && Auth::user()->referral == 0) class="hidden" @endif>
                                 @if (Auth::user()->map_type == 1)
                                     <img src="{{ asset('png/1a.png') }}"
                                         class="absolute imap1 @if (Auth::user()->map1 == 0) hidden @endif">
@@ -147,7 +151,7 @@
                                         class="absolute imap20 @if (Auth::user()->map20 == 0) hidden @endif">
                                 @endif
                             </div>
-                            <div id="map-false" @if (Auth::user()->period->name2 != 3 || Auth::user()->referral == 1) class="hidden" @endif>
+                            <div id="map-false" @if (Auth::user()->period->name2 != '2b' || Auth::user()->referral == 1) class="hidden" @endif>
                                 <div style="top: 250px;"
                                     class="p-2 flex flex-col items-center justify-center gap-y-2 absolute mx-auto inset-x-0">
                                     <span class="underline">Referral Code</span>
@@ -203,7 +207,7 @@
                                         class="absolute imap20 @if (Auth::user()->map20 == 0) hidden @endif">
                                 @endif
                             </div>
-                            @if (Auth::user()->period->name2 == 3 && Auth::user()->referral == 0)
+                            @if (Auth::user()->period->name2 == '2b' && Auth::user()->referral == 0)
                                 <input type="text" style="resize: none; width: 400px; bottom: -36px;" id="referral"
                                     class="bg-eternity-6-black border-2 border-eternity-6-gray absolute inset-x-0 mx-auto"
                                     type="text" name="referral" placeholder="Input Code Here">
@@ -213,16 +217,195 @@
                                     Submit</div>
                             @endif
                         </div>
-                        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex items-center gap-x-4"
-                            style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#inventory');">
-                            <div class="bg-map-9b w-12 h-12 bg-no-repeat bg-cover bg-center" style="margin-top: 25px;">
+                        <div id="item"
+                            class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden pt-4"
+                            style="width: 1000px; height: 600px;">
+                            <form action="{{ route('escape.buyitem') }}" method="post">
+                                @csrf
+                                <div class="text-2xl text-center mb-4">Items Shop</div>
+                                <hr class="mb-4">
+                                <div class="overflow-y-scroll mb-4" style="height: 400px;">
+                                    <div class="grid grid-cols-3 gap-2 mx-24 mb-2">
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/dice-1.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Dice 1</div>
+                                            <div class="text-md">Price : 50</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('dice1');"></span>
+                                                <input type="number" name="dice1" id="amount-dice1"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('dice1');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/dice-2.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Dice 2</div>
+                                            <div class="text-md">Price : 90</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('dice2');"></span>
+                                                <input type="number" name="dice2" id="amount-dice2"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('dice2');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/dice-3.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Dice 3</div>
+                                            <div class="text-md">Price : 130</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('dice3');"></span>
+                                                <input type="number" name="dice3" id="amount-dice3"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('dice3');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/dice-4.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Dice 4</div>
+                                            <div class="text-md">Price : 170</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('dice4');"></span>
+                                                <input type="number" name="dice4" id="amount-dice4"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('dice4');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/dice-5.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Dice 5</div>
+                                            <div class="text-md">Price : 210</div>
+                                            <div class="flex items-center gap-x-1 mb-5 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('dice5');"></span>
+                                                <input type="number" name="dice5" id="amount-dice5"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('dice5');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/dice-6.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Dice 6</div>
+                                            <div class="text-md">Price : 250</div>
+                                            <div class="flex items-center gap-x-1 mb-5 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('dice6');"></span>
+                                                <input type="number" name="dice6" id="amount-dice6"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('dice6');"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-4 gap-2 mx-24">
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/timestwo.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">X2</div>
+                                            <div class="text-md">Price : 300</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('timestwo');"></span>
+                                                <input type="number" name="timestwo" id="amount-timestwo"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('timestwo');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/freepass.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Freepass</div>
+                                            <div class="text-md">Price : 1000</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('freepass');"></span>
+                                                <input type="number" name="freepass" id="amount-freepass"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('freepass');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/teleport.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Teleport</div>
+                                            <div class="text-md">Price : 750</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('teleport');"></span>
+                                                <input type="number" name="teleport" id="amount-teleport"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('teleport');"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col items-center justify-center gap-y-1">
+                                            <img src="{{ asset('svg/magnet.svg') }}" class="w-16 h-16">
+                                            <div class="text-lg">Magnet</div>
+                                            <div class="text-md">Price : 250</div>
+                                            <div class="flex items-center gap-x-1 mb-4 border border-eternity-6-gray">
+                                                <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
+                                                    onclick="minAmount('magnet');"></span>
+                                                <input type="number" name="magnet" id="amount-magnet"
+                                                    class="w-12 bg-transparent text-center border border-eternity-6-gray"
+                                                    value=0>
+                                                <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
+                                                    onclick="plusAmount('magnet');"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mb-4">
+                                <div class="w-full flex justify-center">
+                                    <button type="submit" class="hover-button cursor-pointer">Buy</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex flex-col items-center justify-center p-2"
+                            style="width: 150px; height:70px; bottom:0; left:0;">
+                            <span class="text-lg">Eternites</span>
+                            <span class="text-lg">
+                                <span id="user-eternites">{{ Auth::user()->eternite2 }}</span>
+                            </span>
+                        </div>
+                        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex flex-col items-center justify-center p-2"
+                            style="width: 100px; height:70px; top:0; right:0;">
+                            <span class="text-lg">Round</span>
+                            <span class="text-lg">
+                                {{ Auth::user()->period->name2 }}</span>
+                        </div>
+                        @if (Auth::user()->period->name2 != '3')
+                            <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray flex items-center gap-x-4"
+                                style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#inventory');">
+                                <div class="bg-map-9b w-12 h-12 bg-no-repeat bg-cover bg-center"
+                                    style="margin-top: 25px;">
+                                </div>
+                                <span class="text-lg">x
+                                    <span id="map-count">{{ Auth::user()->map }}</span>
+                                </span>
                             </div>
-                            <span class="text-lg">x <span id="map-count">{{ Auth::user()->map }}</span></span>
-                        </div>
-                        <div class="nplc-item bg-logout-button hover:bg-logout-button-hover"
-                            style="width: 100px; height:100px; bottom:0; left:0;" onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-                        </div>
+                        @else
+                            <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray flex items-center justify-center gap-x-4"
+                                style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#item');">
+                                <span class="text-lg">Shop
+                                </span>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -255,6 +438,7 @@
         function closeHUD() {
             $('#hud-background').removeClass('block').addClass('hidden');
             $('#inventory').removeClass('block').addClass('hidden');
+            $('#item').removeClass('block').addClass('hidden');
             $('#question').removeClass('block').addClass('hidden');
             $('.puzzle').removeClass('block').addClass('hidden');
         }
@@ -503,6 +687,17 @@
                     }, 1000);
                 }
             });
+        }
+    </script>
+    <script>
+        function plusAmount(id) {
+            $('#amount-' + id).get(0).value++
+        }
+
+        function minAmount(id) {
+            if ($('#amount-' + id).val() > 0) {
+                $('#amount-' + id).get(0).value--
+            }
         }
     </script>
     @yield('scripts')

@@ -81,6 +81,10 @@ class HomeController extends Controller
 
     public function escape_index()
     {
-        return view('user.escape.index');
+        if (Auth::user()->period->name2 == '3') {
+            return view('user.escape.boardgame');
+        } else {
+            return view('user.escape.index');
+        }
     }
 }

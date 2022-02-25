@@ -194,6 +194,16 @@ module.exports = {
                 "medium-shelf-open-right": "url('/svg/medium-shelf-open-right.svg')",
                 "medium-shelf-open-right-hover": "url('/svg/medium-shelf-open-right-hover.svg')",
 
+                "dice-1": "url('/svg/dice-1.svg')",
+                "dice-2": "url('/svg/dice-2.svg')",
+                "dice-3": "url('/svg/dice-3.svg')",
+                "dice-4": "url('/svg/dice-4.svg')",
+                "dice-5": "url('/svg/dice-5.svg')",
+                "dice-6": "url('/svg/dice-6.svg')",
+                "magnet": "url('/svg/magnet.svg')",
+                "teleport": "url('/svg/teleport.svg')",
+                "freepass": "url('/svg/freepass.svg')",
+                "timestwo": "url('/svg/timestwo.svg')",
             },
             colors: {
                 "eternity-6-blue": "#2484C6",
