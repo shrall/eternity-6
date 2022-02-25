@@ -776,7 +776,7 @@
             <div class="board-block bg-eternity-6-brown" id="19-01" style="top: 90rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-01" style="top: 90rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-01" style="top: 90rem; left:60rem;"></div>
-            <div id="user-position" class="absolute z-20 w-12 h-12 bg-lb-rt-dashboard-frame bg-cover"
+            <div id="user-position" class="absolute z-20 w-12 h-12 bg-pion bg-cover"
                 style="top: 90rem; left:42rem;">
             </div>
             <div class="text-3xl text-center cursor-pointer" style="margin-top: 91rem;">START</div>

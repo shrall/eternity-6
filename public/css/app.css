@@ -393,17 +393,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-0{
   top: 0px;
 }
+.bottom-24{
+  bottom: 6rem;
+}
 .left-0{
   left: 0px;
 }
 .right-0{
   right: 0px;
-}
-.bottom-12{
-  bottom: 3rem;
-}
-.bottom-24{
-  bottom: 6rem;
 }
 .z-40{
   z-index: 40;
@@ -638,6 +635,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-12{
   width: 3rem;
 }
+.w-40{
+  width: 10rem;
+}
 .w-32{
   width: 8rem;
 }
@@ -649,9 +649,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-3\/10{
   width: 30%;
-}
-.w-40{
-  width: 10rem;
 }
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
@@ -898,6 +895,69 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-e-flower{
   background-image: url('/svg/e-flower.svg');
 }
+.bg-map-20a{
+  background-image: url('/svg/20a.svg');
+}
+.bg-map-19a{
+  background-image: url('/svg/19a.svg');
+}
+.bg-map-18a{
+  background-image: url('/svg/18a.svg');
+}
+.bg-map-17b{
+  background-image: url('/svg/17b.svg');
+}
+.bg-map-10b{
+  background-image: url('/svg/10b.svg');
+}
+.bg-map-15b{
+  background-image: url('/svg/15b.svg');
+}
+.bg-map-14b{
+  background-image: url('/svg/14b.svg');
+}
+.bg-map-13b{
+  background-image: url('/svg/13b.svg');
+}
+.bg-map-12b{
+  background-image: url('/svg/12b.svg');
+}
+.bg-map-11b{
+  background-image: url('/svg/11b.svg');
+}
+.bg-map-10a{
+  background-image: url('/svg/10a.svg');
+}
+.bg-map-6b{
+  background-image: url('/svg/6b.svg');
+}
+.bg-map-8b{
+  background-image: url('/svg/8b.svg');
+}
+.bg-map-2b{
+  background-image: url('/svg/2b.svg');
+}
+.bg-map-6a{
+  background-image: url('/svg/6a.svg');
+}
+.bg-map-5a{
+  background-image: url('/svg/5a.svg');
+}
+.bg-map-3a{
+  background-image: url('/svg/3a.svg');
+}
+.bg-map-4a{
+  background-image: url('/svg/4a.svg');
+}
+.bg-map-2a{
+  background-image: url('/svg/2a.svg');
+}
+.bg-map-1a{
+  background-image: url('/svg/1a.svg');
+}
+.bg-lb-rt-dashboard-frame{
+  background-image: url('/svg/lb-rt-frame.svg');
+}
 .bg-dice-1{
   background-image: url('/svg/dice-1.svg');
 }
@@ -946,41 +1006,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-hard-room{
   background-image: url('/svg/hard-room.svg');
 }
-.bg-map-1a{
-  background-image: url('/svg/1a.svg');
-}
 .bg-map-1b{
   background-image: url('/svg/1b.svg');
-}
-.bg-map-2a{
-  background-image: url('/svg/2a.svg');
-}
-.bg-map-2b{
-  background-image: url('/svg/2b.svg');
-}
-.bg-map-3a{
-  background-image: url('/svg/3a.svg');
 }
 .bg-map-3b{
   background-image: url('/svg/3b.svg');
 }
-.bg-map-4a{
-  background-image: url('/svg/4a.svg');
-}
 .bg-map-4b{
   background-image: url('/svg/4b.svg');
 }
-.bg-map-5a{
-  background-image: url('/svg/5a.svg');
-}
 .bg-map-5b{
   background-image: url('/svg/5b.svg');
-}
-.bg-map-6a{
-  background-image: url('/svg/6a.svg');
-}
-.bg-map-6b{
-  background-image: url('/svg/6b.svg');
 }
 .bg-map-7a{
   background-image: url('/svg/7a.svg');
@@ -991,17 +1027,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-map-8a{
   background-image: url('/svg/8a.svg');
 }
-.bg-map-8b{
-  background-image: url('/svg/8b.svg');
-}
 .bg-map-9a{
   background-image: url('/svg/9a.svg');
-}
-.bg-map-10a{
-  background-image: url('/svg/10a.svg');
-}
-.bg-map-10b{
-  background-image: url('/svg/10b.svg');
 }
 .bg-paper{
   background-image: url('/svg/paper.svg');
@@ -1054,32 +1081,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-map-11a{
   background-image: url('/svg/11a.svg');
 }
-.bg-map-11b{
-  background-image: url('/svg/11b.svg');
-}
 .bg-map-12a{
   background-image: url('/svg/12a.svg');
-}
-.bg-map-12b{
-  background-image: url('/svg/12b.svg');
 }
 .bg-map-13a{
   background-image: url('/svg/13a.svg');
 }
-.bg-map-13b{
-  background-image: url('/svg/13b.svg');
-}
 .bg-map-14a{
   background-image: url('/svg/14a.svg');
 }
-.bg-map-14b{
-  background-image: url('/svg/14b.svg');
-}
 .bg-map-15a{
   background-image: url('/svg/15a.svg');
-}
-.bg-map-15b{
-  background-image: url('/svg/15b.svg');
 }
 .bg-map-16a{
   background-image: url('/svg/16a.svg');
@@ -1089,12 +1101,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-map-17a{
   background-image: url('/svg/17a.svg');
-}
-.bg-map-17b{
-  background-image: url('/svg/17b.svg');
-}
-.bg-map-18a{
-  background-image: url('/svg/18a.svg');
 }
 .bg-map-18b{
   background-image: url('/svg/18b.svg');
@@ -1168,9 +1174,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-lucky-draw-box{
   background-image: url('/svg/lucky-draw-box.svg');
 }
-.bg-lb-rt-dashboard-frame{
-  background-image: url('/svg/lb-rt-frame.svg');
-}
 .bg-lt-rb-long-frame{
   background-image: url('/svg/lt-rb-long-frame.svg');
 }
@@ -1183,11 +1186,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-market-right{
   background-image: url('/svg/market-right.svg');
 }
-.bg-map-20a{
-  background-image: url('/svg/20a.svg');
-}
-.bg-map-19a{
-  background-image: url('/svg/19a.svg');
+.bg-pion{
+  background-image: url('/png/orang.png');
 }
 .bg-contain{
   background-size: contain;

@@ -50,7 +50,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017001');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('16017001');
         $user->save();
 
         $user = new User();
@@ -65,7 +72,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017002');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('06017002');
         $user->save();
 
         $user = new User();
@@ -80,7 +94,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017003');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('16017003');
         $user->save();
 
         $user = new User();
@@ -95,7 +116,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017004');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('06017004');
         $user->save();
 
         $user = new User();
@@ -110,7 +138,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017005');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('16017005');
         $user->save();
 
         $user = new User();
@@ -125,7 +160,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017006');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('06017006');
         $user->save();
 
         $user = new User();
@@ -140,7 +182,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017007');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('16017007');
         $user->save();
 
         $user = new User();
@@ -155,7 +204,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017008');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('06017008');
         $user->save();
 
         $user = new User();
@@ -170,7 +226,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017009');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('16017009');
         $user->save();
 
         $user = new User();
@@ -185,7 +248,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017010');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('06017010');
         $user->save();
 
         $user = new User();
@@ -200,7 +270,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017011');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('17022001');
         $user->save();
 
         $user = new User();
@@ -215,7 +292,15 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017012');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+
+        $user->password = Hash::make('07022002');
         $user->save();
 
         $user = new User();
@@ -230,7 +315,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017013');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('17022003');
         $user->save();
 
         $user = new User();
@@ -245,7 +337,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017014');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('07022004');
         $user->save();
 
         $user = new User();
@@ -260,7 +359,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017015');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('17022005');
         $user->save();
 
         $user = new User();
@@ -275,7 +381,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017016');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('07022006');
         $user->save();
 
         $user = new User();
@@ -290,7 +403,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017017');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('17022007');
         $user->save();
 
         $user = new User();
@@ -305,7 +425,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017018');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('07022008');
         $user->save();
 
         $user = new User();
@@ -320,7 +447,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017019');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('17022009');
         $user->save();
 
         $user = new User();
@@ -335,7 +469,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017020');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('07022010');
         $user->save();
 
         $user = new User();
@@ -350,7 +491,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017021');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('15012001');
         $user->save();
 
         $user = new User();
@@ -365,7 +513,15 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017022');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->auction_q = 2;
+        $user->password = Hash::make('05012002');
         $user->save();
 
         $user = new User();
@@ -380,7 +536,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017023');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('15012003');
         $user->save();
 
         $user = new User();
@@ -395,7 +558,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017024');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('05012004');
         $user->save();
 
         $user = new User();
@@ -410,7 +580,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017025');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('15012005');
         $user->save();
 
         $user = new User();
@@ -425,7 +602,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017026');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make(05012006);
         $user->save();
 
         $user = new User();
@@ -440,7 +624,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017027');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('15012007');
         $user->save();
 
         $user = new User();
@@ -455,7 +646,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017028');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('05012008');
         $user->save();
 
         $user = new User();
@@ -470,7 +668,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017029');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('15012009');
         $user->save();
 
         $user = new User();
@@ -485,7 +690,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017030');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('05012010');
         $user->save();
 
         $user = new User();
@@ -500,7 +712,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017031');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('12022001');
         $user->save();
 
         $user = new User();
@@ -515,7 +734,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017032');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('02022002');
         $user->save();
 
         $user = new User();
@@ -530,7 +756,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017033');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('12022003');
         $user->save();
 
         $user = new User();
@@ -545,7 +778,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017034');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('02022004');
         $user->save();
 
         $user = new User();
@@ -560,7 +800,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017035');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('12022005');
         $user->save();
 
         $user = new User();
@@ -575,7 +822,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017036');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('02022006');
         $user->save();
 
         $user = new User();
@@ -590,7 +844,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017037');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('12022007');
         $user->save();
 
         $user = new User();
@@ -605,7 +866,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017038');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('02022008');
         $user->save();
 
         $user = new User();
@@ -620,7 +888,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017039');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('12022009');
         $user->save();
 
         $user = new User();
@@ -635,7 +910,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017040');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('02022010');
         $user->save();
 
         $user = new User();
@@ -650,7 +932,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017041');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('15072001');
         $user->save();
 
         $user = new User();
@@ -665,7 +954,15 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017042');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+
+        $user->password = Hash::make('05072002');
         $user->save();
 
         $user = new User();
@@ -680,7 +977,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017043');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('15072003');
         $user->save();
 
         $user = new User();
@@ -695,7 +999,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017044');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('05072004');
         $user->save();
 
         $user = new User();
@@ -710,7 +1021,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017045');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('15072005');
         $user->save();
 
         $user = new User();
@@ -725,7 +1043,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017046');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('05072006');
         $user->save();
 
         $user = new User();
@@ -740,7 +1065,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017047');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('15072007');
         $user->save();
 
         $user = new User();
@@ -755,7 +1087,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017048');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('05072008');
         $user->save();
 
         $user = new User();
@@ -770,7 +1109,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017049');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('15072009');
         $user->save();
 
         $user = new User();
@@ -785,7 +1131,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017050');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('05072010');
         $user->save();
 
         $user = new User();
@@ -800,7 +1153,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017051');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('13035001');
         $user->save();
 
         $user = new User();
@@ -815,7 +1175,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017052');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('03035002');
         $user->save();
 
         $user = new User();
@@ -830,7 +1197,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017053');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('13035003');
         $user->save();
 
         $user = new User();
@@ -845,7 +1219,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017054');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('03035004');
         $user->save();
 
         $user = new User();
@@ -860,7 +1241,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017055');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('13035005');
         $user->save();
 
         $user = new User();
@@ -875,7 +1263,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017056');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('03035006');
         $user->save();
 
         $user = new User();
@@ -890,7 +1285,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017057');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('13035007');
         $user->save();
 
         $user = new User();
@@ -905,7 +1307,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017058');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('03035008');
         $user->save();
 
         $user = new User();
@@ -920,7 +1329,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017059');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('13035009');
         $user->save();
 
         $user = new User();
@@ -935,7 +1351,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017060');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('03035010');
         $user->save();
 
         $user = new User();
@@ -950,7 +1373,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017061');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('18032001');
         $user->save();
 
         $user = new User();
@@ -965,7 +1395,15 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017062');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+
+        $user->password = Hash::make('08032002');
         $user->save();
 
         $user = new User();
@@ -980,7 +1418,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017063');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('18032003');
         $user->save();
 
         $user = new User();
@@ -995,7 +1440,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017064');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('08032004');
         $user->save();
 
         $user = new User();
@@ -1010,7 +1462,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017065');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('18032005');
         $user->save();
 
         $user = new User();
@@ -1025,7 +1484,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017066');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('08032006');
         $user->save();
 
         $user = new User();
@@ -1040,7 +1506,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017067');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('18032007');
         $user->save();
 
         $user = new User();
@@ -1055,7 +1528,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017068');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('08032008');
         $user->save();
 
         $user = new User();
@@ -1070,7 +1550,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017069');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('18032009');
         $user->save();
 
         $user = new User();
@@ -1085,7 +1572,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017070');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('08032010');
         $user->save();
 
         $user = new User();
@@ -1100,7 +1594,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017071');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('19011001');
         $user->save();
 
         $user = new User();
@@ -1115,7 +1616,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017072');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('09011002');
         $user->save();
 
         $user = new User();
@@ -1130,7 +1638,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017073');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('19011003');
         $user->save();
 
         $user = new User();
@@ -1145,7 +1660,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017074');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('09011004');
         $user->save();
 
         $user = new User();
@@ -1160,7 +1682,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017075');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('19011005');
         $user->save();
 
         $user = new User();
@@ -1175,7 +1704,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017076');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('09011006');
         $user->save();
 
         $user = new User();
@@ -1190,7 +1726,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017077');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('19011007');
         $user->save();
 
         $user = new User();
@@ -1205,7 +1748,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017078');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('09011008');
         $user->save();
 
         $user = new User();
@@ -1220,7 +1770,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017079');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('19011009');
         $user->save();
 
         $user = new User();
@@ -1235,8 +1792,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017080');
         $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('09011010');
         $user->save();
 
         $user = new User();
@@ -1251,7 +1814,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017081');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('18811001');
         $user->save();
 
         $user = new User();
@@ -1266,7 +1836,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017082');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('08811002');
         $user->save();
 
         $user = new User();
@@ -1281,7 +1858,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017083');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('18811003');
         $user->save();
 
         $user = new User();
@@ -1296,7 +1880,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017084');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('08811004');
         $user->save();
 
         $user = new User();
@@ -1311,7 +1902,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017085');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('18811005');
         $user->save();
 
         $user = new User();
@@ -1326,7 +1924,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017086');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('08811006');
         $user->save();
 
         $user = new User();
@@ -1341,7 +1946,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017087');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('18811007');
         $user->save();
 
         $user = new User();
@@ -1356,7 +1968,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017088');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('08811008');
         $user->save();
 
         $user = new User();
@@ -1371,7 +1990,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017089');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('18811009');
         $user->save();
 
         $user = new User();
@@ -1386,7 +2012,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017090');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('08811010');
         $user->save();
 
         $user = new User();
@@ -1401,7 +2034,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017091');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('16898001');
         $user->save();
 
         $user = new User();
@@ -1416,7 +2056,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017092');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('06898002');
         $user->save();
 
         $user = new User();
@@ -1431,7 +2078,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017093');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('16898003');
         $user->save();
 
         $user = new User();
@@ -1446,7 +2100,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017094');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('06898004');
         $user->save();
 
         $user = new User();
@@ -1461,7 +2122,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017095');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('16898005');
         $user->save();
 
         $user = new User();
@@ -1476,7 +2144,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017096');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('06898006');
         $user->save();
 
         $user = new User();
@@ -1491,7 +2166,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017097');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('16898007');
         $user->save();
 
         $user = new User();
@@ -1506,7 +2188,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017098');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('06898008');
         $user->save();
 
         $user = new User();
@@ -1521,7 +2210,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017099');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('16898009');
         $user->save();
 
         $user = new User();
@@ -1536,7 +2232,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017100');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('06898010');
         $user->save();
 
         $user = new User();
@@ -1551,7 +2254,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017101');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('14025001');
         $user->save();
 
         $user = new User();
@@ -1566,7 +2276,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017102');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('04025002');
         $user->save();
 
         $user = new User();
@@ -1581,7 +2298,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017103');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('14025003');
         $user->save();
 
         $user = new User();
@@ -1596,7 +2320,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017104');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('04025004');
         $user->save();
 
         $user = new User();
@@ -1611,7 +2342,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017105');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('14025005');
         $user->save();
 
         $user = new User();
@@ -1626,7 +2364,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017106');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('04025006');
         $user->save();
 
         $user = new User();
@@ -1641,7 +2386,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017107');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('14025007');
         $user->save();
 
         $user = new User();
@@ -1656,7 +2408,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017108');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('04025008');
         $user->save();
 
         $user = new User();
@@ -1671,7 +2430,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017109');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('14025009');
         $user->save();
 
         $user = new User();
@@ -1686,7 +2452,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017110');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('04025010');
         $user->save();
 
         $user = new User();
@@ -1701,7 +2474,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017111');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('17809001');
         $user->save();
 
         $user = new User();
@@ -1716,7 +2496,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017112');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('07809002');
         $user->save();
 
         $user = new User();
@@ -1731,7 +2518,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017113');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('17809003');
         $user->save();
 
         $user = new User();
@@ -1746,7 +2540,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017114');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('07809004');
         $user->save();
 
         $user = new User();
@@ -1761,7 +2562,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017115');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('17809005');
         $user->save();
 
         $user = new User();
@@ -1776,7 +2584,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017116');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('07809006');
         $user->save();
 
         $user = new User();
@@ -1791,7 +2606,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017117');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('17809007');
         $user->save();
 
         $user = new User();
@@ -1806,7 +2628,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017118');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('07809008');
         $user->save();
 
         $user = new User();
@@ -1821,7 +2650,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017119');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('17809009');
         $user->save();
 
         $user = new User();
@@ -1836,7 +2672,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017100');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('07809010');
         $user->save();
 
         $user = new User();
@@ -1851,7 +2694,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017121');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('11722001');
         $user->save();
 
         $user = new User();
@@ -1866,7 +2716,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017122');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('01722002');
         $user->save();
 
         $user = new User();
@@ -1881,7 +2738,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017123');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('11722003');
         $user->save();
 
         $user = new User();
@@ -1896,7 +2760,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017124');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('01722004');
         $user->save();
 
         $user = new User();
@@ -1911,7 +2782,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017125');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('11722005');
         $user->save();
 
         $user = new User();
@@ -1926,7 +2804,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->password = Hash::make('6017126');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
+        $user->password = Hash::make('01722006');
         $user->save();
 
         $user = new User();
@@ -1941,7 +2826,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->password = Hash::make('6017127');
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
+        $user->password = Hash::make('11722007');
         $user->save();
 
         $user = new User();
@@ -1956,7 +2848,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->password = Hash::make('6017128');
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
+        $user->password = Hash::make('01722008');
         $user->save();
 
         $user = new User();
@@ -1971,7 +2870,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->password = Hash::make('6017129');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
+        $user->password = Hash::make('11722009');
         $user->save();
 
         $user = new User();
@@ -1986,7 +2892,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->password = Hash::make('6017130');
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
+        $user->password = Hash::make('01722010');
         $user->save();
 
         $user = new User();
@@ -2001,7 +2914,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->password = Hash::make('6017131');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
+        $user->password = Hash::make('13469001');
         $user->save();
 
         $user = new User();
@@ -2016,7 +2936,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->password = Hash::make('6017132');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
+        $user->password = Hash::make('03469002');
         $user->save();
 
         $user = new User();
@@ -2031,7 +2958,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->password = Hash::make('6017133');
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
+        $user->password = Hash::make('13469003');
         $user->save();
 
         $user = new User();
@@ -2046,7 +2980,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->password = Hash::make('6017134');
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
+        $user->password = Hash::make('03469004');
         $user->save();
 
         $user = new User();
@@ -2061,7 +3002,14 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->password = Hash::make('6017135');
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
+        $user->password = Hash::make('13469005');
         $user->save();
 
         $user = new User();
@@ -2076,6 +3024,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('6017136');
         $user->save();
 
@@ -2091,6 +3046,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('6017137');
         $user->save();
 
@@ -2106,6 +3068,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('6017138');
         $user->save();
 
@@ -2121,6 +3090,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('6017139');
         $user->save();
 
@@ -2136,6 +3112,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('6017140');
         $user->save();
 
@@ -2151,6 +3134,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '21UGF12FDR';
+        $user->referral_answer = '8IANDJDOXA';
         $user->password = Hash::make('6017141');
         $user->save();
 
@@ -2166,6 +3156,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'QEVP1MMCER';
+        $user->referral_answer = '8MDLS9UPCK';
         $user->password = Hash::make('6017142');
         $user->save();
 
@@ -2181,6 +3178,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
+        $user->question_pack = 3;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'Z8UK3BCOUS';
+        $user->referral_answer = 'D5X7GDA27Y';
         $user->password = Hash::make('6017143');
         $user->save();
 
@@ -2196,6 +3200,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
+        $user->question_pack = 1;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'JWQFIS72X9';
+        $user->referral_answer = 'KXTWQFSK91';
         $user->password = Hash::make('6017144');
         $user->save();
 
@@ -2211,6 +3222,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
+        $user->question_pack = 2;
+        $user->map_type = 1;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'CS40MAGLYH';
+        $user->referral_answer = 'VFQXBES5PB';
         $user->password = Hash::make('6017145');
         $user->save();
 
@@ -2226,6 +3244,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8IANDJDOXA';
+        $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('6017146');
         $user->save();
 
@@ -2241,6 +3266,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
+        $user->question_pack = 1;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = '8MDLS9UPCK';
+        $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('6017147');
         $user->save();
 
@@ -2256,6 +3288,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
+        $user->question_pack = 2;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'D5X7GDA27Y';
+        $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('6017148');
         $user->save();
 
@@ -2271,6 +3310,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'KXTWQFSK91';
+        $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('6017149');
         $user->save();
 
@@ -2286,6 +3332,13 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
+        $user->question_pack = 3;
+        $user->map_type = 2;
+        $user->easy = 1;
+        $user->medium = 1;
+        $user->hard = 1;
+        $user->referral_code = 'VFQXBES5PB';
+        $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('6017150');
         $user->save();
 

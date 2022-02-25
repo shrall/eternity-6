@@ -204,6 +204,7 @@ module.exports = {
                 "teleport": "url('/svg/teleport.svg')",
                 "freepass": "url('/svg/freepass.svg')",
                 "timestwo": "url('/svg/timestwo.svg')",
+                "pion": "url('/png/orang.png')",
             },
             colors: {
                 "eternity-6-blue": "#2484C6",
