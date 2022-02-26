@@ -56,7 +56,7 @@ class CreateUsersTable extends Migration
             $table->integer('ship5')->default(0);
             $table->integer('ship6')->default(0);
             $table->integer('escape')->default(0);
-            $table->integer('eternite2')->default(0);
+            $table->integer('eternite2')->default(1000);
             $table->integer('easy')->default(0);
             $table->text('easy1')->nullable();
             $table->text('easy2')->nullable();
