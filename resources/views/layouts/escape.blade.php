@@ -189,11 +189,11 @@
                             class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden"
                             style="width: 1000px; height: 600px;">
                             <div class="flex flex-col items-center justify-center" style="height: 600px;">
-                                <div class="flex items-center justify-center mb-8">
-                                    <div class="text-3xl text-center" id="question-text"></div>
+                                <div class="flex flex-col items-center justify-center gap-2 mb-8">
                                     <img src="{{ asset('png/hard-1.png') }}" id="qr-hard-1" class="hidden">
                                     <img src="{{ asset('png/hard-2.png') }}" id="qr-hard-2" class="hidden">
                                     <img src="{{ asset('png/hard-3.png') }}" id="qr-hard-3" class="hidden">
+                                    <div class="text-3xl text-center" id="question-text"></div>
                                 </div>
                                 <div class="grid grid-cols-4 gap-x-2 items-center justify-evenly mb-4"
                                     id="question-choices">
@@ -1148,6 +1148,7 @@
             if (diff == 'hard') {
                 //ganti qr code seems gud
                 $('#qr-hard-' + type).removeClass('hidden').addClass('block');
+                $('#question-text').html('Silahkan Scan QR Code.');
             } else {
                 $('#question-text').html(questions[type][num - 1]);
             }
