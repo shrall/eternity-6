@@ -1143,11 +1143,12 @@
             } else if (diff == 'hard') {
                 questions = hard;
             }
+            $('#qr-hard-' + type).addClass('hidden').removeClass('block');
+            $('#question-text').html(null);
             if (diff == 'hard') {
                 //ganti qr code seems gud
                 $('#qr-hard-' + type).removeClass('hidden').addClass('block');
             } else {
-                $('#qr-hard-' + type).addClass('hidden').removeClass('block');
                 $('#question-text').html(questions[type][num - 1]);
             }
             openHUD('#question');
