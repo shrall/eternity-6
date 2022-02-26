@@ -13,14 +13,18 @@
                     <div class="mb-2">
                         {{ $user->easy8 }}
                     </div>
-                    <div class="mb-2">
-                        <label for="">Eternite Reward</label>
-                        <input type="number" name="eternite" id="eternite" class="form-control" value="0">
+                    @if ($user->easy8_c == 0)
+                        <div class="mb-2">
+                            <label for="">Eternite Reward</label>
+                            <input type="number" name="eternite" id="eternite" class="form-control" value="0">
+                        </div>
+                    @endif
+                </div>
+                @if ($user->easy8_c == 0)
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-secondary">Submit</button>
-                </div>
+                @endif
             </div>
         </form>
     </div>

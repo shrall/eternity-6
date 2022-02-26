@@ -39,9 +39,9 @@
                             style="width: 1000px; height: 600px;">
                             <div class="flex items-center justify-center mb-8 mt-24">
                                 <img src="{{ asset('png/qr-challenge-1.png') }}" id="qr-challenge-1"
-                                    class="hidden">
+                                    style="width: 300px; height:300px;" class="hidden">
                                 <img src="{{ asset('png/qr-challenge-2.png') }}" id="qr-challenge-2"
-                                    class="hidden">
+                                    style="width: 300px; height:300px;" class="hidden">
                             </div>
                             <div class="flex items-center justify-center mb-8">
                                 <div class="text-3xl text-center">Scan This QR.</div>
@@ -339,12 +339,6 @@
                                         class="absolute imap7 @if (Auth::user()->map7 == 0) hidden @endif">
                                     <img src="{{ asset('png/6a.png') }}"
                                         class="absolute imap6 @if (Auth::user()->map6 == 0) hidden @endif">
-                                    <img src="{{ asset('png/8a.png') }}"
-                                        class="absolute imap8 @if (Auth::user()->map8 == 0) hidden @endif">
-                                    <img src="{{ asset('png/9a.png') }}"
-                                        class="absolute imap9 @if (Auth::user()->map9 == 0) hidden @endif">
-                                    <img src="{{ asset('png/10a.png') }}"
-                                        class="absolute imap10 @if (Auth::user()->map10 == 0) hidden @endif">
                                     <img src="{{ asset('png/11a.png') }}"
                                         class="absolute imap11 @if (Auth::user()->map11 == 0) hidden @endif">
                                     <img src="{{ asset('png/15a.png') }}"

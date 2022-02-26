@@ -62,7 +62,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy1"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -83,7 +84,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy2"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -104,7 +106,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy3"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -125,7 +128,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy4"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -146,7 +150,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy5"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -167,7 +172,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy6"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -188,7 +194,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy7"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -209,7 +216,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy8"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -230,7 +238,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy9"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -251,7 +260,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-easy10"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -272,7 +282,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-medium1"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -293,7 +304,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-medium2"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -314,7 +326,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-medium3"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -335,7 +348,8 @@
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-medium4"
+                                                class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -352,11 +366,14 @@
                                     @if ($user->medium5 != null)
                                         @if ($user->medium5_c == 0)
                                             <a data-toggle="modal" data-target="#modal-medium5"
-                                                class="btn btn-sm btn-secondary mx-2"><span class="fas fa-fw fa-eye"></span>
+                                                class="btn btn-sm btn-secondary mx-2"><span
+                                                    class="fas fa-fw fa-eye"></span>
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-medium5"
+                                                class="btn btn-sm btn-success mx-2"><span
+                                                    class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -373,11 +390,14 @@
                                     @if ($user->medium6 != null)
                                         @if ($user->medium6_c == 0)
                                             <a data-toggle="modal" data-target="#modal-medium6"
-                                                class="btn btn-sm btn-secondary mx-2"><span class="fas fa-fw fa-eye"></span>
+                                                class="btn btn-sm btn-secondary mx-2"><span
+                                                    class="fas fa-fw fa-eye"></span>
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-medium6"
+                                                class="btn btn-sm btn-success mx-2"><span
+                                                    class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif
@@ -394,11 +414,14 @@
                                     @if ($user->hard1 != null)
                                         @if ($user->hard1_c == 0)
                                             <a data-toggle="modal" data-target="#modal-hard1"
-                                                class="btn btn-sm btn-secondary mx-2"><span class="fas fa-fw fa-eye"></span>
+                                                class="btn btn-sm btn-secondary mx-2"><span
+                                                    class="fas fa-fw fa-eye"></span>
                                                 Check
                                             </a>
                                         @else
-                                            <a class="btn btn-sm btn-success mx-2"><span class="fas fa-fw fa-check"></span>
+                                            <a data-toggle="modal" data-target="#modal-hard1"
+                                                class="btn btn-sm btn-success mx-2"><span
+                                                    class="fas fa-fw fa-check"></span>
                                                 Checked
                                             </a>
                                         @endif

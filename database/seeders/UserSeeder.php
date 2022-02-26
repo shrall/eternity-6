@@ -609,7 +609,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make(05012006);
+        $user->password = Hash::make('05012006');
         $user->save();
 
         $user = new User();
