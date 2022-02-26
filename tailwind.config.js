@@ -188,11 +188,16 @@ module.exports = {
                 "medium-parfume": "url('/svg/medium-parfumee.svg')",
                 "medium-parfume-hover": "url('/svg/medium-parfumee-hover.svg')",
                 "medium-shelf-closed": "url('/svg/medium-shelf-closed.svg')",
-                "medium-shelf-closed-hover": "url('/svg/medium-shelf-closed-hover.svg')",
-                "medium-shelf-open-left": "url('/svg/medium-shelf-open-left.svg')",
-                "medium-shelf-open-left-hover": "url('/svg/medium-shelf-open-left-hover.svg')",
-                "medium-shelf-open-right": "url('/svg/medium-shelf-open-right.svg')",
-                "medium-shelf-open-right-hover": "url('/svg/medium-shelf-open-right-hover.svg')",
+                "medium-shelf-closed-hover":
+                    "url('/svg/medium-shelf-closed-hover.svg')",
+                "medium-shelf-open-left":
+                    "url('/svg/medium-shelf-open-left.svg')",
+                "medium-shelf-open-left-hover":
+                    "url('/svg/medium-shelf-open-left-hover.svg')",
+                "medium-shelf-open-right":
+                    "url('/svg/medium-shelf-open-right.svg')",
+                "medium-shelf-open-right-hover":
+                    "url('/svg/medium-shelf-open-right-hover.svg')",
 
                 "dice-1": "url('/svg/dice-1.svg')",
                 "dice-2": "url('/svg/dice-2.svg')",
@@ -200,11 +205,27 @@ module.exports = {
                 "dice-4": "url('/svg/dice-4.svg')",
                 "dice-5": "url('/svg/dice-5.svg')",
                 "dice-6": "url('/svg/dice-6.svg')",
-                "magnet": "url('/svg/magnet.svg')",
-                "teleport": "url('/svg/teleport.svg')",
-                "freepass": "url('/svg/freepass.svg')",
-                "timestwo": "url('/svg/timestwo.svg')",
-                "pion": "url('/png/orang.png')",
+                magnet: "url('/svg/magnet.svg')",
+                teleport: "url('/svg/teleport.svg')",
+                freepass: "url('/svg/freepass.svg')",
+                timestwo: "url('/svg/timestwo.svg')",
+                pion: "url('/png/orang.png')",
+
+                tembok: "url('/svg/bg-tembok.svg')",
+
+                "pic-faraday": "url('/svg/pic-faraday.svg')",
+                "pic-edison": "url('/svg/pic-edison.svg')",
+                "pic-grahambell": "url('/svg/pic-grahambell.svg')",
+                "pic-watt": "url('/svg/pic-watt.svg')",
+
+                "michael-faraday": "url('/svg/michael-faraday.svg')",
+                "thomas-edison": "url('/svg/thomas-edison.svg')",
+                "alexander-grahambell": "url('/svg/alexander-grahambell.svg')",
+                "james-watt": "url('/svg/james-watt.svg')",
+
+                safe: "url('/svg/safe.svg')",
+                click: "url('/svg/click.svg')",
+                fingerprint: "url('/svg/fingerprint.svg')",
             },
             colors: {
                 "eternity-6-blue": "#2484C6",

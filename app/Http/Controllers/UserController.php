@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Log;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -772,11 +773,83 @@ class UserController extends Controller
         return redirect()->route('escape_index')->with('Message', 'Purchase Successful');
     }
 
-    public function move_pos(Request $request){
+    public function move_pos(Request $request)
+    {
         $user = User::where('id', Auth::id())->first();
         $user->update([
             'x' => $request->x,
             'y' => $request->y
         ]);
+    }
+    public function use_item(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        if ($user[$request->item] >= 0) {
+            $user->update([
+                $request->item => $user[$request->item] - 1
+            ]);
+        }
+        return $user[$request->item];
+    }
+    public function freepass(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        $user->update([
+            'chl1' => 1
+        ]);
+    }
+    public function safe(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        if ($request->answer == '7684') {
+            $user->update([
+                'safe' => 1
+            ]);
+        }
+        return $user->safe;
+    }
+    public function slide(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        $user->update([
+            'slide' => 1
+        ]);
+        return $user->slide;
+    }
+    public function circuit(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        $user->update([
+            'circuit' => 1
+        ]);
+        return $user->slide;
+    }
+    public function click(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        if ($user->safe == 1 && $user->slide == 1 && $user->circuit == 1) {
+            $user->update([
+                'chl3' => 1
+            ]);
+        }
+        return $user->chl3;
+    }
+    public function finish(Request $request)
+    {
+        $user = User::where('id', $request->id)->first();
+        $rank = 1;
+        if ($user->chl1 == 1 && $user->chl2 == 1 && $user->chl3 == 1 && $user->map == 20) {
+            $users = User::where('escape', 1)->where('role', 0)->where('id', '!=', $request->id)->get();
+            foreach ($users as $key => $usere) {
+                if ($usere->finish != 0) {
+                    $rank += 1;
+                }
+            }
+            $user->update([
+                'finish_timestamp' => Carbon::now(),
+                'finish' => $rank
+            ]);
+        }
+        return $user->finish;
     }
 }

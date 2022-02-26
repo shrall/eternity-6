@@ -34,6 +34,157 @@
                 <div id="game-hud">
                     <div id="hud-foreground">
                         @yield('puzzles')
+                        <div id="challenge"
+                            class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden"
+                            style="width: 1000px; height: 600px;">
+                            <div class="flex items-center justify-center mb-8 mt-24">
+                                <img src="{{ asset('png/qr-challenge-1.png') }}" id="qr-challenge-1"
+                                    class="hidden">
+                                <img src="{{ asset('png/qr-challenge-2.png') }}" id="qr-challenge-2"
+                                    class="hidden">
+                            </div>
+                            <div class="flex items-center justify-center mb-8">
+                                <div class="text-3xl text-center">Scan This QR.</div>
+                            </div>
+                        </div>
+                        <div id="challenge-3"
+                            class="absolute inset-x-0 mx-auto bg-tembok border-2 border-eternity-6-gray top-0 hidden p-4"
+                            style="width: 1000px; height: 600px;">
+                            <div class="flex items-center gap-x-2 absolute" style="width: 475px;height:162px;">
+                                <div
+                                    class="bg-eternity-6-brown border border-eternity-6-gray flex flex-col gap-y-2 p-2 w-28">
+                                    <img src="{{ asset('svg/pic-edison.svg') }}" class="w-auto h-16">
+                                    <div class="text-xs text-center">Thomas Alva Edison</div>
+                                    <div class="text-xs text-center">1847-1931</div>
+                                </div>
+                                <div
+                                    class="bg-eternity-6-brown border border-eternity-6-gray flex flex-col gap-y-2 p-2 w-28">
+                                    <img src="{{ asset('svg/pic-grahambell.svg') }}" class="w-auto h-16">
+                                    <div class="text-xs text-center">Alexander Graham Bell</div>
+                                    <div class="text-xs text-center">1847-1922</div>
+                                </div>
+                                <div
+                                    class="bg-eternity-6-brown border border-eternity-6-gray flex flex-col gap-y-2 p-2 w-28">
+                                    <img src="{{ asset('svg/pic-watt.svg') }}" class="w-auto h-16">
+                                    <div class="text-xs text-center">James Watt<br><br> </div>
+                                    <div class="text-xs text-center">1736-1819</div>
+                                </div>
+                                <div
+                                    class="bg-eternity-6-brown border border-eternity-6-gray flex flex-col gap-y-2 p-2 w-28">
+                                    <img src="{{ asset('svg/pic-faraday.svg') }}" class="w-auto h-16">
+                                    <div class="text-xs text-center">Michael Faraday<br><br> </div>
+                                    <div class="text-xs text-center">1791-1867</div>
+                                </div>
+                            </div>
+                            <div class="absolute bg-safe bg-no-repeat bg-cover"
+                                style="width: 475px; height:350px; top:250px;">
+                                <input type="number" name="safe1 safe-input" id="safe1"
+                                    class="rounded-xl absolute text-center text-lg text-black" readonly
+                                    style="width: 65px; left: 76px; top:71px; background-color:#f1f1f1;">
+                                <input type="number" name="safe2 safe-input" id="safe2"
+                                    class="rounded-xl absolute text-center text-lg text-black" readonly
+                                    style="width: 65px; left:160px; top:71px; background-color:#f1f1f1;">
+                                <input type="number" name="safe3 safe-input" id="safe3"
+                                    class="rounded-xl absolute text-center text-lg text-black" readonly
+                                    style="width: 65px; left:244px; top:71px; background-color:#f1f1f1;">
+                                <input type="number" name="safe4 safe-input" id="safe4"
+                                    class="rounded-xl absolute text-center text-lg text-black" readonly
+                                    style="width: 65px; left:328px; top:71px; background-color:#f1f1f1;">
+                                <img src="{{ asset('svg/fingerprint.svg') }}" onclick="clickFingerprint();"
+                                    class="absolute w-16 h-24 hover:opacity-80 cursor-pointer"
+                                    style="top: 200px; left:68px;">
+                                <img src="{{ asset('svg/1.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(1)"
+                                    style="top:125px; right:220px;">
+                                <img src="{{ asset('svg/2.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(2)"
+                                    style="top:125px; right:160px;">
+                                <img src="{{ asset('svg/3.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(3)"
+                                    style="top:125px; right:100px;">
+                                <img src="{{ asset('svg/4.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(4)"
+                                    style="top:185px; right:220px;">
+                                <img src="{{ asset('svg/5.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(5)"
+                                    style="top:185px; right:160px;">
+                                <img src="{{ asset('svg/6.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(6)"
+                                    style="top:185px; right:100px;">
+                                <img src="{{ asset('svg/7.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(7)"
+                                    style="top:245px; right:220px;">
+                                <img src="{{ asset('svg/8.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(8)"
+                                    style="top:245px; right:160px;">
+                                <img src="{{ asset('svg/9.svg') }}"
+                                    class="absolute w-12 h-12 hover:opacity-80 cursor-pointer" onclick="clickSafe(9)"
+                                    style="top:245px; right:100px;">
+                            </div>
+                            <div class="absolute bg-eternity-6-brown border border-eternity-6-gray right-0"
+                                style="width: 220px; height:295px; right:50px;">
+                                <img src="{{ asset('png/puzzle-piece-3.png') }}" style="width: 70px; height:70px;"
+                                    id="piece-3" class="absolute cursor-pointer hover:opacity-90"
+                                    onclick="movePiece('3');">
+                                <img src="{{ asset('png/puzzle-piece-6.png') }}"
+                                    style="width: 70px; height:70px; left:72.5px;" id="piece-6"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('6');">
+                                <img src="{{ asset('png/puzzle-piece-2.png') }}"
+                                    style="width: 70px; height:70px; left: 145px;" id="piece-2"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('2');">
+                                <img src="{{ asset('png/puzzle-piece-11.png') }}"
+                                    style="width: 70px; height:70px; top: 72.5px;" id="piece-11"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('11');">
+                                <img src="{{ asset('png/puzzle-piece-1.png') }}"
+                                    style="width: 70px; height:70px; left: 72.5px; top: 72.5px;" id="piece-1"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('1');">
+                                <img src="{{ asset('png/puzzle-piece-4.png') }}"
+                                    style="width: 70px; height:70px; left: 145px; top: 72.5px;" id="piece-4"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('4');">
+                                <img src="{{ asset('png/puzzle-piece-5.png') }}"
+                                    style="width: 70px; height:70px; top: 145px;" id="piece-5"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('5');">
+                                <img src="{{ asset('png/puzzle-piece-9.png') }}"
+                                    style="width: 70px; height:70px; left: 72.5px; top: 145px;" id="piece-9"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('9');">
+                                <img src="{{ asset('png/puzzle-piece-8.png') }}"
+                                    style="width: 70px; height:70px; left: 145px; top: 145px;" id="piece-8"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('8');">
+                                <img src="{{ asset('png/puzzle-piece-10.png') }}"
+                                    style="width: 70px; height:70px; top: 217.5px;" id="piece-10"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('10');">
+                                <img src="{{ asset('png/puzzle-piece-7.png') }}"
+                                    style="width: 70px; height:70px; left: 72.5px; top: 217.5px;" id="piece-7"
+                                    class="absolute cursor-pointer hover:opacity-90" onclick="movePiece('7');">
+                                <img src="{{ asset('png/puzzle-piece-12.png') }}" id="piece-12"
+                                    style="width: 70px; height:70px; left: 145px; top: 217.5px;"
+                                    class="absolute cursor-pointer hover:opacity-90 hidden">
+                            </div>
+                            <div class="absolute bg-eternity-6-brown border border-eternity-6-gray rounded-xl"
+                                style="width: 420px; height:205px; right:50px; top:360px;">
+                                <img src="{{ asset('svg/hijau.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="0hijau" onclick="circuit(0, 'hijau')" style="left: 20px; top:15px;">
+                                <img src="{{ asset('svg/ungu.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="0ungu" onclick="circuit(0, 'ungu')" style="left: 20px; top:55px;">
+                                <img src="{{ asset('svg/pink.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="0pink" onclick="circuit(0, 'pink')" style="left: 20px; top:95px;">
+                                <img src="{{ asset('svg/kuning.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="0kuning" onclick="circuit(0, 'kuning')" style="left: 20px; top:135px;">
+
+                                <img src="{{ asset('svg/pink.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="1pink" onclick="circuit(1, 'pink')" style="right: 20px; top:15px;">
+                                <img src="{{ asset('svg/kuning.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="1kuning" onclick="circuit(1, 'kuning')" style="right: 20px; top:55px;">
+                                <img src="{{ asset('svg/hijau.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="1hijau" onclick="circuit(1, 'hijau')" style="right: 20px; top:95px;">
+                                <img src="{{ asset('svg/ungu.svg') }}" class="absolute w-12 h-12 hover:opacity-70"
+                                    id="1ungu" onclick="circuit(1, 'ungu')" style="right: 20px; top:135px;">
+                            </div>
+                            <img onclick="click3();" src="{{ asset('svg/click.svg') }}"
+                                style="top: 200px; left:500px;"
+                                class="absolute w-32 h-32 hover:opacity-80 cursor-pointer">
+                            <div class="absolute hidden opacity-50"></div>
+                        </div>
                         <div id="question"
                             class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden"
                             style="width: 1000px; height: 600px;">
@@ -376,14 +527,14 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex flex-col items-center justify-center p-2"
+                        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif flex-col items-center justify-center p-2"
                             style="width: 150px; height:70px; bottom:0; left:0;">
                             <span class="text-lg">Eternites</span>
                             <span class="text-lg">
                                 <span id="user-eternites">{{ Auth::user()->eternite2 }}</span>
                             </span>
                         </div>
-                        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray flex flex-col items-center justify-center p-2"
+                        <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif flex-col items-center justify-center p-2"
                             style="width: 100px; height:70px; top:0; right:0;">
                             <span class="text-lg">Round</span>
                             <span class="text-lg">
@@ -400,10 +551,88 @@
                                 </span>
                             </div>
                         @else
-                            <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray flex items-center justify-center gap-x-4"
+                            <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif items-center justify-center gap-x-4"
                                 style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#item');">
                                 <span class="text-lg">Shop
                                 </span>
+                            </div>
+                            <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif flex-col items-center py-2 gap-y-2 overflow-y-scroll"
+                                style="width: 100px; height:450px; top:0; left:0;">
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/dice-1.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Dice 1</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-dice1">{{ Auth::user()->dice1 }}</span></div>
+                                    <div class="hover-button" onclick="useItem('dice1')" style="padding: 0.5rem;">Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/dice-2.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Dice 2</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-dice2">{{ Auth::user()->dice2 }}</span></div>
+                                    <div class="hover-button" onclick="useItem('dice2')" style="padding: 0.5rem;">Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/dice-3.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Dice 3</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-dice3">{{ Auth::user()->dice3 }}</span></div>
+                                    <div class="hover-button" onclick="useItem('dice3')" style="padding: 0.5rem;">Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/dice-4.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Dice 4</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-dice4">{{ Auth::user()->dice4 }}</span></div>
+                                    <div class="hover-button" onclick="useItem('dice4')" style="padding: 0.5rem;">Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/dice-5.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Dice 5</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-dice5">{{ Auth::user()->dice5 }}</span></div>
+                                    <div class="hover-button" onclick="useItem('dice5')" style="padding: 0.5rem;">Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/dice-6.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Dice 6</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-dice6">{{ Auth::user()->dice6 }}</span></div>
+                                    <div class="hover-button" onclick="useItem('dice6')" style="padding: 0.5rem;">Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/freepass.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Freepass</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-freepass">{{ Auth::user()->freepass }}</span></div>
+                                    <div class="hover-button" onclick="useItem('freepass')" style="padding: 0.5rem;">
+                                        Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/teleport.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Teleport</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-teleport">{{ Auth::user()->teleport }}</span></div>
+                                    <div class="hover-button" onclick="useItem('teleport')" style="padding: 0.5rem;">
+                                        Use
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/timestwo.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">X2</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-timestwo">{{ Auth::user()->timestwo }}</span></div>
+                                    <div class="hover-button" onclick="useItem('timestwo')" style="padding: 0.5rem;">
+                                        Use
+                                    </div>
+                                </div>
                             </div>
                         @endif
                     </div>
@@ -440,6 +669,8 @@
             $('#inventory').removeClass('block').addClass('hidden');
             $('#item').removeClass('block').addClass('hidden');
             $('#question').removeClass('block').addClass('hidden');
+            $('#challenge').removeClass('block').addClass('hidden');
+            $('#challenge-3').removeClass('block').addClass('hidden');
             $('.puzzle').removeClass('block').addClass('hidden');
         }
 
@@ -499,6 +730,87 @@
                 $('#map-count').html(result);
             });
         }
+        var dice1 = @json(Auth::user()->dice1);
+        var dice2 = @json(Auth::user()->dice2);
+        var dice3 = @json(Auth::user()->dice3);
+        var dice4 = @json(Auth::user()->dice4);
+        var dice5 = @json(Auth::user()->dice5);
+        var dice6 = @json(Auth::user()->dice6);
+        var freepass = @json(Auth::user()->freepass);
+        var teleport = @json(Auth::user()->teleport);
+        var timestwo = @json(Auth::user()->timestwo);
+        var magnet = @json(Auth::user()->magnet);
+        var item_y = 0;
+
+        function useItem(item) {
+            if (!timestwo) {
+                if (diceRes != 0 && diceTimer != 0) {
+                    openModal('warning');
+                    $('#warning-message').html('Select A Tile To Move First.')
+                } else if (parseInt($('#qty-' + item).html()) <= 0) {
+                    openModal('warning');
+                    $('#warning-message').html("You don't have the item.")
+                } else {
+                    $.post('{{ config('app.url') }}' + "/escape/use-item", {
+                        _token: CSRF_TOKEN,
+                        item: item,
+                        id: {{ Auth::id() }}
+                    }).done(function(result) {
+                        if (item == 'dice1' || item == 'dice2' || item == 'dice3' || item == 'dice4' || item ==
+                            'dice5' || item == 'dice6') {
+                            getMovement(parseInt(item[4]));
+                            $('#dice-info').html(null);
+                            diceTimer = 20;
+                            diceRes = parseInt(item[4]);
+                        } else if (item == 'teleport') {
+                            if (chl1 == 0) {
+                                item_y = '09'
+                            } else if (chl2 == 0) {
+                                item_y = '17'
+                            } else if (chl3 == 0) {
+                                item_y = '24'
+                            } else {
+                                item_y = '30'
+                            }
+                            $.post('{{ config('app.url') }}' + "/escape/move-pos", {
+                                    _token: CSRF_TOKEN,
+                                    x: player_x_id,
+                                    y: item_y
+                                })
+                                .done(function(data) {})
+                                .fail(function(e) {
+                                    console.log(e);
+                                });
+                            player_y_id = item_y;
+                            $('#user-position').css('top', $('#' + player_x_id + '-' + player_y_id).css('top'))
+                            $('#user-position').css('left', $('#' + player_x_id + '-' + player_y_id).css('left'))
+                        } else if (item == 'magnet') {
+
+                        } else if (item ==
+                            'freepass') {
+                            $.post('{{ config('app.url') }}' + "/escape/freepass", {
+                                _token: CSRF_TOKEN,
+                                id: {{ Auth::id() }}
+                            }).done(function(result) {
+                                chl1 = 1;
+                                $('#border-chl1').addClass('hidden');
+                            });
+                        } else if (item == 'timestwo') {
+                            timestwo = true;
+                            $('#dice-info').html(null);
+                            $('#dice-info').removeClass('bg-dice-1').removeClass('bg-dice-2').removeClass(
+                                    'bg-dice-3')
+                                .removeClass('bg-dice-4').removeClass('bg-dice-5').removeClass('bg-dice-6');
+                            $('#dice-info').addClass('bg-timestwo')
+                        }
+                        $('#qty-' + item).html(result);
+                    });
+                }
+            } else {
+                openModal('warning');
+                $('#warning-message').html("Please use your X2 first.")
+            }
+        }
     </script>
     <script>
         function openModal(type) {
@@ -507,6 +819,154 @@
 
         function closeModal() {
             $('.modal').removeClass('flex').addClass('hidden');
+        }
+    </script>
+    <script>
+        var safe = '0';
+        var safe_counter = @json(Auth::user()->safe);
+        var slide_counter = @json(Auth::user()->slide);
+        var circuit_counter = @json(Auth::user()->circuit);
+
+        function clickSafe(number) {
+            if (safe_counter == 0) {
+                if ($('#safe1').val() == '') {
+                    $('#safe1').val(number)
+                } else if ($('#safe2').val() == '') {
+                    $('#safe2').val(number)
+                } else if ($('#safe3').val() == '') {
+                    $('#safe3').val(number)
+                } else if ($('#safe4').val() == '') {
+                    $('#safe4').val(number)
+                } else {
+                    $('#safe1').val(null);
+                    $('#safe2').val(null);
+                    $('#safe3').val(null);
+                    $('#safe4').val(null);
+                    $('#safe1').val(number)
+                }
+            }
+        }
+
+        function clickFingerprint() {
+            safe = $('#safe1').val() + $('#safe2').val() + $('#safe3').val() + $('#safe4').val()
+            $.post('{{ config('app.url') }}' + "/escape/safe", {
+                _token: CSRF_TOKEN,
+                answer: safe,
+                id: {{ Auth::id() }}
+            }).done(function(result) {
+                console.log(result);
+                if (result == 0) {
+                    $('#safe1').val(null);
+                    $('#safe2').val(null);
+                    $('#safe3').val(null);
+                    $('#safe4').val(null);
+                } else {
+                    safe_counter = result
+                }
+            });
+        }
+        var puzzle = [
+            '3', '6', '2',
+            '11', '1', '4',
+            '5', '9', '8',
+            '10', '7', '0'
+        ]
+
+        function movePiece(number) {
+            if (slide_counter == 0) {
+                let sel_piece = parseInt(puzzle.indexOf(number));
+                let e_location = parseInt(puzzle.indexOf('0'));
+                let templeft = $('#piece-' + number).css('left');
+                let temptop = $('#piece-' + number).css('top');
+                if (e_location == (sel_piece - 1) || e_location == (sel_piece + 1) ||
+                    e_location == (sel_piece - 3) || e_location == (sel_piece + 3)) {
+                    puzzle[sel_piece] = '0'
+                    puzzle[e_location] = number
+                    $('#piece-' + number).css('left', $('#piece-12').css('left'));
+                    $('#piece-' + number).css('top', $('#piece-12').css('top'));
+                    $('#piece-12').css('left', templeft);
+                    $('#piece-12').css('top', temptop);
+                }
+                if (arraysEqual(puzzle, ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '0'])) {
+                    $('#piece-12').removeClass('hidden').addClass('block');
+                    $.post('{{ config('app.url') }}' + "/escape/slide", {
+                        _token: CSRF_TOKEN,
+                        id: {{ Auth::id() }}
+                    }).done(function(result) {
+                        slide_counter = 1;
+                    });
+                }
+            }
+
+            function arraysEqual(a, b) {
+                if (a === b) return true;
+                if (a == null || b == null) return false;
+                if (a.length !== b.length) return false;
+
+                for (var i = 0; i < a.length; ++i) {
+                    if (a[i] !== b[i]) return false;
+                }
+                return true;
+            }
+        }
+        var firstc = '';
+        var secondc = '';
+        var firstp = 0;
+        var secondp = 0;
+        var kuning = false;
+        var hijau = false;
+        var pink = false;
+        var ungu = false;
+
+        function circuit(pos, color) {
+            $('#' + pos + color).addClass('opacity-50');
+            if (firstc == '') {
+                firstc = color
+                firstp = pos
+            } else {
+                secondc = color;
+                secondp = pos;
+                if (firstc == secondc && firstp != secondp) {
+                    if (color == 'kuning') {
+                        kuning = true;
+                    } else if (color == 'hijau') {
+                        hijau = true;
+                    } else if (color == 'pink') {
+                        pink = true;
+                    } else if (color == 'ungu') {
+                        ungu = true;
+                    }
+                } else {
+                    $('#' + firstp + firstc).removeClass('opacity-50');
+                    $('#' + secondp + secondc).removeClass('opacity-50');
+                }
+                firstc = ''
+                secondc = ''
+            }
+            if (kuning && hijau && pink && ungu) {
+                $.post('{{ config('app.url') }}' + "/escape/circuit", {
+                    _token: CSRF_TOKEN,
+                    id: {{ Auth::id() }}
+                }).done(function(result) {
+                    circuit_counter = 1;
+                });
+            }
+        }
+
+        function click3() {
+            $.post('{{ config('app.url') }}' + "/escape/click", {
+                _token: CSRF_TOKEN,
+                id: {{ Auth::id() }}
+            }).done(function(result) {
+                if (result == 0) {
+                    openModal('warning');
+                    $('#warning-message').html("You Haven't Finished All The Puzzles.")
+                } else {
+                    chl3 = 1;
+                    $('#border-chl3').addClass('hidden');
+                    closeHUD();
+                }
+            });
         }
     </script>
     <script>

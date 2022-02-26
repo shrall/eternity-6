@@ -494,6 +494,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-40{
   margin-top: 10rem;
 }
+.mt-24{
+  margin-top: 6rem;
+}
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -554,11 +557,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-16{
   height: 4rem;
 }
-.h-12{
-  height: 3rem;
-}
 .h-24{
   height: 6rem;
+}
+.h-12{
+  height: 3rem;
 }
 .h-vh-50{
   height: 50vh;
@@ -602,6 +605,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-vh-10{
   height: 10vh;
 }
+.h-8{
+  height: 2rem;
+}
 .w-96{
   width: 24rem;
 }
@@ -629,6 +635,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full{
   width: 100%;
 }
+.w-28{
+  width: 7rem;
+}
+.w-auto{
+  width: auto;
+}
 .w-16{
   width: 4rem;
 }
@@ -649,6 +661,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-3\/10{
   width: 30%;
+}
+.w-8{
+  width: 2rem;
+}
+.w-24{
+  width: 6rem;
 }
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
@@ -833,6 +851,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .overflow-y-scroll{
   overflow-y: scroll;
 }
+.rounded-xl{
+  border-radius: 0.75rem;
+}
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -889,8 +910,35 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-e-grid-black{
   background-image: url('/svg/background.svg');
 }
+.bg-tembok{
+  background-image: url('/svg/bg-tembok.svg');
+}
+.bg-safe{
+  background-image: url('/svg/safe.svg');
+}
 .bg-map-9b{
   background-image: url('/svg/9b.svg');
+}
+.bg-dice-1{
+  background-image: url('/svg/dice-1.svg');
+}
+.bg-dice-2{
+  background-image: url('/svg/dice-2.svg');
+}
+.bg-dice-3{
+  background-image: url('/svg/dice-3.svg');
+}
+.bg-dice-4{
+  background-image: url('/svg/dice-4.svg');
+}
+.bg-dice-5{
+  background-image: url('/svg/dice-5.svg');
+}
+.bg-dice-6{
+  background-image: url('/svg/dice-6.svg');
+}
+.bg-timestwo{
+  background-image: url('/svg/timestwo.svg');
 }
 .bg-e-flower{
   background-image: url('/svg/e-flower.svg');
@@ -913,11 +961,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-map-15b{
   background-image: url('/svg/15b.svg');
 }
-.bg-map-14b{
-  background-image: url('/svg/14b.svg');
-}
 .bg-map-13b{
   background-image: url('/svg/13b.svg');
+}
+.bg-map-14b{
+  background-image: url('/svg/14b.svg');
 }
 .bg-map-12b{
   background-image: url('/svg/12b.svg');
@@ -955,26 +1003,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-map-1a{
   background-image: url('/svg/1a.svg');
 }
-.bg-lb-rt-dashboard-frame{
-  background-image: url('/svg/lb-rt-frame.svg');
-}
-.bg-dice-1{
-  background-image: url('/svg/dice-1.svg');
-}
-.bg-dice-6{
-  background-image: url('/svg/dice-6.svg');
-}
-.bg-dice-2{
-  background-image: url('/svg/dice-2.svg');
-}
-.bg-dice-3{
-  background-image: url('/svg/dice-3.svg');
-}
-.bg-dice-4{
-  background-image: url('/svg/dice-4.svg');
-}
-.bg-dice-5{
-  background-image: url('/svg/dice-5.svg');
+.bg-pion{
+  background-image: url('/png/orang.png');
 }
 .bg-starting-point{
   background-image: url('/svg/starting-point.svg');
@@ -1174,6 +1204,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-lucky-draw-box{
   background-image: url('/svg/lucky-draw-box.svg');
 }
+.bg-lb-rt-dashboard-frame{
+  background-image: url('/svg/lb-rt-frame.svg');
+}
 .bg-lt-rb-long-frame{
   background-image: url('/svg/lt-rb-long-frame.svg');
 }
@@ -1185,9 +1218,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-market-right{
   background-image: url('/svg/market-right.svg');
-}
-.bg-pion{
-  background-image: url('/png/orang.png');
 }
 .bg-contain{
   background-size: contain;
@@ -1238,6 +1268,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1249,10 +1283,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -1343,6 +1373,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
 .font-bold{
   font-weight: 700;
 }
@@ -1360,6 +1398,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 .text-eternity-6-green{
   --tw-text-opacity: 1;
   color: rgb(29 185 84 / var(--tw-text-opacity));
@@ -1376,6 +1418,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .opacity-40{
   opacity: 0.4;
+}
+.opacity-50{
+  opacity: 0.5;
 }
 .shadow-sm{
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -1794,6 +1839,14 @@ input[type=number] {
 
 .hover\:opacity-75:hover{
   opacity: 0.75;
+}
+
+.hover\:opacity-90:hover{
+  opacity: 0.9;
+}
+
+.hover\:opacity-70:hover{
+  opacity: 0.7;
 }
 
 @keyframes pulse{

@@ -138,6 +138,8 @@ class CreateUsersTable extends Migration
             $table->integer('safe')->default(0);
             $table->integer('slide')->default(0);
             $table->integer('circuit')->default(0);
+            $table->integer('finish')->default(0);
+            $table->timestamp('finish_timestamp')->nullable();
             $table->timestamps();
         });
     }

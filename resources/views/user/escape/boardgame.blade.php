@@ -2,18 +2,28 @@
 
 @section('content')
     <div class="w-full h-full overflow-hidden bg-eternity-6-black" id="map-container">
-        <div class="dragged relative mt-16 mx-4" id="sea" style="transform: translate(-106.68px, -1052.11px);">
-            <div class="text-3xl text-center cursor-pointer hover:text-eternity-6-orange">FINISH</div>
+        <div id="last-screen"
+            class="w-full h-full @if (Auth::user()->finish == 0) hidden @else flex @endif flex-col items-center justify-center gap-4">
+            <img src="{{asset('svg/e-logo.svg')}}" class="w-48">
+            <div class="text-4xl">Congratulations!</div>
+            <div class="text-2xl">Your Rank : <span id="player-rank">{{ Auth::user()->finish }}</span></div>
+        </div>
+        <div class="dragged relative mt-16 mx-4 @if (Auth::user()->finish == 0) block @else hidden @endif" id="sea" style="transform: translate(-106.68px, -1052.11px);">
+            <div class="text-3xl text-center cursor-pointer hover:text-eternity-6-orange" onclick="openFinish();">FINISH
+            </div>
             @if (Auth::user()->chl3 == 0)
-                <hr class="absolute border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
+                <hr id="border-chl3" onclick="openChallenge(3);"
+                    class="absolute border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
                     style="top: 21rem; left: 9rem; width:72rem;">
             @endif
             @if (Auth::user()->chl2 == 0)
-                <hr class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
+                <hr id="border-chl2" onclick="openChallenge(2);"
+                    class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
                     style="top: 42rem;">
             @endif
             @if (Auth::user()->chl1 == 0)
-                <hr class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
+                <hr id="border-chl1" onclick="openChallenge(1);"
+                    class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
                     style="top: 66rem;">
             @endif
             <div class="board-block bg-eternity-6-brown" id="10-30" style="top:  3rem; left:27rem;"></div>
@@ -147,12 +157,10 @@
             <div class="board-block bg-eternity-6-brown" id="18-24" style="top: 21rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-24" style="top: 21rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-24" style="top: 21rem; left:57rem;"></div>
-            <div onclick="getMap('map14')"
-                class="board-block @if (Auth::user()->map14 == 0) bg-map-14b @else bg-eternity-6-brown @endif"
-                id="21-24" style="top: 21rem; left:60rem;"></div>
+            <div class="board-block bg-eternity-6-brown" id="21-24" style="top: 21rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-24" style="top: 21rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-24" style="top: 21rem; left:66rem;"></div>
-            <div class="board-block bg-e-flower" id="24-24" style="top: 21rem; left:69rem;"></div>
+            <div class="board-block bg-eternity-6-brown" id="24-24" style="top: 21rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="25-24" style="top: 21rem; left:72rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="26-24" style="top: 21rem; left:75rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="27-24" style="top: 21rem; left:78rem;"></div>
@@ -176,7 +184,9 @@
             <div class="board-block bg-eternity-6-brown" id="18-23" style="top: 24rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-23" style="top: 24rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-23" style="top: 24rem; left:57rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="21-23" style="top: 24rem; left:60rem;"></div>
+            <div onclick="getMap('map14')"
+                class="board-block @if (Auth::user()->map14 == 0) bg-map-14b @else bg-eternity-6-brown @endif"
+                id="21-23" style="top: 24rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-23" style="top: 24rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-23" style="top: 24rem; left:66rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="24-23" style="top: 24rem; left:69rem;"></div>
@@ -362,10 +372,8 @@
             <div class="board-block bg-eternity-6-brown" id="16-17" style="top: 42rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-17" style="top: 42rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-17" style="top: 42rem; left:51rem;"></div>
-            <div onclick="getMap('map6')"
-                class="board-block @if (Auth::user()->map6 == 0) bg-map-6a @else bg-eternity-6-brown @endif"
-                id="19-17" style="top: 42rem; left:54rem;"></div>
-            <div class="board-block bg-e-flower" id="20-17" style="top: 42rem; left:57rem;"></div>
+            <div class="board-block bg-eternity-6-brown" id="19-17" style="top: 42rem; left:54rem;"></div>
+            <div class="board-block bg-eternity-6-brown" id="20-17" style="top: 42rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-17" style="top: 42rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-17" style="top: 42rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-17" style="top: 42rem; left:66rem;"></div>
@@ -394,7 +402,9 @@
             <div class="board-block bg-eternity-6-brown" id="16-16" style="top: 45rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-16" style="top: 45rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-16" style="top: 45rem; left:51rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="19-16" style="top: 45rem; left:54rem;"></div>
+            <div onclick="getMap('map6')"
+                class="board-block @if (Auth::user()->map6 == 0) bg-map-6a @else bg-eternity-6-brown @endif"
+                id="19-16" style="top: 45rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-16" style="top: 45rem; left:57rem;"></div>
             <div class="board-block bg-e-flower" id="21-16" style="top: 45rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-16" style="top: 45rem; left:63rem;"></div>
@@ -605,7 +615,7 @@
             <div class="board-block bg-eternity-6-brown" id="12-09" style="top: 66rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-09" style="top: 66rem; left:36rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="14-09" style="top: 66rem; left:39rem;"></div>
-            <div class="board-block bg-e-flower" id="15-09" style="top: 66rem; left:42rem;"></div>
+            <div class="board-block bg-eternity-6-brown" id="15-09" style="top: 66rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-09" style="top: 66rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-09" style="top: 66rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-09" style="top: 66rem; left:51rem;"></div>
@@ -615,7 +625,7 @@
             <div class="board-block bg-eternity-6-brown" id="22-09" style="top: 66rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-09" style="top: 66rem; left:66rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="24-09" style="top: 66rem; left:69rem;"></div>
-            <div class="board-block bg-e-flower" id="25-09" style="top: 66rem; left:72rem;"></div>
+            <div class="board-block bg-eternity-6-brown" id="25-09" style="top: 66rem; left:72rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="26-09" style="top: 66rem; left:75rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="27-09" style="top: 66rem; left:78rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="28-09" style="top: 66rem; left:81rem;"></div>
@@ -776,18 +786,18 @@
             <div class="board-block bg-eternity-6-brown" id="19-01" style="top: 90rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-01" style="top: 90rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-01" style="top: 90rem; left:60rem;"></div>
-            <div id="user-position" class="absolute z-20 w-12 h-12 bg-pion bg-cover"
-                style="top: 90rem; left:42rem;">
+            <div id="user-position" class="absolute z-20 w-12 h-12 bg-pion bg-cover" style="top: 90rem; left:42rem;">
             </div>
             <div class="text-3xl text-center cursor-pointer" style="margin-top: 91rem;">START</div>
         </div>
         <div
-            class="absolute bottom-24 border border-eternity-6-gray bg-eternity-6-black mx-auto left-0 right-0 w-40 text-lg flex items-center justify-center">
+            class=" @if (Auth::user()->finish == 0) flex @else hidden @endif dice-things absolute bottom-24 border border-eternity-6-gray bg-eternity-6-black mx-auto left-0 right-0 w-40 text-lg items-center justify-center">
             Cooldown : <span id="dice-cooldown">0</span>
         </div>
         <div id="dice-button"
-            class="absolute bottom-0 border border-eternity-6-gray bg-eternity-6-black mx-auto left-0 right-0 w-32 h-24 text-xl flex items-center justify-center hover:text-eternity-6-orange cursor-pointer">
-            <span class="w-16 h-16 flex items-center justify-center text-center" id="dice-info" onclick="rollDice();">Roll
+            class="dice-things absolute bottom-0 border border-eternity-6-gray bg-eternity-6-black mx-auto left-0 right-0 w-32 h-24 text-xl @if (Auth::user()->finish == 0) flex @else hidden @endif items-center justify-center hover:text-eternity-6-orange cursor-pointer">
+            <span class="w-16 h-16 flex items-center justify-center text-center bg-no-repeat bg-center" id="dice-info"
+                onclick="rollDice();">Roll
                 Dice</span>
         </div>
     </div>
@@ -875,7 +885,7 @@
         var animCounter = 0;
 
         function diceAnimate() {
-            $('#dice-info').addClass('bg-dice-1').removeClass('bg-dice-6');
+            $('#dice-info').addClass('bg-dice-1').removeClass('bg-dice-6').removeClass('bg-timestwo');
             setTimeout(function() {
                 $('#dice-info').addClass('bg-dice-2').removeClass('bg-dice-1');
                 setTimeout(function() {
@@ -904,11 +914,16 @@
         }
 
         var diceRes = 0;
+        var timestwo = false;
 
         function getDice() {
             $('#dice-info').removeClass('bg-dice-1').removeClass('bg-dice-2').removeClass('bg-dice-3').removeClass(
                 'bg-dice-4').removeClass('bg-dice-5').removeClass('bg-dice-6');
+
             diceRes = Math.floor((Math.random() * 6) + 1)
+            if (timestwo) {
+                diceRes = diceRes * 2;
+            }
             getMovement(diceRes);
         }
 
@@ -917,7 +932,11 @@
         var chl3 = @json(Auth::user()->chl3);
 
         function getMovement(diceRoll) {
-            $('#dice-info').addClass('bg-dice-' + diceRoll)
+            if (timestwo) {
+                $('#dice-info').addClass('bg-dice-' + (diceRoll / 2))
+            } else {
+                $('#dice-info').addClass('bg-dice-' + (diceRoll))
+            }
             for (let index = 1; index <= diceRoll; index++) {
                 x_math_plus = (parseInt(player_x_id) + index);
                 if (x_math_plus < 10) {
@@ -992,9 +1011,7 @@
                         x: clicked_x,
                         y: clicked_y
                     })
-                    .done(function(data) {
-                        console.log(data)
-                    })
+                    .done(function(data) {})
                     .fail(function(e) {
                         console.log(e);
                     });
@@ -1004,14 +1021,11 @@
                 $('#user-position').css('left', $(this).css('left'))
                 resetDiceBoard();
                 diceRes = 0;
-            } else {
-                openModal('warning');
-                $('#warning-message').html("You Can't Move There.")
+                timestwo = false;
             }
         });
 
         function getMap(map) {
-            console.log($(event.target).hasClass('bg-eternity-6-orange'))
             if ($(event.target).hasClass('bg-eternity-6-orange')) {
                 addItem(map);
                 var tempstring = map[0] + map[1] + map[2] + "-" + map.substr(3, map.length)
@@ -1038,5 +1052,50 @@
     <script>
         $('#user-position').css('top', $('#' + player_x_id + '-' + player_y_id).css('top'))
         $('#user-position').css('left', $('#' + player_x_id + '-' + player_y_id).css('left'))
+    </script>
+    <script>
+        function openChallenge(number) {
+            if (number == 1 && player_y_id == '09') {
+                openHUD('#challenge');
+                $('#qr-challenge-1').addClass('block').removeClass('hidden');
+                $('#qr-challenge-2').addClass('hidden').removeClass('block');
+            } else if (number == 2 && player_y_id == '17') {
+                openHUD('#challenge');
+                $('#qr-challenge-1').addClass('hidden').removeClass('block');
+                $('#qr-challenge-2').addClass('block').removeClass('hidden');
+            } else if (number == 3 && player_y_id == '24') {
+                openHUD('#challenge-3');
+            } else {
+                openModal('warning');
+                $('#warning-message').html('You Need To Be In Front Of The Wall.')
+            }
+        }
+    </script>
+    <script>
+        function openFinish() {
+            if (player_y_id == '30') {
+                $.post('{{ config('app.url') }}' + "/escape/finish", {
+                    _token: CSRF_TOKEN,
+                    id: {{ Auth::id() }}
+                }).done(function(result) {
+                    console.log(result)
+                    if (result == 0) {
+                        openModal('warning');
+                        $('#warning-message').html("You Don't Have The Map.")
+                    } else {
+                        $('#sea').addClass('hidden');
+                        $('.dice-things').addClass('hidden');
+                        $('#last-screen').removeClass('hidden').addClass('flex')
+                        $('#player-rank').html(result)
+                    }
+                }).fail(function(e) {
+                    console.log(e)
+                });
+            } else {
+
+                openModal('warning');
+                $('#warning-message').html('You Are Not In Front Of The Finish line.')
+            }
+        }
     </script>
 @endsection

@@ -139,6 +139,8 @@ class User extends Authenticatable
         'safe',
         'slide',
         'circuit',
+        'finish',
+        'finish_timestamp'
     ];
 
     /**

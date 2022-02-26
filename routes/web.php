@@ -47,6 +47,13 @@ Route::group(['middleware' => ['player']], function () {
     Route::post('escape/submit-referral', [UserController::class, 'submit_referral'])->name('escape.submitreferral');
     Route::post('escape/buy-item', [UserController::class, 'escape_buy_item'])->name('escape.buyitem');
     Route::post('escape/move-pos', [UserController::class, 'move_pos'])->name('escape.movepos');
+    Route::post('escape/use-item', [UserController::class, 'use_item'])->name('escape.useitem');
+    Route::post('escape/freepass', [UserController::class, 'freepass'])->name('escape.freepass');
+    Route::post('escape/safe', [UserController::class, 'safe'])->name('escape.safe');
+    Route::post('escape/click', [UserController::class, 'click'])->name('escape.click');
+    Route::post('escape/slide', [UserController::class, 'slide'])->name('escape.slide');
+    Route::post('escape/circuit', [UserController::class, 'circuit'])->name('escape.circuit');
+    Route::post('escape/finish', [UserController::class, 'finish'])->name('escape.finish');
 });
 
 Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
