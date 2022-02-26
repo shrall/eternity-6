@@ -191,6 +191,9 @@
                             <div class="flex flex-col items-center justify-center" style="height: 600px;">
                                 <div class="flex items-center justify-center mb-8">
                                     <div class="text-3xl text-center" id="question-text"></div>
+                                    <img src="{{ asset('png/hard-1.png') }}" id="qr-hard-1" class="hidden">
+                                    <img src="{{ asset('png/hard-2.png') }}" id="qr-hard-2" class="hidden">
+                                    <img src="{{ asset('png/hard-3.png') }}" id="qr-hard-3" class="hidden">
                                 </div>
                                 <div class="grid grid-cols-4 gap-x-2 items-center justify-evenly mb-4"
                                     id="question-choices">
@@ -1069,9 +1072,9 @@
             'Sebutkan faktor-faktor penyebab kelangkaan!', 'Sebutkan hal-hal yang mempengaruhi penawaran!',
             'Diketahui negara Y memiliki data dalam satu tahun: sewa  Rp800.000, upah  Rp500.000, investasi Rp100.000, bunga Rp30.000, konsumsi Rp900.000, ekspor Rp20.000, impor Rp15.000, Belanja pemerintah Rp700.000, Besarnya pendapatan nasional negara Y dihitung dengan menggunakan pendekatan pengeluaran adalah'
         ];
-        hard['1'] = ['ga cukup jadi butuh link. saranku QR Code trus di scan gitu kykny bagus'];
-        hard['2'] = ['ga cukup jadi butuh link. saranku QR Code trus di scan gitu kykny bagus'];
-        hard['3'] = ['ga cukup jadi butuh link. saranku QR Code trus di scan gitu kykny bagus'];
+        hard['1'] = [''];
+        hard['2'] = [''];
+        hard['3'] = [''];
     </script>
     <script>
         var c_diff = '';
@@ -1106,8 +1109,9 @@
             }
             if (diff == 'hard') {
                 //ganti qr code seems gud
-                $('#question-text').html(questions[type][num - 1]);
+                $('#qr-hard-' + type).removeClass('hidden').addClass('block');
             } else {
+                $('#qr-hard-' + type).addClass('hidden').removeClass('block');
                 $('#question-text').html(questions[type][num - 1]);
             }
             openHUD('#question');

@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
         $user->email = 'user@eternity.com';
         $user->eternite1 = 20000;
         $user->password = Hash::make('wars1234');
-        $user->question_pack = 1;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->escape = 1;
         $user->easy = 1;
@@ -72,7 +72,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->question_pack = 2;
+        $user->question_pack = 1;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -94,7 +94,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -138,7 +138,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->question_pack = 2;
+        $user->question_pack = 1;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -160,7 +160,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->question_pack = 3;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -182,7 +182,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->question_pack = 1;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -226,7 +226,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->question_pack = 3;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -248,7 +248,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->question_pack = 3;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -270,7 +270,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->question_pack = 1;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -292,7 +292,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->question_pack = 2;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -337,7 +337,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->question_pack = 1;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -359,7 +359,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->question_pack = 2;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -381,7 +381,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -425,7 +425,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->question_pack = 2;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -447,7 +447,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -469,7 +469,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -491,7 +491,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->question_pack = 1;
+        $user->question_pack = 2;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -536,7 +536,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->question_pack = 3;
+        $user->question_pack = 2;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -558,7 +558,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->question_pack = 1;
+        $user->question_pack = 2;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -624,7 +624,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->question_pack = 1;
+        $user->question_pack = 3;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -646,7 +646,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->question_pack = 2;
+        $user->question_pack = 3;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -734,7 +734,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->question_pack = 2;
+        $user->question_pack = 1;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -756,7 +756,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 3;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -800,7 +800,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->question_pack = 2;
+        $user->question_pack = 1;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -822,7 +822,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->question_pack = 3;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -844,7 +844,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 7;
-        $user->question_pack = 1;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -888,7 +888,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->question_pack = 3;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -910,7 +910,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->question_pack = 3;
+        $user->question_pack = 2;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -932,7 +932,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 1;
-        $user->question_pack = 1;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -954,7 +954,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 2;
-        $user->question_pack = 2;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -999,7 +999,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 4;
-        $user->question_pack = 1;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -1021,7 +1021,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 5;
-        $user->question_pack = 2;
+        $user->question_pack = 3;
         $user->map_type = 1;
         $user->easy = 1;
         $user->medium = 1;
@@ -1043,7 +1043,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 6;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -1087,7 +1087,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 8;
-        $user->question_pack = 2;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -1109,7 +1109,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 9;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
@@ -1131,7 +1131,7 @@ class UserSeeder extends Seeder
         $user->wood = 100;
         $user->cloth = 100;
         $user->auction_q = 10;
-        $user->question_pack = 3;
+        $user->question_pack = 1;
         $user->map_type = 2;
         $user->easy = 1;
         $user->medium = 1;
