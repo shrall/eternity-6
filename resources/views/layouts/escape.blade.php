@@ -636,6 +636,15 @@
                                         Use
                                     </div>
                                 </div>
+                                <div class="flex flex-col items-center gap-y-1">
+                                    <img src="{{ asset('svg/magnet.svg') }}" class="w-12 h-12">
+                                    <div class="text-md">Magnet</div>
+                                    <div class="text-sm">Qty: <span
+                                            id="qty-magnet">{{ Auth::user()->magnet }}</span></div>
+                                    <div class="hover-button" onclick="useItem('magnet')" style="padding: 0.5rem;">
+                                        Use
+                                    </div>
+                                </div>
                             </div>
                         @endif
                     </div>
@@ -744,9 +753,11 @@
         var timestwo = @json(Auth::user()->timestwo);
         var magnet = @json(Auth::user()->magnet);
         var item_y = 0;
+        var timestwobool = false;
+        var magnetbool = false;
 
         function useItem(item) {
-            if (!timestwo) {
+            if (!timestwobool && !magnetbool) {
                 if (diceRes != 0 && diceTimer != 0) {
                     openModal('warning');
                     $('#warning-message').html('Select A Tile To Move First.')
@@ -788,7 +799,32 @@
                             $('#user-position').css('top', $('#' + player_x_id + '-' + player_y_id).css('top'))
                             $('#user-position').css('left', $('#' + player_x_id + '-' + player_y_id).css('left'))
                         } else if (item == 'magnet') {
+                            magnetbool = true;
+                            let magnet_x_first = player_x_id - 2;
+                            let magnet_x_last = player_x_id + 2;
+                            let magnet_y_first = player_y_id - 2;
+                            let magnet_y_last = player_y_id + 2;
 
+                            for (let j = 0; j < 5; j++) {
+                                for (let k = 0; k < 5; k++) {
+                                    let xtemp = ""
+                                    let ytemp = ""
+                                    if ((magnet_y_first + k) < 10) {
+                                        ytemp = '0' + (magnet_y_first + k)
+                                    } else {
+                                        ytemp = (magnet_y_first + k)
+                                    }
+                                    if ((magnet_x_first + j) < 10) {
+                                        xtemp = '0' + (magnet_x_first + j)
+                                    } else {
+                                        xtemp = (magnet_x_first + j)
+                                    }
+                                    console.log(xtemp + '-' + ytemp)
+                                    $('#' + xtemp.toString() + '-' + ytemp.toString())
+                                        .addClass('bg-eternity-6-blue')
+                                        .removeClass('bg-eternity-6-brown');
+                                }
+                            }
                         } else if (item ==
                             'freepass') {
                             $.post('{{ config('app.url') }}' + "/escape/freepass", {
@@ -799,7 +835,7 @@
                                 $('#border-chl1').addClass('hidden');
                             });
                         } else if (item == 'timestwo') {
-                            timestwo = true;
+                            timestwobool = true;
                             $('#dice-info').html(null);
                             $('#dice-info').removeClass('bg-dice-1').removeClass('bg-dice-2').removeClass(
                                     'bg-dice-3')
@@ -811,7 +847,7 @@
                 }
             } else {
                 openModal('warning');
-                $('#warning-message').html("Please use your X2 first.")
+                $('#warning-message').html("Please Use Your Current Item First.")
             }
         }
     </script>

@@ -4,11 +4,12 @@
     <div class="w-full h-full overflow-hidden bg-eternity-6-black" id="map-container">
         <div id="last-screen"
             class="w-full h-full @if (Auth::user()->finish == 0) hidden @else flex @endif flex-col items-center justify-center gap-4">
-            <img src="{{asset('svg/e-logo.svg')}}" class="w-48">
+            <img src="{{ asset('svg/e-logo.svg') }}" class="w-48">
             <div class="text-4xl">Congratulations!</div>
             <div class="text-2xl">Your Rank : <span id="player-rank">{{ Auth::user()->finish }}</span></div>
         </div>
-        <div class="dragged relative mt-16 mx-4 @if (Auth::user()->finish == 0) block @else hidden @endif" id="sea" style="transform: translate(-106.68px, -1052.11px);">
+        <div class="dragged relative mt-16 mx-4 @if (Auth::user()->finish == 0) block @else hidden @endif" id="sea"
+            style="transform: translate(-106.68px, -1052.11px);">
             <div class="text-3xl text-center cursor-pointer hover:text-eternity-6-orange" onclick="openFinish();">FINISH
             </div>
             @if (Auth::user()->chl3 == 0)
@@ -44,8 +45,8 @@
             <div class="board-block bg-eternity-6-brown" id="12-29" style="top:  6rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-29" style="top:  6rem; left:36rem;"></div>
             <div onclick="getMap('map20')"
-                class="board-block @if (Auth::user()->map20 == 0) bg-map-20a @else bg-eternity-6-brown @endif" id="14-29"
-                style="top:  6rem; left:39rem;"></div>
+                class="board-block @if (Auth::user()->map20 == 0) imap bg-map-20a @else bg-eternity-6-brown @endif"
+                id="14-29" data-map="20" style="top:  6rem; left:39rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="15-29" style="top:  6rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-29" style="top:  6rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-29" style="top:  6rem; left:48rem;"></div>
@@ -57,8 +58,8 @@
             <div class="board-block bg-eternity-6-brown" id="08-28" style="top:  9rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-28" style="top:  9rem; left:24rem;"></div>
             <div onclick="getMap('map19')"
-                class="board-block @if (Auth::user()->map19 == 0) bg-map-19a @else bg-eternity-6-brown @endif" id="10-28"
-                style="top:  9rem; left:27rem;"></div>
+                class="board-block @if (Auth::user()->map19 == 0) imap bg-map-19a @else bg-eternity-6-brown @endif"
+                id="10-28" data-map="19" style="top:  9rem; left:27rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="11-28" style="top:  9rem; left:30rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="12-28" style="top:  9rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-28" style="top:  9rem; left:36rem;"></div>
@@ -73,8 +74,8 @@
             <div class="board-block bg-eternity-6-brown" id="22-28" style="top:  9rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-28" style="top:  9rem; left:66rem;"></div>
             <div onclick="getMap('map18')"
-                class="board-block @if (Auth::user()->map18 == 0) bg-map-18a @else bg-eternity-6-brown @endif" id="07-27"
-                style="top: 12rem; left:18rem;"></div>
+                class="board-block @if (Auth::user()->map18 == 0) imap bg-map-18a @else bg-eternity-6-brown @endif"
+                id="07-27" data-map="18" style="top: 12rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-27" style="top: 12rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-27" style="top: 12rem; left:24rem;"></div>
             <div class="board-block bg-e-flower" id="10-27" style="top: 12rem; left:27rem;"></div>
@@ -101,8 +102,8 @@
             <div class="board-block bg-eternity-6-brown" id="12-26" style="top: 15rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-26" style="top: 15rem; left:36rem;"></div>
             <div onclick="getMap('map17')"
-                class="board-block @if (Auth::user()->map17 == 0) bg-map-17b @else bg-eternity-6-brown @endif" id="14-26"
-                style="top: 15rem; left:39rem;"></div>
+                class="board-block @if (Auth::user()->map17 == 0) imap bg-map-17b @else bg-eternity-6-brown @endif"
+                id="14-26" data-map="17" style="top: 15rem; left:39rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="15-26" style="top: 15rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-26" style="top: 15rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-26" style="top: 15rem; left:48rem;"></div>
@@ -115,8 +116,8 @@
             <div class="board-block bg-eternity-6-brown" id="24-26" style="top: 15rem; left:69rem;"></div>
             <div class="board-block bg-e-flower" id="25-26" style="top: 15rem; left:72rem;"></div>
             <div onclick="getMap('map16')"
-                class="board-block @if (Auth::user()->map16 == 0) bg-map-10b @else bg-eternity-6-brown @endif" id="05-25"
-                style="top: 18rem; left:12rem;"></div>
+                class="board-block @if (Auth::user()->map16 == 0) imap bg-map-10b @else bg-eternity-6-brown @endif"
+                id="05-25" data-map="16" style="top: 18rem; left:12rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="06-25" style="top: 18rem; left:15rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="07-25" style="top: 18rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-25" style="top: 18rem; left:21rem;"></div>
@@ -138,8 +139,8 @@
             <div class="board-block bg-eternity-6-brown" id="24-25" style="top: 18rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="25-25" style="top: 18rem; left:72rem;"></div>
             <div onclick="getMap('map15')"
-                class="board-block @if (Auth::user()->map15 == 0) bg-map-15b @else bg-eternity-6-brown @endif"
-                id="26-25" style="top: 18rem; left:75rem;"></div>
+                class="board-block @if (Auth::user()->map15 == 0) imap bg-map-15b @else bg-eternity-6-brown @endif"
+                data-map="15" id="26-25" style="top: 18rem; left:75rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="04-24" style="top: 21rem; left: 9rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-24" style="top: 21rem; left:12rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="06-24" style="top: 21rem; left:15rem;"></div>
@@ -169,8 +170,8 @@
             <div class="board-block bg-eternity-6-brown" id="05-23" style="top: 24rem; left:12rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="06-23" style="top: 24rem; left:15rem;"></div>
             <div onclick="getMap('map13')"
-                class="board-block @if (Auth::user()->map13 == 0) bg-map-13b @else bg-eternity-6-brown @endif"
-                id="07-23" style="top: 24rem; left:18rem;"></div>
+                class="board-block @if (Auth::user()->map13 == 0) imap bg-map-13b @else bg-eternity-6-brown @endif"
+                data-map="13" id="07-23" style="top: 24rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-23" style="top: 24rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-23" style="top: 24rem; left:24rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="10-23" style="top: 24rem; left:27rem;"></div>
@@ -185,16 +186,16 @@
             <div class="board-block bg-eternity-6-brown" id="19-23" style="top: 24rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-23" style="top: 24rem; left:57rem;"></div>
             <div onclick="getMap('map14')"
-                class="board-block @if (Auth::user()->map14 == 0) bg-map-14b @else bg-eternity-6-brown @endif"
-                id="21-23" style="top: 24rem; left:60rem;"></div>
+                class="board-block @if (Auth::user()->map14 == 0) imap bg-map-14b @else bg-eternity-6-brown @endif"
+                data-map="14" id="21-23" style="top: 24rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-23" style="top: 24rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-23" style="top: 24rem; left:66rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="24-23" style="top: 24rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="25-23" style="top: 24rem; left:72rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="26-23" style="top: 24rem; left:75rem;"></div>
             <div onclick="getMap('map12')"
-                class="board-block @if (Auth::user()->map12 == 0) bg-map-12b @else bg-eternity-6-brown @endif"
-                id="27-23" style="top: 24rem; left:78rem;"></div>
+                class="board-block @if (Auth::user()->map12 == 0) imap bg-map-12b @else bg-eternity-6-brown @endif"
+                data-map="12" id="27-23" style="top: 24rem; left:78rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="28-23" style="top: 24rem; left:81rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="02-22" style="top: 27rem; left: 3rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="03-22" style="top: 27rem; left: 6rem;"></div>
@@ -209,8 +210,8 @@
             <div class="board-block bg-eternity-6-brown" id="12-22" style="top: 27rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-22" style="top: 27rem; left:36rem;"></div>
             <div onclick="getMap('map11')"
-                class="board-block @if (Auth::user()->map11 == 0) bg-map-11b @else bg-eternity-6-brown @endif"
-                id="14-22" style="top: 27rem; left:39rem;"></div>
+                class="board-block @if (Auth::user()->map11 == 0) imap bg-map-11b @else bg-eternity-6-brown @endif"
+                data-map="11" id="14-22" style="top: 27rem; left:39rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="15-22" style="top: 27rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-22" style="top: 27rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-22" style="top: 27rem; left:48rem;"></div>
@@ -232,8 +233,8 @@
             <div class="board-block bg-eternity-6-brown" id="04-21" style="top: 30rem; left: 9rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-21" style="top: 30rem; left:12rem;"></div>
             <div onclick="getMap('map10')"
-                class="board-block @if (Auth::user()->map10 == 0) bg-map-10a @else bg-eternity-6-brown @endif"
-                id="06-21" style="top: 30rem; left:15rem;"></div>
+                class="board-block @if (Auth::user()->map10 == 0) imap bg-map-10a @else bg-eternity-6-brown @endif"
+                data-map="10" id="06-21" style="top: 30rem; left:15rem;"></div>
             <div class="board-block bg-e-flower" id="07-21" style="top: 30rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-21" style="top: 30rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-21" style="top: 30rem; left:24rem;"></div>
@@ -258,8 +259,8 @@
             <div class="board-block bg-eternity-6-brown" id="28-21" style="top: 30rem; left:81rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="29-21" style="top: 30rem; left:84rem;"></div>
             <div onclick="getMap('map9')"
-                class="board-block  @if (Auth::user()->map9 == 0) bg-map-6b @else bg-eternity-6-brown @endif"
-                id="30-21" style="top: 30rem; left:87rem;"></div>
+                class="board-block  @if (Auth::user()->map9 == 0) imap bg-map-6b @else bg-eternity-6-brown @endif"
+                data-map="9" id="30-21" style="top: 30rem; left:87rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="01-20" style="top: 33rem; left: 0rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="02-20" style="top: 33rem; left: 3rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="03-20" style="top: 33rem; left: 6rem;"></div>
@@ -287,8 +288,8 @@
             <div class="board-block bg-eternity-6-brown" id="25-20" style="top: 33rem; left:72rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="26-20" style="top: 33rem; left:75rem;"></div>
             <div onclick="getMap('map8')"
-                class="board-block @if (Auth::user()->map8 == 0) bg-map-8b @else bg-eternity-6-brown @endif"
-                id="27-20" style="top: 33rem; left:78rem;"></div>
+                class="board-block @if (Auth::user()->map8 == 0) imap bg-map-8b @else bg-eternity-6-brown @endif"
+                data-map="8" id="27-20" style="top: 33rem; left:78rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="28-20" style="top: 33rem; left:81rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="29-20" style="top: 33rem; left:84rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="30-20" style="top: 33rem; left:87rem;"></div>
@@ -331,8 +332,8 @@
             <div class="board-block bg-eternity-6-brown" id="07-18" style="top: 39rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-18" style="top: 39rem; left:21rem;"></div>
             <div onclick="getMap('map7')"
-                class="board-block @if (Auth::user()->map7 == 0) bg-map-2b @else bg-eternity-6-brown @endif"
-                id="09-18" style="top: 39rem; left:24rem;"></div>
+                class="board-block @if (Auth::user()->map7 == 0) imap bg-map-2b @else bg-eternity-6-brown @endif"
+                data-map="7" id="09-18" style="top: 39rem; left:24rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="10-18" style="top: 39rem; left:27rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="11-18" style="top: 39rem; left:30rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="12-18" style="top: 39rem; left:33rem;"></div>
@@ -403,15 +404,15 @@
             <div class="board-block bg-eternity-6-brown" id="17-16" style="top: 45rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-16" style="top: 45rem; left:51rem;"></div>
             <div onclick="getMap('map6')"
-                class="board-block @if (Auth::user()->map6 == 0) bg-map-6a @else bg-eternity-6-brown @endif"
-                id="19-16" style="top: 45rem; left:54rem;"></div>
+                class="board-block @if (Auth::user()->map6 == 0) imap bg-map-6a @else bg-eternity-6-brown @endif"
+                data-map="6" id="19-16" style="top: 45rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-16" style="top: 45rem; left:57rem;"></div>
             <div class="board-block bg-e-flower" id="21-16" style="top: 45rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-16" style="top: 45rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-16" style="top: 45rem; left:66rem;"></div>
             <div onclick="getMap('map5')"
-                class="board-block @if (Auth::user()->map5 == 0) bg-map-5a @else bg-eternity-6-brown @endif"
-                id="24-16" style="top: 45rem; left:69rem;"></div>
+                class="board-block @if (Auth::user()->map5 == 0) imap bg-map-5a @else bg-eternity-6-brown @endif"
+                data-map="5" id="24-16" style="top: 45rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="25-16" style="top: 45rem; left:72rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="26-16" style="top: 45rem; left:75rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="27-16" style="top: 45rem; left:78rem;"></div>
@@ -484,8 +485,8 @@
             <div class="board-block bg-eternity-6-brown" id="04-13" style="top: 54rem; left: 9rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-13" style="top: 54rem; left:12rem;"></div>
             <div onclick="getMap('map3')"
-                class="board-block @if (Auth::user()->map3 == 0) bg-map-3a @else bg-eternity-6-brown @endif"
-                id="06-13" style="top: 54rem; left:15rem;"></div>
+                class="board-block @if (Auth::user()->map3 == 0) imap bg-map-3a @else bg-eternity-6-brown @endif"
+                data-map="3" id="06-13" style="top: 54rem; left:15rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="07-13" style="top: 54rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-13" style="top: 54rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-13" style="top: 54rem; left:24rem;"></div>
@@ -525,8 +526,8 @@
             <div class="board-block bg-eternity-6-brown" id="13-12" style="top: 57rem; left:36rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="14-12" style="top: 57rem; left:39rem;"></div>
             <div onclick="getMap('map4')"
-                class="board-block @if (Auth::user()->map4 == 0) bg-map-4a @else bg-eternity-6-brown @endif"
-                id="15-12" style="top: 57rem; left:42rem;"></div>
+                class="board-block @if (Auth::user()->map4 == 0) imap bg-map-4a @else bg-eternity-6-brown @endif"
+                data-map="4" id="15-12" style="top: 57rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-12" style="top: 57rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-12" style="top: 57rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-12" style="top: 57rem; left:51rem;"></div>
@@ -630,8 +631,8 @@
             <div class="board-block bg-eternity-6-brown" id="27-09" style="top: 66rem; left:78rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="28-09" style="top: 66rem; left:81rem;"></div>
             <div onclick="getMap('map2')"
-                class="board-block @if (Auth::user()->map2 == 0) bg-map-2a @else bg-eternity-6-brown @endif"
-                id="29-09" style="top: 66rem; left:84rem;"></div>
+                class="board-block @if (Auth::user()->map2 == 0) imap bg-map-2a @else bg-eternity-6-brown @endif"
+                data-map="2" id="29-09" style="top: 66rem; left:84rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="03-08" style="top: 69rem; left: 6rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="04-08" style="top: 69rem; left: 9rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-08" style="top: 69rem; left:12rem;"></div>
@@ -773,8 +774,8 @@
             <div class="board-block bg-eternity-6-brown" id="21-02" style="top: 87rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-02" style="top: 87rem; left:63rem;"></div>
             <div onclick="getMap('map1')"
-                class="board-block @if (Auth::user()->map1 == 0) bg-map-1a @else bg-eternity-6-brown @endif"
-                id="10-01" style="top: 90rem; left:27rem;"></div>
+                class="board-block @if (Auth::user()->map1 == 0) imap bg-map-1a @else bg-eternity-6-brown @endif"
+                data-map="1" id="10-01" style="top: 90rem; left:27rem;"></div>
             <div class="board-block bg-e-flower" id="11-01" style="top: 90rem; left:30rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="12-01" style="top: 90rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-01" style="top: 90rem; left:36rem;"></div>
@@ -858,7 +859,7 @@
     </script>
     <script>
         function rollDice() {
-            if (animCounter == 0 && diceTimer == 0 && diceRes == 0) {
+            if (animCounter == 0 && diceTimer == 0 && diceRes == 0 && !magnetbool) {
                 $('#dice-info').html(null);
                 diceTimer = 20;
                 resetDiceBoard();
@@ -869,6 +870,8 @@
                     $('#warning-message').html('Please Wait ' + diceTimer + ' Seconds.')
                 } else if (diceRes != 0) {
                     $('#warning-message').html('Select A Tile To Move First.')
+                } else if (magnetbool) {
+                    $('#warning-message').html('Please Use Your Current Item First.')
                 }
             }
         }
@@ -914,14 +917,14 @@
         }
 
         var diceRes = 0;
-        var timestwo = false;
+        var timestwobool = false;
 
         function getDice() {
             $('#dice-info').removeClass('bg-dice-1').removeClass('bg-dice-2').removeClass('bg-dice-3').removeClass(
                 'bg-dice-4').removeClass('bg-dice-5').removeClass('bg-dice-6');
 
             diceRes = Math.floor((Math.random() * 6) + 1)
-            if (timestwo) {
+            if (timestwobool) {
                 diceRes = diceRes * 2;
             }
             getMovement(diceRes);
@@ -932,7 +935,7 @@
         var chl3 = @json(Auth::user()->chl3);
 
         function getMovement(diceRoll) {
-            if (timestwo) {
+            if (timestwobool) {
                 $('#dice-info').addClass('bg-dice-' + (diceRoll / 2))
             } else {
                 $('#dice-info').addClass('bg-dice-' + (diceRoll))
@@ -994,7 +997,7 @@
 
         function resetDiceBoard() {
             $('.board-block').each(function() {
-                $(this).removeClass('bg-eternity-6-orange').addClass('bg-eternity-6-brown');
+                $(this).removeClass('bg-eternity-6-orange').removeClass('bg-eternity-6-blue').addClass('bg-eternity-6-brown');
             })
         }
 
@@ -1021,12 +1024,20 @@
                 $('#user-position').css('left', $(this).css('left'))
                 resetDiceBoard();
                 diceRes = 0;
-                timestwo = false;
+                timestwobool = false;
+            } else if ($(this).hasClass('bg-eternity-6-blue') && $(this).hasClass('imap')) {
+                console.log('map' + $(this).data('map'))
+                getMap('map' + $(this).data('map'))
+                resetDiceBoard();
+                magnetbool = false;
+            } else {
+                magnetbool = false;
+                resetDiceBoard();
             }
         });
 
         function getMap(map) {
-            if ($(event.target).hasClass('bg-eternity-6-orange')) {
+            if ($(event.target).hasClass('bg-eternity-6-orange') || $(event.target).hasClass('bg-eternity-6-blue')) {
                 addItem(map);
                 var tempstring = map[0] + map[1] + map[2] + "-" + map.substr(3, map.length)
                 $(event.target).removeClass('bg-' + tempstring + 'a');

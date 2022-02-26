@@ -904,6 +904,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-eternity-6-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 132 198 / var(--tw-bg-opacity));
+}
 .bg-lt-rb-frame{
   background-image: url('/svg/lt-rb-frame.svg');
 }
