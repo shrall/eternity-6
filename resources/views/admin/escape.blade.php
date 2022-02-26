@@ -32,6 +32,7 @@
                                 <th class="border-0">Map</th>
                                 <th class="border-0">Tipe Map</th>
                                 <th class="border-0">Rank</th>
+                                <th class="border-0">Finish Time</th>
                                 <th class="border-0">Actions</th>
                             </tr>
                         </thead>
@@ -47,6 +48,7 @@
                                     <td>{{ $user->map }}</td>
                                     <td>{{ $user->map_type == 1 ? 'A' : 'B' }}</td>
                                     <td>{{ $user->finish }}</td>
+                                    <td>{{ $user->finish_timestamp ?? 'Belum Finish' }}</td>
                                     <td>
                                         <a data-toggle="modal" data-target="#modal-edit-{{ $user->id }}"
                                             class="btn btn-sm btn-secondary mx-2"><span
