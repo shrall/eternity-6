@@ -16,7 +16,7 @@
                             value="{{ Auth::user()->period->name2 }}">
                     </div>
                     <div class="mb-2">
-                        <label for="">Shop (set jadi 0 kalo mau di offin)</label>
+                        <label for="">Shop (0 = Off | 1 = On)</label>
                         <input type="text" name="board_shop" id="board_shop" class="form-control" min="1"
                             value="{{ Auth::user()->period->board_shop }}">
                     </div>

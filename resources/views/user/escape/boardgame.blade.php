@@ -14,17 +14,17 @@
             </div>
             @if (Auth::user()->chl3 == 0)
                 <hr id="border-chl3" onclick="openChallenge(3);"
-                    class="absolute border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
+                    class="absolute border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-4"
                     style="top: 21rem; left: 9rem; width:72rem;">
             @endif
             @if (Auth::user()->chl2 == 0)
                 <hr id="border-chl2" onclick="openChallenge(2);"
-                    class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
+                    class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-4"
                     style="top: 42rem;">
             @endif
             @if (Auth::user()->chl1 == 0)
                 <hr id="border-chl1" onclick="openChallenge(1);"
-                    class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-2"
+                    class="absolute w-full border-eternity-6-orange z-10 cursor-pointer hover:opacity-75 border-4"
                     style="top: 66rem;">
             @endif
             <div class="board-block bg-eternity-6-brown" id="10-30" style="top:  3rem; left:27rem;"></div>
@@ -997,7 +997,8 @@
 
         function resetDiceBoard() {
             $('.board-block').each(function() {
-                $(this).removeClass('bg-eternity-6-orange').removeClass('bg-eternity-6-blue').addClass('bg-eternity-6-brown');
+                $(this).removeClass('bg-eternity-6-orange').removeClass('bg-eternity-6-blue').addClass(
+                    'bg-eternity-6-brown');
             })
         }
 
@@ -1026,11 +1027,10 @@
                 diceRes = 0;
                 timestwobool = false;
             } else if ($(this).hasClass('bg-eternity-6-blue') && $(this).hasClass('imap')) {
-                console.log('map' + $(this).data('map'))
                 getMap('map' + $(this).data('map'))
                 resetDiceBoard();
                 magnetbool = false;
-            } else {
+            } else if ($(this).hasClass('bg-eternity-6-blue')) {
                 magnetbool = false;
                 resetDiceBoard();
             }
@@ -1038,7 +1038,7 @@
 
         function getMap(map) {
             if ($(event.target).hasClass('bg-eternity-6-orange') || $(event.target).hasClass('bg-eternity-6-blue')) {
-                addItem(map);
+                getItem(map);
                 var tempstring = map[0] + map[1] + map[2] + "-" + map.substr(3, map.length)
                 $(event.target).removeClass('bg-' + tempstring + 'a');
                 $(event.target).removeClass('bg-' + tempstring + 'b');
