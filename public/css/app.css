@@ -659,6 +659,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-3\/10{
   width: 30%;
 }
+.w-60{
+  width: 15rem;
+}
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: var(--tw-transform);

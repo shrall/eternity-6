@@ -445,7 +445,8 @@
                 <div class="flex items-center justify-center">
                     <div class="text-4xl text-center">ATTENTION<br><br>Due to the artificial tornado caused by E-Corp, your
                         map was
-                        swapped with another team<br><br>find your map by inputting the other team's referral code.</div>
+                        swapped with another team<br><br>find your map by inputting the other team's referral
+                        code.<br><br>If you fail, you will lose all of your map in round 3. Good Luck !</div>
                 </div>
             </div>
         </div>

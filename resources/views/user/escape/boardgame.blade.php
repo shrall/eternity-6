@@ -47,11 +47,11 @@
             <div onclick="getMap('map20')"
                 class="board-block @if (Auth::user()->map20 == 0) imap bg-map-20a @else bg-eternity-6-brown @endif"
                 id="14-29" data-map="20" style="top:  6rem; left:39rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="15-29" style="top:  6rem; left:42rem;"></div>
+            <div class="board-block bg-e-flower" id="15-29" style="top:  6rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-29" style="top:  6rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-29" style="top:  6rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-29" style="top:  6rem; left:51rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="19-29" style="top:  6rem; left:54rem;"></div>
+            <div class="board-block bg-e-flower" id="19-29" style="top:  6rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-29" style="top:  6rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-29" style="top:  6rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-29" style="top:  6rem; left:63rem;"></div>
@@ -63,13 +63,13 @@
             <div class="board-block bg-eternity-6-brown" id="11-28" style="top:  9rem; left:30rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="12-28" style="top:  9rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-28" style="top:  9rem; left:36rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="14-28" style="top:  9rem; left:39rem;"></div>
+            <div class="board-block bg-e-flower" id="14-28" style="top:  9rem; left:39rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="15-28" style="top:  9rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-28" style="top:  9rem; left:45rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="17-28" style="top:  9rem; left:48rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="18-28" style="top:  9rem; left:51rem;"></div>
+            <div class="board-block bg-e-flower" id="17-28" style="top:  9rem; left:48rem;"></div>
+            <div class="board-block bg-e-flower" id="18-28" style="top:  9rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-28" style="top:  9rem; left:54rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="20-28" style="top:  9rem; left:57rem;"></div>
+            <div class="board-block bg-e-flower" id="20-28" style="top:  9rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-28" style="top:  9rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-28" style="top:  9rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-28" style="top:  9rem; left:66rem;"></div>
@@ -89,13 +89,13 @@
             <div class="board-block bg-eternity-6-brown" id="18-27" style="top: 12rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-27" style="top: 12rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-27" style="top: 12rem; left:57rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="21-27" style="top: 12rem; left:60rem;"></div>
+            <div class="board-block bg-e-flower" id="21-27" style="top: 12rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-27" style="top: 12rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-27" style="top: 12rem; left:66rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="24-27" style="top: 12rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="06-26" style="top: 15rem; left:15rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="07-26" style="top: 15rem; left:18rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="08-26" style="top: 15rem; left:21rem;"></div>
+            <div class="board-block bg-e-flower" id="08-26" style="top: 15rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-26" style="top: 15rem; left:24rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="10-26" style="top: 15rem; left:27rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="11-26" style="top: 15rem; left:30rem;"></div>
@@ -105,16 +105,16 @@
                 class="board-block @if (Auth::user()->map17 == 0) imap bg-map-17b @else bg-eternity-6-brown @endif"
                 id="14-26" data-map="17" style="top: 15rem; left:39rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="15-26" style="top: 15rem; left:42rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="16-26" style="top: 15rem; left:45rem;"></div>
+            <div class="board-block bg-e-flower" id="16-26" style="top: 15rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-26" style="top: 15rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-26" style="top: 15rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-26" style="top: 15rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-26" style="top: 15rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-26" style="top: 15rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-26" style="top: 15rem; left:63rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="23-26" style="top: 15rem; left:66rem;"></div>
+            <div class="board-block bg-e-flower" id="23-26" style="top: 15rem; left:66rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="24-26" style="top: 15rem; left:69rem;"></div>
-            <div class="board-block bg-e-flower" id="25-26" style="top: 15rem; left:72rem;"></div>
+            <div class="board-block bg-eternity-6-brown" id="25-26" style="top: 15rem; left:72rem;"></div>
             <div onclick="getMap('map16')"
                 class="board-block @if (Auth::user()->map16 == 0) imap bg-map-10b @else bg-eternity-6-brown @endif"
                 id="05-25" data-map="16" style="top: 18rem; left:12rem;"></div>
@@ -177,9 +177,9 @@
             <div class="board-block bg-eternity-6-brown" id="10-23" style="top: 24rem; left:27rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="11-23" style="top: 24rem; left:30rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="12-23" style="top: 24rem; left:33rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="13-23" style="top: 24rem; left:36rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="14-23" style="top: 24rem; left:39rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="15-23" style="top: 24rem; left:42rem;"></div>
+            <div class="board-block bg-e-flower" id="13-23" style="top: 24rem; left:36rem;"></div>
+            <div class="board-block bg-e-flower" id="14-23" style="top: 24rem; left:39rem;"></div>
+            <div class="board-block bg-e-flower" id="15-23" style="top: 24rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-23" style="top: 24rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-23" style="top: 24rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-23" style="top: 24rem; left:51rem;"></div>
@@ -201,13 +201,13 @@
             <div class="board-block bg-eternity-6-brown" id="03-22" style="top: 27rem; left: 6rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="04-22" style="top: 27rem; left: 9rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-22" style="top: 27rem; left:12rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="06-22" style="top: 27rem; left:15rem;"></div>
+            <div class="board-block bg-e-flower" id="06-22" style="top: 27rem; left:15rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="07-22" style="top: 27rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-22" style="top: 27rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-22" style="top: 27rem; left:24rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="10-22" style="top: 27rem; left:27rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="11-22" style="top: 27rem; left:30rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="12-22" style="top: 27rem; left:33rem;"></div>
+            <div class="board-block bg-e-flower" id="12-22" style="top: 27rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-22" style="top: 27rem; left:36rem;"></div>
             <div onclick="getMap('map11')"
                 class="board-block @if (Auth::user()->map11 == 0) imap bg-map-11b @else bg-eternity-6-brown @endif"
@@ -218,7 +218,7 @@
             <div class="board-block bg-eternity-6-brown" id="18-22" style="top: 27rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-22" style="top: 27rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-22" style="top: 27rem; left:57rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="21-22" style="top: 27rem; left:60rem;"></div>
+            <div class="board-block bg-e-flower" id="21-22" style="top: 27rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-22" style="top: 27rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-22" style="top: 27rem; left:66rem;"></div>
             <div class="board-block bg-e-flower" id="24-22" style="top: 27rem; left:69rem;"></div>
@@ -244,7 +244,7 @@
             <div class="board-block bg-eternity-6-brown" id="13-21" style="top: 30rem; left:36rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="14-21" style="top: 30rem; left:39rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="15-21" style="top: 30rem; left:42rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="16-21" style="top: 30rem; left:45rem;"></div>
+            <div class="board-block bg-e-flower" id="16-21" style="top: 30rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-21" style="top: 30rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-21" style="top: 30rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-21" style="top: 30rem; left:54rem;"></div>
@@ -278,7 +278,7 @@
             <div class="board-block bg-eternity-6-brown" id="15-20" style="top: 33rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-20" style="top: 33rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-20" style="top: 33rem; left:48rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="18-20" style="top: 33rem; left:51rem;"></div>
+            <div class="board-block bg-e-flower" id="18-20" style="top: 33rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-20" style="top: 33rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-20" style="top: 33rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-20" style="top: 33rem; left:60rem;"></div>
@@ -295,7 +295,7 @@
             <div class="board-block bg-eternity-6-brown" id="30-20" style="top: 33rem; left:87rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="01-19" style="top: 36rem; left: 0rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="02-19" style="top: 36rem; left: 3rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="03-19" style="top: 36rem; left: 6rem;"></div>
+            <div class="board-block bg-e-flower" id="03-19" style="top: 36rem; left: 6rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="04-19" style="top: 36rem; left: 9rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-19" style="top: 36rem; left:12rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="06-19" style="top: 36rem; left:15rem;"></div>
@@ -321,7 +321,7 @@
             <div class="board-block bg-e-flower" id="26-19" style="top: 36rem; left:75rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="27-19" style="top: 36rem; left:78rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="28-19" style="top: 36rem; left:81rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="29-19" style="top: 36rem; left:84rem;"></div>
+            <div class="board-block bg-e-flower" id="29-19" style="top: 36rem; left:84rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="30-19" style="top: 36rem; left:87rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="01-18" style="top: 39rem; left: 0rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="02-18" style="top: 39rem; left: 3rem;"></div>
@@ -339,7 +339,7 @@
             <div class="board-block bg-eternity-6-brown" id="12-18" style="top: 39rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-18" style="top: 39rem; left:36rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="14-18" style="top: 39rem; left:39rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="15-18" style="top: 39rem; left:42rem;"></div>
+            <div class="board-block bg-e-flower" id="15-18" style="top: 39rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-18" style="top: 39rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-18" style="top: 39rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-18" style="top: 39rem; left:51rem;"></div>
@@ -391,7 +391,7 @@
             <div class="board-block bg-eternity-6-brown" id="04-16" style="top: 45rem; left: 9rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-16" style="top: 45rem; left:12rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="06-16" style="top: 45rem; left:15rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="07-16" style="top: 45rem; left:18rem;"></div>
+            <div class="board-block bg-e-flower" id="07-16" style="top: 45rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-16" style="top: 45rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-16" style="top: 45rem; left:24rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="10-16" style="top: 45rem; left:27rem;"></div>
@@ -442,7 +442,7 @@
             <div class="board-block bg-eternity-6-brown" id="21-15" style="top: 48rem; left:60rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="22-15" style="top: 48rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-15" style="top: 48rem; left:66rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="24-15" style="top: 48rem; left:69rem;"></div>
+            <div class="board-block bg-e-flower" id="24-15" style="top: 48rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="25-15" style="top: 48rem; left:72rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="26-15" style="top: 48rem; left:75rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="27-15" style="top: 48rem; left:78rem;"></div>
@@ -487,7 +487,7 @@
             <div onclick="getMap('map3')"
                 class="board-block @if (Auth::user()->map3 == 0) imap bg-map-3a @else bg-eternity-6-brown @endif"
                 data-map="3" id="06-13" style="top: 54rem; left:15rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="07-13" style="top: 54rem; left:18rem;"></div>
+            <div class="board-block bg-e-flower" id="07-13" style="top: 54rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-13" style="top: 54rem; left:21rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="09-13" style="top: 54rem; left:24rem;"></div>
             <div class="board-block bg-e-flower" id="10-13" style="top: 54rem; left:27rem;"></div>
@@ -502,7 +502,7 @@
             <div class="board-block bg-eternity-6-brown" id="19-13" style="top: 54rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-13" style="top: 54rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-13" style="top: 54rem; left:60rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="22-13" style="top: 54rem; left:63rem;"></div>
+            <div class="board-block bg-e-flower" id="22-13" style="top: 54rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-13" style="top: 54rem; left:66rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="24-13" style="top: 54rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="25-13" style="top: 54rem; left:72rem;"></div>
@@ -530,11 +530,11 @@
                 data-map="4" id="15-12" style="top: 57rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-12" style="top: 57rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-12" style="top: 57rem; left:48rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="18-12" style="top: 57rem; left:51rem;"></div>
+            <div class="board-block bg-e-flower" id="18-12" style="top: 57rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-12" style="top: 57rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-12" style="top: 57rem; left:57rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="21-12" style="top: 57rem; left:60rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="22-12" style="top: 57rem; left:63rem;"></div>
+            <div class="board-block bg-e-flower" id="22-12" style="top: 57rem; left:63rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="23-12" style="top: 57rem; left:66rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="24-12" style="top: 57rem; left:69rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="25-12" style="top: 57rem; left:72rem;"></div>
@@ -670,7 +670,7 @@
             <div class="board-block bg-eternity-6-brown" id="12-07" style="top: 72rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-07" style="top: 72rem; left:36rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="14-07" style="top: 72rem; left:39rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="15-07" style="top: 72rem; left:42rem;"></div>
+            <div class="board-block bg-e-flower" id="15-07" style="top: 72rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-07" style="top: 72rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-07" style="top: 72rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-07" style="top: 72rem; left:51rem;"></div>
@@ -685,17 +685,17 @@
             <div class="board-block bg-eternity-6-brown" id="27-07" style="top: 72rem; left:78rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="05-06" style="top: 75rem; left:12rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="06-06" style="top: 75rem; left:15rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="07-06" style="top: 75rem; left:18rem;"></div>
+            <div class="board-block bg-e-flower" id="07-06" style="top: 75rem; left:18rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="08-06" style="top: 75rem; left:21rem;"></div>
             <div class="board-block bg-e-flower" id="09-06" style="top: 75rem; left:24rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="10-06" style="top: 75rem; left:27rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="11-06" style="top: 75rem; left:30rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="12-06" style="top: 75rem; left:33rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="13-06" style="top: 75rem; left:36rem;"></div>
+            <div class="board-block bg-e-flower" id="13-06" style="top: 75rem; left:36rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="14-06" style="top: 75rem; left:39rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="15-06" style="top: 75rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-06" style="top: 75rem; left:45rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="17-06" style="top: 75rem; left:48rem;"></div>
+            <div class="board-block bg-e-flower" id="17-06" style="top: 75rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-06" style="top: 75rem; left:51rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="19-06" style="top: 75rem; left:54rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="20-06" style="top: 75rem; left:57rem;"></div>
@@ -714,7 +714,7 @@
             <div class="board-block bg-eternity-6-brown" id="12-05" style="top: 78rem; left:33rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="13-05" style="top: 78rem; left:36rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="14-05" style="top: 78rem; left:39rem;"></div>
-            <div class="board-block bg-eternity-6-brown" id="15-05" style="top: 78rem; left:42rem;"></div>
+            <div class="board-block bg-e-flower" id="15-05" style="top: 78rem; left:42rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="16-05" style="top: 78rem; left:45rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="17-05" style="top: 78rem; left:48rem;"></div>
             <div class="board-block bg-eternity-6-brown" id="18-05" style="top: 78rem; left:51rem;"></div>
@@ -792,8 +792,8 @@
             <div class="text-3xl text-center cursor-pointer" style="margin-top: 91rem;">START</div>
         </div>
         <div
-            class=" @if (Auth::user()->finish == 0) flex @else hidden @endif dice-things absolute bottom-24 border border-eternity-6-gray bg-eternity-6-black mx-auto left-0 right-0 w-40 text-lg items-center justify-center">
-            Cooldown : <span id="dice-cooldown">0</span>
+            class=" @if (Auth::user()->finish == 0) flex @else hidden @endif dice-things absolute bottom-24 border border-eternity-6-gray bg-eternity-6-black mx-auto left-0 right-0 w-60 text-lg items-center justify-center">
+            Countdown : <span id="dice-cooldown">0</span>
         </div>
         <div id="dice-button"
             class="dice-things absolute bottom-0 border border-eternity-6-gray bg-eternity-6-black mx-auto left-0 right-0 w-32 h-24 text-xl @if (Auth::user()->finish == 0) flex @else hidden @endif items-center justify-center hover:text-eternity-6-orange cursor-pointer">
@@ -861,7 +861,7 @@
         function rollDice() {
             if (animCounter == 0 && diceTimer == 0 && diceRes == 0 && !magnetbool) {
                 $('#dice-info').html(null);
-                diceTimer = 20;
+                diceTimer = 10;
                 resetDiceBoard();
                 diceAnimate();
             } else {
@@ -903,7 +903,7 @@
                                     .removeClass(
                                         'bg-dice-5');
                                 animCounter++;
-                                if (animCounter < 5) {
+                                if (animCounter < 19) {
                                     diceAnimate();
                                 } else {
                                     getDice();

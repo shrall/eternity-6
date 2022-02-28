@@ -76,6 +76,36 @@ class PeriodController extends Controller
                 'name2' => $request->period,
                 'board_shop' => $request->board_shop,
             ]);
+            if ($request->period == '3') {
+                $users = User::where('role', 0)->where('escape', 1)->get();
+                foreach ($users as $key => $user) {
+                    if ($user->referral != 1) {
+                        $user->update([
+                            'map' => 0,
+                            'map1' => 0,
+                            'map2' => 0,
+                            'map3' => 0,
+                            'map4' => 0,
+                            'map5' => 0,
+                            'map6' => 0,
+                            'map7' => 0,
+                            'map8' => 0,
+                            'map9' => 0,
+                            'map10' => 0,
+                            'map11' => 0,
+                            'map12' => 0,
+                            'map13' => 0,
+                            'map14' => 0,
+                            'map15' => 0,
+                            'map16' => 0,
+                            'map17' => 0,
+                            'map18' => 0,
+                            'map19' => 0,
+                            'map20' => 0,
+                        ]);
+                    }
+                }
+            }
             return redirect()->route('admin.escape');
         } else {
             $users = User::where('role', 0)->get();
