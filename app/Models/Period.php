@@ -58,5 +58,6 @@ class Period extends Model
         'armor_change',
         'furniture_change',
         'sail_change',
+        'board_shop'
     ];
 }

@@ -12,7 +12,13 @@
                 <div class="modal-body">
                     <div class="mb-2">
                         <label for="">Period</label>
-                        <input type="text" name="period" id="period" class="form-control" min="1" value="{{Auth::user()->period->name2}}">
+                        <input type="text" name="period" id="period" class="form-control" min="1"
+                            value="{{ Auth::user()->period->name2 }}">
+                    </div>
+                    <div class="mb-2">
+                        <label for="">Shop (set jadi 0 kalo mau di offin)</label>
+                        <input type="text" name="board_shop" id="board_shop" class="form-control" min="1"
+                            value="{{ Auth::user()->period->board_shop }}">
                     </div>
                 </div>
                 <div class="modal-footer">

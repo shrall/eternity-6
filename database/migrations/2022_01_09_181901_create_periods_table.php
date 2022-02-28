@@ -63,6 +63,7 @@ class CreatePeriodsTable extends Migration
             $table->integer('armor_change')->default(0);
             $table->integer('furniture_change')->default(0);
             $table->integer('sail_change')->default(0);
+            $table->integer('board_shop')->default(1);
             $table->timestamps();
         });
     }

@@ -561,11 +561,14 @@
                                     <span id="map-count">{{ Auth::user()->map }}</span>/20
                                 </span>
                             </div>
-                            <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif items-center justify-center gap-x-4"
-                                style="width: 150px; height:50px; bottom:50px; right:0;" onclick="openHUD('#item');">
-                                <span class="text-lg">Shop
-                                </span>
-                            </div>
+                            @if (Auth::user()->period->board_shop == 1)
+                                <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif items-center justify-center gap-x-4"
+                                    style="width: 150px; height:50px; bottom:50px; right:0;"
+                                    onclick="openHUD('#item');">
+                                    <span class="text-lg">Shop
+                                    </span>
+                                </div>
+                            @endif
                             <div class="nplc-item bg-eternity-6-black border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif flex-col items-center py-2 gap-y-2 overflow-y-scroll"
                                 style="width: 100px; height:450px; top:0; left:0;">
                                 <div class="flex flex-col items-center gap-y-1">

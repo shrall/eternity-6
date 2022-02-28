@@ -74,6 +74,7 @@ class PeriodController extends Controller
         if ($request->escape != null) {
             $period->update([
                 'name2' => $request->period,
+                'board_shop' => $request->board_shop,
             ]);
             return redirect()->route('admin.escape');
         } else {
