@@ -140,7 +140,10 @@ class User extends Authenticatable
         'slide',
         'circuit',
         'finish',
-        'finish_timestamp'
+        'finish_timestamp',
+        'chl1_timestamp',
+        'chl2_timestamp',
+        'chl3_timestamp',
     ];
 
     /**

@@ -40,7 +40,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 1);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="flour" id="raw-1"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="flour" id="raw-1"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 1);"></span>
@@ -64,7 +64,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 2);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="egg" id="raw-2"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="egg" id="raw-2"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 2);"></span>
@@ -88,7 +88,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 3);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="cloth" id="raw-3"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="cloth" id="raw-3"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 3);"></span>
@@ -112,7 +112,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 4);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="meat" id="raw-4"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="meat" id="raw-4"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 4);"></span>
@@ -136,7 +136,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 5);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="wood" id="raw-5"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="wood" id="raw-5"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 5);"></span>
@@ -160,7 +160,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 6);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="oil" id="raw-6"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="oil" id="raw-6"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 6);"></span>
@@ -184,7 +184,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('raw', 7);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="iron" id="raw-7"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="iron" id="raw-7"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('raw', 7);"></span>
@@ -235,7 +235,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 1);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="bread" id="crafted-1"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="bread" id="crafted-1"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 1);"></span>
@@ -259,7 +259,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 2);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="omelette" id="crafted-2"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="omelette" id="crafted-2"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 2);"></span>
@@ -283,7 +283,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 3);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="steak" id="crafted-3"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="steak" id="crafted-3"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 3);"></span>
@@ -307,7 +307,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 4);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="sword" id="crafted-4"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="sword" id="crafted-4"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 4);"></span>
@@ -331,7 +331,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 5);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="furniture" id="crafted-5"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="furniture" id="crafted-5"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 5);"></span>
@@ -355,7 +355,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 6);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="bakpao" id="crafted-6"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="bakpao" id="crafted-6"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 6);"></span>
@@ -379,7 +379,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 7);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="armor" id="crafted-7"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="armor" id="crafted-7"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 7);"></span>
@@ -403,7 +403,7 @@
                                     <td class="flex items-center gap-x-1">
                                         <span class="fa fa-fw fa-minus cursor-pointer hover:text-gray-200"
                                             onclick="minSell('crafted', 8);"></span>
-                                        <input type="number" onkeyup="refreshTotal();" name="sail" id="crafted-8"
+                                        <input readonly type="number" onkeyup="refreshTotal();" name="sail" id="crafted-8"
                                             class="w-12 bg-transparent cursor-default text-center" value=0>
                                         <span class="fa fa-fw fa-plus cursor-pointer hover:text-gray-200"
                                             onclick="plusSell('crafted', 8);"></span>

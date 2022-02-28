@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Log;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -196,9 +197,10 @@ class UserController extends Controller
                 'easy' => $request->easy,
                 'medium' => $request->medium,
                 'hard' => $request->hard,
-                'chl1' => $request->chl1,
-                'chl2' => $request->chl2,
+                'chl1' => $request->chl2 == 1 ? 1 : $request->chl1,
+                'chl2' => $request->chl3 == 1 ? 1 : $request->chl2,
                 'chl3' => $request->chl3,
+                'chl3_timestamp' => $user->chl3_timestamp != null ? $user->chl3_timestamp : $request->chl3 == 1 ? Carbon::now() : null,
             ]);
             return redirect()->route('admin.escape');
         } else {

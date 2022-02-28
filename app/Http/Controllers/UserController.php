@@ -394,12 +394,12 @@ class UserController extends Controller
         $cb = $request->cannonball * 200;
         $coal = $request->coal * 35;
         $r = $request->ration * 20;
-        if ($request->cannon > 1) {
-            return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Has Exceeded Ship's Capacity");
-        }
-        if ($user->cannon_c > 0 && $request->cannon > 1) {
-            return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Has Exceeded Ship's Capacity");
-        }
+        // if ($request->cannon > 1) {
+        //     return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Has Exceeded Ship's Capacity");
+        // }
+        // if ($user->cannon_c > 0 && $request->cannon > 1) {
+        //     return redirect()->route('rally_trading_trading_resource')->with('Message', "Cannon Has Exceeded Ship's Capacity");
+        // }
         // if ($user->coal_c >= 10 && $request->coal > 10) {
         //     return redirect()->route('rally_trading_trading_resource')->with('Message', "Coal Has Exceeded Ship's Capacity");
         // }
@@ -724,14 +724,178 @@ class UserController extends Controller
     public function submit_answer(Request $request)
     {
         $user = User::where('id', $request->id)->first();
-        $user->update([
-            $request->difficulty . $request->number => $request->answer,
-        ]);
+        if ($request->difficulty == 'easy') {
+            if ($user->question_pack == 1) {
+                if ($request->number == 1 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 2 && $request->answer == 'c') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 3 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 4 && $request->answer == 'd') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 5 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 6 && $request->answer == 'd') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 7 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 8 && $request->answer == 'c') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 9 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 10 && $request->answer == 'c') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                }
+            } else if ($user->question_pack == 2) {
+                if ($request->number == 1 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 2 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 3 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 4 && $request->answer == 'c') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 5 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 6 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 7 && $request->answer == 'd') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 8 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 9 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 10 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                }
+            } else if ($user->question_pack == 3) {
+                if ($request->number == 1 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 2 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 3 && $request->answer == 'd') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 4 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 5 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 6 && $request->answer == 'b') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 7 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 8 && $request->answer == 'd') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 9 && $request->answer == 'c') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                } else if ($request->number == 10 && $request->answer == 'a') {
+                    $user->update([
+                        'eternite2' => $user->eternite2 + 75,
+                        'easy' . $request->number . '_c' => 1,
+                    ]);
+                }
+            }
+            $user->update([
+                $request->difficulty . $request->number => $request->answer,
+            ]);
+            return $user->eternite2;
+        } else {
+            $user->update([
+                $request->difficulty . $request->number => $request->answer,
+            ]);
+        }
     }
     public function submit_referral(Request $request)
     {
         $user = User::where('id', $request->id)->first();
-        if (strtolower(preg_replace('/\s+/', '', $request->code)) == $user->referral_answer) {
+        if ($request->code == $user->referral_answer) {
             $user->update([
                 'referral' => 1
             ]);
@@ -795,7 +959,8 @@ class UserController extends Controller
     {
         $user = User::where('id', $request->id)->first();
         $user->update([
-            'chl1' => 1
+            'chl1' => 1,
+            'chl1_timestamp' => Carbon::now()
         ]);
     }
     public function safe(Request $request)
@@ -829,7 +994,8 @@ class UserController extends Controller
         $user = User::where('id', $request->id)->first();
         if ($user->safe == 1 && $user->slide == 1 && $user->circuit == 1) {
             $user->update([
-                'chl3' => 1
+                'chl3' => 1,
+                'chl3_timestamp' => Carbon::now()
             ]);
         }
         return $user->chl3;

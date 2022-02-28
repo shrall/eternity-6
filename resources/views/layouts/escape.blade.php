@@ -195,17 +195,21 @@
                                     <img src="{{ asset('png/hard-3.png') }}" id="qr-hard-3" class="hidden">
                                     <div class="text-3xl text-center" id="question-text"></div>
                                 </div>
-                                <div class="grid grid-cols-4 gap-x-2 items-center justify-evenly mb-4"
+                                <div class="grid grid-cols-4 gap-x-2 items-center justify-evenly mb-4 px-4"
                                     id="question-choices">
-                                    <div class="text-md text-center font-montserrat" id="choice-a"></div>
-                                    <div class="text-md text-center font-montserrat" id="choice-b"></div>
-                                    <div class="text-md text-center font-montserrat" id="choice-c"></div>
-                                    <div class="text-md text-center font-montserrat" id="choice-d"></div>
+                                    <div class="text-md text-center font-montserrat border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300 cursor-pointer answer-choice"
+                                        onclick="selectAnswer('a');" id="choice-a"></div>
+                                    <div class="text-md text-center font-montserrat border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300 cursor-pointer answer-choice"
+                                        onclick="selectAnswer('b');" id="choice-b"></div>
+                                    <div class="text-md text-center font-montserrat border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300 cursor-pointer answer-choice"
+                                        onclick="selectAnswer('c');" id="choice-c"></div>
+                                    <div class="text-md text-center font-montserrat border border-white rounded-lg text-xl px-6 py-2 transition ease-in-out bg-transparent hover:bg-eternity-6-orange duration-300 cursor-pointer answer-choice"
+                                        onclick="selectAnswer('d');" id="choice-d"></div>
                                 </div>
                                 <div class="items-center justify-center mb-8 hidden" id="easy-2-q">
                                     <img src="{{ asset('png/easy-2-q.png') }}" class="w-36">
                                 </div>
-                                <div class="flex items-center justify-center mb-8">
+                                <div class="flex items-center justify-center mb-8" id="answer-box">
                                     <textarea style="resize: none; width: 800px;" id="answer"
                                         class="bg-eternity-6-black border-2 border-eternity-6-gray p-4" type="text"
                                         name="answer"></textarea>
@@ -308,7 +312,7 @@
                             <div id="map-false" @if (Auth::user()->period->name2 != '2b' || Auth::user()->referral == 1) class="hidden" @endif>
                                 <div style="top: 250px;"
                                     class="p-2 flex flex-col items-center justify-center gap-y-2 absolute mx-auto inset-x-0">
-                                    <span class="underline">Referral Code</span>
+                                    <span class="underline">Your Referral Code</span>
                                     <span>{{ Auth::user()->referral_code }}</span>
                                 </div>
                                 @if (Auth::user()->map_type == 1)
@@ -358,7 +362,7 @@
                             @if (Auth::user()->period->name2 == '2b' && Auth::user()->referral == 0)
                                 <input type="text" style="resize: none; width: 400px; bottom: -36px;" id="referral"
                                     class="bg-eternity-6-black border-2 border-eternity-6-gray absolute inset-x-0 mx-auto"
-                                    type="text" name="referral" placeholder="Input Code Here">
+                                    type="text" name="referral" placeholder="Input Referral Code">
                                 <div class="flex items-center justify-center hover-button cursor-pointer absolute inset-x-0 mx-auto"
                                     id="referral-button" style="bottom: -93px; width: 145px;"
                                     onclick="submitReferral();">
@@ -538,18 +542,27 @@
                                 {{ Auth::user()->period->name2 }}</span>
                         </div>
                         @if (Auth::user()->period->name2 != '3')
+                            <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray flex items-center gap-x-4 @if (Auth::user()->period->name2 == '2b') animate-bounce @endif "
+                                style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#inventory');">
+                                <div class="bg-map-9b w-12 h-12 bg-no-repeat bg-cover bg-center"
+                                    style="margin-top: 25px;">
+                                </div>
+                                <span class="text-lg">
+                                    <span id="map-count">{{ Auth::user()->map }}</span>/20
+                                </span>
+                            </div>
+                        @else
                             <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray flex items-center gap-x-4"
                                 style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#inventory');">
                                 <div class="bg-map-9b w-12 h-12 bg-no-repeat bg-cover bg-center"
                                     style="margin-top: 25px;">
                                 </div>
-                                <span class="text-lg">x
-                                    <span id="map-count">{{ Auth::user()->map }}</span>
+                                <span class="text-lg">
+                                    <span id="map-count">{{ Auth::user()->map }}</span>/20
                                 </span>
                             </div>
-                        @else
                             <div class="nplc-item bg-eternity-6-black hover:opacity-80 border-2 border-eternity-6-gray @if (Auth::user()->finish == 0) flex @else hidden @endif items-center justify-center gap-x-4"
-                                style="width: 150px; height:50px; bottom:0; right:0;" onclick="openHUD('#item');">
+                                style="width: 150px; height:50px; bottom:50px; right:0;" onclick="openHUD('#item');">
                                 <span class="text-lg">Shop
                                 </span>
                             </div>
@@ -1017,23 +1030,26 @@
             'Manakah yang lebih dulu, ayam atau telur?',
             'Ada 5 orang yang berjalan di satu payung kecil, tetapi anehnya tidak seorangpun dari mereka kehujanan, kenapa?',
             'Siapakah menteri ekonomi Indonesia?',
-            'Sebutkan contoh Tradeoff dalam kehidupan sehari-hari!'
+            'Di bawah ini macam-macam kegiatan yang dilakukan di bidang ekonomi. 1.Menyediakan tanah dan modal untuk wiraswasta. 2. Membeli kebutuhan sehari-hari. 3. Membayar pajak badan usaha ke kas negara. 4. Membayar upah karyawan dan biaya bunga. 5. Membayar pajak karyawan. 6. Kegiatan ekonomi yang dilakukan oleh rumah tangga konsumen adalah…'
         ];
         easy_choices['1a'] = ['A. Everest', 'A. Burung Garuda',
             'A. Orang pertama menyeberang terlebih dahulu, kemudian orang pertama mengoper perahu tersebut dan orang kedua menyeberang',
-            'A. Pasir', 'A. Perempuan', 'A. Kerupuk', 'A. Telur', 'A. Karena hujannya di tempat lain', '', ''
+            'A. Pasir', 'A. Perempuan', 'A. Kerupuk', 'A. Telur', 'A. Karena hujannya di tempat lain', 'A. Sri Mulyani',
+            'A. 1, 2, dan 3'
         ];
         easy_choices['1b'] = ['B. K2', 'B. Foto Presiden', 'B. Mereka berada di dua tepi sungai yang berbeda',
             'B. Air', 'B. Panitia eternity', 'B. Plastik', 'B. Ayam ', 'B. Karena mereka berjalan di dalam rumah',
-            '', ''
+            'B. Airlangga Hartarto', 'B. 1, 2, dan 5'
         ];
         easy_choices['1c'] = ['C. Makalu', 'C. Peci',
             'C. Orang pertama menyeberang menggunakan perahu, orang kedua menyeberang dengan berenang',
-            'C. Es batu mencair', 'C. Wanita', 'C. Tisu', 'C. Peternak Ayam', 'C. Karena tidak hujan ', '', ''
+            'C. Es batu mencair', 'C. Wanita', 'C. Tisu', 'C. Peternak Ayam', 'C. Karena tidak hujan ',
+            'C. Agus Martowardojo', 'C. 2, 3, dan 4'
         ];
         easy_choices['1d'] = ['D. Cho Oyu', 'D. Jam dinding',
             'D. Orang pertama menggendong orang kedua dan menyeberang bersama menggunakan perahu', 'D. Sidik jari',
-            'D. Orang tua ', 'D. Piring', 'D. Semua jawaban benar', 'D. Karena orangnya kecil-kecil', '', ''
+            'D. Orang tua ', 'D. Piring', 'D. Semua jawaban benar', 'D. Karena orangnya kecil-kecil',
+            'D. Ginandjar Kartasasmita', 'D. 2, 3, dan 5'
         ];
         easy['2'] = ['Kenapa kaca spion ada dua?',
             'Mobil apa yang bikin galau?',
@@ -1043,23 +1059,26 @@
             'Apa yang terjadi 4 tahun sekali?',
             'Apa nama daerah yang sangat beracun?',
             'Cicak cicak apa yang banyak maunya?',
-            'Siapakah ini?',
-            'Apa perbedaan ekonomi mikro dan ekonomi makro?'
+            'Sistem ekonomi di mana seluruh kebijakan perekonomian ditentukan oleh pemerintah, sedangkan masyarakat hanya menjalankan peraturan yang ditentukan disebut…',
+            'Ilmu yang memfokuskan studinya pada ekonomi secara menyeluruh dan total disebut…'
         ];
         easy_choices['2a'] = ['A. Agar pengendara dapat melihat kondisi di belakang kiri dan kanan kendaraan',
             'A. Mobil tanpa penumpang di kiri',
-            'A. 3', 'A. Emas ', 'A. Papua nugreentea', 'A. Piala dunia ', 'A. Tasikmalaya', 'A. Cicak labil', '', ''
+            'A. 3', 'A. Emas ', 'A. Papua nugreentea', 'A. Piala dunia ', 'A. Tasikmalaya', 'A. Cicak labil',
+            'A. Sistem ekonomi terpusat', 'A. Ekonomi makro'
         ];
         easy_choices['2b'] = ['B. Supaya bisa liat doi', 'B. Mobilang sayang tapi bukan pacar ', 'B. 4',
             'B. Leprechaun (kurcaci ijo)', 'B. Papua Nugenea', 'B. Piala Thomas ', 'B. Tasikasik',
-            'B. Cicak cicak demanding', '', ''
+            'B. Cicak cicak demanding', 'C. Sistem ekonomi komando', 'C. Ekonomi mikro'
         ];
         easy_choices['2c'] = ['C. Karena kalau cuma satu kesepian', 'C. Mobil belum lunas cicilannya', 'C. 5', 'C. i',
-            'C. Papua Nugrinti', 'C. Piala presiden', 'C. Toxicmalaysia', 'C. Cicak betina', '', ''
+            'C. Papua Nugrinti', 'C. Piala presiden', 'C. Toxicmalaysia', 'C. Cicak betina', 'C. Sistem ekonomi rakyat',
+            'C. Ekonomi politik'
         ];
         easy_choices['2d'] = ['D. Karena sudah kodratnya', 'D. Mobil mantan', 'D. 6', 'D. Kentang',
             'D. Papua New Guinea',
-            'D. Piala Gubernur', 'D. Toxicmalaya ', 'D. Cicak kelaparan', '', ''
+            'D. Piala Gubernur', 'D. Toxicmalaya ', 'D. Cicak kelaparan', 'D. Sistem ekonomi liberal',
+            'D. Ekonomi digital'
         ];
         easy['3'] = [
             'Ada seseorang yang berjalan di tepi pantai. Ketika ia menoleh ke belakang, ia tidak menemukan jejak kakinya. Mengapa?',
@@ -1070,21 +1089,25 @@
             'Buku buku apa yang buat keringatan dan pakai alat?',
             'Siapa penyanyi dangdut yang mempunyai surel (surat elektronik)?',
             'Meja meja apa yang sudah punah?',
-            'Sebutkan 10 prinsip ekonomi',
+            'Dibawah ini yang termasuk 10 Prinsip Ekonomi adalah…',
             'Berikan contoh pasar monopolistik!'
         ];
         easy_choices['3a'] = ['A. Karena dia berjalan mundur ', 'A. Xi Jinping', 'A. 1001', 'A. Tari jaipong',
-            'A. Karena matahari bisanya terbit ', 'A. Buku hantam', 'A. Saiful jamil', 'A. Merak', '', ''
+            'A. Karena matahari bisanya terbit ', 'A. Buku hantam', 'A. Saiful jamil', 'A. Merak',
+            'A. Biaya bukan merupakan harga untuk mendapatkan sesuatu', 'A. Aqua, VIT, Le Minerale, Prima, atau Nestle'
         ];
         easy_choices['3b'] = ['B. Karena dia tidak menoleh', 'B. Kim Jong Unch', 'B. 2000', 'B. Tari tunai ',
-            'B. Karena matahari tidak bisa berenang', 'B. Buku tangkis', 'B. Ayu ting ting', 'B. Quangga', '', ''
+            'B. Karena matahari tidak bisa berenang', 'B. Buku tangkis', 'B. Ayu ting ting', 'B. Quangga',
+            'B. Setiap orang tidak perlu menghadapi Tradeoff', 'B. Aqua, Pilot, Philips, Samsung, Informa'
         ];
         easy_choices['3c'] = ['C. Karena dia menutup matanya', 'C. Jokowi', 'C. 500', 'C. Tari torsetor',
-            'C. Karena matahari terbit dari timur', 'C. Buku sulap', 'C. Via valen', 'C. Burung dodo', '', ''
+            'C. Karena matahari terbit dari timur', 'C. Buku sulap', 'C. Via valen', 'C. Burung dodo',
+            'C. Harga akan meningkat jika uang beredar terlalu banyak', 'C. Sidu, Canon, Vivo, Innisfree, Tupperware'
         ];
         easy_choices['3d'] = ['D. Karena jejak kakinya terhapus oleh air laut', 'D. Joe Biden', 'D. 1000',
             'D. Tari piring', 'D. Karena matahari bisa berenang', 'D. Buku anak', 'D. Lesti kejora', 'D. Mejalodon',
-            '', ''
+            'D. Masyarakat menghadapi tradeoff jangka panjang antara inflasi dan pengangguran',
+            'D. Baygon, Royal Canin, Robot, Sarasa'
         ];
         medium['1'] = ['Berdasarkan sumbernya, inflasi dibagi menjadi dua. Sebutkan dan jelaskan!',
             'Sebutkan dan jelaskan kebijakan perdagangan internasional di bidang ekspor!',
@@ -1112,18 +1135,15 @@
         var c_num = '';
 
         function openQ(diff, type, num) {
-            if (diff == 'easy' && type == 2 && num == 9) {
-                $('#easy-2-q').removeClass('hidden').addClass('flex');
-            } else {
-                $('#easy-2-q').removeClass('flex').addClass('hidden');
-            }
             if (diff == 'easy') {
+                $('#answer-box').removeClass('block').addClass('hidden');
                 $('#question-choices').removeClass('hidden').addClass('grid');
                 $('#choice-a').html(easy_choices[type + 'a'][num - 1]);
                 $('#choice-b').html(easy_choices[type + 'b'][num - 1]);
                 $('#choice-c').html(easy_choices[type + 'c'][num - 1]);
                 $('#choice-d').html(easy_choices[type + 'd'][num - 1]);
             } else {
+                $('#answer-box').removeClass('hidden').addClass('block');
                 $('#question-choices').removeClass('grid').addClass('hidden');
             }
             $('#answer').val(null);
@@ -1158,6 +1178,20 @@
                 id: {{ Auth::id() }}
             }).done(function(result) {
                 closeHUD();
+                $('.answer-choice').each(function() {
+                    $(this).removeClass('bg-eternity-6-orange');
+                    $(this).addClass('bg-transparent');
+                })
+                if (c_diff == 'easy') {
+                    if (parseInt($('#user-eternites').html()) == result) {
+                        openModal('warning');
+                        $('#warning-message').html('Wrong Answer')
+                    } else {
+                        openModal('warning');
+                        $('#warning-message').html('Correct Answer')
+                    }
+                    $('#user-eternites').html(result)
+                }
                 $('#paper-' + c_diff + c_num).addClass('hidden');
             });
         }
@@ -1183,6 +1217,16 @@
                     }, 1000);
                 }
             });
+        }
+    </script>
+    <script>
+        function selectAnswer(ans) {
+            $('#answer').val(ans);
+            $('.answer-choice').each(function() {
+                $(this).removeClass('bg-eternity-6-orange');
+                $(this).addClass('bg-transparent');
+            })
+            $('#choice-' + ans).addClass('bg-eternity-6-orange').removeClass('bg-transparent');
         }
     </script>
     <script>

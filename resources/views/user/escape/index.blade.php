@@ -249,8 +249,8 @@
         </div>
         @if (Auth::user()->map11 == 0)
             @if (Auth::user()->map_type == 1)
-                <div class="e-map map11 bg-map-11a hover:bg-map-11a-hover w-12 h-12 bg-center" style="top: 404px; left: 325px;"
-                    onclick="getItem('map11');">
+                <div class="e-map map11 bg-map-11a hover:bg-map-11a-hover w-12 h-12 bg-center"
+                    style="top: 404px; left: 325px;" onclick="getItem('map11');">
                 </div>
             @else
                 <div class="e-map map11 bg-map-11b hover:bg-map-11b-hover w-12 h-12 bg-right"
@@ -260,8 +260,8 @@
         @endif
         @if (Auth::user()->map12 == 0)
             @if (Auth::user()->map_type == 1)
-                <div class="e-map map12 bg-map-12a hover:bg-map-12a-hover w-12 h-12 bg-right" style="top: 172px; left: 54px;"
-                    onclick="getItem('map12');">
+                <div class="e-map map12 bg-map-12a hover:bg-map-12a-hover w-12 h-12 bg-right"
+                    style="top: 172px; left: 54px;" onclick="getItem('map12');">
                 </div>
             @else
                 <div class="e-map map12 bg-map-12b hover:bg-map-12b-hover w-12 h-12" style="top: 172px; left: 55px;"
@@ -271,8 +271,8 @@
         @endif
         @if (Auth::user()->map13 == 0)
             @if (Auth::user()->map_type == 1)
-                <div class="e-map map13 bg-map-13a hover:bg-map-13a-hover w-12 h-12 bg-right" style="top: 206px; left: 432px;"
-                    onclick="getItem('map13');">
+                <div class="e-map map13 bg-map-13a hover:bg-map-13a-hover w-12 h-12 bg-right"
+                    style="top: 206px; left: 432px;" onclick="getItem('map13');">
                 </div>
             @else
                 <div class="e-map map13 bg-map-13b hover:bg-map-13b-hover w-12 h-12 bg-center"
@@ -282,8 +282,8 @@
         @endif
         @if (Auth::user()->map14 == 0)
             @if (Auth::user()->map_type == 1)
-                <div class="e-map map14 bg-map-14a hover:bg-map-14a-hover w-12 h-12 bg-right" style="top: 330px; left: 1045px;"
-                    onclick="getItem('map14');">
+                <div class="e-map map14 bg-map-14a hover:bg-map-14a-hover w-12 h-12 bg-right"
+                    style="top: 330px; left: 1045px;" onclick="getItem('map14');">
                 </div>
             @else
                 <div class="e-map map14 bg-map-14b hover:bg-map-14b-hover w-12 h-12 bg-right"
@@ -293,8 +293,8 @@
         @endif
         @if (Auth::user()->map15 == 0)
             @if (Auth::user()->map_type == 1)
-                <div class="e-map map15 bg-map-15a hover:bg-map-15a-hover w-12 h-12 bg-right" style="top: 225px; left: 623px;"
-                    onclick="getItem('map15');">
+                <div class="e-map map15 bg-map-15a hover:bg-map-15a-hover w-12 h-12 bg-right"
+                    style="top: 225px; left: 623px;" onclick="getItem('map15');">
                 </div>
             @else
                 <div class="e-map map15 bg-map-15b hover:bg-map-15b-hover w-12 h-12 bg-left"
@@ -304,8 +304,8 @@
         @endif
         @if (Auth::user()->map16 == 0)
             @if (Auth::user()->map_type == 1)
-                <div class="e-map map16 bg-map-16a hover:bg-map-16a-hover w-12 h-12 bg-center" style="top: 150px; left: 1143px;"
-                    onclick="getItem('map16');">
+                <div class="e-map map16 bg-map-16a hover:bg-map-16a-hover w-12 h-12 bg-center"
+                    style="top: 150px; left: 1143px;" onclick="getItem('map16');">
                 </div>
             @else
                 <div class="e-map map16 bg-map-16b hover:bg-map-16b-hover w-12 h-12" style="top: 150px; left: 1143px;"
@@ -435,13 +435,43 @@
 @endsection
 
 @section('modals')
+    @if (Auth::user()->period->name2 == '2b' && session()->get('tornado') == null)
+        <div class="absolute w-screen h-screen flex items-center justify-center modal" id="tornado-modal">
+            <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+                onclick="closeModal();">
+            </div>
+            <div
+                class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+                <div class="flex items-center justify-center">
+                    <div class="text-4xl text-center">ATTENTION<br><br>Due to the artificial tornado caused by E-Corp, your
+                        map was
+                        swapped with another team<br><br>find your map by inputting the other team's referral code.</div>
+                </div>
+            </div>
+        </div>
+        @if (Auth::user()->period->name2 == '2b')
+            {{ session()->put('tornado', 1) }}
+        @endif
+    @endif
     <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="locked-room-modal">
-        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+            onclick="closeModal();">
         </div>
         <div
             class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
             <div class="flex items-center justify-center">
                 <div class="text-4xl">Room is Locked</div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="warning-modal">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal"
+            onclick="closeModal();">
+        </div>
+        <div
+            class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+            <div class="flex items-center justify-center">
+                <div class="text-4xl" id="warning-message"></div>
             </div>
         </div>
     </div>

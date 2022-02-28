@@ -140,6 +140,9 @@ class CreateUsersTable extends Migration
             $table->integer('circuit')->default(0);
             $table->integer('finish')->default(0);
             $table->timestamp('finish_timestamp')->nullable();
+            $table->timestamp('chl1_timestamp')->nullable();
+            $table->timestamp('chl2_timestamp')->nullable();
+            $table->timestamp('chl3_timestamp')->nullable();
             $table->timestamps();
         });
     }
