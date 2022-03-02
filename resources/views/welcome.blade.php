@@ -22,13 +22,19 @@
                 <span onclick="openModal('login');" class="text-2xl cursor-pointer">Login</span>
             @endguest
             @auth
-                <span
-                    onclick="event.preventDefault();
-                                                                                                        document.getElementById('logout-form').submit();"
-                    class="text-2xl cursor-pointer">Logout</span>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
+                <div class="flex items-center gap-x-2">
+                    @if (Auth::user()->escape == 1)
+                        <span @if (Auth::user()->rank <= 5) onclick="openModal('last');" @else onclick="openModal('info');" @endif class="text-2xl cursor-pointer hover:text-gray-300">Info</span>
+                    @endif
+                    <span>|</span>
+                    <span
+                        onclick="event.preventDefault();
+                                                                                                                                                                document.getElementById('logout-form').submit();"
+                        class="text-2xl cursor-pointer hover:text-gray-300">Logout</span>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
             @endauth
         </div>
         <div class="h-vh-80 flex flex-col items-center justify-center gap-4 relative">
@@ -111,6 +117,46 @@
             class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
             <div class="flex items-center justify-center">
                 <div class="text-4xl">Access Denied</div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="info-modal">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
+        </div>
+        <div
+            class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+            <div class="grid grid-cols-2 gap-2 justify-center">
+                <div class="text-3xl text-center">Line</div>
+                <div class="text-3xl text-center">Zoom</div>
+                <div class="flex flex-col gap-y-2 items-center">
+                    <img src="{{ asset('png/qr-info.jpg') }}" alt="" srcset="">
+                </div>
+                <div class="flex flex-col gap-y-2 items-center justify-center">
+                    <div>Meeting ID: 966 8951 3032</div>
+                    <div>Password: RALLY2</div>
+                    <a class="underline text-center" target="_blank"
+                        href="https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09">https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute w-screen h-screen hidden items-center justify-center modal" id="last-modal">
+        <div class="bg-transparent backdrop-blur-sm 50 w-screen h-screen absolute background-modal" onclick="closeModal();">
+        </div>
+        <div
+            class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
+            <div class="grid grid-cols-2 gap-2 justify-center">
+                <div class="text-3xl text-center">Line</div>
+                <div class="text-3xl text-center">Zoom</div>
+                <div class="flex flex-col gap-y-2 items-center">
+                    <img src="{{ asset('png/qr-last-stage.jpg') }}" alt="" srcset="">
+                </div>
+                <div class="flex flex-col gap-y-2 items-center justify-center">
+                    <div>Meeting ID: 966 8951 3032</div>
+                    <div>Password: RALLY2</div>
+                    <a class="underline text-center" target="_blank"
+                        href="https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09">https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09</a>
+                </div>
             </div>
         </div>
     </div>
