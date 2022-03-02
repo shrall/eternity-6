@@ -898,6 +898,10 @@ class UserController extends Controller
             $user->update([
                 'referral' => 1
             ]);
+            $usera = User::where('referral_code', $request->code)->first();
+            $usera->update([
+                'referral' => 1
+            ]);
             return 1;
         } else {
             return 0;
