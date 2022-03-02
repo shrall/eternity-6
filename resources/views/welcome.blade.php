@@ -24,12 +24,14 @@
             @auth
                 <div class="flex items-center gap-x-2">
                     @if (Auth::user()->escape == 1)
-                        <span @if (Auth::user()->rank <= 5) onclick="openModal('last');" @else onclick="openModal('info');" @endif class="text-2xl cursor-pointer hover:text-gray-300">Info</span>
+                        <span
+                            @if (Auth::user()->rank <= 5 && Auth::user()->rank > 0) onclick="openModal('last');" @else onclick="openModal('info');" @endif
+                            class="text-2xl cursor-pointer hover:text-gray-300">Info</span>
                     @endif
                     <span>|</span>
                     <span
                         onclick="event.preventDefault();
-                                                                                                                                                                document.getElementById('logout-form').submit();"
+                                                                                                                                                                        document.getElementById('logout-form').submit();"
                         class="text-2xl cursor-pointer hover:text-gray-300">Logout</span>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
@@ -126,10 +128,12 @@
         <div
             class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
             <div class="grid grid-cols-2 gap-2 justify-center">
-                <div class="text-3xl text-center">Line</div>
+                <div class="text-3xl text-center">Line Group (Top 50)</div>
                 <div class="text-3xl text-center">Zoom</div>
                 <div class="flex flex-col gap-y-2 items-center">
                     <img src="{{ asset('png/qr-info.jpg') }}" alt="" srcset="">
+                    <a class="underline text-center" target="_blank"
+                        href="https://line.me/R/ti/g/e3dVvOhhNM">https://line.me/R/ti/g/e3dVvOhhNM</a>
                 </div>
                 <div class="flex flex-col gap-y-2 items-center justify-center">
                     <div>Meeting ID: 966 8951 3032</div>
@@ -146,10 +150,12 @@
         <div
             class="w-vw-60 bg-eternity-6-black border-2 border-eternity-6-gray p-8 absolute bg-contain bg-no-repeat flex flex-col">
             <div class="grid grid-cols-2 gap-2 justify-center">
-                <div class="text-3xl text-center">Line</div>
+                <div class="text-3xl text-center">Line Group (Top 5)</div>
                 <div class="text-3xl text-center">Zoom</div>
                 <div class="flex flex-col gap-y-2 items-center">
                     <img src="{{ asset('png/qr-last-stage.jpg') }}" alt="" srcset="">
+                    <a class="underline text-center" target="_blank"
+                        href="https://line.me/R/ti/g/e3dVvOhhNM">https://line.me/R/ti/g/e3dVvOhhNM</a>
                 </div>
                 <div class="flex flex-col gap-y-2 items-center justify-center">
                     <div>Meeting ID: 966 8951 3032</div>
