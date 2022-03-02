@@ -11,7 +11,7 @@
                 <div class="modal-body">
                     <div class="mb-2">
                         <label for="">Period</label>
-                        <input type="number" name="period" id="period" class="form-control" min="1" value="{{Auth::user()->period->name}}">
+                        <input type="number" name="period" id="period" class="form-control" value="{{Auth::user()->period->name}}">
                     </div>
                     <div class="mb-2">
                         <label for="">Close Start (0 = Close | 1 = Open)</label>
