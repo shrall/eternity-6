@@ -58,6 +58,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
         $user->password = Hash::make('16017001');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -80,6 +81,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
         $user->password = Hash::make('06017002');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -102,6 +104,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
         $user->password = Hash::make('16017003');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -124,6 +127,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
         $user->password = Hash::make('06017004');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -146,6 +150,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
         $user->password = Hash::make('16017005');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -168,6 +173,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('06017006');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -190,6 +196,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('16017007');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -212,6 +219,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('06017008');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -234,6 +242,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('16017009');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -256,6 +265,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('06017010');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -278,6 +288,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
         $user->password = Hash::make('17022001');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -299,8 +310,8 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-
         $user->password = Hash::make('07022002');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -323,6 +334,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
         $user->password = Hash::make('17022003');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -345,6 +357,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
         $user->password = Hash::make('07022004');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -367,6 +380,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
         $user->password = Hash::make('17022005');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -389,6 +403,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('07022006');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -411,6 +426,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('17022007');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -433,6 +449,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('07022008');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -455,6 +472,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('17022009');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -477,6 +495,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('07022010');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -499,6 +518,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
         $user->password = Hash::make('15012001');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -522,6 +542,7 @@ class UserSeeder extends Seeder
         $user->referral_answer = '8MDLS9UPCK';
         $user->auction_q = 2;
         $user->password = Hash::make('05012002');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -544,6 +565,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
         $user->password = Hash::make('15012003');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -566,6 +588,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
         $user->password = Hash::make('05012004');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -588,6 +611,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
         $user->password = Hash::make('15012005');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -610,10 +634,11 @@ class UserSeeder extends Seeder
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('05012006');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
-        $user->name = '027-Ryan Kendrick Hoatmodjo';
+        $user->name = '027-Trio kwek kwek';
         $user->email = 'Player027@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -632,6 +657,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('15012007');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -654,6 +680,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('05012008');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -676,6 +703,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('15012009');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -698,6 +726,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('05012010');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -720,6 +749,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
         $user->password = Hash::make('12022001');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -742,6 +772,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
         $user->password = Hash::make('02022002');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -764,6 +795,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
         $user->password = Hash::make('12022003');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -786,6 +818,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
         $user->password = Hash::make('02022004');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -808,6 +841,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
         $user->password = Hash::make('12022005');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -830,6 +864,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('02022006');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -852,6 +887,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('12022007');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -874,6 +910,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('02022008');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -896,6 +933,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('12022009');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -918,6 +956,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('02022010');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -940,6 +979,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
         $user->password = Hash::make('15072001');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -961,8 +1001,8 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-
         $user->password = Hash::make('05072002');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -985,6 +1025,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
         $user->password = Hash::make('15072003');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1007,6 +1048,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
         $user->password = Hash::make('05072004');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1029,6 +1071,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
         $user->password = Hash::make('15072005');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1051,6 +1094,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('05072006');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1073,6 +1117,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('15072007');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1095,6 +1140,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('05072008');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1117,6 +1163,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('15072009');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1139,6 +1186,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('05072010');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1161,6 +1209,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
         $user->password = Hash::make('13035001');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1183,6 +1232,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
         $user->password = Hash::make('03035002');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1205,6 +1255,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
         $user->password = Hash::make('13035003');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1227,6 +1278,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
         $user->password = Hash::make('03035004');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1249,6 +1301,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
         $user->password = Hash::make('13035005');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1271,6 +1324,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
         $user->password = Hash::make('03035006');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1293,6 +1347,7 @@ class UserSeeder extends Seeder
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
         $user->password = Hash::make('13035007');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1315,6 +1370,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
         $user->password = Hash::make('03035008');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1337,6 +1393,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
         $user->password = Hash::make('13035009');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1359,6 +1416,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('03035010');
+        $user->escape = 1;
         $user->save();
 
         $user = new User();
@@ -1759,7 +1817,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '079-Player';
+        $user->name = '079-Uptrend';
         $user->email = 'Player079@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1781,7 +1839,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '080-Player';
+        $user->name = '080-WFH';
         $user->email = 'Player080@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1803,7 +1861,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '081-Player';
+        $user->name = '081-Kalam Kudus';
         $user->email = 'Player081@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1825,7 +1883,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '082-Player';
+        $user->name = '082-Qixing';
         $user->email = 'Player082@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1847,7 +1905,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '083-Player';
+        $user->name = '083-AOUAD TEAM';
         $user->email = 'Player083@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1869,7 +1927,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '084-Player';
+        $user->name = '084-Selen';
         $user->email = 'Player084@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1891,7 +1949,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '085-Player';
+        $user->name = '085-Nekat Gas Pol';
         $user->email = 'Player085@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1913,7 +1971,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '086-Player';
+        $user->name = '086-power puff';
         $user->email = 'Player086@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1935,7 +1993,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '087-Player';
+        $user->name = '087-Pepega';
         $user->email = 'Player087@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1957,7 +2015,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '088-Player';
+        $user->name = '088-SMAZA';
         $user->email = 'Player088@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -1979,7 +2037,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '089-Player';
+        $user->name = '089-Trouble Maker';
         $user->email = 'Player089@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2001,7 +2059,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '090-Player';
+        $user->name = '090-Beyonders';
         $user->email = 'Player090@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2023,7 +2081,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '091-Player';
+        $user->name = '091- LOMONEY';
         $user->email = 'Player091@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2045,7 +2103,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '092-Player';
+        $user->name = '092-DREAM CATCHER';
         $user->email = 'Player092@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2067,7 +2125,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '093-Player';
+        $user->name = '093-The Boomers';
         $user->email = 'Player093@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2089,7 +2147,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '094-Player';
+        $user->name = '094-SDE-2';
         $user->email = 'Player094@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2111,7 +2169,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '095-Player';
+        $user->name = '095-GLORY';
         $user->email = 'Player095@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2133,7 +2191,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '096-Player';
+        $user->name = '096-ASN';
         $user->email = 'Player096@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2155,7 +2213,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '097-Player';
+        $user->name = '097-Pejuang Cuan';
         $user->email = 'Player097@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2177,7 +2235,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '098-Player';
+        $user->name = '098-Sentlakdeng';
         $user->email = 'Player098@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2199,7 +2257,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '099-Player';
+        $user->name = '099-Nyasar';
         $user->email = 'Player099@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2221,7 +2279,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '100-Player';
+        $user->name = '100-JIKJIN';
         $user->email = 'Player100@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2243,7 +2301,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '101-Player';
+        $user->name = '101-Deltoria';
         $user->email = 'Player101@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2265,7 +2323,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '102-Player';
+        $user->name = '102-SPIRIT';
         $user->email = 'Player102@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2287,7 +2345,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '103-Player';
+        $user->name = '103-CDE';
         $user->email = 'Player103@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2309,7 +2367,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '104-Player';
+        $user->name = '104-SOTH TEAM';
         $user->email = 'Player104@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2331,7 +2389,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '105-Player';
+        $user->name = '105-Angguners';
         $user->email = 'Player105@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2353,7 +2411,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '106-Player';
+        $user->name = '106-KITA MAU MPL';
         $user->email = 'Player106@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2375,7 +2433,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '107-Player';
+        $user->name = '107-Nekatin Aja';
         $user->email = 'Player107@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2397,7 +2455,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '108-Player';
+        $user->name = '108-Velata';
         $user->email = 'Player108@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2419,7 +2477,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '109-Player';
+        $user->name = '109-UNCLASSIFIED';
         $user->email = 'Player109@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2441,7 +2499,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '110-Player';
+        $user->name = '110-ayang bisnis';
         $user->email = 'Player110@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2463,7 +2521,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '111-Player';
+        $user->name = '111-Mari Berbisnis';
         $user->email = 'Player111@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2485,7 +2543,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '112-Player';
+        $user->name = '112-PASRAH';
         $user->email = 'Player112@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2507,7 +2565,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '113-Player';
+        $user->name = '113-TuT';
         $user->email = 'Player113@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2529,7 +2587,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '114-Player';
+        $user->name = '114-Eternals';
         $user->email = 'Player114@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2551,7 +2609,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '115-Player';
+        $user->name = '115-THREE MUSKETEERS';
         $user->email = 'Player115@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2573,7 +2631,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '116-Player';
+        $user->name = '116-SIMANIS';
         $user->email = 'Player116@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2595,7 +2653,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '117-Player';
+        $user->name = '117-MOONLIGHT';
         $user->email = 'Player117@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2617,7 +2675,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '118-Player';
+        $user->name = '118-Cuan Hunter ';
         $user->email = 'Player118@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2639,7 +2697,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '119-Player';
+        $user->name = '119-Naevis';
         $user->email = 'Player119@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2661,7 +2719,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '120-Player';
+        $user->name = '120-TARING SERIGALA';
         $user->email = 'Player120@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2683,7 +2741,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '121-Player';
+        $user->name = '121-CAKAR SERIGALA';
         $user->email = 'Player121@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2705,7 +2763,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '122-Player';
+        $user->name = '122-WE BARE WOLVES';
         $user->email = 'Player122@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2727,7 +2785,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '123-Player';
+        $user->name = '123-Meraki';
         $user->email = 'Player123@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2749,7 +2807,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '124-Player';
+        $user->name = '124-Chandelle';
         $user->email = 'Player124@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -2771,7 +2829,7 @@ class UserSeeder extends Seeder
         $user->save();
 
         $user = new User();
-        $user->name = '125-Player';
+        $user->name = '125-Eternite';
         $user->email = 'Player125@eternity.com';
         $user->eternite1 = 20000;
         $user->flour = 100;
@@ -3341,6 +3399,7 @@ class UserSeeder extends Seeder
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('6017150');
         $user->save();
+
 
 
         $user = new User();
