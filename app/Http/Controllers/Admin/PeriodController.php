@@ -358,6 +358,8 @@ class PeriodController extends Controller
             }
             $period->update([
                 'name' => $request->period,
+                'close_start' => $request->close_start,
+                'close_final' => $request->close_final
             ]);
         }
         return redirect()->route('admin.dashboard');

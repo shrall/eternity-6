@@ -433,7 +433,6 @@ class UserController extends Controller
     }
     public function auction_answer(Request $request)
     {
-
         if (Auth::user()->period->name == 1 || Auth::user()->period->name == 3 || Auth::user()->period->name == 5 || Auth::user()->period->name == 7 || Auth::user()->period->name == 9 || Auth::user()->period->name == 11) {
             return redirect()->route('rally_trading_index')->with('Message', 'The Trading Menu is Closed');
         }

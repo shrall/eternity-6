@@ -13,6 +13,14 @@
                         <label for="">Period</label>
                         <input type="number" name="period" id="period" class="form-control" min="1" value="{{Auth::user()->period->name}}">
                     </div>
+                    <div class="mb-2">
+                        <label for="">Close Start (0 = Close | 1 = Open)</label>
+                        <input type="number" name="close_start" id="close-start" class="form-control" value="{{Auth::user()->period->close_start}}">
+                    </div>
+                    <div class="mb-2">
+                        <label for="">Close Final (1 = Close)</label>
+                        <input type="number" name="close_final" id="close-final" class="form-control" value="{{Auth::user()->period->close_final}}">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-secondary">Submit</button>

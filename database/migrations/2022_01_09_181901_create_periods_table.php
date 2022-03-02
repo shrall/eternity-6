@@ -17,6 +17,8 @@ class CreatePeriodsTable extends Migration
             $table->id();
             $table->integer('name');
             $table->string('name2')->default(0);
+            $table->integer('close_start')->default(0);
+            $table->integer('close_final')->default(0);
             $table->text('news');
             $table->integer('flour')->default(0);
             $table->integer('egg')->default(0);

@@ -22,8 +22,9 @@
                 <span onclick="openModal('login');" class="text-2xl cursor-pointer">Login</span>
             @endguest
             @auth
-                <span onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();"
+                <span
+                    onclick="event.preventDefault();
+                                                                                                        document.getElementById('logout-form').submit();"
                     class="text-2xl cursor-pointer">Logout</span>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
@@ -52,21 +53,46 @@
                     </a>
                 @endguest
                 @auth
-                    <a href="{{ route('rally_trading_index') }}"
-                        class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
-                        <img src="{{ asset('svg/first-island.svg') }}" class="w-56 group-hover:animate-pulse">
-                        <div class="text-xl font-montserrat font-medium">Rally & Trading</div>
-                    </a>
-                    <a @if (Auth::user()->escape == 0) onclick="openModal('denied');" @else href="{{ route('escape_index') }}" @endif
-                        class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
-                        <img src="{{ asset('svg/second-island.svg') }}" class="w-56 group-hover:animate-pulse">
-                        <div class="text-xl font-montserrat font-medium">Escape Room</div>
-                    </a>
-                    <a href="#"
-                        class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
-                        <img src="{{ asset('svg/fourth-island.svg') }}" class="w-56 group-hover:animate-pulse">
-                        <div class="text-xl font-montserrat font-medium">Business Simulation</div>
-                    </a>
+                    @if (Auth::user()->period->close_final == 0)
+                        @if (Auth::user()->period->close_start == 0)
+                            <a @if (Auth::user()->role == 0) onclick="openModal('denied');" @else href="{{ route('escape_index') }}" @endif
+                                class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                                <img src="{{ asset('svg/first-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                                <div class="text-xl font-montserrat font-medium">Rally & Trading</div>
+                            </a>
+                            <a onclick="openModal('denied');"
+                                class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                                <img src="{{ asset('svg/second-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                                <div class="text-xl font-montserrat font-medium">Escape Room</div>
+                            </a>
+                            <a onclick="openModal('denied');"
+                                class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                                <img src="{{ asset('svg/fourth-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                                <div class="text-xl font-montserrat font-medium">Business Simulation</div>
+                            </a>
+                        @else
+                            <a href="{{ route('rally_trading_index') }}"
+                                class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                                <img src="{{ asset('svg/first-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                                <div class="text-xl font-montserrat font-medium">Rally & Trading</div>
+                            </a>
+                            <a @if (Auth::user()->escape == 0) onclick="openModal('denied');" @else href="{{ route('escape_index') }}" @endif
+                                class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                                <img src="{{ asset('svg/second-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                                <div class="text-xl font-montserrat font-medium">Escape Room</div>
+                            </a>
+                            <a href="#"
+                                class="flex flex-col items-center justify-center gap-4 cursor-pointer transition ease-in-out hover:-translate-y-3 group">
+                                <img src="{{ asset('svg/fourth-island.svg') }}" class="w-56 group-hover:animate-pulse">
+                                <div class="text-xl font-montserrat font-medium">Business Simulation</div>
+                            </a>
+                        @endif
+                    @else
+                        <div class="text-4xl text-center">The race is over !<br>
+                            Please return to the main zoom for the winners announcement<br>
+                            Good Luck !
+                        </div>
+                    @endif
                 @endauth
             </div>
         </div>
@@ -149,6 +175,5 @@
             }
         }
         move();
-
     </script>
 @endsection
