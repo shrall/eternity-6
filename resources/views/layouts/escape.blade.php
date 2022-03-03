@@ -37,11 +37,15 @@
                         <div id="challenge"
                             class="absolute inset-x-0 mx-auto bg-eternity-6-black border-2 border-eternity-6-gray top-0 hidden"
                             style="width: 1000px; height: 600px;">
-                            <div class="flex items-center justify-center mb-8 mt-24">
-                                <img src="{{ asset('png/qr-challenge-1.png') }}" id="qr-challenge-1"
-                                    style="width: 300px; height:300px;" class="hidden">
-                                <img src="{{ asset('png/qr-challenge-2.png') }}" id="qr-challenge-2"
-                                    style="width: 300px; height:300px;" class="hidden">
+                            <div class="flex flex-col items-center justify-center mb-8 mt-24">
+                                <img src="{{ asset('png/qr-challenge-1.png') }}" id=""
+                                    style="width: 300px; height:300px;" class="hidden qr-challenge-1">
+                                <a class="underline text-center qr-challenge-1" target="_blank"
+                                    href="https://bit.ly/ChallengeTembokPertama">https://bit.ly/ChallengeTembokPertama</a>
+                                <img src="{{ asset('png/qr-challenge-2.png') }}" id=""
+                                    style="width: 300px; height:300px;" class="hidden qr-challenge-2">
+                                <a class="underline text-center qr-challenge-2" target="_blank"
+                                    href="https://bit.ly/ChallengeTembokKedua">https://bit.ly/ChallengeTembokKedua</a>
                             </div>
                             <div class="flex items-center justify-center mb-8">
                                 <div class="text-3xl text-center">Scan This QR.</div>
