@@ -62,7 +62,6 @@
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex flex-col justify-between gap-8 mb-8">
                     Meeting ID: 973 6268 3439<br>
-                    Password: RALLY1<br>
                     <a class="underline" target="_blank" href="https://zoom.us/j/97362683439">https://zoom.us/j/97362683439</a>
                 </div>
             </div>
@@ -79,7 +78,6 @@
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex flex-col justify-between gap-8 mb-8">
                     Meeting ID: 985 6135 1232<br>
-                    Password: RALLY2<br>
                     <a class="underline" target="_blank" href="https://zoom.us/j/98561351232">https://zoom.us/j/98561351232</a>
                 </div>
             </div>
@@ -96,7 +94,6 @@
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex flex-col justify-between gap-8 mb-8">
                     Meeting ID: 998 5592 8459<br>
-                    Password: RALLY3<br>
                     <a class="underline" target="_blank" href="https://zoom.us/j/99855928459">https://zoom.us/j/99855928459</a>
                 </div>
             </div>
@@ -113,7 +110,6 @@
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex flex-col justify-between gap-8 mb-8">
                     Meeting ID: 975 7518 4518<br>
-                    Password: RALLY4<br>
                     <a class="underline" target="_blank" href="https://zoom.us/j/97575184518">https://zoom.us/j/97575184518</a>
                 </div>
             </div>
@@ -130,7 +126,6 @@
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex flex-col justify-between gap-8 mb-8">
                     Meeting ID: 992 5909 4390<br>
-                    Password: RALLY5<br>
                     <a class="underline" target="_blank" href="https://zoom.us/j/99259094390">https://zoom.us/j/99259094390</a>
                 </div>
             </div>
@@ -147,7 +142,6 @@
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex flex-col justify-between gap-8 mb-8">
                     Meeting ID: 987 4423 3541<br>
-                    Password: RALLY6<br>
                     <a class="underline" target="_blank" href="https://zoom.us/j/98744233541">https://zoom.us/j/98744233541</a>
                 </div>
             </div>
