@@ -47,9 +47,9 @@
             <div class="text-3xl ml-12 mb-8">Zoom Info</div>
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex items-center justify-between gap-8 mb-8">
-                    Meeting ID: 993 1132 7023<br>
+                    Meeting ID: 941 8896 5251<br>
                     Password: AUCTION1<br>
-                    <a target="_blank" href="https://zoom.us/j/99311327023?pwd=dXdLU2tOZTU2dHBtZzJ1THZ5czhQZz09"></a>
+                    <a class="underline" target="_blank" href="https://zoom.us/j/94188965251">https://zoom.us/j/94188965251</a>
                 </div>
             </div>
             <div class="flex items-center mr-8 2xl:mr-32">
@@ -64,9 +64,9 @@
             <div class="text-3xl ml-12 mb-8">Zoom Info</div>
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex items-center justify-between gap-8 mb-8">
-                    Meeting ID: 953 2862 2784<br>
+                    Meeting ID: 925 4579 8592<br>
                     Password: AUCTION2<br>
-                    <a target="_blank" href="https://zoom.us/j/95328622784?pwd=Z2pTNW5nbkYzWHp2bkJFSkVud1lnQT09"></a>
+                    <a class="underline" target="_blank" href="https://zoom.us/j/92545798592">https://zoom.us/j/92545798592</a>
                 </div>
             </div>
             <div class="flex items-center mr-8 2xl:mr-32">
@@ -81,9 +81,9 @@
             <div class="text-3xl ml-12 mb-8">Zoom Info</div>
             <div class="text-xl ml-12 mr-24 font-montserrat">
                 <div class="flex items-center justify-between gap-8 mb-8">
-                    Meeting ID: 978 1499 4739<br>
+                    Meeting ID: 967 0745 1445<br>
                     Password: AUCTION3<br>
-                    <a target="_blank" href="https://zoom.us/j/97814994739?pwd=R0x5aUNpT3NYbER2blhpRWZmL0ZpZz09"></a>
+                    <a target="_blank" href="https://zoom.us/j/96707451445">https://zoom.us/j/96707451445</a>
                 </div>
             </div>
             <div class="flex items-center mr-8 2xl:mr-32">
