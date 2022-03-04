@@ -57,7 +57,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('16017001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -79,7 +79,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('06017002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -101,7 +101,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('16017003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -123,7 +123,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('06017004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -145,7 +145,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('16017005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -167,7 +167,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('06017006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -189,7 +189,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('16017007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -211,7 +211,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('06017008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -233,7 +233,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('16017009');
+        $user->password = Hash::make('NYOBA');
 
         $user->save();
 
@@ -256,7 +256,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('06017010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -278,7 +278,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('17022001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -300,7 +300,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('07022002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -322,7 +322,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('17022003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -344,7 +344,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('07022004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -366,7 +366,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('17022005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -388,7 +388,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('07022006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -410,7 +410,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('17022007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -432,7 +432,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('07022008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -454,7 +454,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('17022009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -476,7 +476,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('07022010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -498,7 +498,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('15012001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -521,7 +521,7 @@ class UserSeeder extends Seeder
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
         $user->auction_q = 2;
-        $user->password = Hash::make('05012002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -543,7 +543,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('15012003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -565,7 +565,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('05012004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -587,7 +587,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('15012005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -609,7 +609,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('05012006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -631,7 +631,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('15012007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -653,7 +653,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('05012008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -675,7 +675,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('15012009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -697,7 +697,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('05012010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -719,7 +719,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('12022001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -741,7 +741,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('02022002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -763,7 +763,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('12022003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -785,7 +785,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('02022004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -807,7 +807,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('12022005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -829,7 +829,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('02022006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -851,7 +851,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('12022007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -873,7 +873,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('02022008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -895,7 +895,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('12022009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -917,7 +917,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('02022010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -939,7 +939,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('15072001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -961,7 +961,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('05072002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -983,7 +983,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('15072003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1005,7 +1005,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('05072004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1027,7 +1027,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('15072005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1049,7 +1049,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('05072006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1071,7 +1071,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('15072007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1093,7 +1093,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('05072008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1115,7 +1115,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('15072009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1137,7 +1137,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('05072010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1159,7 +1159,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('13035001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1181,7 +1181,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('03035002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1203,7 +1203,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('13035003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1225,7 +1225,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('03035004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1247,7 +1247,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('13035005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1269,7 +1269,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('03035006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1291,7 +1291,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('13035007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1313,7 +1313,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('03035008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1335,7 +1335,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('13035009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1357,7 +1357,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('03035010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1379,7 +1379,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('18032001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1401,7 +1401,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('08032002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1423,7 +1423,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('18032003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1445,7 +1445,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('08032004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1467,7 +1467,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('18032005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1489,7 +1489,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('08032006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1511,7 +1511,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('18032007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1533,7 +1533,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('08032008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1555,7 +1555,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('18032009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1577,7 +1577,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('08032010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1599,7 +1599,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('19011001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1621,7 +1621,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('09011002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1643,7 +1643,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('19011003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1665,7 +1665,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('09011004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1687,7 +1687,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('19011005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1709,7 +1709,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('09011006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1731,7 +1731,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('19011007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1753,7 +1753,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('09011008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1775,7 +1775,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('19011009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1797,7 +1797,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('09011010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1819,7 +1819,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('18811001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1841,7 +1841,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('08811002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1863,7 +1863,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('18811003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1885,7 +1885,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('08811004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1907,7 +1907,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('18811005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1929,7 +1929,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('08811006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1951,7 +1951,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('18811007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1973,7 +1973,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('08811008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -1995,7 +1995,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('18811009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2017,7 +2017,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('08811010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2039,7 +2039,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('16898001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2061,7 +2061,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('06898002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2083,7 +2083,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('16898003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2105,7 +2105,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('06898004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2127,7 +2127,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('16898005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2149,7 +2149,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('06898006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2171,7 +2171,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('16898007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2193,7 +2193,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('06898008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2215,7 +2215,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('16898009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2237,7 +2237,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('06898010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2259,7 +2259,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('14025001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2281,7 +2281,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('04025002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2303,7 +2303,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('14025003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2325,7 +2325,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('04025004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2347,7 +2347,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('14025005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2369,7 +2369,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('04025006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2391,7 +2391,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('14025007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2413,7 +2413,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('04025008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2435,7 +2435,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('14025009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2457,7 +2457,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('04025010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2479,7 +2479,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('17809001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2501,7 +2501,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('07809002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2523,7 +2523,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('17809003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2545,7 +2545,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('07809004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2567,7 +2567,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('17809005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2589,7 +2589,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8IANDJDOXA';
         $user->referral_answer = '21UGF12FDR';
-        $user->password = Hash::make('07809006');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2611,7 +2611,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '8MDLS9UPCK';
         $user->referral_answer = 'QEVP1MMCER';
-        $user->password = Hash::make('17809007');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2633,7 +2633,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'D5X7GDA27Y';
         $user->referral_answer = 'Z8UK3BCOUS';
-        $user->password = Hash::make('07809008');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2655,7 +2655,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'KXTWQFSK91';
         $user->referral_answer = 'JWQFIS72X9';
-        $user->password = Hash::make('17809009');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2677,7 +2677,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'VFQXBES5PB';
         $user->referral_answer = 'CS40MAGLYH';
-        $user->password = Hash::make('07809010');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2699,7 +2699,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = '21UGF12FDR';
         $user->referral_answer = '8IANDJDOXA';
-        $user->password = Hash::make('11722001');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2721,7 +2721,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'QEVP1MMCER';
         $user->referral_answer = '8MDLS9UPCK';
-        $user->password = Hash::make('01722002');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2743,7 +2743,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'Z8UK3BCOUS';
         $user->referral_answer = 'D5X7GDA27Y';
-        $user->password = Hash::make('11722003');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2765,7 +2765,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'JWQFIS72X9';
         $user->referral_answer = 'KXTWQFSK91';
-        $user->password = Hash::make('01722004');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -2787,7 +2787,7 @@ class UserSeeder extends Seeder
         $user->hard = 1;
         $user->referral_code = 'CS40MAGLYH';
         $user->referral_answer = 'VFQXBES5PB';
-        $user->password = Hash::make('11722005');
+        $user->password = Hash::make('NYOBA');
         $user->save();
 
         $user = new User();
@@ -3339,6 +3339,7 @@ class UserSeeder extends Seeder
         $user->referral_answer = 'CS40MAGLYH';
         $user->password = Hash::make('6017150');
         $user->save();
+
 
 
 
