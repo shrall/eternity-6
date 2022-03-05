@@ -12,80 +12,80 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-2">
-                        <label for="">Eternite</label>
+                        <label for="">Eternite - {{$user->eternite1}}</label>
                         <input type="number" name="eternite" id="eternite" class="form-control" min="0" value=0>
                     </div>
                     <div class="row">
                         <div class="col-md-3 mb-2">
-                            <label>Flour</label>
+                            <label>Flour - {{$user->flour}}</label>
                             <input class="form-control" id="flour" name="flour" type="number" value=0 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Egg</label>
+                            <label>Egg - {{$user->egg}}</label>
                             <input class="form-control" id="egg" name="egg" type="number" value=0 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Raw Meat</label>
+                            <label>Raw Meat - {{$user->meat}}</label>
                             <input class="form-control" id="meat" name="meat" type="number" value=0 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Oil</label>
+                            <label>Oil - {{$user->oil}}</label>
                             <input class="form-control" id="oil" name="oil" type="number" value=0 required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 mb-2">
-                            <label>Bread</label>
+                            <label>Bread - {{$user->bread}}</label>
                             <input class="form-control" id="" name="bread" type="number" value=0 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Bakpao</label>
+                            <label>Bakpao - {{$user->bakpao}}</label>
                             <input class="form-control" id="" name="bakpao" type="number" value=0 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Omelette</label>
+                            <label>Omelette - {{$user->omelette}}</label>
                             <input class="form-control" id="" name="omelette" type="number" value=0 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Steak</label>
+                            <label>Steak - {{$user->steak}}</label>
                             <input class="form-control" id="" name="steak" type="number" value=0 required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 mb-2">
-                            <label>Iron</label>
+                            <label>Iron - {{$user->iron}}</label>
                             <input class="form-control" id="" name="iron" type="number" placeholder="" value=0
                                 required>
                         </div>
                         <div class="col-md-4 mb-2">
-                            <label>Wood</label>
+                            <label>Wood - {{$user->wood}}</label>
                             <input class="form-control" id="" name="wood" type="number" placeholder="" value=0
                                 required>
                         </div>
                         <div class="col-md-4 mb-2">
-                            <label>Cloth</label>
+                            <label>Cloth - {{$user->cloth}}</label>
                             <input class="form-control" id="" name="cloth" type="number" placeholder="" value=0
                                 required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 mb-2">
-                            <label>Sword</label>
+                            <label>Sword - {{$user->sword}}</label>
                             <input class="form-control" id="" name="sword" type="number" placeholder="" value=0
                                 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Furniture</label>
+                            <label>Furniture - {{$user->furniture}}</label>
                             <input class="form-control" id="" name="furniture" type="number" placeholder="" value=0
                                 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Armor</label>
+                            <label>Armor - {{$user->armor}}</label>
                             <input class="form-control" id="" name="armor" type="number" placeholder="" value=0
                                 required>
                         </div>
                         <div class="col-md-3 mb-2">
-                            <label>Ship Sail</label>
+                            <label>Ship Sail - {{$user->sail}}</label>
                             <input class="form-control" id="" name="sail" type="number" placeholder="" value=0
                                 required>
                         </div>
