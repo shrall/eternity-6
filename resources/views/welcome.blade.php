@@ -136,10 +136,10 @@
                         href="https://line.me/R/ti/g/e3dVvOhhNM">https://line.me/R/ti/g/e3dVvOhhNM</a>
                 </div>
                 <div class="flex flex-col gap-y-2 items-center justify-center">
-                    <div>Meeting ID: 966 8951 3032</div>
-                    <div>Password: RALLY2</div>
+                    <div>Meeting ID: 923 7513 5434</div>
+                    <div>Password: 929052</div>
                     <a class="underline text-center" target="_blank"
-                        href="https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09">https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09</a>
+                        href="https://zoom.us/j/92375135434?pwd=eGZiMzYwQmdFa3NYRTV5MmVzTW4yZz09">https://zoom.us/j/92375135434?pwd=eGZiMzYwQmdFa3NYRTV5MmVzTW4yZz09</a>
                 </div>
             </div>
         </div>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="flex flex-col gap-y-2 items-center justify-center">
                     <div>Meeting ID: 966 8951 3032</div>
-                    <div>Password: RALLY2</div>
+                    <div>Password: -</div>
                     <a class="underline text-center" target="_blank"
                         href="https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09">https://zoom.us/j/96689513032?pwd=cE1qb3FGSyttNFVXNGZuOVBHTVZldz09</a>
                 </div>
