@@ -44,11 +44,11 @@
                                         {{ $loop->iteration }}
                                     </td>
                                     <td>Periode {{ $log->period }}</td>
-                                    @if ($log->math == 1)
+                                    @if ($log->math == 0)
                                         <td class="text-success">
                                             <span class="fas fa-fw fa-plus mr-2"></span>{{ $log->amount }}
                                         </td>
-                                    @elseif ($log->math == 0)
+                                    @elseif ($log->math == 1)
                                         <td class="text-danger">
                                             <span class="fas fa-fw fa-minus mr-2"></span>{{ $log->amount }}
                                         </td>
