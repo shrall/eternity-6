@@ -6,7 +6,6 @@
             class="w-full h-full @if (Auth::user()->finish == 0) hidden @else flex @endif flex-col items-center justify-center gap-4">
             <img src="{{ asset('svg/e-logo.svg') }}" class="w-48">
             <div class="text-4xl">Congratulations!</div>
-            <div class="text-2xl">Your Rank : <span id="player-rank">{{ Auth::user()->finish }}</span></div>
         </div>
         <div class="dragged relative mt-16 mx-4 @if (Auth::user()->finish == 0) block @else hidden @endif" id="sea"
             style="transform: translate(-106.68px, -1052.11px);">
@@ -1097,7 +1096,6 @@
                         $('#sea').addClass('hidden');
                         $('.dice-things').addClass('hidden');
                         $('#last-screen').removeClass('hidden').addClass('flex')
-                        $('#player-rank').html(result)
                     }
                 }).fail(function(e) {
                     console.log(e)
