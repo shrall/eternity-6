@@ -28,10 +28,11 @@
                             <tr>
                                 <th class="border-0">Name</th>
                                 <th class="border-0">Eternites 2</th>
-                                <th class="border-0">Paket Soal</th>
+                                <th class="border-0">Paket</th>
                                 <th class="border-0">Map</th>
                                 <th class="border-0">Tipe Map</th>
-                                <th class="border-0">Challenge 3 Time</th>
+                                <th class="border-0">Referral</th>
+                                <th class="border-0">Ch 3 Time</th>
                                 <th class="border-0">Rank</th>
                                 <th class="border-0">Finish Time</th>
                                 <th class="border-0">Actions</th>
@@ -48,7 +49,8 @@
                                     <td>{{ $user->question_pack }}</td>
                                     <td>{{ $user->map }}</td>
                                     <td>{{ $user->map_type == 1 ? 'A' : 'B' }}</td>
-                                    <td>{{ $user->chl3_timestamp ?? 'Belum Challenge 3' }}</td>
+                                    <td>{{ $user->referral == 1 ? 'Sudah' : 'Belum' }}</td>
+                                    <td>{{ $user->chl3_timestamp ?? 'Belum Ch 3' }}</td>
                                     <td>{{ $user->finish }}</td>
                                     <td>{{ $user->finish_timestamp ?? 'Belum Finish' }}</td>
                                     <td>
@@ -68,5 +70,4 @@
             </div>
         </div>
     </div>
-
 @endsection
